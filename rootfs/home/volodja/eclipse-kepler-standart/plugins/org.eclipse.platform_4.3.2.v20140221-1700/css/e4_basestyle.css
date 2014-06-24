@@ -1,0 +1,54 @@
+.MPart StyledText {
+  background-image: url(./eclipse-text-editor-background-image.png);
+  background-color: white;
+  color: black;
+}
+
+.MPartStack {
+  swt-unselected-tabs-color: #2D3340 #2D3340 #2D3340 100% 100%;
+  swt-outer-keyline-color: #FFFFFF;
+	swt-inner-keyline-color: #FFFFFF;
+	swt-tab-outline: #B6BCCC;
+	swt-shadow-visible: true;
+	swt-mru-visible: false;
+}
+
+.MPartStack.active {
+	swt-inner-keyline-color: #FFFFFF;
+	swt-tab-outline: #B6BCCC;
+	swt-shadow-visible: true;
+}
+
+#PerspectiveSwitcher {
+	eclipse-perspective-keyline-color: #AAB0BF #AAB0BF;
+}
+
+.MToolBar.Draggable {
+	handle-image:  url(./dragHandle.png);
+}
+
+.MToolControl.Draggable {
+	handle-image:  url(./dragHandle.png);
+}
+
+.DragFeedback {
+    background-color: #00FF00; 
+}
+
+.ModifiedDragFeedback {
+    background-color: #A0A000; 
+}
+
+CTabItem {
+  font: Terminus;
+	font-style: normal;
+	font-weight: normal;
+}
+
+CTabItem.busy {
+	font-style: italic;
+}
+
+CTabItem.highlighted {
+	font-weight: bold;
+}

@@ -1,0 +1,1 @@
+echo "$1" | translate-bin -f ru -t en -s google

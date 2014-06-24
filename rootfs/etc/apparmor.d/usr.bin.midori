@@ -1,0 +1,73 @@
+# Author: Jamie Strandboge <jamie@canonical.com>
+#include <tunables/global>
+
+# We need 'flags=(attach_disconnected)' in newer chromium versions
+/usr/bin/midori {
+  #include <abstractions/audio>
+  #include <abstractions/cups-client>
+  #include <abstractions/dbus-session>
+  #include <abstractions/gnome>
+  #include <abstractions/ibus>
+  #include <abstractions/nameservice>
+  #include <abstractions/user-tmp>
+
+  deny @{HOME}/ rw,
+  deny @{HOME}/.Skype/ rw,
+  deny @{HOME}/.Skype/** rw,
+  deny @{HOME}/.pidgin/ rw,
+  deny @{HOME}/.pidgin/** rw,
+  deny @{HOME}/workspace/ rw,
+  deny @{HOME}/workspace/** rw,
+  deny /media/data/ rw,
+  deny /media/data/** rw,
+  deny /media/vm/ rw,
+  deny /media/vm/** rw,
+
+  /media/desktop/   rw,
+  /media/desktop/*  rw,
+  /media/desktop/** rw,
+
+  # Networking
+  network inet stream,
+#  network inet6 stream,
+#  @{PROC}/[0-9]*/net/if_inet6 r,
+#  @{PROC}/[0-9]*/net/ipv6_route r,
+
+  /proc/*/status  r,
+  /proc/*/task/   r,
+  /proc/*/task/*  r,
+  /proc/*/fd/     r,
+
+  @{HOME}/.local/share/webkit/icondatabase/   r,
+  @{HOME}/.local/share/webkit/icondatabase/** rwk,
+  @{HOME}/.local/share/webkit/databases/** rw,
+
+  @{HOME}/.cache/dconf/user             rw,
+  @{HOME}/.cache/midori/**              rw,
+  @{HOME}/.cache/gstreamer-1.0/registry.x86_64.bin.tmp* rw,
+
+  @{HOME}/.config/midori/               r,
+  @{HOME}/.config/midori/**             rwk,
+  @{HOME}/.config/dconf/user            r,
+  @{HOME}/.config/fontconfig/fonts.conf r,
+  @{HOME}/.config/enchant/              r,
+  @{HOME}/.config/enchant/**            r,
+
+  @{HOME}/.macromedia/Flash_Player/**   rw,
+  @{HOME}/.adobe/Flash_Player/**        r,
+  @{HOME}/.adobe/Flash_Player/#SharedObjects/* rw,
+  
+  /usr/share/glib-2.0/schemas/gschemas.compiled r,
+  /usr/share/hunspell/  r,
+  /usr/share/hunspell/* r,
+  /usr/share/midori/*   r,
+  /usr/share/midori/**  r,
+  /usr/share/enchant/enchant.ordering r,
+
+  /var/lib/aspell/*     r,
+
+  /usr/lib/x86_64-linux-gnu/gstreamer1.0/gstreamer-1.0/gst-plugin-scanner ix,
+
+  /etc/xdg/midori/*     r,
+
+}

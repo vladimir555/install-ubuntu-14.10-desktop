@@ -1,0 +1,61 @@
+#include <tunables/global>
+/opt/doom3-fallen-angel/doom3 {
+  #include <abstractions/audio>
+  #include <abstractions/base>
+  #include <abstractions/nameservice>
+  #include <abstractions/nvidia>
+  #include <abstractions/user-tmp>
+  #include <abstractions/X>
+
+
+  /bin/cp                                 ix,
+  /usr/bin/dirname                        ix,
+  /bin/mkdir                              ix,
+  /opt/doom3-fallen-angel/doom3.x86       ix,
+
+  /dev/input/js0                          r,
+  /dev/nvidia0                            mk,
+
+  /proc/*/task/                           r,
+  /proc/*/status                          r,
+
+  /run/shm/pulse-shm-*                    mk,
+
+  @{HOME}/.d3-fa/                         rw,
+  @{HOME}/.d3-fa/                         rw,
+  @{HOME}/.d3-fa/**                       rw,
+  @{HOME}/.d3-fa/**                       mk,                     
+  @{HOME}/.doom3/                         rw,
+  @{HOME}/.doom3/                         rw,
+  @{HOME}/.doom3/**                       rw,
+  @{HOME}/.nv/GLCache/                    rwk,
+  @{HOME}/.nv/GLCache/*                   rwk,
+  @{HOME}/.nv/GLCache/**                  rwk,
+  @{HOME}/.nvidia/                        rw,
+  @{HOME}/.nvidia/*                       rw,
+  @{HOME}/.nvidia/**                      rw,
+  /opt/doom3-fallen-angel/                r,
+  /opt/doom3-fallen-angel/*               r,
+  /opt/doom3-fallen-angel/**              r,
+  /tmp/*                                  mk,
+  /var/lib/dbus/machine-id                r,
+
+  /opt/doom3-fallen-angel/**              mk,
+
+  /usr/lib/**                             mk,
+
+#  /etc/mtab                               r,
+#  /etc/fstab                              r,
+
+  # Recent skype builds have an executable stack, so it tries to mmap certain
+  # files. Let's deny them for now.
+  deny /etc/passwd                        m,
+  deny /etc/group                         m,
+  deny /usr/share/fonts/**                m,
+
+
+  # Silence a few non-needed writes
+  deny /var/cache/fontconfig/             w,
+  deny owner @{HOME}/.fontconfig/         w,
+  deny owner @{HOME}/.fontconfig/*.cache-*.TMP* w,
+}

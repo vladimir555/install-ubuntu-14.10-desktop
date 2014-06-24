@@ -1,0 +1,1 @@
+elinks "http://yandex.ru/yandsearch?text=$1"

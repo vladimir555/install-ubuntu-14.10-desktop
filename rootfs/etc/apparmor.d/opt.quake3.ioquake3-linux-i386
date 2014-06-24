@@ -1,0 +1,41 @@
+#include <tunables/global>
+/opt/quake3/ioquake3-linux-i386 {
+  #include <abstractions/audio>
+  #include <abstractions/base>
+  #include <abstractions/nameservice>
+  #include <abstractions/nvidia>
+  #include <abstractions/user-tmp>
+  #include <abstractions/X>
+
+
+  /proc/*/task/                           r,
+  /proc/*/status                          r,
+  /opt/quake3/ioquake3-linux-i386         rm,
+  @{HOME}/.q3a/                           rw,
+  @{HOME}/.q3a/*                          rw,
+  @{HOME}/.q3a/**                         rw,
+  @{HOME}/.nv/GLCache/                    rwk,
+  @{HOME}/.nv/GLCache/*                   rwk,
+  @{HOME}/.nv/GLCache/**                  rwk,
+  @{HOME}/.nvidia/                        rw,
+  @{HOME}/.nvidia/*                       rw,
+  @{HOME}/.nvidia/**                      rw,
+  /opt/quake3/                            r,
+  /opt/quake3/*                           r,
+  /opt/quake3/**                          r,
+  /tmp/*                                  mk,
+  /var/lib/dbus/machine-id                r,
+
+
+  # Recent skype builds have an executable stack, so it tries to mmap certain
+  # files. Let's deny them for now.
+  deny /etc/passwd                        m,
+  deny /etc/group                         m,
+  deny /usr/share/fonts/**                m,
+
+
+  # Silence a few non-needed writes
+  deny /var/cache/fontconfig/             w,
+  deny owner @{HOME}/.fontconfig/         w,
+  deny owner @{HOME}/.fontconfig/*.cache-*.TMP* w,
+}

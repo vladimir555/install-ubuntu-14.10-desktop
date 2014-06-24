@@ -1,0 +1,1 @@
+elinks "http://go.mail.ru/search?q=$1"

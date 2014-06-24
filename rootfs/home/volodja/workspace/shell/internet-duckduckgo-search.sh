@@ -1,0 +1,1 @@
+elinks duckduckgo.com?q="$1"
