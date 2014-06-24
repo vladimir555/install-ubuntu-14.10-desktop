@@ -1,2 +1,2 @@
-apt-get remove byobu xterm
-apt-get autoremove
+apt-get -y remove byobu xterm
+apt-get -y autoremove
