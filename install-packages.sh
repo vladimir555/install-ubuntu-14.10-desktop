@@ -12,5 +12,6 @@ apt-get -y install \
  xinit qt4-qtconfig \
  mate-core mate-desktop-environment mate-notification-daemon \
  eom evince dconf-tools engrampa \
- mate-applets mate-sensors-applet lightdm
+ mate-applets mate-sensors-applet \
+ lightdm
 apt-file update
