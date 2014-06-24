@@ -1,7 +1,7 @@
 apt-get -y install \
  audacious vlc exfalso \
  inkscape gimp \
- elinks transgui pidgin pepperflashplugin-nonfree flashplugin-installer firefox \
+ elinks transgui pidgin pepperflashplugin-nonfree flashplugin-installer firefox firefox-locale-ru \
  libreoffice libreoffice-l10n-ru \
  openjdk-7-jdk virtualbox g++ clang make git traceroute pigz pbzip2 unrar unzip source-highlight \
  apparmor apparmor-profiles apparmor-utils \
