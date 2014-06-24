@@ -13,5 +13,5 @@ apt-get -y install \
  mate-core mate-desktop-environment mate-notification-daemon \
  eom evince dconf-tools engrampa \
  mate-applets mate-sensors-applet \
- lightdm
+ lightdm lightdm-gtk-greeter
 apt-file update

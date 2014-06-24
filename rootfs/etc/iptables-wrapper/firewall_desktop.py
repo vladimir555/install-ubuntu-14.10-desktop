@@ -9,7 +9,7 @@ from network.interface          import Interface
 from network.iptables           import IPTables 
 from network.firewall_profile   import Firewall, Profile
 
-internet    = Interface("eth1")
+internet    = Interface("eth0")
 iptables    = IPTables()
 firewall    = Firewall(iptables)
 
