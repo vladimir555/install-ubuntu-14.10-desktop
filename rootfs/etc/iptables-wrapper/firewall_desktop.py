@@ -22,6 +22,7 @@ firewall.allowClient([internet],
       Profile.Proxy, 
       Profile.Quake3, 
       Profile.Linphone,
-      Profile.TransmissionGUI])
+      Profile.TransmissionGUI
+])
 
 iptables.save("/etc/iptables.config")

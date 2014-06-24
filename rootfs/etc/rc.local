@@ -13,6 +13,6 @@
 
 /usr/bin/python3 /etc/iptables-wrapper/firewall_desktop.py
 
-aplay --device="plughw:CARD=Quartet,DEV=0" /root/noise
+#aplay --device="plughw:CARD=Quartet,DEV=0" /root/noise
 
 exit 0
