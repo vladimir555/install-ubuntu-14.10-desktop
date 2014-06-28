@@ -4,9 +4,10 @@ Type=X-GNOME-Metatheme
 Comment=
 
 [X-GNOME-Metatheme]
-GtkTheme=Clearlooks
+GtkTheme=v2
 MetacityTheme=Spidey
 IconTheme=menta
 GtkColorScheme=fg_color:#ffffffffffff,bg_color:#2ccc33324000,text_color:#ffffffffffff,base_color:#2ccd33334000,selected_fg_color:#ffffffffffff,selected_bg_color:#170a1c292666,tooltip_fg_color:#ffffffffffff,tooltip_bg_color:#000000000000
 CursorTheme=DMZ-Black
 CursorSize=24
+BackgroundImage=/home/volodja/Desktop/wallpaper/look.com.ua-88022.jpg

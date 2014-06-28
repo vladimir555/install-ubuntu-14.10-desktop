@@ -11,6 +11,7 @@ apt-get -y install \
  libtranslate-bin \
  xinit qt4-qtconfig \
  mate-core mate-desktop-environment mate-notification-daemon \
+ compiz compiz-plugins compiz-plugins-extra compizconfig-settings-manager \
  eom evince dconf-tools engrampa \
  mate-applets mate-sensors-applet \
  lightdm lightdm-gtk-greeter
