@@ -1,4 +1,4 @@
-gtk-icon-sizes        = "panel-menu=12,12:panel=12,12:gtk-menu=12,12:gtk-small-toolbar=12,12:gtk-large-toolbar=12,12:gtk-button=12,12:gtk-dialog=12,12:gtk-dnd=12,12"
+gtk-icon-sizes        = "panel-menu=16,16:panel=16,16:gtk-menu=16,16:gtk-small-toolbar=16,16:gtk-large-toolbar=16,16:gtk-button=16,16:gtk-dialog=16,16:gtk-dnd=16,16"
 gtk-toolbar-icon-size = GTK_ICON_SIZE_SMALL_TOOLBAR
 
 #gtk_color_scheme = "fg_color:#000\nbg_color:#ede9e3\nbase_color:#fff\ntext_color:#000\nselected_bg_color:#5598d7\nselected_fg_color:#fff"
