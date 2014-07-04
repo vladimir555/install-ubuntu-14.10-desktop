@@ -1,0 +1,42 @@
+/*
+ * main.cpp
+ *
+ *  Created on: 15 марта 2014 г.
+ *      Author: volodja
+ */
+
+
+
+
+#include <iostream>
+#include <string>
+#include <typeinfo>
+
+
+using namespace std;
+
+
+void func(const string &s) {
+    cout << s << endl;
+}
+
+
+int main() {
+//    cout << string(typeid(string()).name()) << endl;
+
+//    cout << typeid((
+    func (
+        []() -> const string&& {
+            string result = "qwert";
+            cout << "lambda: " << result << endl;
+            return result;
+        }());
+
+//cout << typeid(l).name() << endl;
+//    ).name() << endl;
+
+//    cout << "return: " << l() << endl;
+//    cout << "lambda type: " << typeid(l).name() << endl;
+
+    return 0;
+}

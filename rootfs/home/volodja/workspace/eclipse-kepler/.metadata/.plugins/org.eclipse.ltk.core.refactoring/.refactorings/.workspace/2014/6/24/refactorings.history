@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Delete resource &apos;iptables-wrapper/utility/enum.py&apos;" deleteContents="false" description="Delete resource &apos;iptables-wrapper/utility/enum.py&apos;" element1="/iptables-wrapper/utility/enum.py" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1402571890621"/>&#x0A;<refactoring comment="Delete resource &apos;iptables-wrapper/network/protocol.py&apos;" deleteContents="false" description="Delete resource &apos;iptables-wrapper/network/protocol.py&apos;" element1="/iptables-wrapper/network/protocol.py" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1402579324821"/>
+</session>

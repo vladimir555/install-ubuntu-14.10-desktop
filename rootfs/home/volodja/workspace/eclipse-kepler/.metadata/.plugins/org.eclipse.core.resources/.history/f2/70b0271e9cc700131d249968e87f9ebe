@@ -1,0 +1,72 @@
+/*
+ * tcp_service.h
+ *
+ *  Created on: 24 марта 2014 г.
+ *      Author: volodja
+ */
+
+
+
+
+
+#ifndef TCP_SERVICE_H_
+#define TCP_SERVICE_H_
+
+
+#include <boost/shared_ptr.hpp>
+#include <boost/asio.hpp>
+#include <boost/bind.hpp>
+#include <boost/noncopyable.hpp>
+#include <iostream>
+#include <vector>
+
+
+#include "tcp_connection.h"
+#include "server/service.h"
+#include "utility/type.h"
+
+
+using boost::shared_ptr;
+using boost::bind;
+using std::vector;
+using std::cerr;
+using std::cout;
+using std::endl;
+using utility::TCPAddress;
+
+
+namespace server {
+namespace implementation {
+
+
+class TCPService: public IService, private boost::noncopyable {
+public:
+    explicit    TCPService(const TCPAddress &listen_address);
+    virtual    ~TCPService();
+
+    void        initialize();
+    void        finalize();
+
+private:
+    typedef boost::asio::ip::tcp::endpoint  EndPoint;
+    typedef boost::asio::ip::tcp::socket    Socket;
+    typedef boost::asio::ip::tcp::acceptor  Acceptor;
+    typedef boost::asio::ip::address        Address;
+    typedef boost::asio::io_service         Service;
+    typedef boost::system::error_code       Error;
+
+    TCPAddress  listen_address;
+    Service     service;
+    Socket      socket;
+
+    void        startAccept();
+
+    void        handleAccept(const Error &error);
+};
+
+
+} /* namespace implementation */
+} /* namespace server */
+
+
+#endif /* TCP_SERVICE_H_ */

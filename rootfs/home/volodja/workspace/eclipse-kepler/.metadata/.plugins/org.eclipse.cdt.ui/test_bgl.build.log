@@ -1,0 +1,6 @@
+08:32:05 **** Incremental Build of configuration Debug for project test_bgl ****
+make all 
+make: Цель `all' не требует выполнения команд.
+
+08:32:05 Build Finished (took 69ms)
+

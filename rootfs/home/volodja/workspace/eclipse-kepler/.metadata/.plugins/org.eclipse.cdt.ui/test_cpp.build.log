@@ -1,0 +1,25 @@
+02:40:53 **** Incremental Build of configuration Release for project test_cpp ****
+make all 
+Building file: ../Test.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++11 -D__GXX_EXPERIMENTAL_CXX0X__ -I/home/volodja/include -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Test.d" -MT"Test.d" -o "Test.o" "../Test.cpp"
+Finished building: ../Test.cpp
+ 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++11 -D__GXX_EXPERIMENTAL_CXX0X__ -I/home/volodja/include -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building file: ../tostring.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++11 -D__GXX_EXPERIMENTAL_CXX0X__ -I/home/volodja/include -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"tostring.d" -MT"tostring.d" -o "tostring.o" "../tostring.cpp"
+Finished building: ../tostring.cpp
+ 
+Building target: test_cpp
+Invoking: GCC C++ Linker
+g++ -L/home/volodja/lib -o "test_cpp"  ./Test.o ./main.o ./stopwatch.o ./tostring.o   -lstdc++
+Finished building target: test_cpp
+ 
+
+02:40:56 Build Finished (took 2s.373ms)
+

@@ -1,0 +1,18 @@
+commentBorder=\#83786E | null | false | null | null | null
+commentText=\#83786E | null | false | null | null | null
+declBoder=\#A4B0C0 | null | false | null | null | null
+doctypeExternalId=\#A4B0C0 | null | false | null | null | null
+doctypeExternalPubref=\#A4B0C0 | null | false | null | null | null
+doctypeExtrenalSysref=\#A4B0C0 | null | false | null | null | null
+doctypeName=\#A4B0C0 | null | false | null | null | null
+eclipse.preferences.version=1
+entityReference=\#E79E3C | null | true | null | null | null
+html_content_assist_default_page_sort_order=org.eclipse.wst.html.ui.proposalCategory.htmlTags\u0000org.eclipse.wst.css.ui.proposalCategory.css\u0000org.eclipse.wst.html.ui.proposalCategory.htmlTemplates\u0000org.eclipse.wst.css.ui.proposalCategory.cssTemplates\u0000
+html_content_assist_own_page_sort_order=org.eclipse.wst.html.ui.proposalCategory.htmlTemplates\u0000org.eclipse.wst.css.ui.proposalCategory.cssTemplates\u0000org.eclipse.wst.html.ui.proposalCategory.htmlTags\u0000org.eclipse.wst.css.ui.proposalCategory.css\u0000
+org.eclipse.wst.sse.ui.custom_templates=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><templates/>
+tagAttributeEquals=\#F8E1AA | null | null | null | null | null
+tagAttributeName=\#DE6546 | null | false | null | null | null
+tagAttributeValue=\#D6C248 | null | false | null | null | null
+tagBorder=\#F8E1AA | null | false | null | null | null
+tagName=\#F8E1AA | null | false | null | null | null
+xmlContent=\#F8E1AA | null | null | null | null | null

@@ -1,0 +1,6 @@
+21:23:37 **** Incremental Build of configuration Release for project test_fastcgi ****
+make all 
+make: Цель `all' не требует выполнения команд.
+
+21:23:37 Build Finished (took 61ms)
+

@@ -1,0 +1,6 @@
+var tag_body = document.createElement("body");
+var tag_div  = document.createElement("div");
+
+document.body = tag_body;
+//document.tag_body.appendChild(tag_div);
+tag_body.innerHTML = 'Привет, мир!';

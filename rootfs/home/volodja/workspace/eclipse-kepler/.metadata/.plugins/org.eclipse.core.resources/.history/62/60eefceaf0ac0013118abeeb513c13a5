@@ -1,0 +1,45 @@
+/*
+ * main.cpp
+ *
+ *  Created on: 15 марта 2014 г.
+ *      Author: volodja
+ */
+
+
+
+
+#include <iostream>
+#include <string>
+#include <typeinfo>
+#include <algorithm>
+#include <vector>
+
+
+using namespace std;
+
+
+const string str = "jskjflksdlfjslflsjflksjlfkjslfkjsldfkjlskfjlskjflksjflksjlfkjsldfkjsldkfjlksjflksjlfksjdlfkjsldfkjslkfjlskdfjlskdfjlskjdflskdjflskdjflskdjflskdjflksjdlfksjdlf";
+
+
+void f() {
+    return str;
+}
+
+
+int main() {
+    vector<A> v;
+    A a("a");
+    v.push_back(move(a));
+//    A a = move(A("name"));
+//    A b = a;
+//    v(move(A("name1")));
+
+//    func (
+//        []() -> string {
+//            string result = "qwert";
+//            cout << "lambda: " << result << endl;
+//            return std::move(result);
+//        }());
+
+    return 0;
+}

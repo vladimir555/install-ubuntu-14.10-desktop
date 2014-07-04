@@ -1,0 +1,15 @@
+12:51:59 **** Incremental Build of configuration Release for project test_boost_log ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++11 -D__GXX_EXPERIMENTAL_CXX0X__ -DBOOST_LOG_DYN_LINK -I/home/volodja/include -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: test_boost_log
+Invoking: GCC C++ Linker
+g++  -o "test_boost_log"  ./main.o   -lpthread -lboost_date_time -lboost_thread -lboost_log_setup -lboost_log -lboost_serialization -lboost_filesystem -lboost_system -lboost_unit_test_framework
+Finished building target: test_boost_log
+ 
+
+12:52:07 Build Finished (took 7s.871ms)
+

@@ -1,0 +1,42 @@
+/*
+ * main.cpp
+ *
+ *  Created on: 15 марта 2014 г.
+ *      Author: volodja
+ */
+
+
+
+
+#include <iostream>
+#include <string>
+#include <typeinfo>
+#include <algorithm>
+#include <vector>
+#include "stopwatch.h"
+
+
+using namespace std;
+
+
+const string str = "jskjflksdlfjslflsjflksjlfkjslfkjsldfkjlskfjlskjflksjflksjlfkjsldfkjsldkfjlksjflksjlfksjdlfkjsldfkjslkfjlskdfjlskdfjlskjdflskdjflskdjflskdjflskdjflksjdlfksjdlf";
+
+
+const string f() {
+    return move(str);
+}
+
+
+int main() {
+    size_t length = 0;
+
+    utility::Stopwatch stopwatch;
+
+    for (size_t i = 0; i < 10000000; i++) {
+        length += f().size();
+    }
+
+    cout << stopwatch.getElapsedMicrosecond() << endl;
+
+    return length;
+}

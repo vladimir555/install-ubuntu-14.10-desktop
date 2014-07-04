@@ -1,0 +1,59 @@
+/*
+ * asio_tcp_service_test.h
+ *
+ *  Created on: 04 мая 2014 г.
+ *      Author: volodja
+ */
+
+
+
+
+
+#ifndef ASIO_TCP_SERVICE_TEST_H_
+#define ASIO_TCP_SERVICE_TEST_H_
+
+
+#include <boost/test/unit_test.hpp>
+#include <boost/asio.hpp>
+
+
+#include <boost/log/attributes.hpp>
+
+
+#include "server/implementation/asio_tcp_service.h"
+
+
+using boost::asio::ip::tcp;
+using boost::asio::ip::address;
+using boost::asio::io_service;
+
+
+namespace server {
+namespace implementation {
+
+
+void func() {
+    BOOST_LOG_FUNCTION();
+    BOOST_LOG_NAMED_SCOPE("start");
+    LOG_DEBUG("12345");
+}
+
+
+BOOST_AUTO_TEST_CASE(AsioTcpAcceptorTest) {
+    func();
+
+//    io_service service;
+//
+//    AsioTcpAcceptor::start(tcp::endpoint(address::from_string("127.0.0.1"), 8888), service);
+//
+//    service.run();
+}
+
+
+}
+
+
+}
+
+
+#endif /* ASIO_TCP_SERVICE_TEST_H_ */

@@ -1,0 +1,15 @@
+DLTK_default=255,255,255
+DLTK_keyword=255,128,213
+DLTK_keyword_return=255,128,213
+DLTK_number=255,255,255
+DLTK_string=144,238,144
+content_assist_sorter=false
+eclipse.preferences.version=1
+formatter.tabulation.char=space
+formatter_profile=org.eclipse.vjet.ui.default.sun_profile
+formatter_settings_version=1
+org.eclipse.vjet.eclipse.Templates=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><templates/>
+org.eclipse.vjet.ui.formatterprofiles.version=1
+sourceHoverBackgroundColor=59,59,62
+useAnnotationsPrefPage=true
+useQuickDiffPrefPage=true

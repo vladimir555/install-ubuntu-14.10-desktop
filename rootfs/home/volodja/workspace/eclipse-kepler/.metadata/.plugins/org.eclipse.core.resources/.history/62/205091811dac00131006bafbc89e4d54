@@ -1,0 +1,30 @@
+/*
+ * main.cpp
+ *
+ *  Created on: 15 марта 2014 г.
+ *      Author: volodja
+ */
+
+#include <iostream>
+#include <vector>
+#include <algorithm>
+#include <numeric>
+#include <future>
+
+template<typename RAIterator>
+int parallel_sum(RAIterator begin, RAIterator end) {
+    typename RAIterator::difference_type len = end - begin;
+    if (len < 100000)
+        return std::accumulate(begin, end, 0);
+
+    RAIterator mid = begin + len / 2;
+    auto handle = std::async(std::launch::async, parallel_sum<RAIterator>, mid,
+            end);
+    int sum = parallel_sum(begin, mid);
+    return sum + handle.get();
+}
+
+int main() {
+    std::vector<int> v(1000000, 1);
+    std::cout << "The sum is " << parallel_sum(v.begin(), v.end()) << '\n';
+}

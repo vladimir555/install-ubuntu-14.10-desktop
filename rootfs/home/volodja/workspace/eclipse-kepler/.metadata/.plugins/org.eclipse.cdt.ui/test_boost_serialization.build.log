@@ -1,0 +1,15 @@
+16:52:02 **** Incremental Build of configuration Debug for project test_boost_serialization ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: test_boost_serialization
+Invoking: GCC C++ Linker
+g++  -o "test_boost_serialization"  ./main.o   -lboost_serialization -lboost_iostreams
+Finished building target: test_boost_serialization
+ 
+
+16:52:05 Build Finished (took 2s.516ms)
+

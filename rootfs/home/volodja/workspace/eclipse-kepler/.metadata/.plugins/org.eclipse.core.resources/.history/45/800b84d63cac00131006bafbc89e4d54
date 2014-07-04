@@ -1,0 +1,19 @@
+/*
+ * main.cpp
+ *
+ *  Created on: 15 марта 2014 г.
+ *      Author: volodja
+ */
+
+
+
+
+#include <iostream>
+
+
+using namespace std;
+
+
+int main() {
+    return 0;
+}

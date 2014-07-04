@@ -1,0 +1,15 @@
+02:55:54 **** Build of configuration Release for project adjacency_list ****
+make all 
+Building file: ../adjacency_list.cpp
+Invoking: GCC C++ Compiler
+g++ -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"adjacency_list.d" -MT"adjacency_list.d" -o "adjacency_list.o" "../adjacency_list.cpp"
+Finished building: ../adjacency_list.cpp
+ 
+Building target: adjacency_list
+Invoking: GCC C++ Linker
+g++  -o "adjacency_list"  ./adjacency_list.o   
+Finished building target: adjacency_list
+ 
+
+02:55:56 Build Finished (took 2s.27ms)
+

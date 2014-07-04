@@ -1,0 +1,27 @@
+'''
+Created on 11 июня 2014 г.
+
+@author: volodja
+'''
+
+
+########################
+# Базовое использование
+########################
+
+from rels import Column, Relation
+
+# Enum и EnumWithText уже объявлены в библиотеке
+# и доступны как rels.Enum и rels.EnumWithText
+# тут их объявления приведены для упрощения понимания
+
+class Enum(Relation):                   # объявляем абстраткное перечисление
+    name    = Column(primary  = True)   # столбец с именами
+    value   = Column(external = True)   # столбец со значениями
+
+
+# наследование — добавляем дополнительный столбец для какого-нибудь текста
+#                например, для использования в пользовательском интерфейсе
+class EnumWithText(Enum):
+    text    = Column()
+

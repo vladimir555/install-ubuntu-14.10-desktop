@@ -1,0 +1,6 @@
+function f() {
+	var tag_div  = document.createElement("div");
+
+	document.body.appendChild(tag_div);
+	tag_div.innerHTML = 'Привет, мир!';
+}

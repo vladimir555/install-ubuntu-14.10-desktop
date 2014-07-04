@@ -1,0 +1,60 @@
+/*
+ * main.cpp
+ *
+ *  Created on: 15 марта 2014 г.
+ *      Author: volodja
+ */
+
+
+
+
+#include <iostream>
+#include <string>
+#include <typeinfo>
+#include <algorithm>
+#include <vector>
+#include "stopwatch.h"
+
+
+using namespace std;
+
+
+vector<string> text;
+
+
+vector<string> f() {
+    return text;
+}
+
+
+struct A {
+
+};
+
+
+int main() {
+
+
+    for (size_t n = 0; n < 1000; n++) {
+        string s;
+        for (size_t m = 0; m < 1000; m++) {
+            s += char(rand() / RAND_MAX * 100) + 32;
+        }
+        text.push_back(s);
+    }
+
+    size_t number = 0;
+
+    utility::Stopwatch stopwatch;
+    for (size_t i = 0; i < 10; i++) {
+        for (size_t n = 0; n < 1000; n++) {
+            for (size_t m = 0; m < 1000; m++) {
+                number += f()[n][m];
+            }
+        }
+    }
+    cout << number << endl;
+    cout << stopwatch.getElapsedMicrosecond() << endl;
+
+    return number;
+}

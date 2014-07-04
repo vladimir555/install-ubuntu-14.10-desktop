@@ -1,0 +1,15 @@
+03:55:46 **** Incremental Build of configuration Release for project chat ****
+make -j4 all 
+Building file: ../source/_release/main.cpp
+Invoking: GCC C++ Compiler
+gcc -std=c++11 -D__GXX_EXPERIMENTAL_CXX0X__ -DBOOST_LOG_DYN_LINK -I"/home/volodja/workspace/eclipse-kepler/chat/source" -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"source/_release/main.d" -MT"source/_release/main.d" -o "source/_release/main.o" "../source/_release/main.cpp"
+Finished building: ../source/_release/main.cpp
+ 
+Building target: chat
+Invoking: GCC C++ Linker
+g++  -o "chat"  ./source/utility/to_string.o ./source/utility/type.o  ./source/server/implementation/asio_tcp_service.o ./source/server/implementation/server_config_adapter.o  ./source/config/implementation/default_config_factory.o ./source/config/implementation/property_tree_config.o ./source/config/implementation/property_tree_json_config.o ./source/config/implementation/property_tree_json_config_factory.o  ./source/_release/main.o   -lpthread -lboost_date_time -lboost_thread -lboost_log_setup -lboost_log -lboost_serialization -lboost_filesystem -lboost_system
+Finished building target: chat
+ 
+
+03:55:55 Build Finished (took 9s.391ms)
+

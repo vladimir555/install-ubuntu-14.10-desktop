@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>JS TEST</title>
+        <link href="style.css" rel="stylesheet" type="text/css" />
+        <script type="text/javascript" src="main.js"></script>
+    </head>
+    <body>
+        <input id="b1" value="Нажми Меня" onclick="f();" type="button"/>
+    </body>
+</html>

@@ -1,0 +1,225 @@
+/*
+ * main.cpp
+ *
+ *  Created on: 31 янв. 2014 г.
+ *      Author: volodja
+ */
+
+
+
+
+#include <iostream>
+#include <vector>
+#include <algorithm>
+#include <stdint.h>
+#include <time.h>
+#include <sys/time.h>
+#include <string>
+
+
+using namespace std;
+
+
+timeval getCurrentTime() {
+    timeval current_time;
+    gettimeofday(&current_time, NULL);
+    return  current_time;
+}
+
+
+uint64_t getElapsedMicrosecond(const timeval &stopwatch_time) {
+    timeval current_time = getCurrentTime();
+    return (current_time.tv_sec - stopwatch_time.tv_sec) * 1000000 + current_time.tv_usec - stopwatch_time.tv_usec;
+}
+
+
+class A {
+public:
+    A()
+    :
+        i(0)
+    {
+    }
+
+   ~A() {
+    }
+
+    void increase() {
+        i++;
+    }
+
+private:
+    int i;
+};
+
+
+void testLambdaVsForPointer() {
+    const size_t    count = 10000000;
+    vector<A*>      data;
+    timeval         stopwatch_time;
+
+    cout << "test lambda vs for dynamic objects:" << endl;
+    cout << "  data pushback " << endl;
+    {
+        cout << "    lambda:                       ";
+        stopwatch_time = getCurrentTime();
+        data.resize(count);
+        generate(data.begin(), data.end(), []() -> A* {return new A;} );
+        cout << getElapsedMicrosecond(stopwatch_time) << endl;
+    }
+
+    std::for_each(data.begin(), data.end(), [](A *a) {delete a;} );
+    data.clear();
+
+    {
+        cout << "    lambda back_inserter:         ";
+        stopwatch_time = getCurrentTime();
+        generate_n(back_inserter(data), count, []() -> A* {return new A();} );
+        cout << getElapsedMicrosecond(stopwatch_time) << endl;
+    }
+
+    std::for_each(data.begin(), data.end(), [](A *a) {delete a;} );
+    data.clear();
+
+    {
+        cout << "    for counter:                  ";
+        stopwatch_time = getCurrentTime();
+        for (size_t i = 0; i < count; i++)
+            data.push_back(new A());
+        cout << getElapsedMicrosecond(stopwatch_time) << endl;
+    }
+
+    cout << "  data modify" << endl;
+    {
+        cout << "    lambda:                       ";
+        stopwatch_time = getCurrentTime();
+        std::for_each(data.begin(), data.end(), [](A *a) {a->increase();} );
+        cout << getElapsedMicrosecond(stopwatch_time) << endl;
+    }
+
+    {
+        cout << "    for iterator:                 ";
+        stopwatch_time = getCurrentTime();
+        for (auto i = data.begin(); i != data.end(); i++)
+            (*i)->increase();
+        cout << getElapsedMicrosecond(stopwatch_time) << endl;
+    }
+
+    {
+        cout << "    for counter:                  ";
+        stopwatch_time = getCurrentTime();
+        for (size_t i = 0; i < data.size(); i++)
+            data[i]->increase();
+        cout << getElapsedMicrosecond(stopwatch_time) << endl;
+    }
+
+    std::for_each(data.begin(), data.end(), [](A *a) {delete a;} );
+}
+
+
+void testLambdaVsFor() {
+    const size_t    count = 10000000;
+    vector<A>       data;
+    timeval         stopwatch_time;
+
+    cout << "test lambda vs for static objects:" << endl;
+    cout << "  data pushback " << endl;
+    {
+        cout << "    lambda:                       ";
+        stopwatch_time = getCurrentTime();
+        data.resize(count);
+        generate(data.begin(), data.end(), []() {return A();} );
+        cout << getElapsedMicrosecond(stopwatch_time) << endl;
+    }
+
+    data.clear();
+
+    {
+        cout << "    lambda back_inserter:         ";
+        stopwatch_time = getCurrentTime();
+        generate_n(back_inserter(data), count, []() {return A();} );
+        cout << getElapsedMicrosecond(stopwatch_time) << endl;
+    }
+
+    data.clear();
+
+    {
+        cout << "    for counter:                  ";
+        stopwatch_time = getCurrentTime();
+        for (size_t i = 0; i < count; i++)
+            data.push_back(A());
+        cout << getElapsedMicrosecond(stopwatch_time) << endl;
+    }
+
+    cout << "  data modify" << endl;
+    {
+        cout << "    lambda:                       ";
+        stopwatch_time = getCurrentTime();
+        std::for_each(data.begin(), data.end(), [](A &a) {a.increase();} );
+        cout << getElapsedMicrosecond(stopwatch_time) << endl;
+    }
+
+    {
+        cout << "    for iterator:                 ";
+        stopwatch_time = getCurrentTime();
+        for (auto i = data.begin(); i != data.end(); i++)
+            i->increase();
+        cout << getElapsedMicrosecond(stopwatch_time) << endl;
+    }
+
+    {
+        cout << "    for counter:                  ";
+        stopwatch_time = getCurrentTime();
+        for (size_t i = 0; i < data.size(); i++)
+            data[i].increase();
+        cout << getElapsedMicrosecond(stopwatch_time) << endl;
+    }
+}
+
+
+vector<A> copy(const size_t &count) {
+    vector<A>   data(count);
+    return      data;
+}
+
+
+vector<A> move(const size_t &count) {
+    vector<A>   data(count);
+    return      move(data);
+}
+
+
+void testMoveVsCopy() {
+    cout << "test move vs copy:" << endl;
+
+    const size_t    size    = 10000000;
+    const uint      count   = 1000;
+    vector<A>       data(size);
+    timeval         stopwatch_time;
+
+    {
+        cout << "    copy:                         ";
+        stopwatch_time = getCurrentTime();
+        for (uint i = 0; i < count; i++)
+            data = copy(size);
+        cout << getElapsedMicrosecond(stopwatch_time) << endl;
+    }
+
+
+    {
+        cout << "    move:                         ";
+        stopwatch_time = getCurrentTime();
+        for (uint i = 0; i < count; i++)
+            data = move(size);
+        cout << getElapsedMicrosecond(stopwatch_time) << endl;
+    }
+}
+
+
+int main() {
+    testLambdaVsForPointer();
+    testLambdaVsFor();
+    testMoveVsCopy();
+
+	return 0;
+}

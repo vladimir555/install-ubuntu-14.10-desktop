@@ -1,0 +1,6 @@
+18:58:57 **** Incremental Build of configuration Release for project chat-server ****
+make all 
+make: Цель `all' не требует выполнения команд.
+
+18:58:57 Build Finished (took 60ms)
+

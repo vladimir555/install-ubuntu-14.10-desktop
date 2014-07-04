@@ -1,0 +1,8 @@
+function onload() {
+	var tag_body = document.createElement("body");
+	var tag_div  = document.createElement("div");
+
+	document.appendChild(tag_body);
+	document.tag_body.appendChild(tag_div);
+	tag_div.innerHTML = 'Привет, мир!';
+}

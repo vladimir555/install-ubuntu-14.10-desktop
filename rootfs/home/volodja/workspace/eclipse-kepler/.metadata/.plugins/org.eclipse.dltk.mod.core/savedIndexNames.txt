@@ -1,0 +1,1 @@
+/home/volodja/workspace/eclipse-kepler/.metadata/.plugins/org.eclipse.dltk.mod.core/2139540758.index

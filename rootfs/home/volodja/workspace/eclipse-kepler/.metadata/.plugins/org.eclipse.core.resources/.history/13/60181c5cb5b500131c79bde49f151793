@@ -1,0 +1,43 @@
+/*
+ * property_tree_json_config.cpp
+ *
+ *  Created on: 26 марта 2014 г.
+ *      Author: volodja
+ */
+
+
+
+
+
+#include "property_tree_json_config.h"
+
+
+namespace config {
+namespace implementation {
+
+
+JSONConfig::JSONConfig(const string &file_name)
+:
+    file_name(file_name)
+{}
+
+
+JSONConfig::~JSONConfig() {
+}
+
+
+TCPAddress JSONConfig::getServerAddress() const {
+    return TCPAddress(this->getValue("server.host"), PropertyTreeConfig::getValue("server.port"));
+}
+
+
+TCPAddress JSONConfig::getDBAddress() const {
+}
+
+
+TCPAddress JSONConfig::getClientAddress() const {
+}
+
+
+} /* namespace implementation */
+} /* namespace config */

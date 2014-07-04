@@ -1,0 +1,10 @@
+19:36:57 **** Incremental Build of configuration Release for project test_cpp11 ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++11 -D__GXX_EXPERIMENTAL_CXX0X__ -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.cpp"
+../main.cpp:31:22: ошибка: «requires» не является именем типа
+make: *** [main.o] Ошибка 1
+
+19:36:57 Build Finished (took 659ms)
+
