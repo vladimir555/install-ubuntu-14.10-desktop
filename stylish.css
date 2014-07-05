@@ -1,0 +1,8 @@
+* { 
+    font-family: "Terminus", "Terminus (TTF)" !important; 
+    font-size: 10 !important;
+}
+input {
+    color: white !important; 
+    background-color: #2D3340 !important; 
+}
