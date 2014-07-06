@@ -1,3 +1,0 @@
-stopwatch.d: ../stopwatch.cpp ../stopwatch.h
-
-../stopwatch.h:
