@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Delete resource &apos;chat/source/_test/config/implementation/config_serialization.h&apos;" deleteContents="false" description="Delete resource &apos;chat/source/_test/config/implementation/config_serialization.h&apos;" element1="/chat/source/_test/config/implementation/config_serialization.h" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1396247310163"/>
-</session>

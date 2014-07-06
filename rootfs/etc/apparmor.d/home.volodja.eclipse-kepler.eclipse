@@ -17,6 +17,7 @@
 
   /etc/fonts/** r,
   /etc/java-7-openjdk/* r,
+  /etc/java-7-openjdk/security/nss.cfg r,
   /etc/nsswitch.conf r,
   /etc/timezone r,
   /etc/ssl/certs/java/cacerts r,
