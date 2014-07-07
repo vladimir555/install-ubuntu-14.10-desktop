@@ -1,0 +1,11 @@
+<!ENTITY txt.context_popup.add_to_sd "Speed Dial में जोड़ें">
+<!ENTITY txt_main_button.speed_dial "Speed Dial">
+<!ENTITY txt_main_button.speed_dial_status "Speed Dial (status bar)">
+<!ENTITY txt.main_popup.global_options "विश्वव्यापी विकल्प ">
+<!ENTITY txt.main_popup.sd_options "Speed Dial विकल्प">
+<!ENTITY txt.main_popup.most_visited_options "सर्वाधिक मुलाकात लिए गए विकल्प">
+<!ENTITY txt.main_popup.recently_closed_options "हाल ही में बंध किये गए विकल्प">
+<!ENTITY txt.main_popup.change_background "पृष्ठभूमि बदलें">
+<!ENTITY txt.main_popup.change_text_color "अक्षरों का रंग बदलें">
+<!ENTITY txt.main_popup.fvd_suite "Fvd Suite Downloader और Converter">
+<!ENTITY txt.urlbar_button.title "Add page to Speed Dial">

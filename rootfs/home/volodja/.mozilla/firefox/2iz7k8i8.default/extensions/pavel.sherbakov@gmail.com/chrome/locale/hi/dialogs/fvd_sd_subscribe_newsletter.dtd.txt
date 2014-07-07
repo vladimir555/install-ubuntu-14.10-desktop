@@ -1,0 +1,2 @@
+﻿<!ENTITY window.title "समाचार पत्रक मंगवाएं">
+<!ENTITY button.close "बंध करें">

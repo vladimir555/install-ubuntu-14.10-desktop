@@ -1,0 +1,30 @@
+.snippet{
+	padding: 5px;
+	border-bottom: 1px solid #0551af;
+}
+
+.snippet:hover{
+	cursor: pointer;
+	background-color: #92e2fd;
+}
+
+.snippet:hover label{
+	cursor: pointer;
+}
+
+.favicon{
+	width: 16px;
+	height: 16px;
+}
+
+#container{
+	overflow: auto;
+}
+
+.add_to_sd{
+	list-style-image: url('../sd/skin/dials/sd_favicon.png');
+}
+
+.snippet[loading="1"]{
+	box-shadow: inset 0px 0px 10px -5px #000;
+}

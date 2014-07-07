@@ -1,0 +1,12 @@
+﻿<!ENTITY window.title "समकालन प्रगतिशील है...">
+<!ENTITY button.try_again "फिर कोशिश करें">
+<!ENTITY button.close "बंध करें">
+<!ENTITY sync_success "समकालन पूर्ण!">
+<!ENTITY sync_failed "समकालन असफल!">
+<!ENTITY aborting_sync "समकालन रोक रहे हैं...">
+
+<!ENTITY syncing_status "समकालन की स्थिति">
+<!ENTITY groups "समूह">
+<!ENTITY dials "सरल पट्ट">
+<!ENTITY apply_changes "बदलाव लागु करें">
+<!ENTITY close_when_finished "ख़त्म होने पर बंध करें">

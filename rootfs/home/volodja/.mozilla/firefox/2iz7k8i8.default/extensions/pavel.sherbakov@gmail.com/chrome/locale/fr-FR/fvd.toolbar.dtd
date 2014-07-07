@@ -1,0 +1,11 @@
+<!ENTITY txt.context_popup.add_to_sd "Ajouter au Speed Dial">
+<!ENTITY txt_main_button.speed_dial "Speed Dial">
+<!ENTITY txt_main_button.speed_dial_status "Speed Dial(barre de statut)">
+<!ENTITY txt.main_popup.global_options "Options Globales">
+<!ENTITY txt.main_popup.sd_options "Options du Speed Dial">
+<!ENTITY txt.main_popup.most_visited_options "Options pour 'Les plus visités'">
+<!ENTITY txt.main_popup.recently_closed_options "Options pour 'Récemment fermés'">
+<!ENTITY txt.main_popup.change_background "Changer l'arrière-plan">
+<!ENTITY txt.main_popup.change_text_color "Changer la couleur du texte">
+<!ENTITY txt.main_popup.fvd_suite "Fvd Suite - Outil de téléchargement et de conversion">
+<!ENTITY txt.urlbar_button.title "Add page to Speed Dial">

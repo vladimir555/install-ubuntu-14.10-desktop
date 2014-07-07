@@ -1,0 +1,14 @@
+<!ENTITY window.title "Install EverSync extension">
+<!ENTITY head_message "To use Fvd Sync you need to install additional addon - EverSync">
+<!ENTITY fvd_speed_dial "FVD Speed Dial">
+<!ENTITY sd_1 "Sync your Dials">
+<!ENTITY sd_2 "Sync your Groups">
+<!ENTITY sd_3 "Use it between Firefox, Chrome, Different PCs">
+<!ENTITY fvd_sync "FVD Sync">
+<!ENTITY s_1 "Sync your Firefox/Chrome Bookmarks">
+<!ENTITY s_2 "Sync your Folders">
+<!ENTITY ever_helper "Your EverHelper client area">
+<!ENTITY eh_1 "Manage Bookmarks and Dials">
+<!ENTITY eh_2 "Copy Bookmarks to FVD Speed Dial and From Speed Dial to Bookmarks">
+<!ENTITY eh_3 "Trash / Favorites / Private / Archive / Advanced Search and more additional features">
+<!ENTITY download "Download from Mozilla.org">

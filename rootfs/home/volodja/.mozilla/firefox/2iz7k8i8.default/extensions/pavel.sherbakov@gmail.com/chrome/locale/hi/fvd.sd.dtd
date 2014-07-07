@@ -1,0 +1,84 @@
+<!ENTITY context.open "इस भाग में खोलें">
+<!ENTITY context.open_new_tab "नये भाग में खोलें">
+<!ENTITY context.open_new_tab_background "पिछले भाग में खोलें">
+<!ENTITY context.edit "संपादन">
+<!ENTITY context.refresh "पुनः प्रस्तुत">
+<!ENTITY context.remove "सरल पट्ट निकालें">
+<!ENTITY context.copy_url "कड़ी की नक़ल">
+<!ENTITY context.move_to "स्थानांतर">
+<!ENTITY context_list.open "इस भाग में खोलें ">
+<!ENTITY context_list.open_new_tab "नये भाग में खोलें ">
+<!ENTITY context_list.open_new_tab_background "पिछले भाग में खोलें ">
+<!ENTITY context_list.add "सरल पट्ट में जोड़ें">
+<!ENTITY context_list.remove "निकाल">
+<!ENTITY context_list.block "रोक लगाएँ">
+<!ENTITY context_list.edit "संपादन">
+<!ENTITY context_list.refresh "पुनः प्रस्तुत ">
+<!ENTITY context_group.refresh_all "सबकुछ पुनः प्रस्तुत ">
+<!ENTITY context_group.open_all_links "सभी कड़ियाँ खोलें">
+<!ENTITY context_group.default "मूलरूप">
+<!ENTITY context_group.last_selected "पिछला चुनाव">
+<!ENTITY context_group.manage_groups "समूह नियंत्रण">
+<!ENTITY context_group.edit "समूह संपादन">
+<!ENTITY context_group.delete "समूह निकाल">
+<!ENTITY context_group.sync_this_group "समूह समकालन">
+<!ENTITY fs_context.add_dial "सरल पट्ट जोड़ें">
+<!ENTITY fs_context.refresh_all "सबकुछ पुनः प्रस्तुत ">
+<!ENTITY fs_context.open_all "सभी कड़ियाँ खोलें ">
+<!ENTITY fs_context.thumbs.big "बड़ा">
+<!ENTITY fs_context.thumbs.medium "मध्यम">
+<!ENTITY fs_context.thumbs.small "छोटा">
+<!ENTITY fs_context.thumbs.custom "व्यक्ति विशेष">
+<!ENTITY fs_context.thumbs.list "सूचि">
+<!ENTITY fs_context.view "प्रदर्शन">
+<!ENTITY fs_context.columns "पंक्तिबध्ध">
+<!ENTITY thumb.delete_dial "सरल पट्ट निकालें ">
+<!ENTITY thumb.edit_dial "सरल पट्ट संपादन">
+<!ENTITY list_elem.add "सरल पट्ट से जोड़ें">
+<!ENTITY list_elem.remove "निकाल">
+<!ENTITY list_elem.block "कड़ी या क्षेत्र प्रतिबंध">
+<!ENTITY list_elem.error_loading_page "लेख खोलनेमें असमर्थ">
+<!ENTITY list_open_all.title "सभी शीर्षक खोलें ">
+<!ENTITY list_remove_all.title "सभी शीर्षक निकालें">
+<!ENTITY list_open_all.add_dial "सरल पट्ट जोड़ें ">
+<!ENTITY list_no_items.title "प्रदर्शन के लिए कुछ नहीं">
+<!ENTITY thumb_types.title "लघु प्रदर्शन">
+<!ENTITY thumb_types.type_small "छोटा">
+<!ENTITY thumb_types.type_medium "मध्यम">
+<!ENTITY thumb_types.type_big "बड़ा">
+<!ENTITY thumb_types.type_list "सूचि">
+<!ENTITY selector.refresh "पुनः प्रस्तुत">
+<!ENTITY selector.options "विकल्प">
+<!ENTITY dont_display_page.title "पन्ना प्रदर्शित न करें">
+<!ENTITY make_home_page.title "Speed Dial को अपना मुख्य पृष्ठ चुनें">
+<!ENTITY settings2.most_visited.week "पिछला हफ्ता">
+<!ENTITY settings2.most_visited.last_month "पिछला महिना">
+<!ENTITY settings2.most_visited.all_time "अब तक का सभी">
+<!ENTITY settings2.most_visited.group_by.uri "uri के समूहमें">
+<!ENTITY settings2.most_visited.group_by.domain "क्षेत्र के समूहमें">
+<!ENTITY settings2.top_sites_groups.all_groups "लोकप्रिय">
+<!ENTITY settings2.top_sites_groups.add_group "समूह जोड़ें">
+<!ENTITY settings2.top_sites_groups.manage_groups "समूह नियंत्रण">
+<!ENTITY settings2.list_types.title "शीर्षक">
+<!ENTITY settings2.list_types.uri "URI">
+<!ENTITY double_click_to_expand.title "बढाने के लिए दो बार क्लिक करें या Enter का उपयोग करें">
+<!ENTITY most_visited.restore_removed "निकाला हुआ पुनः प्रस्तुत करें">
+<!ENTITY list_type_selector.title "शीर्षक बताए">
+<!ENTITY list_type_selector.url "कड़ी बताए">
+<!ENTITY all_group.tooltip "यह समूह सिर्फ सबसे लोकप्रिय सरल पट्ट प्रदर्शित करता है">
+<!ENTITY change_background.title "पृष्ठभूमि बदलें">
+<!ENTITY restore_thumb.restore_previous "पिछला पुनः बताए">
+<!ENTITY restore_thumb.yes "हाँ">
+<!ENTITY restore_thumb.no "ना">
+<!ENTITY restore_session.label "सत्र पुनः प्रस्थापित करें">
+<!ENTITY fs_context.thumbs.custom_change_size "Change Size...">
+<!ENTITY fs_context.theme "Theme">
+<!ENTITY enable_power_off_message "Learn how you can protect your Speed Dials from unwanted viewers ">
+<!ENTITY poweroff.enter_passcode "Unlock Speed Dial">
+<!ENTITY power_off_feature "Power Off feature">
+<!ENTITY search_on_google "Search">
+<!ENTITY expand_message.dont_display_again "Dont display again">
+<!ENTITY fs_context.rows "Rows">
+<!ENTITY fs_context.scrolling_type "Scrolling type">
+<!ENTITY fs_context.scrolling_type_vertical "Vertical">
+<!ENTITY fs_context.scrolling_type_horizontal "Horizontal">

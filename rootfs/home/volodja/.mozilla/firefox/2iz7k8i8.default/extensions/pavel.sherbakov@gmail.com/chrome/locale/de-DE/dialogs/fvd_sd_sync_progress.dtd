@@ -1,0 +1,11 @@
+<!ENTITY window.title "Synchronisierung läuft...">
+<!ENTITY button.try_again "Erneut versuchen">
+<!ENTITY button.close "Schließen">
+<!ENTITY sync_success "Synchronisation erfolgreich!">
+<!ENTITY sync_failed "Synchronisation schlug fehl!">
+<!ENTITY aborting_sync "Breche Synchronisierung ab...">
+<!ENTITY syncing_status "Synchronisations-Status">
+<!ENTITY groups "Gruppen">
+<!ENTITY dials "Dials">
+<!ENTITY apply_changes "Änderungen anwenden">
+<!ENTITY close_when_finished "Nach Beenden schließen">

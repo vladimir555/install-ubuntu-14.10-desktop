@@ -1,0 +1,9 @@
+<!ENTITY window.title "内容版本冲突">
+<!ENTITY button.pick_local "保留本地版本">
+<!ENTITY button.pick_server "保留服务器版本">
+<!ENTITY button.close "放弃同步">
+<!ENTITY local_version "本地版本">
+<!ENTITY server_version "服务器版本">
+<!ENTITY description "FVD Speed Dial 不知道要保留此内容类型的哪个版本。">
+<!ENTITY please_select "请选择要保留的版本">
+<!ENTITY use_choice "对此次同步中的所有冲突应用此选择">

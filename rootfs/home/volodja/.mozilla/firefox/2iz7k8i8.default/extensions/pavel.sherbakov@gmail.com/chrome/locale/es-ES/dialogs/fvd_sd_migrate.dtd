@@ -1,0 +1,11 @@
+<!ENTITY dialog.title "Importar diales/grupos desde otros complementos">
+<!ENTITY step_select_addon.caption "Seleccionar complemento para importar">
+<!ENTITY step_select_groups.caption "Seleccionar grupos para importar">
+<!ENTITY step_select_urls.caption "Seleccionar diales para importar">
+<!ENTITY import_urls.caption "Importando diales">
+<!ENTITY btn_select_all "Seleccionar todo">
+<!ENTITY btn_unselect_all "Deseleccionar todo">
+<!ENTITY btn_previous "Previo">
+<!ENTITY btn_next "Siguiente">
+<!ENTITY btn_close "Hecho">
+<!ENTITY btn_abort "Cerrar">

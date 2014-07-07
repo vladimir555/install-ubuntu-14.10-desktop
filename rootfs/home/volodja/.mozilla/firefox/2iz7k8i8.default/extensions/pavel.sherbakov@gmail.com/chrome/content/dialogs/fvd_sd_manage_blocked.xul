@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://global/skin/"?>
+
+<!DOCTYPE dialog SYSTEM "chrome://fvd.speeddial/locale/fvd.toolbar.dialogs.dtd">
+
+<dialog xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+	title="&fvd_sd_manage_blocked.dialog.title;"
+	buttons="-"
+	>
+	
+	<script type="application/x-javascript" src="chrome://fvd.speeddial/content/dialogs/fvd_sd_manage_blocked.js"/>
+	<script type="application/x-javascript" src="chrome://fvd.speeddial/content/include/tools/misc.js"/>
+
+	<tree flex="1" context="context_menu" height="400">
+	  <treecols>
+	    <treecol id="element" label="&fvd_sd_manage_blocked.tree.sign.title;" primary="true" flex="1"/>
+	    <treecol id="element" label="&fvd_sd_manage_blocked.tree.type.title;" primary="true" flex="1"/>
+	  </treecols>
+	  <treechildren>
+	  
+		  <treeitem>
+		      <treerow>
+		        <treecell label="joe@somewhere.com"/>
+		        <treecell label="Top secret plans"/>
+		      </treerow>
+		  </treeitem>
+	  
+	  </treechildren>
+	</tree>
+	
+	<spacer style="height: 10px;"/>
+	
+	<hbox pack="end">
+		<button label="&fvd_sd_manage_blocked.button.add;" oncommand="addBlock()"/>
+		<button label="&fvd_sd_manage_blocked.button.edit;" oncommand="editSelected()"/>
+		<button label="&fvd_sd_manage_blocked.button.unblock;" oncommand="onOK(event);"/>
+		<button label="&fvd_sd_manage_blocked.button.ok;"  oncommand="onCancel(event);window.close()"/>
+	</hbox>
+	
+		<popupset>
+		  <menupopup id="context_menu">    
+		    <menuitem label="&fvd_sd_manage_blocked.context.unblock;" oncommand="unblockPopuped()" />
+		    <menuitem label="&fvd_sd_manage_blocked.context.open_uri;" oncommand="openPopuped()"/>
+		    <menuitem label="&fvd_sd_manage_blocked.context.edit;"  oncommand="editPopuped()"/>
+		  </menupopup>
+		</popupset>
+	
+	
+	
+</dialog>

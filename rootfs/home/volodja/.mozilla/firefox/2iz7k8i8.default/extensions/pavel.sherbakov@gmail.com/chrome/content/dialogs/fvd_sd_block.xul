@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://global/skin/"?>
+
+<!DOCTYPE dialog SYSTEM "chrome://fvd.speeddial/locale/fvd.toolbar.dialogs.dtd">
+
+<dialog xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+	id="fvd_new_dial_dialog"
+	width="400"
+	height="230"
+	title="&fvd_sd_sd_block.dialog.title;"
+	ondialogaccept="return onOK(event)"
+	ondialogcancel="return onCancel(event)"
+	>
+	
+	<script type="application/x-javascript" src="chrome://fvd.speeddial/content/dialogs/fvd_sd_block.js"/>
+	<script type="application/x-javascript" src="chrome://fvd.speeddial/content/include/tools/misc.js"/>
+	
+	<groupbox>
+		<caption label="&fvd_sd_sd_block.block_type.title;" />
+		<vbox align="start">	
+			<radiogroup id="block_type">
+			  <radio id="block_uri" label="&fvd_sd_sd_block.block_type.uri;" selected="true" onclick="setBlockType('url')" />
+			  <radio id="block_domain" label="&fvd_sd_sd_block.block_type.domain;" onclick="setBlockType('domain')" />
+			</radiogroup>
+		</vbox>
+	</groupbox>
+	
+	<groupbox>
+		<caption label="&fvd_sd_sd_block.block_url.title;" />
+		<vbox>	
+			<textbox id="uri" 
+
+			type="autocomplete"
+			autocompletesearch="history"
+			autocompletesearchparam="enable-actions"
+			completeselectedindex="true"
+			tabscrolling="true"
+			showcommentcolumn="false"
+			showimagecolumn="true"
+			enablehistory="true"
+			newlines="stripsurroundingwhitespace"	
+
+			crop="right"/>
+		</vbox>
+	</groupbox>
+
+</dialog>

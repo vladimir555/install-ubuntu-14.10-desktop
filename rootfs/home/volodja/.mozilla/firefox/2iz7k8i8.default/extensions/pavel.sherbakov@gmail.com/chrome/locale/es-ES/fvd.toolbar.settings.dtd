@@ -1,0 +1,213 @@
+<!ENTITY txt.dialog.title "Configuración">
+<!ENTITY txt.dialog.button_ok.title "Aceptar">
+<!ENTITY txt.dialog.button_cancel.title "Cancelar">
+<!ENTITY txt.prefpane.general.title "Configuración">
+<!ENTITY txt.prefpane.about.title "Acerca de...">
+<!ENTITY txt.group.toolbar_elements.title "Mostrar elementos de barra de herramientas">
+<!ENTITY txt.group.toolbar_elements.display_search.title "Barra de búsqueda">
+<!ENTITY txt.group.toolbar_elements.display_search_video.title "Botón de búsqueda de vídeos">
+<!ENTITY txt.group.toolbar_elements.display_search_adult.title "Botón de búsqueda de contenido para adultos (18+)">
+<!ENTITY txt.group.toolbar_elements.display_tools.title "Botón de herramientas útiles">
+<!ENTITY txt.group.toolbar_elements.display_recording.title "Botón de grabación">
+<!ENTITY txt.group.toolbar_elements.download.title "Descargar">
+<!ENTITY txt.group.global_options.display_main_button "Mostrar botón principal">
+<!ENTITY txt.group.global_options.display_status_button "Mostrar botón de barra de estado">
+<!ENTITY txt.group.notes.title "Notas">
+<!ENTITY txt.group.toolbar_elements.dont_display_features_hint.title "No mostrar notas">
+<!ENTITY txt.group.toolbar_elements.display_search_adult_about.title "Se pueden deshabilitar las características relacionadas con contenido para adultos en las preferencias de FVD Suite">
+<!ENTITY txt.group.newpages.title "Abrir nuevas páginas en">
+<!ENTITY txt.group.newpages.new_tab.title "nueva pestaña">
+<!ENTITY txt.group.newpages.current_tab.title "pestaña actual">
+<!ENTITY txt.group.hooks.title "Manejar eventos:">
+<!ENTITY txt.group.hooks.dns_errors.title "búsqueda de error DNS">
+<!ENTITY txt.group.hooks.pages_errors.title "páginas de error">
+<!ENTITY txt.group.hooks.search_queries.title "consultas de búsqueda">
+<!ENTITY txt.group.hooks.url_queries.title "búsqueda desde la barra de direcciones">
+<!ENTITY txt.group.hooks.about_blank.title "Habilitar Speed Dial en nueva pestaña">
+<!ENTITY txt.group.hooks.thumbs_icons_and_titles.title "Mostrar iconos y títulos sobre los diales">
+<!ENTITY txt.group.tab_preview.title "Previsualización de pestaña">
+<!ENTITY txt.group.tab_preview.display.title "Mostrar">
+<!ENTITY txt.prefpane.sd.title "Speed Dial">
+<!ENTITY fvd_sd.group.show_url_in_dial.title "Dial predeterminado">
+<!ENTITY fvd_sd.group.default.title "Dial predeterminado">
+<!ENTITY fvd_sd.group.default.top_sites "Speed Dial">
+<!ENTITY fvd_sd.group.default.most_visited "Más Visitados">
+<!ENTITY fvd_sd.group.default.recently_closed "Cerrados Recientemente">
+<!ENTITY fvd_sd.group.default.last_selected "Último seleccionado">
+<!ENTITY fvd_sd.group.enable.title "Habilitar">
+<!ENTITY fvd_sd.group.recent.title "Cerrados Recientemente">
+<!ENTITY fvd_sd.group.recent.show_last "Mostrar últimos:">
+<!ENTITY fvd_sd.group.all_groups_max_dials.title "Máximo de diales en grupo Populares">
+<!ENTITY fvd_sd.group.groups.title "Grupos">
+<!ENTITY fvd_sd.group.groups.default.title "Predeterminado:">
+<!ENTITY fvd_sd.group.groups.manage.title "Administrar">
+<!ENTITY fvd_sd.group.most_visited.title "Más Visitados">
+<!ENTITY fvd_sd.group.most_visited.show_last "Mostrar últimos:">
+<!ENTITY fvd_sd.group.most_visited_interval.title "Período">
+<!ENTITY txt.group.most_visited_interval.week.title "Última semana">
+<!ENTITY txt.group.most_visited_interval.month.title "Último mes">
+<!ENTITY txt.group.most_visited_interval.all_time.title "Tiempo completo">
+<!ENTITY fvd_sd.group.most_visited_group_by.title "Agrupar por">
+<!ENTITY txt.group.most_visited_interval.uri.title "URI">
+<!ENTITY txt.group.most_visited_interval.domain.title "Dominio">
+<!ENTITY txt.group.most_visited.max_items "(Máx. 75)">
+<!ENTITY txt.group.recent.max_items "(Máx. 40)">
+<!ENTITY fvd_sd.group.blocked_domains.title "Dominios bloqueados">
+<!ENTITY fvd_sd.group.blocked_domains.manage "Administrar">
+<!ENTITY txt.group.sd.make_home_page "Hacer de Speed Dial mi página de inicio">
+<!ENTITY txt.group.sd.show_url_in_dial "Mostrar URLs bajo los diales">
+<!ENTITY fvd_sd.group.dials_opening.title "Apertura de diales">
+<!ENTITY txt.group.dials_opening.current_tab.title "Pestaña actual">
+<!ENTITY txt.group.dials_opening.new_tab.title "Nueva pestaña">
+<!ENTITY txt.group.dials_opening.new_tab_passive.title "Nueva pestaña en segundo plano">
+<!ENTITY txt.prefpane.about.version.title "Versión:">
+<!ENTITY txt.prefpane.about.home_site_visit.title "Visitar ">
+<!ENTITY txt.group.sniffing_options.title "Opciones de rastreo">
+<!ENTITY txt.group.sniffing_options.display_swf.title "Habilitar archivos .swf">
+<!ENTITY txt.group.toolbar_elements.download.close_after_download "Cerrar ventana al finalizar la descarga">
+<!ENTITY fvd_sd.group.top_sites.title "Speed Dial">
+<!ENTITY fvd_sd.group.global_options.title "Opciones globales">
+<!ENTITY txt.group.toolbar_elements.disable_plugins.title "Deshabilitar plugins (Flash, Silverlight...)">
+<!ENTITY fvd_sd.group.background.image.url "URL">
+<!ENTITY fvd_sd.group.background.image.local_file.browse "...">
+<!ENTITY fvd_sd.group.background.image.local_file "Archivo local">
+<!ENTITY fvd_sd.group.background.image.type.no_image "Sin imagen">
+<!ENTITY fvd_sd.group.background.image.type.fill "Llenar">
+<!ENTITY fvd_sd.group.background.image.type.fit "Ajustar">
+<!ENTITY fvd_sd.group.background.image.type.stretch "Estirar">
+<!ENTITY fvd_sd.group.background.image.type.tile "Mosaico">
+<!ENTITY fvd_sd.group.background.image.type.center "Centrar">
+<!ENTITY fvd_sd.group.background.refresh_preview "Actualizar previsualización">
+<!ENTITY fvd_sd.group.background.caption.image "Imagen">
+<!ENTITY fvd_sd.group.background.image.type "Tipo:">
+<!ENTITY fvd_sd.group.background.title "Fondo">
+<!ENTITY fvd_sd.group.background.caption.color "Color de fondo">
+<!ENTITY fvd_sd.group.background.color.enabled "Habilitado">
+<!ENTITY fvd_sd.group.font_colors.title "Color de texto">
+<!ENTITY fvd_sd.group.font_colors.title_for_dials "Título (para diales):">
+<!ENTITY fvd_sd.group.font_colors.url_for_dials "URL (para diales):">
+<!ENTITY fvd_sd.group.font_colors.text_in_list_mode "Texto en modo Lista:">
+<!ENTITY fvd_sd.group.font_colors.show_title_url "Mostrar título/URL (modo Lista):">
+<!ENTITY fvd_sd.group.font_colors.list_links "Listar enlaces:">
+<!ENTITY fvd_sd.group.font_colors.other_texts "Otros textos:">
+<!ENTITY fvd_sd.group.font_colors.restore_default "Restaurar predeterminado">
+<!ENTITY fvd_sd.group.font_colors.size "Tamaño:">
+<!ENTITY fvd_sd.group.font_colors.color "Color:">
+<!ENTITY fvd_sd.group.font_colors.bolder "Negrita">
+<!ENTITY fvd_sd.group.display_restore_previous_session "Mostrar para restaurar sesión previa">
+<!ENTITY fvd_sd.group.import_data "Importar datos desde otros complementos">
+<!ENTITY fvd_sd.group.import_data.start "Iniciar importación">
+<!ENTITY fvd_sd.import_export.title "Importar/exportar diales y configuraciones">
+<!ENTITY fvd_sd.import_export.export "Exportar">
+<!ENTITY fvd_sd.import_export.import "Importar">
+<!ENTITY txt.group.top_sites.display_plus_cells.title "Mostrar botones [+] en Speed Dial">
+<!ENTITY fvd_sd.dials_opacity.title "Opacidad de diales">
+<!ENTITY txt.group.sd.disable_custom_search "Deshabilitar búsqueda">
+<!ENTITY txt.group.top_sites.hide_cell_background.title "Ocultar fondo predeterminado de diales">
+<!ENTITY txt.group.top_sites.enable_popular_group.title "Habilitar grupo Populares">
+<!ENTITY fvd_sd.group.most_visited.order_by "Ordenar por">
+<!ENTITY txt.group.most_visited_order_by.visits "Visitas">
+<!ENTITY txt.group.most_visited_order_by.date "Fecha">
+<!ENTITY txt.group.sd.show_in_last_tab "Mostrar en última pestaña">
+<!ENTITY txt.group.global_options.show_clicks_and_quick_menu "Mostrar clics y menú rápido">
+<!ENTITY txt.global.tabs.general "General">
+<!ENTITY txt.global.tabs.appearance "Apariencia">
+<!ENTITY txt.global.tabs.import_export "Copia de seguridad">
+<!ENTITY fvd_sd.custom_dial_size.title "Tamaño personalizado de dial">
+<!ENTITY fvd_sd.custom_dial_size.width "Ancho:">
+<!ENTITY fvd_sd.custom_dial_size.max_min_width "(Mínimo 150 px; máximo 260 px)">
+<!ENTITY txt.group.top_sites.display_button_in_google_results.title "Mostrar botón de resultados en Google">
+<!ENTITY fvd_sd.theme.title "Tema">
+<!ENTITY themes.white.label "Blanco">
+<!ENTITY themes.dark.label "oscuro">
+<!ENTITY themes_help.dont_forget_to_change "No se olvide de cambiar los">
+<!ENTITY themes_help.font_colors "colores de fuente">
+<!ENTITY themes_help.and_set_nice "y establecer un bonito">
+<!ENTITY themes_help.background "fondo">
+<!ENTITY suggestions_popup.submit_suggestion "Enviar sugerencia">
+<!ENTITY suggestions_popup.report_bug "Enviar fallo detectado">
+<!ENTITY txt.group.global_options.show_in_context_menu "Mostrar en menú contextual">
+<!ENTITY fvd_sd.group.hot_key.use_hot_key "Utilizar tecla de acceso directo">
+<!ENTITY fvd_sd.group.hot_key.apply_changes "Reiniciar el navegador para aplicar los cambios">
+<!ENTITY fvd_sd.group.hot_key.already_used "Esta tecla ya está en uso">
+<!ENTITY fvd_sd.make_donation "Hacer una donación">
+<!ENTITY donate_message "¡Gracias por su interés en donar! Su donación nos ayudará a asegurar que podamos continuar realizando grandes programas, y seguir manteniéndolos gratis tanto tiempo como sea posible. ¿Por qué le pedimos donar si es gratis? Eso es lo mejor: si no puede permitirse el lujo o no está seguro de que merezca la pena, es usted libre de seguir usando nuestra aplicación sin ningún coste adicional. 
+
+Construir, mejorar y extender nuestro complemento FVD Speed Dial cuesta mucho dinero.
+
+Esperamos realmente que los usuarios satisfechos o los usuarios que les guste nuestra iniciativa estén deseando donar algo de dinero (o que puedan permitirse el lujo) permitiéndonos llegar a la mayor cantidad de gente posible en el mundo entero.
+
+Las donaciones recibidas NO serán utilizadas para pagar salarios o cualquier coste indirecto que no esté relacionado directamente para mantener el servicio en Internet. ">
+<!ENTITY donate_button.text "Donar">
+<!ENTITY txt.group.top_sites.disable_like_button.title "Deshabilitar botón Me Gusta">
+<!ENTITY fvd_sd.group.sync.title "Sincronizar">
+<!ENTITY fvd_sd.sync.online " en línea">
+<!ENTITY fvd_sd.sync.logout "Cerrar sesión">
+<!ENTITY fvd_sd.sync.remove_account "Eliminar cuenta">
+<!ENTITY fvd_sd.sync.login "Iniciar sesión">
+<!ENTITY fvd_sd.sync.register "Registrar">
+<!ENTITY fvd_sd.sync.restore_password "Restaurar contraseña">
+<!ENTITY fvd_sd.sync.already_have_account "Ya tengo una cuenta">
+<!ENTITY fvd_sd.sync.email "E-mail">
+<!ENTITY fvd_sd.sync.password "Contraseña">
+<!ENTITY fvd_sd.sync.button.login "Iniciar sesión">
+<!ENTITY fvd_sd.sync.create_new_account "Crear nueva cuenta">
+<!ENTITY fvd_sd.sync.subscribe "Suscribirse para actualizaciones y noticias">
+<!ENTITY fvd_sd.sync.button.create_account "Crear cuenta">
+<!ENTITY fvd_sd.sync.check_email "Verifique su cuenta de correo para confirmar el registro.">
+<!ENTITY fvd_sd.sync.confirm_code "Código de confirmación">
+<!ENTITY fvd_sd.sync.button.cancel_confirm "Cancelar">
+<!ENTITY fvd_sd.sync.button.confirm "Confirmar">
+<!ENTITY fvd_sd.sync.button.resend_confirm "Reenviar correo de confirmación">
+<!ENTITY fvd_sd.sync.button.restore_password "Restaurar contraseña">
+<!ENTITY fvd_sd.sync.enable_auto_sync "Habilitar auto-sincronizacion (cada 3 horas.)">
+<!ENTITY fvd_sd.sync.button.merge "Fusionar">
+<!ENTITY fvd_sd.sync.button.upload "Subir">
+<!ENTITY fvd_sd.sync.button.download "Descargar">
+<!ENTITY fvd_sd.sync.merge "Fusionar datos locales y del servidor">
+<!ENTITY fvd_sd.sync.upload "Sobreescribir datos del servidor">
+<!ENTITY fvd_sd.sync.download "Sobreescribir datos locales">
+<!ENTITY fvd_sd.sync.import_export_to_from "a/desde archivo local (.sd)">
+<!ENTITY fvd_sd.sync.enable_sync "Habilitar sincronización">
+<!ENTITY fvd_sd.sync.tab.account "Cuenta">
+<!ENTITY fvd_sd.sync.tab.sync "Sincronizar">
+<!ENTITY fvd_sd.sync.settings "Configuración">
+<!ENTITY fvd_sd.sync.manual_sync "Sincronización manual">
+<!ENTITY fvd_sd.sync.close_sync_progress_window_after_sync "Cerrar ventana de proceso después de sincronizar">
+<!ENTITY fvd_sd.sync.change_password "Cambiar contraseña">
+<!ENTITY fvd_sd.sync.change_password.old_password "Contraseña antigua">
+<!ENTITY fvd_sd.sync.change_password.new_password "Contraseña nueva">
+<!ENTITY fvd_sd.sync.change_password.new_password_confirm "Confirmar nueva contraseña">
+<!ENTITY fvd_sd.sync.cancel_change_password "Cancelar">
+<!ENTITY fvd_sd.sync.confirm_change_password "Confirmar">
+<!ENTITY fvd_sd.sync.change_password_confirm_sent_desc "Se ha enviado la clave de confirmación a su cuenta de correo">
+<!ENTITY fvd_sd.sync.change_password.confirm_key "Confirmar clave">
+<!ENTITY fvd_sd.sync.manage_groups "Administrar grupos">
+<!ENTITY fvd_sd.sync.button.manage_synced_groups "Administrar grupos sincronizados">
+<!ENTITY fvd_sd.custom_dial_size_mostvisited.title "Most Visited Dial Size">
+<!ENTITY sync.button.start_sync "Start Sync">
+<!ENTITY txt.group.global_options.display_search_preview "Display search preview">
+<!ENTITY group.poweroff.top_text_1 "Create your personal passcode to unlock your dials.">
+<!ENTITY group.poweroff.top_text_2 "After pressing Power Off button your dials will be hidden and the only way to unlock them is to enter passcode.">
+<!ENTITY group.poweroff.top_text_3 "This is good feature if you do not want someone see your sped dials without you!">
+<!ENTITY group.poweroff.tabs.main.title "Main">
+<!ENTITY group.poweroff.tabs.change_pass.title "Change Password">
+<!ENTITY group.poweroff.tabs.restore.title "Restore Password">
+<!ENTITY group.poweroff.tabs.main.passcode "PassCode">
+<!ENTITY group.poweroff.tabs.main.passcode_repeat "PassCode repeat">
+<!ENTITY group.poweroff.tabs.main.recovery_email "Recovery email">
+<!ENTITY group.poweroff.tabs.main.create_passcode "Create PassCode">
+<!ENTITY group.poweroff.tabs.main.setuped "Power off is setuped">
+<!ENTITY group.poweroff.tabs.change_pass.old_passcode "Old PassCode">
+<!ENTITY group.poweroff.tabs.change_pass.new_passcode "New PassCode *">
+<!ENTITY group.poweroff.tabs.change_pass.change_passcode "Change PassCode">
+<!ENTITY group.poweroff.tabs.change_pass.remove_passcode_message "* To remove PassCode leave New PassCode blank">
+<!ENTITY group.poweroff.tabs.restore_password.do_restore_password "Send PassCode to Recovery Email">
+<!ENTITY group.poweroff.tabs.restore_password.please_wait "Please wait...">
+<!ENTITY fvd_sd.scrolling "Dials Scrolling">
+<!ENTITY scrolling.vertical "Vertical">
+<!ENTITY scrolling.horizontal "Horizontal">
+<!ENTITY txt.group.popular.max_items "(max 50)">
+<!ENTITY importing.please_wait "Importing... Please wait.">
+<!ENTITY txt.group.global_options.display_urlbar_button "Display URL bar button">
+<!ENTITY txt.dialog.button_get_premium_for_free.title "Get Premium account for Free!">

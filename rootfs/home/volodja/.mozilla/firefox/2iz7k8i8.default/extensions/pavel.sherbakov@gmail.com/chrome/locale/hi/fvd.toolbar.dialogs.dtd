@@ -1,0 +1,82 @@
+<!ENTITY fvd_confirm_download_browser.dialog.title "Fvd Suite काम नहीं कर रहा">
+<!ENTITY fvd_confirm_download_browser.button.no.title "नहीं (Fvd Suite मुझे पहले चालू करना है)">
+<!ENTITY fvd_confirm_download_browser.button.yes.title "हाँ">
+<!ENTITY fvd_confirm_download_browser.label.first.value "Fvd Suite काम नहीं कर रहा. ">
+<!ENTITY fvd_confirm_download_browser.label.second.value "हम आपको Fvd Suite शुरू करने के बाद download करने की अनुरोध करते हैं.">
+<!ENTITY fvd_confirm_download_browser.label.three.value "क्या आप Firefox से डाऊनलोड करना चाहते हैं?">
+<!ENTITY fvd_sd_new_dial.dialog.title "सरल पट्ट > नया/सुधार">
+<!ENTITY fvd_sd_new_dial.title.title "सरल पट्ट का शीर्षक">
+<!ENTITY fvd_sd_new_dial.url.title "कड़ी">
+<!ENTITY fvd_sd_new_dial.title_not_found "शीर्षक उपलब्ध नहीं">
+<!ENTITY fvd_sd_new_dial.preview_type.make_from_dial "सरल पट्ट की कड़ी से बनाएं">
+<!ENTITY fvd_sd_new_dial.preview_type.make_from_uri "URI से बनाएं">
+<!ENTITY fvd_sd_new_dial.preview_type.make_from_local_file "स्थानिक दस्तावेज से बनाएं">
+<!ENTITY fvd_sd_new_dial.preview_type.preview "पूर्व दर्शन करें">
+<!ENTITY fvd_sd_new_dial.preview_type.make_from_file_button "...">
+<!ENTITY fvd_sd_new_dial.group.title "समूह">
+<!ENTITY fvd_sd_new_dial.user_defined_image.title "पूर्वनिश्चित निशान">
+<!ENTITY fvd_sd_new_dial.url.emptytext "http://">
+<!ENTITY fvd_sd_new_dial.button.close "बंध करें">
+<!ENTITY fvd_sd_new_dial.disable_js " JavaScript रोकें">
+<!ENTITY fvd_sd_new_dial.enable_js "JavaScript शुरू करें">
+<!ENTITY fvd_sd_new_dial.tab.main "मुख्य">
+<!ENTITY fvd_sd_new_dial.tab.preview "पूर्व दर्शन">
+<!ENTITY fvd_sd_new_dial.button.back "पीछे">
+<!ENTITY fvd_sd_new_dial.delay.label "विलम्ब (सेकंड) >">
+<!ENTITY fvd_sd_new_dial.empty_title.value "परिवर्तनशील शीर्षक">
+<!ENTITY fvd_sd_new_dial.disable_plugins.yes "हाँ">
+<!ENTITY fvd_sd_new_dial.disable_plugins.no "ना">
+<!ENTITY fvd_sd_new_dial.disable_plugins "Plugins रोकें (flash, silverlight,...) >">
+<!ENTITY fvd_sd_new_dial.preview_type "पूर्व दर्शन का प्रकार">
+<!ENTITY fvd_sd_new_dial.autoupdate "स्वचलित सुधार">
+<!ENTITY fvd_sd_new_dial.autoupdate.every "हर >">
+<!ENTITY fvd_sd_new_dial.autoupdate.minutes "मिनट">
+<!ENTITY fvd_sd_new_dial.autoupdate.hours "घंटे">
+<!ENTITY fvd_sd_new_dial.autoupdate.days "दिन">
+<!ENTITY fvd_sd_manage_groups.tree.name.title "नाम">
+<!ENTITY fvd_sd_manage_groups.tree.count.title "सरल पट्ट">
+<!ENTITY fvd_sd_manage_groups.add.title "बढ़ाएं">
+<!ENTITY fvd_sd_manage_groups.edit.title "संपादन">
+<!ENTITY fvd_sd_manage_groups.remove.title "निकाल">
+<!ENTITY fvd_sd_manage_groups.close.title "बंध">
+<!ENTITY fvd_sd_manage_groups.context.remove.title "निकाल">
+<!ENTITY fvd_sd_sd_block.dialog.title "कड़ियाँ/कार्यक्षेत्र रोकें">
+<!ENTITY fvd_sd_sd_block.block_type.title "रोकने का प्रकार">
+<!ENTITY fvd_sd_sd_block.block_type.uri "URI">
+<!ENTITY fvd_sd_sd_block.block_type.domain "कार्यक्षेत्र">
+<!ENTITY fvd_sd_sd_block.block_url.title "कड़ियाँ/कार्यक्षेत्र">
+<!ENTITY fvd_sd_manage_blocked.dialog.title "रोके हुए कार्यक्षेत्र नियंत्रित करें">
+<!ENTITY fvd_sd_manage_blocked.tree.sign.title "कड़ियाँ/कार्यक्षेत्र">
+<!ENTITY fvd_sd_manage_blocked.tree.type.title "प्रकार">
+<!ENTITY fvd_sd_manage_blocked.button.ok "ठीक है">
+<!ENTITY fvd_sd_manage_blocked.button.unblock "रोक हटाएं">
+<!ENTITY fvd_sd_manage_blocked.button.add "जोड़ें">
+<!ENTITY fvd_sd_manage_blocked.button.edit "संपादन">
+<!ENTITY fvd_sd_manage_blocked.context.unblock "रोक हटाएँ">
+<!ENTITY fvd_sd_manage_blocked.context.open_uri "कड़ी को खोलें">
+<!ENTITY fvd_sd_manage_blocked.context.edit "संपादन">
+<!ENTITY fvd_sd_view_group.dialog.title "समूह देखें">
+<!ENTITY fvd_sd_view_group.type.title "शीर्षक">
+<!ENTITY fvd_sd_view_group.type.uri "कड़ियाँ">
+<!ENTITY fvd_sd_view_group.context.open "इस भाग में खोलें">
+<!ENTITY fvd_sd_view_group.context.open_new_tab "नये भाग में खोलें">
+<!ENTITY fvd_sd_view_group.context.open_new_tab_background "पिछले भाग में खोलें">
+<!ENTITY fvd_sd_view_group.context.remove "कड़ी निकाल दें">
+<!ENTITY fvd_sd_view_group.context.add_to_speed_dial "Speed Dial में जोड़ दें">
+<!ENTITY fvd_sd_view_group.context.block "रोकें">
+<!ENTITY fvd_sd_view_group.context.copy_url "कड़ी की नक़ल">
+<!ENTITY fvd_sd_view_group.context.refresh "पुनः प्रस्तुत">
+<!ENTITY fvd_sd_new_group.dialog.title "समूह निर्माण/सुधार">
+<!ENTITY fvd_sd_new_group.group_name.title "समूह का नाम">
+<!ENTITY fvd_sd_new_dial.close_window "खिड़की बंध करें">
+<!ENTITY fvd_sd_new_group.sync_this_group "इस समूह का समकालन करें">
+<!ENTITY fvd_sd_manage_groups.tree.sync.title "समकालन">
+<!ENTITY fvd_sd_new_dial.pickurl.title "Pick URL From:">
+<!ENTITY fvd_sd_new_dial.pickurl.tabs "Opened Tabs">
+<!ENTITY fvd_sd_new_dial.pickurl.mostvisited "Most Visited">
+<!ENTITY fvd_sd_new_dial.pickurl.or "or">
+<!ENTITY fvd_sd_new_dial.button.user_pics "User Pics">
+<!ENTITY fvd_sd_new_dial.preview_type.enter_manually_url "Or enter your image URL below">
+<!ENTITY fvd_sd_new_dial.pickurl.popular "Most Popular">
+<!ENTITY fvd_sd_new_dial.pick_from_panle.loading "Loading...">
+<!ENTITY fvd_sd_new_dial.top_10_pics "Top 10 User Images">

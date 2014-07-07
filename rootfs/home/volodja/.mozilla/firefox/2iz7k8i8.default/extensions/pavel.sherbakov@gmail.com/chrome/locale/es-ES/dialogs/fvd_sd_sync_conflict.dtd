@@ -1,0 +1,9 @@
+<!ENTITY window.title "Conflicto de contenido entre versiones">
+<!ENTITY button.pick_local "Conservar versión local">
+<!ENTITY button.pick_server "Conservar versión de servidor">
+<!ENTITY button.close "Abortar sincronización">
+<!ENTITY local_version "Versión local">
+<!ENTITY server_version "Versión de servidor">
+<!ENTITY description "FVD Speed Dial no puede decidir cuál de estas versiones de este tipo de contenido deben ser conservadas.">
+<!ENTITY please_select "Por favor seleccione la versión que debería conservarse">
+<!ENTITY use_choice "Usar esta selección para todos los conflictos de esta sincronización">

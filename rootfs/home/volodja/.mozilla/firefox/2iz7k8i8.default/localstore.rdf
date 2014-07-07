@@ -1,0 +1,148 @@
+<?xml version="1.0"?>
+<RDF:RDF xmlns:NC="http://home.netscape.com/NC-rdf#"
+         xmlns:RDF="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <RDF:Description RDF:about="chrome://browser/content/sanitize.xul#detailsExpander"
+                   class="expander-up" />
+  <RDF:Description RDF:about="chrome://stylish/content/edit.xul">
+    <NC:persist RDF:resource="chrome://stylish/content/edit.xul#stylish"/>
+  </RDF:Description>
+  <RDF:Description RDF:about="chrome://browser/content/browser.xul#nav-bar"
+                   currentset="urlbar-container,fvd_speed_dial_fvdSpeedDialButton,search-container,webrtc-status-button,bookmarks-menu-button,downloads-button,home-button,social-share-button,abp-toolbarbutton,stylish-toolbar-button,statusbarZoomLevel" />
+  <RDF:Description RDF:about="chrome://browser/content/preferences/fonts.xul">
+    <NC:persist RDF:resource="chrome://browser/content/preferences/fonts.xul#FontsDialog"/>
+  </RDF:Description>
+  <RDF:Description RDF:about="chrome://browser/content/preferences/preferences.xul#BrowserPreferences"
+                   screenX="248"
+                   screenY="212"
+                   lastSelected="paneSecurity" />
+  <RDF:Description RDF:about="chrome://browser/content/preferences/fonts.xul#FontsDialog"
+                   screenX="18"
+                   screenY="126" />
+  <RDF:Description RDF:about="chrome://browser/content/browser.xul#PersonalToolbar"
+                   currentset="personal-bookmarks" />
+  <RDF:Description RDF:about="chrome://fvd.speeddial/content/fvd_settings.xul">
+    <NC:persist RDF:resource="chrome://fvd.speeddial/content/fvd_settings.xul#fvdsd_settings_dialog"/>
+  </RDF:Description>
+  <RDF:Description RDF:about="chrome://cleo/content/cleo.xul#cleoMainWindow"
+                   screenX="637"
+                   screenY="318"
+                   height="486"
+                   width="783" />
+  <RDF:Description RDF:about="chrome://mozapps/content/handling/dialog.xul#handling"
+                   screenX="760"
+                   screenY="352"
+                   width="400"
+                   height="400" />
+  <RDF:Description RDF:about="chrome://passwordmgr/content/passwordManager.xul#SignonViewerDialog"
+                   screenX="398"
+                   screenY="300"
+                   width="483"
+                   height="384" />
+  <RDF:Description RDF:about="chrome://browser/content/browser.xul">
+    <NC:persist RDF:resource="chrome://browser/content/browser.xul#navigator-toolbox"/>
+    <NC:persist RDF:resource="chrome://browser/content/browser.xul#main-window"/>
+    <NC:persist RDF:resource="chrome://browser/content/browser.xul#sidebar-box"/>
+    <NC:persist RDF:resource="chrome://browser/content/browser.xul#sidebar-title"/>
+    <NC:persist RDF:resource="chrome://browser/content/browser.xul#nav-bar"/>
+    <NC:persist RDF:resource="chrome://browser/content/browser.xul#addon-bar"/>
+    <NC:persist RDF:resource="chrome://browser/content/browser.xul#toolbar-menubar"/>
+    <NC:persist RDF:resource="chrome://browser/content/browser.xul#TabsToolbar"/>
+    <NC:persist RDF:resource="chrome://browser/content/browser.xul#PersonalToolbar"/>
+  </RDF:Description>
+  <RDF:Description RDF:about="chrome://browser/content/preferences/preferences.xul">
+    <NC:persist RDF:resource="chrome://browser/content/preferences/preferences.xul#BrowserPreferences"/>
+  </RDF:Description>
+  <RDF:Description RDF:about="chrome://browser/content/browser.xul#main-window"
+                   screenY="24"
+                   width="1920"
+                   height="1036"
+                   sizemode="maximized"
+                   screenX="0" />
+  <RDF:Description RDF:about="chrome://browser/content/browser.xul#sidebar-title"
+                   value="" />
+  <RDF:Description RDF:about="chrome://browser/content/sanitize.xul#SanitizeDialog"
+                   screenX="413"
+                   screenY="407" />
+  <RDF:Description RDF:about="chrome://browser/content/browser.xul#TabsToolbar"
+                   currentset="tabbrowser-tabs,new-tab-button,alltabs-button" />
+  <RDF:Description RDF:about="chrome://mozapps/content/downloads/unknownContentType.xul#unknownContentType"
+                   screenX="701"
+                   screenY="378" />
+  <RDF:Description RDF:about="chrome://mozapps/content/downloads/unknownContentType.xul">
+    <NC:persist RDF:resource="chrome://mozapps/content/downloads/unknownContentType.xul#unknownContentType"/>
+  </RDF:Description>
+  <RDF:Description RDF:about="chrome://adblockplus/content/ui/composer.xul">
+    <NC:persist RDF:resource="chrome://adblockplus/content/ui/composer.xul#abp-composer"/>
+  </RDF:Description>
+  <RDF:Description RDF:about="chrome://fvd.speeddial/content/dialogs/fvd_sd_new_dial.xul">
+    <NC:persist RDF:resource="chrome://fvd.speeddial/content/dialogs/fvd_sd_new_dial.xul#fvd_new_dial_dialog"/>
+  </RDF:Description>
+  <RDF:Description RDF:about="chrome://cleo/content/cleo.xul">
+    <NC:persist RDF:resource="chrome://cleo/content/cleo.xul#cleoMainWindow"/>
+  </RDF:Description>
+  <RDF:Description RDF:about="chrome://cleo/content/cleoOptions.xul">
+    <NC:persist RDF:resource="chrome://cleo/content/cleoOptions.xul#cleooptions"/>
+  </RDF:Description>
+  <RDF:Description RDF:about="chrome://fvd.speeddial/content/fvd_settings.xul#fvdsd_settings_dialog"
+                   screenY="245"
+                   screenX="571"
+                   lastSelected="paneSdMostVisited" />
+  <RDF:Description RDF:about="chrome://browser/content/sanitize.xul">
+    <NC:persist RDF:resource="chrome://browser/content/sanitize.xul#SanitizeDialog"/>
+    <NC:persist RDF:resource="chrome://browser/content/sanitize.xul#detailsExpander"/>
+    <NC:persist RDF:resource="chrome://browser/content/sanitize.xul#itemList"/>
+  </RDF:Description>
+  <RDF:Description RDF:about="chrome://cleo/content/cleoOptions.xul#cleooptions"
+                   screenX="720"
+                   screenY="391"
+                   lastSelected="cleoNotes" />
+  <RDF:Description RDF:about="chrome://defaultfullzoomlevel/content/pref.xul#DefaultFullZoomLevelPref"
+                   screenX="715"
+                   screenY="341" />
+  <RDF:Description RDF:about="chrome://febe/content/settings/febeOptions.xul#febeOptionsID"
+                   screenY="292"
+                   screenX="540"
+                   lastSelected="febeInfoPaneTitleID" />
+  <RDF:Description RDF:about="chrome://stylish/content/edit.xul#stylish"
+                   screenX="646"
+                   screenY="352"
+                   width="628"
+                   height="400"
+                   sizemode="normal" />
+  <RDF:Description RDF:about="chrome://defaultfullzoomlevel/content/pref.xul">
+    <NC:persist RDF:resource="chrome://defaultfullzoomlevel/content/pref.xul#DefaultFullZoomLevelPref"/>
+  </RDF:Description>
+  <RDF:Description RDF:about="chrome://adblockplus/content/ui/composer.xul#abp-composer"
+                   screenX="560"
+                   screenY="318"
+                   width="800"
+                   height="400"
+                   sizemode="normal" />
+  <RDF:Description RDF:about="chrome://passwordmgr/content/passwordManager.xul">
+    <NC:persist RDF:resource="chrome://passwordmgr/content/passwordManager.xul#SignonViewerDialog"/>
+  </RDF:Description>
+  <RDF:Description RDF:about="chrome://browser/content/preferences/connection.xul">
+    <NC:persist RDF:resource="chrome://browser/content/preferences/connection.xul#ConnectionsDialog"/>
+  </RDF:Description>
+  <RDF:Description RDF:about="chrome://mozapps/content/handling/dialog.xul">
+    <NC:persist RDF:resource="chrome://mozapps/content/handling/dialog.xul#handling"/>
+  </RDF:Description>
+  <RDF:Description RDF:about="chrome://browser/content/browser.xul#addon-bar"
+                   migratedset="statusbarZoomLevel"
+                   currentset="addonbar-closebutton,status-bar" />
+  <RDF:Description RDF:about="chrome://fvd.speeddial/content/dialogs/fvd_sd_new_dial.xul#fvd_new_dial_dialog"
+                   screenX="678"
+                   screenY="267" />
+  <RDF:Description RDF:about="chrome://browser/content/browser.xul#navigator-toolbox"
+                   iconsize="small" />
+  <RDF:Description RDF:about="chrome://febe/content/settings/febeOptions.xul">
+    <NC:persist RDF:resource="chrome://febe/content/settings/febeOptions.xul#febeOptionsID"/>
+  </RDF:Description>
+  <RDF:Description RDF:about="chrome://browser/content/preferences/connection.xul#ConnectionsDialog"
+                   screenX="45"
+                   screenY="33" />
+  <RDF:Description RDF:about="chrome://browser/content/sanitize.xul#itemList"
+                   collapsed="false" />
+  <RDF:Description RDF:about="chrome://browser/content/browser.xul#toolbar-menubar"
+                   currentset="menubar-items" />
+</RDF:RDF>

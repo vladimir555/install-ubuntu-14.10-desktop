@@ -1,0 +1,82 @@
+<!ENTITY fvd_confirm_download_browser.dialog.title "Fvd Suite не запущен">
+<!ENTITY fvd_confirm_download_browser.button.no.title "Нет (Снчаала я запущу программу Fvd Suite)">
+<!ENTITY fvd_confirm_download_browser.button.yes.title "Да">
+<!ENTITY fvd_confirm_download_browser.label.first.value "Fvd Suite не запущен. ">
+<!ENTITY fvd_confirm_download_browser.label.second.value "Мы рекомендуем сначала запустить Fvd Suite и потом попробовать скачать заново.">
+<!ENTITY fvd_confirm_download_browser.label.three.value "Вы хотите продолжить эту закачку в Firefox?">
+<!ENTITY fvd_sd_new_dial.dialog.title "Создать/редактировать Dial">
+<!ENTITY fvd_sd_new_dial.title.title "Заголовок">
+<!ENTITY fvd_sd_new_dial.url.title "URL">
+<!ENTITY fvd_sd_new_dial.title_not_found "Заголовок не найден">
+<!ENTITY fvd_sd_new_dial.preview_type.make_from_dial "Создать используя URL Ячейки">
+<!ENTITY fvd_sd_new_dial.preview_type.make_from_uri "Создать с помощью URL (Обновлено!)">
+<!ENTITY fvd_sd_new_dial.preview_type.make_from_local_file "Создать используя Локальный Файл">
+<!ENTITY fvd_sd_new_dial.preview_type.preview "Нажмите для предпросмотра">
+<!ENTITY fvd_sd_new_dial.preview_type.make_from_file_button "...">
+<!ENTITY fvd_sd_new_dial.group.title "Группа">
+<!ENTITY fvd_sd_new_dial.user_defined_image.title "Готовые Логотипы">
+<!ENTITY fvd_sd_new_dial.url.emptytext "http://">
+<!ENTITY fvd_sd_new_dial.button.close "Закрыть">
+<!ENTITY fvd_sd_new_dial.disable_js "Отключить JavaScript">
+<!ENTITY fvd_sd_new_dial.enable_js "Включить JavaScript">
+<!ENTITY fvd_sd_new_dial.tab.main "Главное Меню">
+<!ENTITY fvd_sd_new_dial.tab.preview "Отображение">
+<!ENTITY fvd_sd_new_dial.button.back "Назад">
+<!ENTITY fvd_sd_new_dial.delay.label "Задержка(в секундах):">
+<!ENTITY fvd_sd_new_dial.empty_title.value "Динамический Заголовок">
+<!ENTITY fvd_sd_new_dial.disable_plugins.yes "да">
+<!ENTITY fvd_sd_new_dial.disable_plugins.no "нет">
+<!ENTITY fvd_sd_new_dial.disable_plugins "Отключить плагины(flash, silverlight,...):">
+<!ENTITY fvd_sd_new_dial.preview_type "Тип">
+<!ENTITY fvd_sd_new_dial.autoupdate "Автообновление">
+<!ENTITY fvd_sd_new_dial.autoupdate.every "Каждые:">
+<!ENTITY fvd_sd_new_dial.autoupdate.minutes "Минут">
+<!ENTITY fvd_sd_new_dial.autoupdate.hours "Часов">
+<!ENTITY fvd_sd_new_dial.autoupdate.days "Дней">
+<!ENTITY fvd_sd_manage_groups.tree.name.title "Название">
+<!ENTITY fvd_sd_manage_groups.tree.count.title "Ячейки">
+<!ENTITY fvd_sd_manage_groups.add.title "Добавить">
+<!ENTITY fvd_sd_manage_groups.edit.title "Редактировать">
+<!ENTITY fvd_sd_manage_groups.remove.title "Удалить">
+<!ENTITY fvd_sd_manage_groups.close.title "Закрыть">
+<!ENTITY fvd_sd_manage_groups.context.remove.title "Удалить">
+<!ENTITY fvd_sd_sd_block.dialog.title "Блокировать URL/Домен">
+<!ENTITY fvd_sd_sd_block.block_type.title "Тип Блокирования">
+<!ENTITY fvd_sd_sd_block.block_type.uri "URL">
+<!ENTITY fvd_sd_sd_block.block_type.domain "Домен">
+<!ENTITY fvd_sd_sd_block.block_url.title "URL/Домен">
+<!ENTITY fvd_sd_manage_blocked.dialog.title "Управление заблокированными Доменами">
+<!ENTITY fvd_sd_manage_blocked.tree.sign.title "URL/Домен">
+<!ENTITY fvd_sd_manage_blocked.tree.type.title "Тип">
+<!ENTITY fvd_sd_manage_blocked.button.ok "ОК">
+<!ENTITY fvd_sd_manage_blocked.button.unblock "Разблокировать">
+<!ENTITY fvd_sd_manage_blocked.button.add "Добавить">
+<!ENTITY fvd_sd_manage_blocked.button.edit "Редактировать">
+<!ENTITY fvd_sd_manage_blocked.context.unblock "Разблокировать">
+<!ENTITY fvd_sd_manage_blocked.context.open_uri "Открыть URL">
+<!ENTITY fvd_sd_manage_blocked.context.edit "Редактировать">
+<!ENTITY fvd_sd_view_group.dialog.title "Посмотреть группу">
+<!ENTITY fvd_sd_view_group.type.title "Заголовок">
+<!ENTITY fvd_sd_view_group.type.uri "URL">
+<!ENTITY fvd_sd_view_group.context.open "Открыть во вкладке">
+<!ENTITY fvd_sd_view_group.context.open_new_tab "Открыть в новой вкладке">
+<!ENTITY fvd_sd_view_group.context.open_new_tab_background "Открыть в фоновой вкладке">
+<!ENTITY fvd_sd_view_group.context.remove "Удалить URL">
+<!ENTITY fvd_sd_view_group.context.add_to_speed_dial "Добавить Speed Dial">
+<!ENTITY fvd_sd_view_group.context.block "Блокировать">
+<!ENTITY fvd_sd_view_group.context.copy_url "Копировать URL">
+<!ENTITY fvd_sd_view_group.context.refresh "Обновить">
+<!ENTITY fvd_sd_new_group.dialog.title "Создать/редактировать группу">
+<!ENTITY fvd_sd_new_group.group_name.title "Название группы">
+<!ENTITY fvd_sd_new_dial.close_window "Закрыть окно">
+<!ENTITY fvd_sd_new_group.sync_this_group "Синхронизировать группу">
+<!ENTITY fvd_sd_manage_groups.tree.sync.title "Синхронизация">
+<!ENTITY fvd_sd_new_dial.pickurl.title "Выбрать URL:">
+<!ENTITY fvd_sd_new_dial.pickurl.tabs "Открые табы">
+<!ENTITY fvd_sd_new_dial.pickurl.mostvisited "Часто посещаемые">
+<!ENTITY fvd_sd_new_dial.pickurl.or "или">
+<!ENTITY fvd_sd_new_dial.button.user_pics "Пользовательские изображения">
+<!ENTITY fvd_sd_new_dial.preview_type.enter_manually_url "Или введите URL сами:">
+<!ENTITY fvd_sd_new_dial.pickurl.popular "Наиболее популярные">
+<!ENTITY fvd_sd_new_dial.pick_from_panle.loading "Загрузка...">
+<!ENTITY fvd_sd_new_dial.top_10_pics "ТОП 10 Изображений">

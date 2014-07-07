@@ -1,0 +1,84 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+<?xml-stylesheet href="chrome://fvd.speeddial/skin/dialogs/fvd_sd_sync_conflict.css" type="text/css"?>
+<?xml-stylesheet href="chrome://fvd.speeddial/skin/sd/skin/dials/icons.css" type="text/css"?>
+<!DOCTYPE window SYSTEM "chrome://fvd.speeddial/locale/dialogs/fvd_sd_sync_conflict.dtd">
+
+<dialog
+	xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+	title="&window.title;"
+	buttons="cancel"
+	buttonlabelcancel="&button.close;"
+>
+
+	<script src="chrome://fvd.speeddial/content/dialogs/fvd_sd_sync_conflict.js"/>
+	
+	<vbox>
+		
+		<label class="title" id="conflictTitle"/>
+		
+		<label class="desc" value="&description;"/>
+		
+		<label class="pleaseSelect" value="&please_select;"/>
+		
+		<hbox flex="2">
+		
+			<groupbox flex="2" >
+				
+				<caption label="&local_version;"/>
+				
+				<stack flex="2">
+				
+					<grid>
+						<columns>
+							<column flex="0"/>
+							<column flex="2"/>
+						</columns>
+						<rows id="localContentRows">
+	
+						</rows>
+					</grid>	
+					
+					<hbox bottom="0" pack="center">
+						<button label="&button.pick_local;" oncommand="pickLocal()"/>
+					</hbox>
+					
+				</stack>
+				
+			</groupbox>			
+
+			<groupbox flex="2">
+				
+				<caption label="&server_version;"/>
+				
+				<stack flex="2">
+				
+					<grid>
+						<columns>
+							<column flex="0"/>
+							<column flex="2"/>
+						</columns>
+						<rows id="serverContentRows">
+	
+						</rows>
+					</grid>	
+				
+					<hbox bottom="0" pack="center">
+						<button label="&button.pick_server;" oncommand="pickServer()"/>
+					</hbox>
+				
+				</stack>
+				
+
+				
+			</groupbox>			
+		
+		</hbox>
+		
+		<hbox pack="end">
+			<checkbox id="save_choice" label="&use_choice;"/>
+		</hbox>
+		
+	</vbox>
+	
+</dialog>

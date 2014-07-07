@@ -1,0 +1,12 @@
+﻿<!ENTITY dialog.title "सरल पट्ट/समूह अन्य addons से आयात करें">
+<!ENTITY step_select_addon.caption "आयात करने के लिए addon चुने">
+<!ENTITY step_select_groups.caption "आयात करने लायक समूह चुनें">
+<!ENTITY step_select_urls.caption "आयात करने लायक सरल पट्ट चुनें">
+<!ENTITY import_urls.caption "सरल पट्ट आयात हो रहे हैं">
+
+<!ENTITY btn_select_all "सभी चुनें">
+<!ENTITY btn_unselect_all "कोईभी मत चुनें">
+<!ENTITY btn_previous "पिछला">
+<!ENTITY btn_next "अगला">
+<!ENTITY btn_close "पूर्ण हुआ">
+<!ENTITY btn_abort "बंध करें">

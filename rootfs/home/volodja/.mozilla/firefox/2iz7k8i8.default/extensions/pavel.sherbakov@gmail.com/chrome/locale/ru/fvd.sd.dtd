@@ -1,0 +1,84 @@
+<!ENTITY context.open "Открыть в текущем окне">
+<!ENTITY context.open_new_tab "Открыть в новом окне">
+<!ENTITY context.open_new_tab_background "Открыть в фоновом окне">
+<!ENTITY context.edit "Редактировать">
+<!ENTITY context.refresh "Обновить">
+<!ENTITY context.remove "Удалить">
+<!ENTITY context.copy_url "Копировать URL">
+<!ENTITY context.move_to "Переместить в...">
+<!ENTITY context_list.open "Открыть в текущем окне">
+<!ENTITY context_list.open_new_tab "Открыть в новом окне">
+<!ENTITY context_list.open_new_tab_background "Открыть в фоновом окне">
+<!ENTITY context_list.add "Добавить в Speed Dial">
+<!ENTITY context_list.remove "Удалить">
+<!ENTITY context_list.block "Блокировать">
+<!ENTITY context_list.edit "Изменить">
+<!ENTITY context_list.refresh "Обновить">
+<!ENTITY context_group.refresh_all "Обновить все ссылки">
+<!ENTITY context_group.open_all_links "Открыть все ссылки">
+<!ENTITY context_group.default "По умолчанию">
+<!ENTITY context_group.last_selected "Последняя выбранная">
+<!ENTITY context_group.manage_groups "Управление группами">
+<!ENTITY context_group.edit "Редактировать группу">
+<!ENTITY context_group.delete "Удалить группу">
+<!ENTITY fs_context.add_dial "Добавить Сайт">
+<!ENTITY fs_context.refresh_all "Обновить все сайты">
+<!ENTITY fs_context.open_all "Открыть все сайты">
+<!ENTITY fs_context.thumbs.big "Большой">
+<!ENTITY fs_context.thumbs.medium "Средний">
+<!ENTITY fs_context.thumbs.small "Маленький">
+<!ENTITY fs_context.thumbs.custom "Свой размер">
+<!ENTITY fs_context.thumbs.list "Список">
+<!ENTITY fs_context.view "Вид">
+<!ENTITY fs_context.columns "Количество столбцов">
+<!ENTITY thumb.delete_dial "Удалить сайт">
+<!ENTITY thumb.edit_dial "Редактировать сайт">
+<!ENTITY list_elem.add "Добавить в Speed Dial">
+<!ENTITY list_elem.remove "Удалить">
+<!ENTITY list_elem.block "Блокировать сайт">
+<!ENTITY list_elem.error_loading_page "Ошибка загрузки страницы">
+<!ENTITY list_open_all.title "Открыть все сайты">
+<!ENTITY list_remove_all.title "Удалить выбранные сайты">
+<!ENTITY list_open_all.add_dial "Добавить Сайт">
+<!ENTITY list_no_items.title "Пусто :(">
+<!ENTITY thumb_types.title "Размер Ячейки:">
+<!ENTITY thumb_types.type_small "Маленький">
+<!ENTITY thumb_types.type_medium "Средний">
+<!ENTITY thumb_types.type_big "Большой">
+<!ENTITY thumb_types.type_list "Список">
+<!ENTITY selector.refresh "Обновить">
+<!ENTITY selector.options "Настройки">
+<!ENTITY dont_display_page.title "Не показывать эту страницу">
+<!ENTITY make_home_page.title "Сделать Speed Dial домашней страницей">
+<!ENTITY settings2.most_visited.week "За неделю">
+<!ENTITY settings2.most_visited.last_month "За месяц">
+<!ENTITY settings2.most_visited.all_time "За всё время">
+<!ENTITY settings2.most_visited.group_by.uri "URL">
+<!ENTITY settings2.most_visited.group_by.domain "Домен">
+<!ENTITY settings2.top_sites_groups.all_groups "Популярные">
+<!ENTITY settings2.top_sites_groups.add_group "Добавить группу">
+<!ENTITY settings2.top_sites_groups.manage_groups "Редактировать группу">
+<!ENTITY settings2.list_types.title "Название">
+<!ENTITY settings2.list_types.uri "URL">
+<!ENTITY double_click_to_expand.title "Кликните два раза, чтобы раскрыть Speed Dial (или нажмите Enter)">
+<!ENTITY most_visited.restore_removed "Восстановить удаленные сайты">
+<!ENTITY list_type_selector.title "Показывать название">
+<!ENTITY list_type_selector.url "Показывать URL">
+<!ENTITY all_group.tooltip "Самые популярные сайты">
+<!ENTITY change_background.title "Сменить фон">
+<!ENTITY restore_thumb.restore_previous "Восстановить? ">
+<!ENTITY restore_thumb.yes "Да">
+<!ENTITY restore_thumb.no "Нет">
+<!ENTITY restore_session.label "Восстановить сессию">
+<!ENTITY context_group.sync_this_group "Синхронизировать группу">
+<!ENTITY fs_context.thumbs.custom_change_size "Изменить размер...">
+<!ENTITY fs_context.theme "Тема">
+<!ENTITY enable_power_off_message "Прочтите как защитить вашу информацию от нежелательных пользователей">
+<!ENTITY poweroff.enter_passcode "Разблокировать">
+<!ENTITY power_off_feature "Power Off">
+<!ENTITY search_on_google "Search">
+<!ENTITY expand_message.dont_display_again "Не показывать">
+<!ENTITY fs_context.rows "Число строк">
+<!ENTITY fs_context.scrolling_type "Тип скроллинга">
+<!ENTITY fs_context.scrolling_type_vertical "Вертикальный">
+<!ENTITY fs_context.scrolling_type_horizontal "Горизонтальный">

@@ -1,0 +1,11 @@
+<!ENTITY window.title "正在同步中...">
+<!ENTITY button.try_again "重试">
+<!ENTITY button.close "关闭">
+<!ENTITY sync_success "同步成功！">
+<!ENTITY sync_failed "同步失败！">
+<!ENTITY aborting_sync "正在放弃同步...">
+<!ENTITY syncing_status "同步状态">
+<!ENTITY groups "分组">
+<!ENTITY dials "拨号">
+<!ENTITY apply_changes "应用更改">
+<!ENTITY close_when_finished "完成后关闭">

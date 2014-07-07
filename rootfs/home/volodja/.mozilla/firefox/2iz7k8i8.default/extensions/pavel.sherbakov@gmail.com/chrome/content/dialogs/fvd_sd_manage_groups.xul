@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://global/skin/"?>
+
+<?xml-stylesheet href="chrome://fvd.speeddial/skin/dialogs/fvd_sd_manage_groups.css" type="text/css"?>
+
+<!DOCTYPE dialog SYSTEM "chrome://fvd.speeddial/locale/fvd.toolbar.dialogs.dtd">
+
+<dialog xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+	title="&fvd_sd_new_group.dialog.title;"	
+	buttons="-"
+	>
+	
+	<script type="application/x-javascript" src="chrome://fvd.speeddial/content/dialogs/fvd_sd_manage_groups.js"/>
+	<script src="chrome://fvd.speeddial/content/include/speed_dial.js"></script>
+	
+	<hbox flex="2">		
+		<tree flex="1" seltype="single" context="context_menu" height="400" hidecolumnpicker="true">
+		  <treecols>
+		    <treecol  label="&fvd_sd_manage_groups.tree.name.title;" flex="3"/>	
+			<splitter class="tree-splitter"/>
+		    <treecol  label="&fvd_sd_manage_groups.tree.count.title;"  flex="0"/>			
+		  </treecols>
+		  <treechildren>
+
+		  </treechildren>
+		</tree>	
+		
+		<vbox id="arrows" pack="center">
+			<hbox class="arrow_top" onclick="changePosSelected('top')"/>
+			<hbox class="arrow_bottom" onclick="changePosSelected('bottom')"/>
+		</vbox>
+	</hbox>
+	
+	<popupset>
+	  <menupopup id="context_menu">    
+	    <menuitem label="&fvd_sd_manage_groups.context.remove.title;" oncommand="removeSelected()" />
+	  </menupopup>
+	</popupset>
+	
+	<spacer style="height: 10px;"/>
+	
+	<hbox pack="end">
+		<button label = "&fvd_sd_manage_groups.add.title;" onclick="fvd_speed_dial_speedDialSSD.addGroup();buildTree();" />
+		<button label = "&fvd_sd_manage_groups.edit.title;" onclick="editSelected()" />
+		<button label = "&fvd_sd_manage_groups.remove.title;" onclick="removeSelected()" />
+		<button label = "&fvd_sd_manage_groups.close.title;" onclick="window.close()" />
+	</hbox>
+
+</dialog>

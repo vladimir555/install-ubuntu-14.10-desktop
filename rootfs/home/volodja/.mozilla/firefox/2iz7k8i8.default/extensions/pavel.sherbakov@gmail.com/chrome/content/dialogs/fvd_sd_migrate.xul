@@ -1,0 +1,111 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+<?xml-stylesheet href="chrome://fvd.speeddial/skin/dialogs/fvd_sd_migrate.css" type="text/css"?>
+<?xml-stylesheet href="chrome://fvd.speeddial/skin/sd/skin/dials/icons.css" type="text/css"?>
+<!DOCTYPE window SYSTEM "chrome://fvd.speeddial/locale/dialogs/fvd_sd_migrate.dtd">
+
+<window
+	xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+	title="&dialog.title;"
+	width="600"
+	height="500"
+>
+
+	<script src="chrome://fvd.speeddial/content/dialogs/fvd_sd_migrate.js"/>
+	<script src="chrome://fvd.speeddial/content/include/sd/page_grabber.js"/>
+	
+	<vbox id="stepSelectAddon" class="stepData" flex="2">
+		
+		<groupbox flex="2">
+		
+			<caption label="&step_select_addon.caption;"/>
+		
+			<vbox>
+		
+				<radiogroup id="addonId" oncommand="setupButtons();" flex="2">
+					<vbox id="addonsList" class="listContainer" flex="2">
+						
+					</vbox>
+				</radiogroup>
+			
+			</vbox>
+			
+		</groupbox>
+		
+		
+		
+	</vbox>
+	
+	<vbox id="stepSelectGroups" class="stepData" flex="2">
+		
+		<groupbox flex="2">
+		
+			<caption label="&step_select_groups.caption;"/>
+		
+				
+			<vbox id="groupsList" class="listContainer" flex="2">
+				
+			</vbox>
+
+			
+		</groupbox>
+		
+	</vbox>
+
+	<vbox id="stepSelectUrls" class="stepData" flex="2">
+		
+		<groupbox flex="2">
+		
+			<caption label="&step_select_urls.caption;"/>
+		
+			<vbox flex="2">		
+								
+				<vbox id="dialsContainer" class="listContainer" flex="2">
+				</vbox>
+							
+			</vbox>
+			
+		</groupbox>
+		
+	</vbox>
+	
+	<vbox id="importUrls" class="stepData" flex="2">
+		
+		<groupbox flex="2">
+		
+			<caption label="&import_urls.caption;"/>
+		
+			<vbox flex="2" pack="center" align="center">		
+				<hbox pack="center" align="center">	
+					<progressmeter
+						id="importProgress"
+						mode="determined"
+						value="0" flex="2" />
+				</hbox>
+				<hbox pack="center">
+					<label id="importSuccessMessage" hidden="true"/>
+				</hbox>
+					
+			</vbox>			
+			
+		</groupbox>
+		
+	</vbox>
+	
+	
+	
+	<hbox>
+		<hbox pack="start" flex="2">
+			<button label="&btn_select_all;" id="btnSelectAll" oncommand="selectAll()"/>
+			<button label="&btn_unselect_all;" id="btnUnSelectAll" oncommand="unSelectAll()"/>
+		</hbox>
+		<hbox pack="end">
+			<button label="&btn_previous;" id="btnPrevStep" oncommand="toPrevStep()"/>
+			<button label="&btn_next;" id="btnNextStep"  oncommand="toNextStep()"/>		
+			<button label="&btn_close;" id="btnClose"  oncommand="window.close()"/>	
+			
+			<button label="&btn_abort;" id="btnAbort"  oncommand="abortImport()"/>	
+		</hbox>
+	</hbox>
+	
+</window>

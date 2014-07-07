@@ -1,0 +1,8 @@
+<!ENTITY window.title "同步类型选择">
+<!ENTITY select_sync_type "选择同步类型">
+<!ENTITY merge.desc "合并服务器和计算机上的数据。(注意：服务器有更高的优先级。)">
+<!ENTITY merge "合并本地和服务器数据">
+<!ENTITY upload.desc "将计算机上的数据复制到服务器">
+<!ENTITY upload "覆盖服务器数据">
+<!ENTITY download.desc "将服务器上的数据复制到计算机">
+<!ENTITY download "覆盖本地数据">

@@ -1,0 +1,213 @@
+<!ENTITY txt.dialog.title "Настройки">
+<!ENTITY txt.dialog.button_ok.title "OK">
+<!ENTITY txt.dialog.button_cancel.title "Отмена">
+<!ENTITY txt.prefpane.general.title "Настройки">
+<!ENTITY txt.prefpane.about.title "О программе">
+<!ENTITY txt.group.toolbar_elements.title "Отображать элементы тулбара">
+<!ENTITY txt.group.toolbar_elements.display_search.title "Строка поиска">
+<!ENTITY txt.group.toolbar_elements.display_search_video.title "Кнопка поиска видео">
+<!ENTITY txt.group.toolbar_elements.display_search_adult.title "Кнопка поиска видео для взрослых (18+)">
+<!ENTITY txt.group.toolbar_elements.display_tools.title "Кнопка Полезные Инструменты">
+<!ENTITY txt.group.toolbar_elements.display_recording.title "Кнопка записи">
+<!ENTITY txt.group.toolbar_elements.download.title "Загрузка">
+<!ENTITY txt.group.global_options.display_main_button "Отображать главную кнопку">
+<!ENTITY txt.group.global_options.display_status_button "Отображать кнопку в строке состояния">
+<!ENTITY txt.group.notes.title "Примечания">
+<!ENTITY txt.group.toolbar_elements.dont_display_features_hint.title "Не отображать примечания">
+<!ENTITY txt.group.toolbar_elements.display_search_adult_about.title "Вы можете отключить показ контента для взрослых в настройках FVD Suite">
+<!ENTITY txt.group.newpages.title "Открывать новые страницы в">
+<!ENTITY txt.group.newpages.new_tab.title "новой вкладке">
+<!ENTITY txt.group.newpages.current_tab.title "текущей вкладке">
+<!ENTITY txt.group.hooks.title "Исправлять:">
+<!ENTITY txt.group.hooks.dns_errors.title "ошибки поиска dns">
+<!ENTITY txt.group.hooks.pages_errors.title "ошибки Веб-страниц">
+<!ENTITY txt.group.hooks.search_queries.title "поисковые запросы">
+<!ENTITY txt.group.hooks.url_queries.title "поиск из строки URL">
+<!ENTITY txt.group.hooks.about_blank.title "Разрешить FVD Speed Dial в новой вкладке">
+<!ENTITY txt.group.hooks.thumbs_icons_and_titles.title "Показывать иконки и заголовки над ячейками">
+<!ENTITY txt.group.tab_preview.title "Предпросмотр вкладки">
+<!ENTITY txt.group.tab_preview.display.title "Показать">
+<!ENTITY txt.prefpane.sd.title "Быстрый Набор">
+<!ENTITY fvd_sd.group.show_url_in_dial.title "Набор по умолчанию">
+<!ENTITY fvd_sd.group.default.title "Набор по умолчанию">
+<!ENTITY fvd_sd.group.default.top_sites "Быстрый набор">
+<!ENTITY fvd_sd.group.default.most_visited "Наиболее часто посещаемые">
+<!ENTITY fvd_sd.group.default.recently_closed "Недавно закрытые">
+<!ENTITY fvd_sd.group.default.last_selected "Последние выбранные">
+<!ENTITY fvd_sd.group.enable.title "Активировать">
+<!ENTITY fvd_sd.group.recent.title "Недавно закрытые">
+<!ENTITY fvd_sd.group.recent.show_last "Показать последние:">
+<!ENTITY fvd_sd.group.all_groups_max_dials.title "Максимальное количество кнопок в группе Популярные">
+<!ENTITY fvd_sd.group.groups.title "Группы">
+<!ENTITY fvd_sd.group.groups.default.title "По умолчанию:">
+<!ENTITY fvd_sd.group.groups.manage.title "Управление">
+<!ENTITY fvd_sd.group.most_visited.title "Наиболее часто посещаемые">
+<!ENTITY fvd_sd.group.most_visited.show_last "Показать последние:">
+<!ENTITY fvd_sd.group.most_visited_interval.title "Период">
+<!ENTITY txt.group.most_visited_interval.week.title "Прошлая неделя">
+<!ENTITY txt.group.most_visited_interval.month.title "Прошлый месяц">
+<!ENTITY txt.group.most_visited_interval.all_time.title "За все время">
+<!ENTITY fvd_sd.group.most_visited_group_by.title "Группировать по">
+<!ENTITY txt.group.most_visited_interval.uri.title "URL">
+<!ENTITY txt.group.most_visited_interval.domain.title "Домен">
+<!ENTITY fvd_sd.group.blocked_domains.title "Блокированные домены">
+<!ENTITY fvd_sd.group.blocked_domains.manage "Управление">
+<!ENTITY txt.group.sd.make_home_page "Установить в качестве домашней страницы">
+<!ENTITY txt.group.sd.show_url_in_dial "Отображать URLы под кнопками">
+<!ENTITY fvd_sd.group.dials_opening.title "Открывать страницу">
+<!ENTITY txt.group.dials_opening.current_tab.title "В текущей вкладке">
+<!ENTITY txt.group.dials_opening.new_tab.title "В новой вкладке">
+<!ENTITY txt.group.dials_opening.new_tab_passive.title "В фоновой вкладке">
+<!ENTITY txt.prefpane.about.version.title "Версия:">
+<!ENTITY txt.prefpane.about.home_site_visit.title "Посетить ">
+<!ENTITY txt.group.sniffing_options.title "Настройки захвата видео">
+<!ENTITY txt.group.sniffing_options.display_swf.title "Разрешить .swf файлы">
+<!ENTITY txt.group.toolbar_elements.download.close_after_download "Закрывать окно после окончания загрузки">
+<!ENTITY fvd_sd.group.top_sites.title "Быстрый набор">
+<!ENTITY fvd_sd.group.global_options.title "Глобальные настройки">
+<!ENTITY txt.group.toolbar_elements.disable_plugins.title "Отключить плагины (flash, silverlight,...)">
+<!ENTITY fvd_sd.group.background.image.url "URL">
+<!ENTITY fvd_sd.group.background.image.local_file.browse "...">
+<!ENTITY fvd_sd.group.background.image.local_file "Локальный файл">
+<!ENTITY fvd_sd.group.background.image.type.no_image "Изображения нет">
+<!ENTITY fvd_sd.group.background.image.type.fill "Заполнить">
+<!ENTITY fvd_sd.group.background.image.type.fit "Подогнать по размеру">
+<!ENTITY fvd_sd.group.background.image.type.stretch "Растянуть">
+<!ENTITY fvd_sd.group.background.image.type.tile "Плитка">
+<!ENTITY fvd_sd.group.background.image.type.center "По центру">
+<!ENTITY fvd_sd.group.background.refresh_preview "Обновить предпросмотр">
+<!ENTITY fvd_sd.group.background.caption.image "Изображение">
+<!ENTITY fvd_sd.group.background.image.type "Тип:">
+<!ENTITY fvd_sd.group.background.title "Фон">
+<!ENTITY fvd_sd.group.background.caption.color "Цвет фона">
+<!ENTITY fvd_sd.group.background.color.enabled "Включен">
+<!ENTITY fvd_sd.group.font_colors.title "Цвет текста">
+<!ENTITY fvd_sd.group.font_colors.title_for_dials "Заголовок (для кнопок):">
+<!ENTITY fvd_sd.group.font_colors.url_for_dials "URL: (для кнопок):">
+<!ENTITY fvd_sd.group.font_colors.text_in_list_mode "Текст в режиме списка:">
+<!ENTITY fvd_sd.group.font_colors.show_title_url "Выбор типа списка:">
+<!ENTITY fvd_sd.group.font_colors.list_links "URL (режим списка):">
+<!ENTITY fvd_sd.group.font_colors.other_texts "Другой текст:">
+<!ENTITY fvd_sd.group.font_colors.restore_default "Вернуться к настройкам по умолчанию">
+<!ENTITY fvd_sd.group.font_colors.size "Размер:">
+<!ENTITY fvd_sd.group.font_colors.color "Цвет:">
+<!ENTITY fvd_sd.group.font_colors.bolder "Жирный">
+<!ENTITY fvd_sd.group.display_restore_previous_session "Отображать восстановление прошлой сессии">
+<!ENTITY fvd_sd.group.import_data "Импортировать данные из других аддонов">
+<!ENTITY fvd_sd.group.import_data.start "Начать импорт">
+<!ENTITY fvd_sd.import_export.title "Импортировать/Экспортировать кнопки и настройки">
+<!ENTITY fvd_sd.import_export.export "Экспортировать">
+<!ENTITY fvd_sd.import_export.import "Импортировать">
+<!ENTITY txt.group.top_sites.display_plus_cells.title "Показывать пустые ячейки">
+<!ENTITY fvd_sd.dials_opacity.title "Прозрачность кнопок">
+<!ENTITY txt.group.sd.disable_custom_search "Убрать поиск">
+<!ENTITY txt.group.top_sites.hide_cell_background.title "Убрать фон у ячеек">
+<!ENTITY txt.group.top_sites.enable_popular_group.title "Показывать группу 'Популярные'">
+<!ENTITY txt.group.most_visited.max_items "(75 макс.)">
+<!ENTITY txt.group.recent.max_items "(40 макс.)">
+<!ENTITY fvd_sd.group.most_visited.order_by "Сортировать по">
+<!ENTITY txt.group.most_visited_order_by.visits "Посещаемости">
+<!ENTITY txt.group.most_visited_order_by.date "Дате">
+<!ENTITY txt.group.sd.show_in_last_tab "Показывать в последней вкладке">
+<!ENTITY txt.group.global_options.show_clicks_and_quick_menu "Показывать клики и быстрое меню">
+<!ENTITY txt.global.tabs.general "Основные">
+<!ENTITY txt.global.tabs.appearance "Оформление">
+<!ENTITY txt.global.tabs.import_export "Резервное копирование">
+<!ENTITY fvd_sd.custom_dial_size.title "Собственный размер ячейки">
+<!ENTITY fvd_sd.custom_dial_size.width "Ширина:">
+<!ENTITY fvd_sd.custom_dial_size.max_min_width "(Мин 150px; Макс 260px)">
+<!ENTITY txt.group.top_sites.display_button_in_google_results.title "Показывать кнопку в результатах поиска Google">
+<!ENTITY fvd_sd.theme.title "Тема">
+<!ENTITY themes.white.label "Светлая">
+<!ENTITY themes.dark.label "Темная">
+<!ENTITY themes_help.dont_forget_to_change "Не забудь изменить">
+<!ENTITY themes_help.font_colors "цвет текста">
+<!ENTITY themes_help.and_set_nice "и установить красивый">
+<!ENTITY themes_help.background "фон">
+<!ENTITY suggestions_popup.submit_suggestion "Отправить предложение">
+<!ENTITY suggestions_popup.report_bug "Отправить баг">
+<!ENTITY txt.group.global_options.show_in_context_menu "Показывать в контекстном меню">
+<!ENTITY fvd_sd.group.hot_key.use_hot_key "Использовать горячие клавиши">
+<!ENTITY fvd_sd.group.hot_key.apply_changes "Чтобы применить изменения - перезапустите браузер">
+<!ENTITY fvd_sd.group.hot_key.already_used "Данное сочетание уже используется">
+<!ENTITY fvd_sd.make_donation "Помочь проекту">
+<!ENTITY donate_message "Thank you for your interest in donating! Your donation will help ensure that we can continue to make great software, and keep as much of it free as possible. How’s it free if we’re asking you to donate? That’s the great part—if you can’t afford it or you’re not sure it’s worth it, you’re welcome to keep using our software free of charge. 
+
+Building, improving and extending our FVD Speed dial Addon do cost a lot of money.
+
+We truly hope that satisfied users or users who like our initiative are willing to donate some money (of they can afford it) enabling us to reach as many people as possible in the entire world.
+
+Received donations will NOT be used to pay salaries or any indirect costs that is not directly related to keeping the service on the Internet. ">
+<!ENTITY donate_button.text "Пожертвовать">
+<!ENTITY txt.group.top_sites.disable_like_button.title "Убрать лайк-кнопку">
+<!ENTITY fvd_sd.group.sync.title "Синхронизация">
+<!ENTITY fvd_sd.sync.online " подключен">
+<!ENTITY fvd_sd.sync.logout "Выйти">
+<!ENTITY fvd_sd.sync.remove_account "Удалить аккаунт">
+<!ENTITY fvd_sd.sync.login "Войти">
+<!ENTITY fvd_sd.sync.register "Регистрация">
+<!ENTITY fvd_sd.sync.restore_password "Восстановить пароль">
+<!ENTITY fvd_sd.sync.already_have_account "Аккаунт уже имеется">
+<!ENTITY fvd_sd.sync.email "E-Mail">
+<!ENTITY fvd_sd.sync.password "Пароль">
+<!ENTITY fvd_sd.sync.button.login "Войти">
+<!ENTITY fvd_sd.sync.create_new_account "Создать новый аккаунт">
+<!ENTITY fvd_sd.sync.subscribe "Подписатся на обновления и новости">
+<!ENTITY fvd_sd.sync.button.create_account "Создать аккаунт">
+<!ENTITY fvd_sd.sync.check_email "Проверьте свой E-mail чтобы подтвердить регистрацию">
+<!ENTITY fvd_sd.sync.confirm_code "Код подтверждения">
+<!ENTITY fvd_sd.sync.button.cancel_confirm "Отмена">
+<!ENTITY fvd_sd.sync.button.confirm "Подтвердить">
+<!ENTITY fvd_sd.sync.button.resend_confirm "Переслать E-mail с кодом">
+<!ENTITY fvd_sd.sync.button.restore_password "Восстановить пароль">
+<!ENTITY fvd_sd.sync.enable_auto_sync "Включить авто-синхронизацию (Каждые 3 часа)">
+<!ENTITY fvd_sd.sync.button.merge "Объединить">
+<!ENTITY fvd_sd.sync.button.upload "Закачать">
+<!ENTITY fvd_sd.sync.button.download "Скачать">
+<!ENTITY fvd_sd.sync.merge "Объединение данных на сервере и локальных данных">
+<!ENTITY fvd_sd.sync.upload "Затирание серверных данных локальными данными">
+<!ENTITY fvd_sd.sync.download "Затирание локальных данных серверными данными">
+<!ENTITY fvd_sd.sync.import_export_to_from "в/из локальный(-ого) файла (.sd)">
+<!ENTITY fvd_sd.sync.enable_sync "Включить синхронизацию">
+<!ENTITY fvd_sd.sync.tab.account "Аккаунт">
+<!ENTITY fvd_sd.sync.tab.sync "Синхронизация">
+<!ENTITY fvd_sd.sync.settings "Настройки">
+<!ENTITY fvd_sd.sync.manual_sync "Ручная синхронизация">
+<!ENTITY fvd_sd.sync.close_sync_progress_window_after_sync "Закрыть окно синхронизации по окончании">
+<!ENTITY fvd_sd.sync.change_password "Изменить пароль">
+<!ENTITY fvd_sd.sync.change_password.new_password "Новый пароль">
+<!ENTITY fvd_sd.sync.change_password.new_password_confirm "Подтверждение нового пароля">
+<!ENTITY fvd_sd.sync.cancel_change_password "Отмена">
+<!ENTITY fvd_sd.sync.confirm_change_password "Подтвердить">
+<!ENTITY fvd_sd.sync.change_password_confirm_sent_desc "Код подтверждения выслан на E-Mail">
+<!ENTITY fvd_sd.sync.change_password.confirm_key "Код подтверждения">
+<!ENTITY fvd_sd.sync.change_password.old_password "Старый пароль">
+<!ENTITY fvd_sd.sync.manage_groups "Управление группами">
+<!ENTITY fvd_sd.sync.button.manage_synced_groups "Управление синхронизируемыми группами">
+<!ENTITY fvd_sd.custom_dial_size_mostvisited.title "Размер ячейки в часто посещаемых сайтах">
+<!ENTITY sync.button.start_sync "Начать синхронизацию">
+<!ENTITY txt.group.global_options.display_search_preview "Предпросмотр поиска">
+<!ENTITY group.poweroff.top_text_1 "Создай собственный пароль для разблокировки FVD Speed Dial">
+<!ENTITY group.poweroff.top_text_2 "После нажатия кнопки Power Off FVD Speed Dial станет недоступен( до ввода пароля )">
+<!ENTITY group.poweroff.top_text_3 "Эта опция создана для того, чтобы нежелательные люди не видели ваши персональные данные">
+<!ENTITY group.poweroff.tabs.main.title "Главные настройки">
+<!ENTITY group.poweroff.tabs.change_pass.title "Изменить пароль">
+<!ENTITY group.poweroff.tabs.restore.title "Восстановить пароль">
+<!ENTITY group.poweroff.tabs.main.passcode "Пароль">
+<!ENTITY group.poweroff.tabs.main.passcode_repeat "Повтор пароля">
+<!ENTITY group.poweroff.tabs.main.recovery_email "E-Mail">
+<!ENTITY group.poweroff.tabs.main.create_passcode "Создать пароль">
+<!ENTITY group.poweroff.tabs.main.setuped "Power off настроен">
+<!ENTITY group.poweroff.tabs.change_pass.old_passcode "Старый пароль">
+<!ENTITY group.poweroff.tabs.change_pass.new_passcode "Новый пароль *">
+<!ENTITY group.poweroff.tabs.change_pass.change_passcode "Изменить пароль">
+<!ENTITY group.poweroff.tabs.change_pass.remove_passcode_message "* Чтобы убрать пароль, оставте поле нового пароля пустым">
+<!ENTITY group.poweroff.tabs.restore_password.do_restore_password "Послать пароль на E-Mail">
+<!ENTITY group.poweroff.tabs.restore_password.please_wait "Пожалуйста ждите...">
+<!ENTITY fvd_sd.scrolling "Скроллинг Диалов">
+<!ENTITY scrolling.vertical "Вертикальный">
+<!ENTITY scrolling.horizontal "Горизонтальный">
+<!ENTITY txt.group.popular.max_items "(max 50)">
+<!ENTITY importing.please_wait "Данные импортируются. Пожалуйста, ждите.">
+<!ENTITY txt.group.global_options.display_urlbar_button "Показывать кнопку в адресной панели">
+<!ENTITY txt.dialog.button_get_premium_for_free.title "Получить премиум аккаунт бесплатно!">

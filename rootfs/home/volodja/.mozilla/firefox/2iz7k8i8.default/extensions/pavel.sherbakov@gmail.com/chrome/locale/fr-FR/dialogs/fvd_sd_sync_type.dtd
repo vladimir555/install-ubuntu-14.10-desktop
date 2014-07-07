@@ -1,0 +1,8 @@
+<!ENTITY window.title "Sélection du type de synchronisation">
+<!ENTITY select_sync_type "Sélectionnez le type de synchronisation">
+<!ENTITY merge.desc "Les données de votre ordinateur et du serveur vont être fusionnées. (Note: le serveur a une priorité supérieure.)">
+<!ENTITY merge "Fusionner les données locales &amp; distantes (serveur)">
+<!ENTITY upload.desc "Copier les données locales sur le serveur">
+<!ENTITY upload "Ecraser les données distantes (serveur)">
+<!ENTITY download.desc "Copier les données distantes sur votre ordinateur">
+<!ENTITY download "Ecraser les données locales">

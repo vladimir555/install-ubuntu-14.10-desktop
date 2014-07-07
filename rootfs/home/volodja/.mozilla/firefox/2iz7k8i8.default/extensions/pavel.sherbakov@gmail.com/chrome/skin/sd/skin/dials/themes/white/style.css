@@ -1,0 +1,111 @@
+.sd_cell .preview_parent{
+	border: 1px solid #999;
+	background-color: #fff;
+	padding: 5px;
+	
+	-moz-transition: border 200ms;
+}
+
+.sd_cell .preview_parent stack{
+	/**/
+	background-color: #fff;
+}
+
+
+.sd_cell[pluscell="1"] .preview_parent stack{	
+	background: -moz-linear-gradient(top, #fff, #ededed);
+}
+
+.sd_cell[pluscell="1"]:hover .preview_parent stack{
+	background: -moz-linear-gradient(top, #fff, #e0e0e0);
+}
+
+.sd_cell[pluscell="1"] .sd_cell_preview_container{
+	opacity: 1;
+}
+
+.sd_cell[pluscell="1"]:hover .sd_cell_preview_container{
+	background: url(chrome://fvd.speeddial/skin/sd/skin/dials/plus_hover.png);
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+
+.cell_header_gray_line{
+	background-color:rgba(0, 0, 0, 0.6);
+}
+
+.sd_cell .cell_header2{
+	margin-left: -5px;
+	margin-right: -5px;
+	/*background: -moz-radial-gradient(circle, rgba(255,255,255,0.5), rgba(0,0,0,0.5))*/
+	
+	margin-bottom: -30px;
+}
+
+.sd_cell:hover .cell_header2{
+	margin-bottom: -5px;
+}
+
+.sd_cell:hover .slideMenu{
+	margin-top: -5px;
+}
+
+.sd_cell:hover .preview_parent{
+	border-color: #555;
+}
+
+.topMenuLine .group{
+	color: #7d7c7c;
+	background: -moz-linear-gradient(top, #e6e6e6, #f4f4f4);
+}
+
+.topMenuLine  .group.add{
+	background: -moz-linear-gradient(top, #d5d5d5, #ececec);	
+}
+
+.topMenuLine  .group[current="1"]{
+	background: -moz-linear-gradient(top, #568449, #75ad66);
+}
+
+.slider{		
+	background: -moz-linear-gradient(center top , #D5D5D5, #ECECEC);
+	/*border: 1px solid #cccccc;*/
+}
+
+.slider:hover{
+	background: -moz-linear-gradient(top, #d5d5d5, #dcdcdc);
+}
+
+
+/* List elem */
+
+.sd_list_elem:hover{
+	border: 1px solid rgba(83, 205, 246, 1);
+	background: -moz-linear-gradient(top, #91e2fd, #ffffff);
+}
+
+.sd_list_elem[drag_over="1"]{
+	border: 1px solid rgba(83, 205, 246, 1);
+	background: -moz-linear-gradient(top, #91e2fd, #ffffff);
+}
+
+.sd_list_elem[loading="1"]:hover{
+	background: -moz-linear-gradient(top, #ccc, #ffffff);
+}
+
+
+/* expand message form */
+#expand_message .expandMessageForm{
+	
+	border: 1px solid #d8d8d8; 
+	background: rgba(255,255,255,0.9);
+
+	border-radius: 4px; 
+	box-shadow: inset 0 0 0 1px #fff; 	
+}
+
+
+#expand_message .enablePowerOffMessage{
+	color: #555;
+	margin-top: 10px;
+}

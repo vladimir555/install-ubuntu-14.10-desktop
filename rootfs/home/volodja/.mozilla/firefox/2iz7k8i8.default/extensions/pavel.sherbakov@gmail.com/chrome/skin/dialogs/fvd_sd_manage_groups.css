@@ -1,0 +1,18 @@
+.arrow_top{
+	background: url(../sd/skin/dials/arrow.png);
+	background-position: 0px 0px;
+	background-repeat:no-repeat;
+	width: 30px;
+	height: 30px;
+	cursor: pointer;
+}
+
+.arrow_bottom{
+	margin-top: 5px;
+	background: url(../sd/skin/dials/arrow.png);
+	background-position: -30px 0px;
+	background-repeat:no-repeat;
+	width: 30px;
+	height: 30px;
+	cursor: pointer;
+}

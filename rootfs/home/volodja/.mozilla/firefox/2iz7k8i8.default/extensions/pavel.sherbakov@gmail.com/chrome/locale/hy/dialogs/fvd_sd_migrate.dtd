@@ -1,0 +1,11 @@
+<!ENTITY dialog.title "Ներմուծել Վահանակներ/Խմբեր այլ հավելումներից">
+<!ENTITY step_select_addon.caption "Ընտրեք ներմուծման հավելումը">
+<!ENTITY step_select_groups.caption "Ընտրեք ներմուծման խմբերը">
+<!ENTITY step_select_urls.caption "Ընտրեք ներմուծման վահանակները">
+<!ENTITY import_urls.caption " Վահանակների ներմուծում">
+<!ENTITY btn_select_all "Ընտրել բոլորը">
+<!ENTITY btn_unselect_all "Չընտրել ոչ մեկը">
+<!ENTITY btn_previous "Նախորդը">
+<!ENTITY btn_next "Հաջորդը">
+<!ENTITY btn_close "Պատրաստ է">
+<!ENTITY btn_abort "Փակել">

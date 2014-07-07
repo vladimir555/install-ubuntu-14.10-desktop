@@ -1,0 +1,11 @@
+<!ENTITY dialog.title "Импортировать Ячейки/Группы с других аддонов">
+<!ENTITY step_select_addon.caption "Выберите аддон для импорта">
+<!ENTITY step_select_groups.caption "Выберите группы для импорта">
+<!ENTITY step_select_urls.caption "Выберите Дилы для импорта">
+<!ENTITY import_urls.caption " Импортирование Дилов">
+<!ENTITY btn_select_all "Выделить Все">
+<!ENTITY btn_unselect_all "Отменить Выделенное">
+<!ENTITY btn_previous "Предыдущий">
+<!ENTITY btn_next "Следющий">
+<!ENTITY btn_close "Готово">
+<!ENTITY btn_abort "Закрыть">

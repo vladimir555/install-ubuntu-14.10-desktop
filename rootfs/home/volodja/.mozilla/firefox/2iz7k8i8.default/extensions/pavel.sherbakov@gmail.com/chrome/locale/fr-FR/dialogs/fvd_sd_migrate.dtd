@@ -1,0 +1,11 @@
+<!ENTITY dialog.title "Importer les Accès Rapides/Groupes à partir d'extensions tierces">
+<!ENTITY step_select_addon.caption "Sélectionner l'extension source">
+<!ENTITY step_select_groups.caption "Sélectionner les groupes à importer">
+<!ENTITY step_select_urls.caption "Sélectionner les Accès Rapides à importer">
+<!ENTITY import_urls.caption "Import des Accès Rapides">
+<!ENTITY btn_select_all "Sélectionner tout">
+<!ENTITY btn_unselect_all "Déselectionner tout">
+<!ENTITY btn_previous "Précédent">
+<!ENTITY btn_next "Suivant">
+<!ENTITY btn_close "Terminé">
+<!ENTITY btn_abort "Fermer">

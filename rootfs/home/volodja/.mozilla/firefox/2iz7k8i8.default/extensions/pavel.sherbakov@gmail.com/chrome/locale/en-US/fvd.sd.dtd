@@ -1,0 +1,120 @@
+<!ENTITY context.open	"Open in tab">
+<!ENTITY context.open_new_tab	"Open in new tab">
+<!ENTITY context.open_new_tab_background	"Open in Background tab">
+<!ENTITY context.edit	"Edit">
+<!ENTITY context.refresh	"Refresh">
+<!ENTITY context.remove	"Delete dial">
+<!ENTITY context.copy_url	"Copy URL">
+<!ENTITY context.move_to	"Move To">
+
+<!ENTITY context_list.open	"Open in tab">
+<!ENTITY context_list.open_new_tab	"Open in new tab">
+<!ENTITY context_list.open_new_tab_background	"Open in Background tab">
+<!ENTITY context_list.add	"Add to Speed Dial">
+<!ENTITY context_list.remove	"Delete">
+<!ENTITY context_list.block	"Block">
+<!ENTITY context_list.edit	"Edit">
+<!ENTITY context_list.refresh	"Refresh">
+
+
+<!ENTITY context_group.refresh_all	"Refresh all">
+<!ENTITY context_group.open_all_links	"Open all links">
+<!ENTITY context_group.default	"Default">
+<!ENTITY context_group.last_selected	"Last selected">
+<!ENTITY context_group.manage_groups "Manage Groups">
+<!ENTITY context_group.edit "Edit Group">
+<!ENTITY context_group.delete "Delete Group">
+<!ENTITY context_group.sync_this_group "Sync this Group">
+
+
+
+
+<!ENTITY fs_context.add_dial	"Add Dial">
+<!ENTITY fs_context.refresh_all	"Refresh All">
+<!ENTITY fs_context.open_all	"Open All Links">
+<!ENTITY fs_context.thumbs.big	"Big">
+<!ENTITY fs_context.thumbs.medium	"Medium">
+<!ENTITY fs_context.thumbs.small	"Small">
+<!ENTITY fs_context.thumbs.custom	"Custom">
+<!ENTITY fs_context.thumbs.custom_change_size	"Change Size...">
+<!ENTITY fs_context.thumbs.list	"List">
+<!ENTITY fs_context.view	"View">
+<!ENTITY fs_context.columns	"Columns">
+<!ENTITY fs_context.rows	"Rows">
+<!ENTITY fs_context.scrolling_type "Scrolling type">
+<!ENTITY fs_context.scrolling_type_vertical "Vertical">
+<!ENTITY fs_context.scrolling_type_horizontal "Horizontal">
+
+<!ENTITY thumb.delete_dial	"Delete Dial">
+<!ENTITY thumb.edit_dial	"Edit Dial">
+
+<!ENTITY list_elem.add	"Pin to Speed Dial">
+<!ENTITY list_elem.remove	"Remove">
+<!ENTITY list_elem.block	"Block Url or Domain">
+<!ENTITY list_elem.error_loading_page	"Error loading page">
+
+<!ENTITY list_open_all.title	"Open all links">
+<!ENTITY list_remove_all.title	"Delete these Links">
+<!ENTITY list_open_all.add_dial	"Add Dial">
+<!ENTITY list_no_items.title	"No items to display">
+
+<!ENTITY thumb_types.title	"Thumbnails:">
+<!ENTITY thumb_types.type_small	"Small">
+<!ENTITY thumb_types.type_medium	"Medium">
+<!ENTITY thumb_types.type_big	"Big">
+<!ENTITY thumb_types.type_list	"List">
+
+
+
+<!ENTITY selector.refresh	"Refresh">
+<!ENTITY selector.options	"Options">
+
+<!ENTITY dont_display_page.title	"Don't display this page">
+
+<!ENTITY make_home_page.title	"Make Speed Dial My Homepage">
+
+<!ENTITY settings2.most_visited.week "Last week">
+<!ENTITY settings2.most_visited.last_month "Last month">
+<!ENTITY settings2.most_visited.all_time "All time">
+
+<!ENTITY settings2.most_visited.group_by.uri "URI">
+<!ENTITY settings2.most_visited.group_by.domain "Domain">
+
+<!ENTITY settings2.top_sites_groups.all_groups "Popular">
+<!ENTITY settings2.top_sites_groups.add_group "Add group">
+<!ENTITY settings2.top_sites_groups.manage_groups "Manage groups">
+
+<!ENTITY settings2.list_types.title "Title">
+<!ENTITY settings2.list_types.uri "URI">
+
+
+<!ENTITY double_click_to_expand.title "Double click to expand (or hit Enter)">
+
+<!ENTITY most_visited.restore_removed "Restore removed">
+
+<!ENTITY list_type_selector.title "Show Title">
+<!ENTITY list_type_selector.url "Show URL">
+
+<!ENTITY all_group.tooltip "This group shows only most popular dials.">
+
+<!ENTITY change_background.title "Change Background">
+
+<!ENTITY restore_thumb.restore_previous "Restore Previous:">
+<!ENTITY restore_thumb.yes "Yes">
+<!ENTITY restore_thumb.no "No">
+
+<!ENTITY restore_session.label "Restore Session">
+
+<!ENTITY fs_context.thumbs.custom_change_size	"Change Size...">
+
+<!ENTITY fs_context.theme "Theme">
+
+
+
+
+
+<!ENTITY enable_power_off_message "Learn how you can protect your Speed Dials from unwanted viewers ">
+<!ENTITY poweroff.enter_passcode "Unlock Speed Dial">
+<!ENTITY power_off_feature "Power Off feature">
+<!ENTITY search_on_google "Search">
+<!ENTITY expand_message.dont_display_again "Don't display it again.">

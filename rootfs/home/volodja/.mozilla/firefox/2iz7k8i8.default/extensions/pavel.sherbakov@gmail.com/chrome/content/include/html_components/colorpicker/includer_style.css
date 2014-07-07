@@ -1,0 +1,9 @@
+#colorPicker vbox{	
+	min-height: 330px;
+	min-width: 360px;
+}
+
+#colorPicker iframe{
+	min-height: 330px;
+	min-width: 360px;
+}

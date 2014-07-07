@@ -1,0 +1,415 @@
+@import url("chrome://global/skin/");
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+
+prefwindow#fvdsd_settings_dialog
+{
+	min-width: 500px;
+	min-height: 560px;
+}
+
+radio[pane]{
+	list-style-image: url('sd/skin/images/dial_icons.png');
+	min-width: 65px;	
+}
+
+radio[pane] label{
+	display: none;
+}
+
+radio[pane] image{
+	max-width: 31px;
+	max-height: 31px;
+	margin: 5px;
+}
+
+radio[pane="paneSdGlobal"]
+{
+	-moz-image-region: rect(0px 285px 31px 254px);
+}
+
+radio[pane="paneSdTopSites"]
+{
+	-moz-image-region: rect(0px 91px 31px 60px);
+}
+
+radio[pane="paneSdMostVisited"]
+{
+	-moz-image-region: rect(0px 156px 31px 125px);
+}
+
+radio[pane="paneSdRecentlyClosed"]
+{
+	-moz-image-region: rect(0px 252px 31px 221px);
+}
+
+radio[pane="paneSdBackground"]
+{
+	-moz-image-region: rect(0px 348px 31px 317px);
+}
+
+radio[pane="paneSdFontColors"]
+{
+	-moz-image-region: rect(0px 417px 31px 386px);
+}
+
+radio[pane="paneSdSync"]
+{
+	-moz-image-region: rect(0px 649px 31px 618px);
+}
+
+radio[pane="suggestionsButton"]
+{
+	-moz-image-region: rect(0px 574px 31px 543px);
+}
+
+radio[pane="donateButton"]
+{
+	-moz-image-region: rect(0px 722px 31px 691px);
+}
+
+radio[pane="panePoweroff"]
+{
+	-moz-image-region: rect(0px 797px 31px 766px);
+}
+
+label#fvdsd_about_title
+{
+	font-size: 20px;
+	font-weight: bold;
+}
+
+label#adult_disable_hint
+{
+	color: gray;
+	margin-left: 28px;
+}
+
+/* Speed dial subpanes */
+
+.subPane{
+	padding: 5px;
+	
+	border-top: 1px solid #c0c0c0;
+	border-bottom: 1px solid #c0c0c0;
+	/*background-color: #c5d1ed;*/
+	
+	min-width: 400px;
+	max-height: 44px;
+	
+	margin-bottom: 10px;
+}
+
+.buttonBig{
+	width: 31px;
+	height: 31px;
+	background: url(sd/skin/images/dial_icons.png);
+	margin-right: 25px;	
+	cursor: pointer;
+}
+
+
+.buttonBig.speedDial{
+	background-position: -93px 0px;
+}
+
+.buttonBig.speedDial[active="1"], .buttonBig.speedDial:hover{
+	background-position: -60px 0px;
+}
+
+.buttonBig.mostVisited{
+	background-position: -157px 0px;
+}
+
+.buttonBig.mostVisited[active="1"], .buttonBig.mostVisited:hover{
+	background-position: -125px 0px;
+}
+
+.buttonBig.recentlyClosed{
+	background-position: -189px 0px;
+}
+
+.buttonBig.recentlyClosed[active="1"], .buttonBig.recentlyClosed:hover{	
+	background-position: -221px 0px;
+}
+
+.buttonBig.sdBackground{
+	background-position: -350px 0px;
+}
+
+.buttonBig.sdBackground[active="1"], .buttonBig.sdBackground:hover{	
+	background-position: -317px 0px;
+}
+
+.buttonBig.sdFontColors{
+	background-position: -426px 0px;
+}
+
+.buttonBig.sdFontColors[active="1"], .buttonBig.sdFontColors:hover{	
+	background-position: -386px 0px;
+}
+
+
+.buttonBig.sdSync{
+	background-position: -650px 0px;
+}
+
+.buttonBig.sdSync[active="1"], .buttonBig.sdSync:hover{	
+	background-position: -618px 0px;
+}
+
+.buttonBig.sdGetSatisfaction{
+	background-position: -578px 0px;
+}
+
+.buttonBig.sdGetSatisfaction:hover{
+	background-position: -543px 0px;
+}
+
+.buttonBig.sdDonate{
+	background-position: -726px 0px;
+}
+
+.buttonBig.sdDonate:hover{
+	background-position: -691px 0px;
+}
+
+.buttonBig.settings{
+	background-position: -286px 0px;	
+	width: 28px;
+}
+
+.buttonBig.settings[active="1"], .buttonBig.settings:hover{
+	background-position: -254px 0px;
+}
+
+.bgPreview vbox{
+	border: 1px solid #c0c0c0;
+	box-shadow: 0px 0px 10px -5px #000;
+	min-height: 150px;
+	width: 300px;
+}
+
+.bgPreview label{
+	text-shadow: 0px 0px 3px #fff;
+	font-weight: bold;
+	font-size: 10px;
+	cursor: pointer;
+}
+
+#currentBgDimension{
+	font-weight: bold;
+	margin-top: 5px;
+}
+
+#__popupImageHelper image.inner{
+	min-width: 200px;
+	min-height: 200px;
+}
+
+.tbTextColor{
+	width: 100px;
+}
+
+.countMax{
+	font-size: 10px;
+	color: #888;
+}
+
+groupbox caption{
+	font-weight: bold;
+}
+
+#themesHelpMessage{
+	opacity: 0;
+	-moz-transition: 200ms opacity;
+	font-size: 0px;
+}
+
+#themesHelpMessage label.linkedText{
+	color: #2d6bc2;
+	cursor: pointer;
+	text-decoration: underline;
+}
+
+#themesHelpMessage[visible="1"]{
+	margin-top: 5px;
+	opacity: 1;
+	font-size: 11px;	
+}
+
+/* Sync */
+
+#paneSdSync .content{
+	padding: 5px;
+}
+
+#paneSdSync #syncEnableCheckbox{
+	margin-bottom: 5px;
+}
+
+#paneSdSync groupbox{
+	padding: 5px;
+}
+
+#paneSdSync groupbox caption{
+	font-weight: bolder;
+}
+
+#paneSdSync grid row{
+	padding: 3px;
+}
+
+#paneSdSync textbox.error{
+	box-shadow: 0px 0px 5px 1px #FF0000;
+}
+
+#paneSdSync hbox.loading{
+	background: url( chrome://fvd.speeddial/skin/fvd.toolbar.download.ad_showing.gif );
+	background-position: center center;
+	background-repeat: no-repeat;
+	min-width: 18px;
+	min-height: 18px;
+}
+
+#paneSdSync hbox.errorText{
+	visibility: hidden;
+	text-align: center;
+	color: red;
+}
+
+#paneSdSync hbox.errorText[appeared="1"]{
+	visibility: visible;
+}
+
+
+#paneSdSync hbox.successText{
+	visibility: hidden;
+	text-align: center;
+	color: green;
+}
+
+#paneSdSync hbox.successText[appeared="1"]{
+	visibility: visible;
+}
+
+#syncOptionsButtons button[active="1"] hbox{
+	background-color: Highlight;
+	color: HighlightText;	
+}
+
+.syncAccountOnlineText label{
+	margin-left: 0px;
+	margin-right: 0px;
+}
+
+.syncGreenOnlineText{
+	color: green;
+}
+
+#hotKeyAlreadyUsed{
+	color: #FF0000;
+}
+
+#hotkeyCode{
+	max-width: 300px;
+}
+
+#donatePanel{
+	max-width: 300px;
+}
+
+#donatePanel description{
+	white-space: pre-line;
+	margin-bottom: 15px;
+}
+
+#donatePanel .donateButton{
+	list-style-image: url(paypal_donate.png);
+	cursor: pointer;
+}
+
+#syncSetupedMessageDeck grid{
+	min-width: 400px;
+}
+
+groupbox[highlight="1"] caption{
+	color: red;
+
+}
+
+button#startSync{
+	width: 150px;
+	height: 50px;
+}
+
+
+.poweroffHead{
+	text-align: center;
+	font-size: 13px;
+}
+
+.poweroffHead .small{
+	font-size: 11px;
+}
+
+#panePoweroff tabbox{
+	margin-top: 10px;
+}
+/*
+#poweroffEnterPassDeck grid row > label{
+	padding-top: 3px;
+}
+*/
+
+#panePoweroff textbox{
+	min-width: 250px;	
+}
+
+#panePoweroff .error{
+	display: none;
+	color: #ff0000;
+}
+
+#panePoweroff .error[appear="1"]{
+	display: -moz-box;
+}
+
+#panePoweroff grid row{
+	-moz-box-align: center;
+}
+
+#panePoweroff .removePassCodeMessage{
+	margin-top: 15px;
+}
+
+.poweroffHelpImage{
+	list-style-image: url(poweroff_help.png);
+	box-shadow: 0px 0px 10px -2px;
+}
+
+.poweroffHelpImage2{
+	list-style-image: url(poweroff_help2.png);
+	box-shadow: 0px 0px 10px -2px;
+}
+
+#currentPowerOffEmail{
+	font-size: 18px;
+}
+
+#installSyncFrame{
+	height: 475px;
+}
+
+.importExportProgress{
+	font-weight: bold;
+	margin-top: 20px;
+}
+
+.button-star .button-text{
+  background: url(star.png) left center no-repeat;
+  padding-left: 25px;
+}
+.button-star{
+  -moz-transition-duration: 500ms;
+  opacity: 0;
+}

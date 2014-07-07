@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://fvd.speeddial/skin/fvd.toolbar.css" type="text/css"?>
+
+<!DOCTYPE overlay [
+<!ENTITY % fvd.speeddialDTD SYSTEM "chrome://fvd.speeddial/locale/fvd.toolbar.dtd">
+%fvd.speeddialDTD;
+]>
+
+<overlay id="fvd-speedDialSingle-Overlay" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul" xmlns:html="http://www.w3.org/1999/xhtml">
+
+	<script type="application/x-javascript" src="chrome://fvd.speeddial/content/fvd_speeddial.js"></script>	
+	<script type="application/x-javascript" src="chrome://fvd.speeddial/content/include/speed_dial.js"></script>	
+	<script type="application/x-javascript" src="chrome://fvd.speeddial/content/include/tools/about_blank_hook.js"></script>	
+	
+	<keyset id="mainKeyset">
+		<key id="fvd_speed_dial_hotKey" modifiers="accel" key="M" oncommand="fvd_speed_dial_fvdSSD.openSpeedDialSingle()"/>
+	</keyset>
+		
+	<popupset id="mainPopupSet">
+		<menupopup hidden="true" id="fvd_speed_dial_fvdssdContentMenu">  
+			<menuitem id="fvd_speed_dial_fvdssd__fvd_context_search_tab" label="&txt.context_popup.add_to_sd;" class="menuitem-iconic" oncommand="fvd_speed_dial_fvdSSD.addTabToSpeedDial(TabContextMenu.contextTab)" />	
+			<menuitem id="fvd_speed_dial_fvdssd__fvd_context_search" label="&txt.context_popup.add_to_sd;" class="menuitem-iconic" oncommand="fvd_speed_dial_fvdSSD.addCurrentURIToSpeedDial(event)" />		
+		</menupopup>
+		
+		<menupopup id="fvd_speed_dial_fvdssdMainContentMenu">  
+		
+			<menuitem label="&txt.main_popup.global_options;" oncommand="fvd_speed_dial_gFVDSSDSettings.displayWindow('paneSdGlobal');event.stopPropagation();" />	
+			<menuitem label="&txt.main_popup.sd_options;" oncommand="fvd_speed_dial_gFVDSSDSettings.displayWindow('paneSdTopSites');event.stopPropagation();" />	
+			<menuitem label="&txt.main_popup.most_visited_options;" oncommand="fvd_speed_dial_gFVDSSDSettings.displayWindow('paneSdMostVisited');event.stopPropagation();" />	
+			<menuitem label="&txt.main_popup.recently_closed_options;" oncommand="fvd_speed_dial_gFVDSSDSettings.displayWindow('paneSdRecentlyClosed');event.stopPropagation();" />	
+			<menuitem label="&txt.main_popup.change_background;" oncommand="fvd_speed_dial_gFVDSSDSettings.displayWindow('paneSdBackground');event.stopPropagation();" />	
+			<menuitem label="&txt.main_popup.change_text_color;" oncommand="fvd_speed_dial_gFVDSSDSettings.displayWindow('paneSdFontColors');event.stopPropagation();" />	
+			
+			<menuitem label="&txt.main_popup.fvd_suite;" class="menuitem-iconic fvdSuiteMenuIcon" oncommand="fvd_speed_dial_fvdSSD.goToFvdSuite(event);event.stopPropagation();" />		
+		</menupopup>
+	</popupset>
+	
+	<toolbarpalette id="BrowserToolbarPalette">    
+		<toolbarbutton id="fvd_speed_dial_fvdSpeedDialButton" class="toolbarbutton-1" label="&txt_main_button.speed_dial;" type="menu-button" oncommand="fvd_speed_dial_fvdSSD.mainButtonClick(event)"  />		
+	</toolbarpalette>
+	
+	<hbox id="urlbar-icons">
+	  <hbox hidden="true" tooltiptext="&txt.urlbar_button.title;" chromedir="ltr" class="urlbar-icon" click="" for="" id="fvd_speed_dial_urlBarIcon" img="" level="safe" might="" page="" style="-moz-user-focus:">
+	  	
+	  </hbox>
+	</hbox>
+
+</overlay>
+

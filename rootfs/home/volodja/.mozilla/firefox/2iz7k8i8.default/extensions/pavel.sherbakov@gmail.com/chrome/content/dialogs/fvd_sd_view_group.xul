@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://global/skin/"?>
+
+<?xml-stylesheet href="chrome://fvd.speeddial/skin/dialogs/fvd_sd_view_group.css" type="text/css"?>
+
+<!DOCTYPE dialog SYSTEM "chrome://fvd.speeddial/locale/fvd.toolbar.dialogs.dtd">
+
+<window xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+	
+	width="400"
+	height="400"
+	title="&fvd_sd_view_group.dialog.title;"
+	scrollbars="both"
+	>
+	
+	<script type="application/x-javascript" src="chrome://fvd.speeddial/content/dialogs/fvd_sd_view_group.js"/>
+	<script type="application/x-javascript" src="chrome://fvd.speeddial/content/include/tools/misc.js"/>
+	
+	<vbox hidden="true">
+		<hbox id="snippet" class="snippet" context="context_menu">
+			<image class="favicon"/><label class="title" crop="right" flex="2"/><label class="views_count"/>
+		</hbox>
+	</vbox>
+	
+	<hbox>
+		<radiogroup id="view_type">
+			<hbox>
+				<radio value="title" label="&fvd_sd_view_group.type.title;" onclick="setListType('title')" />
+				<radio value="uri" label="&fvd_sd_view_group.type.uri;" onclick="setListType('uri')"  />
+			</hbox>
+		</radiogroup>
+	</hbox>
+	
+	<vbox flex="2" id="container">
+	
+	</vbox>
+	
+	
+	<popupset>
+	  <menupopup id="context_menu">
+	    <menuitem label="&fvd_sd_view_group.context.open;" oncommand="open()" />
+	    <menuitem label="&fvd_sd_view_group.context.open_new_tab;" oncommand="open('new_tab')" />
+	    <menuitem label="&fvd_sd_view_group.context.open_new_tab_background;" oncommand="open('new_tab_passive')" />
+		<menuitem label="&fvd_sd_view_group.context.remove;"  oncommand="removePopuped()" />
+		
+	    <menuseparator/>
+		<menuitem label="&fvd_sd_view_group.context.refresh;" oncommand="refreshUrl()" />
+	    <menuitem label="&fvd_sd_view_group.context.add_to_speed_dial;" class="menuitem-iconic add_to_sd" oncommand="addToSpeedDial()" />
+		<menuitem label="&fvd_sd_view_group.context.block;" oncommand="block()" />
+		<menuitem label="&fvd_sd_view_group.context.copy_url;" oncommand="copyUrl()" />
+	  </menupopup>
+	</popupset>
+	
+	<browser id="refresh_browser" type="content"></browser>
+	
+</window>

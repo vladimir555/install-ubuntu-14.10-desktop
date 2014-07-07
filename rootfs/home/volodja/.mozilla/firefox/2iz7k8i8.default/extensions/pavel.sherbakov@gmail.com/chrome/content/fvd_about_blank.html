@@ -1,0 +1,349 @@
+<!doctype html>
+<html 
+	xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:svg="http://www.w3.org/2000/svg">
+<head>
+	<title>FVD Speed Dial</title>
+	
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<link rel="stylesheet" href="chrome://fvd.speeddial/skin/sd/skin/search/style.css" type="text/css" media="screen, projection" />
+	<link rel="stylesheet" href="chrome://fvd.speeddial/skin/sd/skin/google.css" type="text/css" media="screen, projection" />
+	<link rel="stylesheet" href="chrome://fvd.speeddial/skin/sd/skin/search/text_colors.css" type="text/css" media="screen, projection" />
+	
+	<script type="text/javascript" src="chrome://fvd.speeddial/content/include/sd/search.js"></script>
+	<script type="text/javascript" src="chrome://fvd.speeddial/content/include/sd/remotead.js"></script>
+	<script type="text/javascript" src="chrome://fvd.speeddial/content/include/sd/premiumforshare.js"></script>
+	
+	<link rel="icon" type="image/png" id="favicon" href="chrome://fvd.speeddial/skin/sd/skin/dials/sd_favicon.png" />
+	<style>
+
+	   
+	   iframe {  width:100%; border:none }
+
+		
+	</style>	
+	<script>
+	var speedDial = null;
+	var frameWin = null;		
+	
+	var __domContentLoaded = false;
+	
+	document.addEventListener( "DOMContentLoaded", function(){
+		
+		__domContentLoaded = true;
+		
+	}, false );	
+	
+	</script>
+</head>
+
+<body onclick="HtmlSearch.clickBody(event)" onscroll="HtmlSearch.scroll()" loaded="0">
+	<div class="popupOptions" id="remoteADPopup">
+		<div class="content">
+			
+			<iframe></iframe>
+			
+		</div>
+	</div>
+	
+	<div class="popupOptions" id="speedDialOptions">
+		<div class="content">
+			<div>
+				<input type="checkbox" id="enableSpeedDial" value="1" class="setting" stype="bool" sname="sd.enable_top_sites" confirm="1" />
+				<label for="enableSpeedDial">
+					<span class="loc_enable_speed_dial"></span>
+				</label>
+				<span for="enableSpeedDial" class="confirm">
+					<span class="loc_sure"></span>
+					<span class="loc_yes option" onclick="HtmlSearch.confirmSetting(this.parentNode, 'enableSpeedDial', true)"></span> /
+					<span class="loc_no  option" onclick="HtmlSearch.confirmSetting(this.parentNode, 'enableSpeedDial', false)"></span>
+				</span>
+			</div>
+			<div>
+				<input type="checkbox" id="defaultSpeedDial" value="1" onchange="HtmlSearch.changeDefaultDisplayType('top_sites', this.checked)"/> <label for="defaultSpeedDial"><span class="loc_default"></span></label>
+			</div>
+			<div>
+				<span class="loc_max_groups"></span> <input type="text" class="setting" id="maxGroupsSpeedDial" stype="int" sname="sd.all_groups_limit_dials" value="" max="50"/>
+			</div>
+			<div>
+				<fieldset>
+					<legend><span class="loc_thumbnails"></span></legend>
+					<div><input type="radio" name="thumbsSpeedDial" id="thumbsSpeedDialCustom" value="custom" class="setting" stype="string" sname="sd.thumbs_type"/> <label for="thumbsSpeedDialCustom"><span class="loc_custom"></span></label></div>					
+					<div><input type="radio" name="thumbsSpeedDial" id="thumbsSpeedDialList" value="list" class="setting" stype="string" sname="sd.thumbs_type"/> <label for="thumbsSpeedDialList"><span class="loc_list"></span></label></div>
+					<div>
+						<label for="topSitesColumns" class="loc_number_of_columns"></label>
+						<select id="topSitesColumns" class="setting" stype="string" sname="sd.top_sites_columns" onfocus="HtmlSearch.rebuildColumnsField(['topSitesColumns'])">
+						<option value="auto" class="loc_columns_auto"></option>	
+						</select>
+					</div>
+				</fieldset>	
+			</div>
+			<div>
+				<fieldset class="centered">
+					<legend><span class="loc_groups"></span></legend>
+					<div><label for="defaultGroupSpeedDial"><span class="loc_default_group"></span></label><select id="defaultGroupSpeedDial" class="setting" stype="string" sname="sd.default_group"></select></div>
+					<br/>
+					<div><button onclick="speedDial.manageGroupsDialog()" class="fvdButton"><span class="loc_manage_groups"></span></button></div>
+				</fieldset>
+			</div>
+			<div id="topSitesImportSettings">
+				<fieldset class="centered">
+					<legend><span class="loc_import"></span></legend>
+					<div><button onclick="speedDial.startMigrate()" class="fvdButton"><span class="loc_import_available"></span></button></div>
+				</fieldset>
+			</div>
+		</div>
+	</div>
+	
+	<div class="popupOptions" id="mostVisitedOptions">
+		<div class="content">
+			<div>
+				<input type="checkbox" id="enableMostVisited" value="1" class="setting" stype="bool" confirm="1" sname="sd.enable_most_visited"/> <label for="enableMostVisited"><span class="loc_enable_most_visited"></span></label> 
+				
+				<span for="enableMostVisited" class="confirm">
+					<span class="loc_sure"></span>
+					<span class="loc_yes option" onclick="HtmlSearch.confirmSetting(this.parentNode, 'enableMostVisited', true)"></span> /
+					<span class="loc_no  option" onclick="HtmlSearch.confirmSetting(this.parentNode, 'enableMostVisited', false)"></span>
+				</span>
+			</div>
+			<div>
+				<input type="checkbox" id="defaultMostVisited" value="1" onchange="HtmlSearch.changeDefaultDisplayType('most_visited', this.checked)"/> <label for="defaultMostVisited"><span class="loc_default"></span></label>
+			</div>
+			<div>
+				<span class="loc_show_last"></span><input type="text" id="showLastMostVisited" value="" class="setting" stype="int" sname="sd.max_most_visited_records"  max="75"/>
+			</div>
+			
+			<div>
+				<fieldset>
+					<legend><span class="loc_most_visited_display_order"></span></legend>
+					<div><input type="radio" id="mostVisitedOrderVisits" name="mostVisitedOrder" value="visits" class="setting" stype="string" sname="sd.most_visited_order"/> <label for="mostVisitedOrderVisits"><span class="loc_most_visited_visits"></span></label></div>
+					<div><input type="radio" id="mostVisitedOrderDate" name="mostVisitedOrder" value="date" class="setting" stype="string" sname="sd.most_visited_order"/> <label for="mostVisitedOrderDate"><span class="loc_most_visited_date"></span></label></div>
+			
+				</fieldset>	
+			</div>
+			
+			<div>
+				<fieldset>
+					<legend><span class="loc_thumbnails"></span></legend>
+					<div><input type="radio" name="thumbsMostVisited" id="thumbsMostVisitedCustom" value="custom" class="setting" stype="string" sname="sd.thumbs_type_most_visited"/> <label for="thumbsMostVisitedCustom"><span class="loc_custom"></span></label></div>										
+					<div><input type="radio" name="thumbsMostVisited" id="thumbsMostVisitedList" value="list" class="setting" stype="string" sname="sd.thumbs_type_most_visited"/> <label for="thumbsMostVisitedList"><span class="loc_list"></span></label></div>
+
+					<div>
+						<label for="mostVisitedColumns" class="loc_number_of_columns"></label>
+						<select id="mostVisitedColumns" class="setting" stype="string" sname="sd.most_visited_columns" onfocus="HtmlSearch.rebuildColumnsField(['mostVisitedColumns'])">
+						<option value="auto" class="loc_columns_auto"></option>	
+						</select>
+					</div>					
+				</fieldset>	
+			</div>
+			<div>
+				<fieldset>
+					<legend><span class="loc_synchronization"></span></legend>
+					<div align="center"><span class="loc_cache_life_time"></span><select class="setting" stype="string" sname="sd.most_visited_cache_life_time" id="cacheLifeTimeMostVisited">
+						<option value="3600000">1</option>
+						<option value="7200000">2</option>
+						<option value="18000000">5</option>
+						<option value="36000000">10</option>
+					</select>&nbsp;<span class="loc_hours"></span>
+					</div>
+					
+					<div id="doneflushMostVisitedCache" class="operationDone"><span class="loc_done"></span></div>
+					
+					<div align="center"><button onclick="HtmlSearch.flushMostVisitedCache(); HtmlSearch.showDone('doneflushMostVisitedCache')" class="loc_sync_now fvdButton"></button></div>
+				</fieldset>	
+			</div>
+			<div id="doneRestoreDeleted" class="operationDone"><span class="loc_done"></span></div>
+			<div class="restoreDeleted"><button onclick="speedDial.clearMostVisitedRemovedData(); HtmlSearch.showDone('doneRestoreDeleted')" class="fvdButton"><span class="loc_restore_removed"></span></button></div>		
+			
+		</div>
+	</div>
+	
+	<div class="popupOptions" id="recentlyClosedOptions">
+		<div class="content">
+			<div>
+				<input type="checkbox" id="enableRecentlyClosed" value="1" class="setting" confirm="1" stype="bool" sname="sd.enable_recently_closed"/> <label for="enableRecentlyClosed"><span class="loc_enable_recently_closed"></span></label> 
+				
+				<span for="enableRecentlyClosed" class="confirm">
+					<span class="loc_sure"></span>
+					<span class="loc_yes option" onclick="HtmlSearch.confirmSetting(this.parentNode, 'enableRecentlyClosed', true)"></span> /
+					<span class="loc_no  option" onclick="HtmlSearch.confirmSetting(this.parentNode, 'enableRecentlyClosed', false)"></span>
+				</span>
+			</div>			
+			<div>
+				<input type="checkbox" id="defaultRecentlyClosed" value="1" onchange="HtmlSearch.changeDefaultDisplayType('recently_closed', this.checked)"/> <label for="defaultRecentlyClosed"><span class="loc_default"></span></label>
+			</div>
+			
+			<div>			
+				<label for="recentlyClosedColumns" class="loc_number_of_columns"></label>
+				<select id="recentlyClosedColumns" class="setting" stype="string" sname="sd.recently_closed_columns" onfocus="HtmlSearch.rebuildColumnsField(['recentlyClosedColumns'])">
+					<option value="auto" class="loc_columns_auto"></option>	
+				</select>			
+			</div>
+			
+						
+			
+			<div>
+				<span class="loc_show_last"></span><input type="text" id="showLastRecentlyClosed" value="" class="setting" stype="int" sname="sd.max_recently_closed_records"  max="40"/>
+			</div>
+		</div>
+	</div>
+	
+	<div class="popupOptions" id="migrateData">
+		<div class="content">
+			<div class="loc_migrate_message"></div>
+			<br/>
+			<div id="importAddonsList"></div>		
+			<br/>		
+			<div align="center"><button onclick="speedDial.startMigrate()" class="fvdButton loc_start_migrate"></button>&nbsp;<button onclick="HtmlSearch.hideOptions()" class="fvdButton loc_cancel_migrate"></button></div>
+			<br/>
+			<div class="migrateDontShowMessage"><label><span class="loc_do_not_display_migrate"></span><input type="checkbox" id="migrateDoNotDisplayAgain" onclick="HtmlSearch.setMigrateMessageNotDisplayState(this.checked)"/></label></div>
+		</div>
+	</div>
+	
+	<div class="popupOptions" id="canTurnOfNewTabPopup">
+		<div class="content">
+			<div><span class="loc_can_turn_off_newtab_msg"></span> (<a href="#" onclick="HtmlSearch.openOptionsAppearance()" class="loc_can_turn_off_newtab_opt_app"></a>)</div>
+			
+			<div class="center cbContainer">
+				<label><input type="checkbox" onclick="HtmlSearch.setCanTurnNewTabPopupDisplayable( !this.checked )"><span class="loc_can_turn_off_newtab_got_it"></span></label>					
+			</div>
+		</div>
+	</div>
+	
+	<div class="popupOptions" id="rateMessage">
+		<div class="content">
+			<div class="loc_rate_message_fvd_speed_dial linkedText center bold" onclick="HtmlSearch.openMozillaPage()"></div>			
+			<div class="loc_rate_message linkedText" onclick="HtmlSearch.openMozillaPage()"></div>
+			<div class="loc_rate_message_appreciate linkedText center" onclick="HtmlSearch.openMozillaPage()"></div>	
+			<div class="stars" onclick="HtmlSearch.openMozillaPage()"></div>		
+			<div class="migrateDontShowMessage"><label><span class="loc_do_not_display_migrate"></span><input type="checkbox" onclick="HtmlSearch.setRateMessageNotDisplayState(this.checked)"/></label></div>
+		</div>
+	</div>
+	
+	<div class="popupOptions" id="hasSyncUpdatesMessage">
+		<div class="content">
+			<div class="loc_found_data_for_sync title"></div>
+			<div class="updateTime"></div>		
+			
+			<button class="fvdButton main loc_sync_updates_now" onclick="HtmlSearch.hideOptions();speedDial.HasSyncUpdatesMessage.sync()"/> <button class="fvdButton loc_skip_sync_updates" onclick="HtmlSearch.hideOptions();speedDial.HasSyncUpdatesMessage.skipSync()"/>			
+		</div>
+	</div>
+	
+	<div id="speedDialTop">
+
+		<div id="searchBar">
+			<div class="activeContent">
+				<div class="dialIcons">
+					<div id="buttonSpeedDial" class="buttonBlock" expanded="1" active="0" 
+					onmouseover="HtmlSearch.mouseOverButton(this)" onmouseout="HtmlSearch.mouseOutButton(this)">
+						<div class="buttonBig speedDial rise" onclick="HtmlSearch.setDisplayType('top_sites', event);" ></div>
+						<div class="buttonBig speedDial fade"></div>
+						<div class="smallButtons">
+							<div class="buttonSmall expand loc_expand_all" onclick="speedDial.toggleExpand( 'top_sites' )" title="%loc%"></div>
+							<div class="buttonSmall unexpand loc_hide_all" onclick="speedDial.toggleExpand( 'top_sites' )" title="%loc%"></div>
+							
+							<div class="buttonSmall options loc_options" onclick="HtmlSearch.showOptions('speedDialOptions', this, event, 'right');" title="%loc%"></div>	
+						</div>
+						<div class="subText"></div>
+					</div>	
+					<div id="buttonMostVisited" class="buttonBlock" expanded="1" active="0" 
+					onmouseover="HtmlSearch.mouseOverButton(this)" onmouseout="HtmlSearch.mouseOutButton(this)">
+						<div class="buttonBig mostVisited rise" onclick="HtmlSearch.setDisplayType('most_visited', event);"></div>
+						<div class="buttonBig mostVisited fade"></div>	
+						<div class="smallButtons">
+							<div class="buttonSmall expand loc_expand_all" onclick="speedDial.toggleExpand( 'most_visited' )" title="%loc%"></div>
+							<div class="buttonSmall unexpand loc_hide_all" onclick="speedDial.toggleExpand( 'most_visited' )" title="%loc%"></div>						
+							
+							<div class="buttonSmall options loc_options" onclick="HtmlSearch.showOptions('mostVisitedOptions', this, event, 'right');" title="%loc%"></div>
+						</div>
+						<div class="subText"></div>
+					</div>	
+					<div id="buttonRecentlyClosed" class="buttonBlock" expanded="1" active="0" 
+					onmouseover="HtmlSearch.mouseOverButton(this)" onmouseout="HtmlSearch.mouseOutButton(this)">
+						<div class="buttonBig recentlyClosed fade"></div>
+						<div class="buttonBig recentlyClosed rise" onclick="HtmlSearch.setDisplayType('recently_closed', event);"></div>
+						<div class="smallButtons">
+							<div class="buttonSmall expand loc_expand_all" onclick="speedDial.toggleExpand( 'recently_closed' )" title="%loc%"></div>
+							<div class="buttonSmall unexpand loc_hide_all" onclick="speedDial.toggleExpand( 'recently_closed' )" title="%loc%"></div>
+							<div class="buttonSmall options loc_options" onclick="HtmlSearch.showOptions('recentlyClosedOptions', this, event, 'right')" title="%loc%"></div>
+						</div>
+						<div class="subText"></div>
+					</div>	
+					<div title="%loc%" id="buttonSync" class="buttonBlock loc_sync_updates_now" onclick="speedDial.HasSyncUpdatesMessage.manualSync()" active="0">
+						<div class="buttonBig sync fade"></div>
+						<div class="buttonBig sync rise"></div>
+					</div>	
+					<!-- Remove in future
+					<div title="%loc%"  class="buttonBlock loc_restore_previous_session" id="buttonRestoreSession" active="0" onclick="HtmlSearch.restorePreviousSession()">
+						<div class="buttonBig restoreSession fade"></div>
+						<div class="buttonBig restoreSession rise"></div>					
+					</div>	
+					-->
+					<div title="%loc%"  class="buttonBlock loc_global_options" id="buttonSettings" active="0" onclick="HtmlSearch.hideOptions(); frameWin.fvd_speed_dial_gFVDSSDSettings.displayWindow('fvdsd_sd')">
+						<div class="buttonBig settings fade"></div>
+						<div class="buttonBig settings rise"></div>					
+					</div>	
+					
+					<div class="buttonsRightPanel">
+						<a class="buttonPowerOff loc_poweroff_button_title" title="%loc%" active="0"></a>
+						<a class="buttonShowHide loc_showhide_button_title" title="%loc%" active="0"></a>						
+					</div>
+					
+				</div>
+				
+				<div class="menuBottom">
+					<div class="button" onclick="HtmlSearch.toggleMenu()" >
+						<span class="text">
+						›
+						</span>
+					</div>
+				</div>
+			</div>	
+		</div>
+	
+	</div>
+	
+	<div id="cursorScrollTopHint" active="0">
+	</div>
+	
+	<div id="moveDialType" active="0" type="none">
+		<div class="left"></div>
+		<div class="right"></div>
+	</div>
+	
+		<iframe src="chrome://fvd.speeddial/content/fvd_about_blank.xul" scrolling="no" id="speedDialFrame" style="position:absolute" type="chrome"></iframe>
+	<!-- Some autocomplete plus styles -->
+	<style type="text/css">		
+		    .acp_ltr { width:492px; margin-top: 5px; margin-left: -1px }               /* width of the suggestion table */		
+		    .acp_ltr tbody td { width:482px; }      /* width of a suggestion line    */
+	</style>
+		
+	<span style="display:none">
+		<span class="loc_all_group_title"></span>
+		<span class="loc_last_selected_group_title"></span>
+	</span>
+	
+	<div id="bottomBlock" active="0" style="display:none">
+
+		<div id="fbLikeLoading"></div>
+		<iframe type="content" id="fb_like" src="" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:350px; height:28px;float:left;" allowTransparency="true"></iframe>
+		
+		<!--<a href="#" onclick="window.open('http://flashvideodownloader.org/fvd-suite/plus.php?item=fvd_toolbar')"><img src="chrome://fvd.speeddial/skin/sd/skin/dials/images/google_plus.png" border="0"></a>-->
+		
+		<div id="makeHomePageParent">			
+			<div id="make_homepage" onclick="HtmlSearch.showDone('doneMakeHomepage');frameWin.fvd_speed_dial_gFVDSSDSettings.setSdAsHomePage(true)" class="loc_make_as_homepage"></div>
+			<div id="doneMakeHomepage" class="operationDone"><span class="loc_done"></span></div>
+		</div>		
+	</div>
+	
+	<div style="display:none" id="showHideButtonButtonBlock" onclick="HtmlSearch.toggleBottomPanel()"></div>
+	<div id="changeBackgroundBlock" class="loc_change_background textColorOther" onclick="frameWin.fvd_speed_dial_gFVDSSDSettings.displayWindow('paneSdBackground')"></div>
+
+  <div id="premiumforshareOverflay">      
+    <div id="premiumforshareDialog">        
+      <iframe></iframe>     
+    </div>      
+  </div>    
+
+</body>
+</html>

@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+<?xml-stylesheet href="chrome://fvd.speeddial/skin/dialogs/fvd_sd_sync_type.css" type="text/css"?>
+<?xml-stylesheet href="chrome://fvd.speeddial/skin/sd/skin/dials/icons.css" type="text/css"?>
+<!DOCTYPE window SYSTEM "chrome://fvd.speeddial/locale/dialogs/fvd_sd_sync_type.dtd">
+
+<window
+	xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+	title="&window.title;"
+>
+
+	<script src="chrome://fvd.speeddial/content/dialogs/fvd_sd_sync_type.js"/>
+	
+	<label id="messageLabel" value=""/>
+	
+	<groupbox id="syncTypesGroupBox">
+
+		<caption label="&select_sync_type;"/>
+	
+		<vbox id="syncTypes" flex="2">
+			
+			<hbox id="syncType_mergeLocalAndServerData" onclick="selectType( 'mergeLocalAndServerData' )" tooltiptext="&merge.desc;">
+				<label value="&merge;"/>
+			</hbox>
+			
+			<hbox id="syncType_overwriteServerData" onclick="selectType( 'overwriteServerData' )" tooltiptext="&upload.desc;">
+				<label value="&upload;"/>
+			</hbox>
+			
+			<hbox id="syncType_overwriteLocalData" onclick="selectType( 'overwriteLocalData' )" tooltiptext="&download.desc;">
+				<label value="&download;"/>
+			</hbox>
+			
+		</vbox>	
+	
+	</groupbox>
+
+</window>

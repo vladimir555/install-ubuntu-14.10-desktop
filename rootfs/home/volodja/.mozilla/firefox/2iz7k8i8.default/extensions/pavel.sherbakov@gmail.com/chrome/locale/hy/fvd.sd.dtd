@@ -1,0 +1,84 @@
+<!ENTITY context.open "Բացել ընթացիկ էջում">
+<!ENTITY context.open_new_tab "Բացել նոր էջում">
+<!ENTITY context.open_new_tab_background "Բացել հետին պատուհանում">
+<!ENTITY context.edit "Խմբագրել">
+<!ENTITY context.refresh "Թարմացնել">
+<!ENTITY context.remove "Ջնջել">
+<!ENTITY context.copy_url "Պատճենել վեբ հղումը">
+<!ENTITY context.move_to "Տեղափոխել՝">
+<!ENTITY context_list.open "Բացել ընթացիկ պատուհանում">
+<!ENTITY context_list.open_new_tab "Բացել նոր պատուհանու">
+<!ENTITY context_list.open_new_tab_background "Բացել հետին պատուհանում">
+<!ENTITY context_list.add "Ավելացնել Speed Dial-ում">
+<!ENTITY context_list.remove "Ջնջել">
+<!ENTITY context_list.block "Կողփել">
+<!ENTITY context_list.edit "Փոփոխել">
+<!ENTITY context_list.refresh "Թարմացնել">
+<!ENTITY context_group.refresh_all "Թարմացնել բոլոր հղումները">
+<!ENTITY context_group.open_all_links "Բացել բոլոր հղումները">
+<!ENTITY context_group.default "Ըստ ծրագրայինի">
+<!ENTITY context_group.last_selected "Վերջին ընտրվածը">
+<!ENTITY context_group.manage_groups "Խմբերի կառավարումը">
+<!ENTITY context_group.edit "Խմբագրել խումբը">
+<!ENTITY context_group.delete "Ջնջել խումբը">
+<!ENTITY fs_context.add_dial "Ավելացնել կայք">
+<!ENTITY fs_context.refresh_all "Թարմացնել բոլոր կայքերը">
+<!ENTITY fs_context.open_all "Բացել բոլոր կայքեր">
+<!ENTITY fs_context.thumbs.big "Մեծ">
+<!ENTITY fs_context.thumbs.medium "Միջին">
+<!ENTITY fs_context.thumbs.small "Փոքր">
+<!ENTITY fs_context.thumbs.custom "Ընտրված">
+<!ENTITY fs_context.thumbs.list "Ցանկը">
+<!ENTITY fs_context.view "Տեսքը">
+<!ENTITY fs_context.columns "Սյուները">
+<!ENTITY thumb.delete_dial "Ջնջել կայքը">
+<!ENTITY thumb.edit_dial "Խմբագրել կայքը">
+<!ENTITY list_elem.add "Ավելացնել Speed Dial-ում">
+<!ENTITY list_elem.remove "Ջնջել">
+<!ENTITY list_elem.block "Արգելել կայքը">
+<!ENTITY list_elem.error_loading_page "Էջի բեռնման սխալ">
+<!ENTITY list_open_all.title "Բացել բոլոր կայքերը">
+<!ENTITY list_remove_all.title "Ջնջել ընտրված կայքերը">
+<!ENTITY list_open_all.add_dial "Ավելացնել կայք">
+<!ENTITY list_no_items.title "Դատարկ.(">
+<!ENTITY thumb_types.title "Չափը.">
+<!ENTITY thumb_types.type_small "Փոքր">
+<!ENTITY thumb_types.type_medium "Միջին">
+<!ENTITY thumb_types.type_big "Մեծ">
+<!ENTITY thumb_types.type_list "Ցանկը">
+<!ENTITY selector.refresh "Թարմացնել">
+<!ENTITY selector.options "Կարգավորումներ">
+<!ENTITY dont_display_page.title "Չցուցադրել այս էջը">
+<!ENTITY make_home_page.title "Դարձնել Speed Dial-ը առաջին էջ">
+<!ENTITY settings2.most_visited.week "Շաբաթվա համար">
+<!ENTITY settings2.most_visited.last_month "Ամսվա համար">
+<!ENTITY settings2.most_visited.all_time "Մշտապես">
+<!ENTITY settings2.most_visited.group_by.uri "Վեբ հղումը">
+<!ENTITY settings2.most_visited.group_by.domain "Տիրույթը">
+<!ENTITY settings2.top_sites_groups.all_groups "Հայտնիները">
+<!ENTITY settings2.top_sites_groups.add_group "Ավելացնել խումբ">
+<!ENTITY settings2.top_sites_groups.manage_groups "Խմբագրել խումբը">
+<!ENTITY settings2.list_types.title "Անունը">
+<!ENTITY settings2.list_types.uri "Վեբ հղումը">
+<!ENTITY double_click_to_expand.title "Կրկնակի սեղմեք՝ բացելու համար Speed Dial-ը (կամ սեղմեք Enter)">
+<!ENTITY most_visited.restore_removed "Վերականգնել ջնջված կայքերը">
+<!ENTITY list_type_selector.title "Ցուցադրել անվանումը">
+<!ENTITY list_type_selector.url "Ցուցադրել վեբ հղումը">
+<!ENTITY all_group.tooltip "Ամենահայտնի կայքերը">
+<!ENTITY change_background.title "Փոխել խորապատկերը">
+<!ENTITY restore_thumb.restore_previous "Վերականգնել նախորդը.">
+<!ENTITY restore_thumb.yes "Այո">
+<!ENTITY restore_thumb.no "Ոչ">
+<!ENTITY restore_session.label "Վերականգնել շրջանը">
+<!ENTITY context_group.sync_this_group "Sync this Group">
+<!ENTITY fs_context.thumbs.custom_change_size "Change Size...">
+<!ENTITY fs_context.theme "Theme">
+<!ENTITY enable_power_off_message "Learn how you can protect your Speed Dials from unwanted viewers ">
+<!ENTITY poweroff.enter_passcode "Unlock Speed Dial">
+<!ENTITY power_off_feature "Power Off feature">
+<!ENTITY search_on_google "Search">
+<!ENTITY expand_message.dont_display_again "Dont display again">
+<!ENTITY fs_context.rows "Rows">
+<!ENTITY fs_context.scrolling_type "Scrolling type">
+<!ENTITY fs_context.scrolling_type_vertical "Vertical">
+<!ENTITY fs_context.scrolling_type_horizontal "Horizontal">

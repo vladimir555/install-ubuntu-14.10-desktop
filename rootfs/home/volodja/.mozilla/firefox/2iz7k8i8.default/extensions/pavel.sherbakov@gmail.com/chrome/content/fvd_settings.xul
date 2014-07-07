@@ -1,0 +1,1135 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://fvd.speeddial/skin/fvd.toolbar.settings.css" type="text/css"?>
+<?xml-stylesheet href="chrome://fvd.speeddial/content/include/html_components/colorpicker/includer_style.css" type="text/css"?>
+<?xml-stylesheet href="chrome://fvd.speeddial/skin/sd/skin/dials/icons.css" type="text/css"?>
+
+<?xml-stylesheet href="chrome://fvd.speeddial/skin/dialogs/fvd_sd_install_fvd_sync.css" type="text/css"?>
+<?xml-stylesheet href="chrome://fvd.speeddial/skin/sd/skin/google.css" type="text/css"?>
+
+
+<!DOCTYPE dialog 
+[
+  <!ENTITY % settingsDTD SYSTEM "chrome://fvd.speeddial/locale/fvd.toolbar.settings.dtd">
+  %settingsDTD;
+  <!ENTITY % installFvdSincDTD SYSTEM "chrome://fvd.speeddial/locale/dialogs/fvd_sd_install_fvd_sync.dtd">
+  %installFvdSincDTD;
+]
+>
+
+<prefwindow id="fvdsd_settings_dialog"
+	title="&txt.dialog.title;"
+	buttons="accept,extra1"
+	buttonlabelextra1="&txt.dialog.button_get_premium_for_free.title;"	
+	buttonlabelaccept="&txt.dialog.button_ok.title;"
+	buttonlabelcancel="&txt.dialog.button_cancel.title;"
+  ondialogextra1="fvds.showShareForPremium();"
+	ondialogaccept="return fvds.ok(event, true);"
+	ondialogcancel="return fvds.ok(event, false);"
+	xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+	xmlns:html="http://www.w3.org/1999/xhtml"
+	>
+
+	<script type="application/x-javascript" src="chrome://fvd.speeddial/content/fvd_settings.js" />
+	<script type="application/x-javascript" src="chrome://fvd.speeddial/content/include/html_components/colorpicker/include.js" />
+	<script type="application/x-javascript" src="chrome://fvd.speeddial/content/include/sd/background_adjuster.js"/>
+	<script type="application/x-javascript" src="chrome://fvd.speeddial/content/include/tools/misc.js"/>
+	<script type="application/x-javascript" src="chrome://fvd.speeddial/content/include/sd/background_adjuster.js"></script>
+	<script type="application/x-javascript" src="chrome://fvd.speeddial/content/include/tools/popup_image_helper.js"></script>
+	<script type="application/x-javascript" src="chrome://fvd.speeddial/content/include/sd/import_export.js"></script>
+	
+	<popupset>
+		<panel id="colorPicker"
+		hidden="false"
+		type="arrow"
+	    orient="vertical" 
+	    ignorekeys="true"	     
+		
+		>
+			<vbox>
+				<iframe id="colorPickerFrame" type="chrome" src=""></iframe>
+			</vbox>
+			
+		</panel>
+		
+		<panel id="__popupImageHelper"
+		hidden="false"
+		type="arrow"
+	    orient="vertical" 
+	    ignorekeys="true"	     
+		
+		>
+			<vbox>
+				<image class="inner"/>
+			</vbox>
+			
+		</panel>
+		
+		<panel id="donatePanel"
+		hidden="false"
+		type="arrow"
+	    orient="vertical" 
+	    ignorekeys="true"	     
+		
+		>
+			<vbox>
+				
+				<description>&donate_message;</description>					
+				
+				<hbox pack="center">
+					<image tooltiptext="&donate_button.text;" class="donateButton" onclick="fvds.donate()" />					
+				</hbox>
+					
+			</vbox>
+			
+		</panel>
+		
+		<menupopup id="suggestionsPopup">  
+			<menuitem label="&suggestions_popup.submit_suggestion;" oncommand="fvds.submitSuggestion()"/>  
+			<menuitem label="&suggestions_popup.report_bug;" oncommand="fvds.reportBug()"/>  
+		</menupopup>
+		
+	</popupset>
+	
+
+	
+	<prefpane id="paneSdGlobal" label="&fvd_sd.group.global_options.title;">
+	
+		<preferences>	
+			<preference id="fvdsd_general_hook_about_blank" name="extensions.fvd_speed_dial.toolbar.hook.about_blank" type="bool" instantApply="true" />
+		
+			<preference id="fvdsd_sd_display_type" name="extensions.fvd_speed_dial.sd.display_type" type="string" instantApply="true" />
+			<preference id="fvdsd_sd_max_recently_closed_records" name="extensions.fvd_speed_dial.sd.max_recently_closed_records" type="int" instantApply="true" />
+			<preference id="fvdsd_sd_max_most_visited_records" name="extensions.fvd_speed_dial.sd.max_most_visited_records" type="int" instantApply="true" />
+			
+			<preference id="fvd_sd_display_url_bar_button" name="extensions.fvd_speed_dial.display_url_bar_button" type="bool" instantApply="true"/>
+			
+			<preference id="fvdsd_sd_open_links_type" name="extensions.fvd_speed_dial.sd.open_links_type" type="string" instantApply="true" />
+			
+			<preference id="fvdsd_sd_enable_top_sites" name="extensions.fvd_speed_dial.sd.enable_top_sites" type="bool" instantApply="true" />
+			<preference id="fvdsd_sd_enable_most_visited" name="extensions.fvd_speed_dial.sd.enable_most_visited" type="bool" instantApply="true" />
+			<preference id="fvdsd_sd_enable_recently_closed" name="extensions.fvd_speed_dial.sd.enable_recently_closed" type="bool" instantApply="true" />
+					
+			<preference id="fvd_sd_most_visited_interval" name="extensions.fvd_speed_dial.sd.most_visited_interval" type="string" instantApply="true" />		
+			<preference id="fvd_sd_most_visited_group_by" name="extensions.fvd_speed_dial.sd.most_visited_group_by" type="string" instantApply="true" />				
+			
+			<preference id="fvd_sd_display_plus_cells" name="extensions.fvd_speed_dial.sd.display_plus_cells" type="bool" instantApply="true"/>
+			
+			<preference id="fvd_sd_default_group" name="extensions.fvd_speed_dial.sd.default_group" type="string" instantApply="true" />		
+			<preference id="fvd_sd_all_groups_limit_dials" name="extensions.fvd_speed_dial.sd.all_groups_limit_dials" type="int" instantApply="true" />	
+			
+			<preference id="fvd_sd_show_url_in_dial" name="extensions.fvd_speed_dial.sd.show_url_in_dial" type="bool" instantApply="true" />				
+			<preference id="fvd_sd_thumbs_icons_and_titles" name="extensions.fvd_speed_dial.sd.thumbs_icons_and_titles" type="bool" />				
+			
+			<preference id="fvd_sd_disable_plugins" name="extensions.fvd_speed_dial.sd.disable_plugins" type="bool"  instantApply="true" />
+			
+			<preference id="fvd_sd_bg_color" name="extensions.fvd_speed_dial.sd.bg.color" type="string" instantApply="true" />
+			<preference id="fvd_sd_bg_file_path" name="extensions.fvd_speed_dial.sd.bg.file_path" type="string" onchange="fvds.needGrabBg = true" instantApply="true" />
+			<preference id="fvd_sd_bg_url" name="extensions.fvd_speed_dial.sd.bg.url" type="string" onchange="fvds.needGrabBg = true" instantApply="true" />
+			<preference id="fvd_sd_bg_type" name="extensions.fvd_speed_dial.sd.bg.type" type="string" instantApply="true" />
+			
+			<preference id="fvd_sd_image_type" name="extensions.fvd_speed_dial.sd.image_type" type="string" onchange="fvds.needGrabBg = true" instantApply="true" />
+			<preference id="fvd_sd_bg_enable_color" name="extensions.fvd_speed_dial.sd.bg.enable_color" type="bool" instantApply="true" />
+			
+			
+			<preference id="fvd_sd_text_cell_title_color" name="extensions.fvd_speed_dial.sd.text.cell_title.color" type="string" instantApply="true"/>
+			<preference id="fvd_sd_text_cell_title_bolder" name="extensions.fvd_speed_dial.sd.text.cell_title.bolder" type="bool" instantApply="true"/>
+			<preference id="fvd_sd_text_cell_title_size" name="extensions.fvd_speed_dial.sd.text.cell_title.size" type="string" instantApply="true"/>
+			
+			<preference id="fvd_sd_text_cell_url_color" name="extensions.fvd_speed_dial.sd.text.cell_url.color" type="string" instantApply="true"/>
+			<preference id="fvd_sd_text_cell_url_bolder" name="extensions.fvd_speed_dial.sd.text.cell_url.bolder" type="bool" instantApply="true"/>
+			<preference id="fvd_sd_text_cell_url_size" name="extensions.fvd_speed_dial.sd.text.cell_url.size" type="string" instantApply="true"/>
+			
+			<preference id="fvd_sd_text_list_elem_color" name="extensions.fvd_speed_dial.sd.text.list_elem.color" type="string" instantApply="true"/>
+			<preference id="fvd_sd_text_list_elem_bolder" name="extensions.fvd_speed_dial.sd.text.list_elem.bolder" type="bool" instantApply="true"/>
+			<preference id="fvd_sd_text_list_elem_size" name="extensions.fvd_speed_dial.sd.text.list_elem.size" type="string" instantApply="true"/>
+			
+			<preference id="fvd_sd_text_list_show_url_title_color" name="extensions.fvd_speed_dial.sd.text.list_show_url_title.color" type="string" instantApply="true"/>
+			<preference id="fvd_sd_text_list_show_url_title_bolder" name="extensions.fvd_speed_dial.sd.text.list_show_url_title.bolder" type="bool" instantApply="true"/>
+			<preference id="fvd_sd_text_list_show_url_title_size" name="extensions.fvd_speed_dial.sd.text.list_show_url_title.size" type="string" instantApply="true"/>
+			
+			<preference id="fvd_sd_text_list_link_color" name="extensions.fvd_speed_dial.sd.text.list_link.color" type="string" instantApply="true"/>
+			<preference id="fvd_sd_text_list_link_bolder" name="extensions.fvd_speed_dial.sd.text.list_link.bolder" type="bool" instantApply="true"/>
+			<preference id="fvd_sd_text_list_link_size" name="extensions.fvd_speed_dial.sd.text.list_link.size" type="string" instantApply="true"/>
+			
+			<preference id="fvd_sd_text_other_color" name="extensions.fvd_speed_dial.sd.text.other.color" type="string" instantApply="true"/>
+			<preference id="fvd_sd_text_other_bolder" name="extensions.fvd_speed_dial.sd.text.other.bolder" type="bool" instantApply="true"/>
+			<preference id="fvd_sd_text_other_size" name="extensions.fvd_speed_dial.sd.text.other.size" type="string" instantApply="true"/>
+			
+			<preference id="fvd_sd_display_restore_previous_session" name="extensions.fvd_speed_dial.sd.display_restore_previous_session" type="bool" instantApply="true"/>
+			
+			<preference id="fvd_sd_dials_opacity" name="extensions.fvd_speed_dial.sd.dials_opacity" type="int" instantApply="true"/>
+			
+			<preference id="fvd_sd_disable_custom_search" name="extensions.fvd_speed_dial.sd.disable_custom_search" type="bool" instantApply="true"/>
+			
+			<preference id="fvd_sd_hide_background" name="extensions.fvd_speed_dial.sd.hide_background" type="bool" instantApply="true"/>
+			
+			<preference id="fvd_sd_enable_popular_group" name="extensions.fvd_speed_dial.sd.enable_popular_group" type="bool" instantApply="true"/>
+			
+			<preference id="fvd_sd_most_visited_order" name="extensions.fvd_speed_dial.sd.most_visited_order" type="string" instantApply="true"/>
+				
+			<preference id="fvd_sd_show_in_last_tab" name="extensions.fvd_speed_dial.sd.show_in_last_tab" type="bool" instantApply="true"/>
+			
+			<preference id="fvd_sd_show_clicks_and_quick_menu" name="extensions.fvd_speed_dial.sd.fvd_sd_show_clicks_and_quick_menu" type="bool" instantApply="true"/>
+			
+			<preference id="fvd_custom_dial_width" name="extensions.fvd_speed_dial.sd.custom_dial_width" instantApply="true" type="int" />
+			<preference id="fvd_custom_dial_width_most_visited" name="extensions.fvd_speed_dial.sd.custom_dial_width_mostvisited" instantApply="true" type="int"/>
+			
+			<preference id="fvd_sd_display_button_in_google_results" name="extensions.fvd_speed_dial.display_button_in_google_results" type="bool" instantApply="true"/>
+			
+			<preference id="fvd_sd_active_theme" name="extensions.fvd_speed_dial.sd.active_theme" type="string" instantApply="true"/>
+			
+			<preference id="fvd_sd_sync_login" name="extensions.fvd_speed_dial.sd.sync.login" type="string" instantApply="true"/>
+			<preference id="fvd_sd_sync_password" name="extensions.fvd_speed_dial.sd.sync.password" type="string" instantApply="true"/>
+			<preference id="fvd_sd_sync_enabled" name="extensions.fvd_speed_dial.sd.sync.enabled" type="bool" instantApply="true"/>
+			<preference id="fvd_sd_sync_auto_sync_enabled" name="extensions.fvd_speed_dial.sd.sync.auto_sync_enabled" type="bool" instantApply="true"/>
+			
+			<preference id="fvd_sd_show_in_context_menu" name="extensions.fvd_speed_dial.sd.show_in_context_menu" type="bool" instantApply="true"/>
+			
+			<preference id="fvd_sd_use_hot_key" name="extensions.fvd_speed_dial.sd.use_hot_key" type="bool" instantApply="true"/>
+			<preference id="fvd_sd_hot_key" name="extensions.fvd_speed_dial.sd.hot_key" type="string" instantApply="true"/>
+			
+			<preference id="fvd_sd_disable_like_button" name="extensions.fvd_speed_dial.sd.disable_like_button" type="bool" instantApply="true"/>
+			
+			<preference id="fvd_sd_sync_close_after_sync_progress" name="extensions.fvd_speed_dial.sd.sync.close_after_sync_progress" type="bool" instantApply="true"/>
+			
+			<preference id="fvd_sd_display_search_preview" name="extensions.fvd_speed_dial.sd.display_search_preview" type="bool" instantApply="true"/>
+			
+			<preference id="fvd_sd_scrolling" name="extensions.fvd_speed_dial.scrolling" type="string" instantApply="true"/>
+				
+		</preferences>
+	
+	
+		<tabbox>
+			<tabs id="globalTabs">
+				<tab label="&txt.global.tabs.general;" id="globalTabs_general" />
+				<tab label="&txt.global.tabs.appearance;" id="globalTabs_appearance" />
+			</tabs>
+			<tabpanels>
+				<tabpanel id="globalTabs_general">
+				
+					<vbox flex="2">
+				
+						<grid>
+							<columns>
+								<column flex="1"/>
+								<column flex="2"/>
+							</columns>
+							<rows>
+								
+								<row>									
+									<hbox flex="2"><checkbox label="&txt.group.sd.make_home_page;" id="sd_make_home_page" /><spacer flex="1" /></hbox>
+									<hbox flex="2"><checkbox label="&txt.group.toolbar_elements.disable_plugins.title;" preference="fvd_sd_disable_plugins" /><spacer flex="1" /></hbox>
+								</row>	
+								<row>							
+									
+									<hbox flex="2"><checkbox label="&txt.group.sd.show_in_last_tab;" preference="fvd_sd_show_in_last_tab" /><spacer flex="1" /></hbox>							
+								</row>
+								
+							</rows>
+						</grid>
+						
+										
+						<hbox flex="2">
+							<groupbox flex="2">
+								<caption label="&fvd_sd.group.default.title;" />
+								<vbox>	
+								
+								<radiogroup id="sd_default_mode" preference="fvdsd_sd_display_type">
+								  <radio id="sd_default_top_sites" value="top_sites" label="&fvd_sd.group.default.top_sites;"/>
+								  <radio id="sd_default_most_visited" value="most_visited" label="&fvd_sd.group.default.most_visited;"/>
+								  <radio id="sd_default_recently_closed" value="recently_closed" label="&fvd_sd.group.default.recently_closed;"/>
+								  <radio value="last_selected" label="&fvd_sd.group.default.last_selected;"/>
+								</radiogroup>
+								
+								</vbox>
+							</groupbox>	
+							
+							<groupbox flex="2">
+								<caption label="&fvd_sd.group.enable.title;" />
+								<vbox>	
+										
+								  <checkbox id="enable_top_sites" oncommand="sdEnableClick()" label="&fvd_sd.group.default.top_sites;" preference="fvdsd_sd_enable_top_sites"/>
+								  <checkbox id="enable_most_visited" oncommand="sdEnableClick()" label="&fvd_sd.group.default.most_visited;" preference="fvdsd_sd_enable_most_visited"/>
+								  <checkbox id="enable_recently_closed" oncommand="sdEnableClick()" label="&fvd_sd.group.default.recently_closed;" preference="fvdsd_sd_enable_recently_closed"/>
+								  <checkbox label="&fvd_sd.group.display_restore_previous_session;" preference="fvd_sd_display_restore_previous_session" />
+								
+								</vbox>
+							</groupbox>	
+							
+						</hbox>
+						
+						<hbox flex="2">
+						
+							<groupbox flex="2">
+								<caption label="&fvd_sd.group.blocked_domains.title;" />
+								<hbox pack="center" align="center" flex="2">	
+									<button oncommand="fvds.manageBlockedDomains()" label="&fvd_sd.group.blocked_domains.manage;"/>			
+								</hbox>
+							</groupbox>	
+							
+							<groupbox flex="2">
+								<caption label="&fvd_sd.group.dials_opening.title;" />
+								
+								<radiogroup preference="fvdsd_sd_open_links_type">
+								  <radio value="current_tab" label="&txt.group.dials_opening.current_tab.title;"/>
+								  <radio value="new_tab" label="&txt.group.dials_opening.new_tab.title;"/>
+								  <radio value="new_tab_passive" label="&txt.group.dials_opening.new_tab_passive.title;"/>
+								</radiogroup>
+								
+							</groupbox>	
+						
+						</hbox>	
+
+						<hbox flex="2">
+						
+							<groupbox flex="2" hidden="true">
+								<caption><checkbox label="&fvd_sd.group.hot_key.use_hot_key;" id="useHotKey" preference="fvd_sd_use_hot_key" oncommand="fvds.refreshHotKeyActivity()" /></caption>
+								<hbox pack="center" align="center" flex="2">	
+									<vbox flex="2">
+										<textbox emptyText="Click here, than press your Hotkey" id="hotkeyCode" onkeydown="fvds.hotKeyScan(event)" flex="2" preference="fvd_sd_hot_key" />
+										<hbox>
+											<label value="&fvd_sd.group.hot_key.apply_changes;"/>
+											<label  value="&fvd_sd.group.hot_key.already_used;" id="hotKeyAlreadyUsed" hidden="true"/>
+										</hbox>
+									</vbox>
+								</hbox>
+							</groupbox>	
+						
+						</hbox>	
+					
+					</vbox>
+				
+				</tabpanel>
+				
+				<tabpanel id="globalTabs_appearance">
+					
+					<vbox flex="2">
+
+						<grid>
+							<columns>
+								<column flex="1"/>
+								<column flex="2"/>
+							</columns>
+							<rows>
+								<row>
+									<hbox flex="2"><checkbox label="&txt.group.hooks.about_blank.title;" preference="fvdsd_general_hook_about_blank" /><spacer flex="1" /></hbox>
+									<hbox flex="2"><checkbox label="&txt.group.global_options.display_main_button;" id="fvdsd_display_main_button" /><spacer flex="1" /></hbox>									
+								</row>	
+								<row>
+									<hbox flex="2"><checkbox label="&txt.group.sd.show_url_in_dial;" preference="fvd_sd_show_url_in_dial" /><spacer flex="1" /></hbox>
+								  <hbox flex="2"><checkbox label="&txt.group.global_options.display_urlbar_button;" preference="fvd_sd_display_url_bar_button" /><spacer flex="1" /></hbox>										
+								</row>	
+								<row>		
+									<hbox flex="2"><checkbox label="&txt.group.hooks.thumbs_icons_and_titles.title;" preference="fvd_sd_thumbs_icons_and_titles" /><spacer flex="1" /></hbox>
+                  <hbox flex="2">
+                    <checkbox label="&txt.group.global_options.show_clicks_and_quick_menu;" preference="fvd_sd_show_clicks_and_quick_menu" />
+                    <vbox pack="center">
+                      <hbox class="sdIcon question clickable imageHelper" helperImage="show_clicks_and_quick_menu" />
+                    </vbox>   
+                  </hbox> 									
+								</row>		
+
+								<row>
+									<hbox flex="2"><checkbox label="&txt.group.sd.disable_custom_search;" preference="fvd_sd_disable_custom_search" /><spacer flex="1" /></hbox>
+									
+                  <hbox flex="2">
+                    <checkbox label="&txt.group.top_sites.display_plus_cells.title;" preference="fvd_sd_display_plus_cells" />
+                    <vbox pack="center">
+                      <hbox class="sdIcon question clickable imageHelper" helperImage="display_plus_cells" />                   
+                    </vbox>                   
+                  </hbox>
+  							</row>
+								<row>
+									<hbox flex="2">
+										<checkbox label="&txt.group.top_sites.hide_cell_background.title;" preference="fvd_sd_hide_background" />
+										<vbox pack="center">
+											<hbox class="sdIcon question clickable imageHelper" helperImage="hide_background" />
+										</vbox>		
+									</hbox>	
+									
+									<checkbox label="&txt.group.top_sites.display_button_in_google_results.title;" preference="fvd_sd_display_button_in_google_results" />                  									
+								</row>
+								<row>
+									<hbox flex="2">
+										<checkbox label="&txt.group.global_options.show_in_context_menu;" preference="fvd_sd_show_in_context_menu" />
+										<vbox pack="center">
+											<hbox class="sdIcon question clickable imageHelper" helperImage="display_in_context_menu" />
+										</vbox>	
+									</hbox>
+																		
+									<checkbox hidden="true" label="&txt.group.top_sites.disable_like_button.title;" preference="fvd_sd_disable_like_button" />							
+								</row>
+								
+								<!--
+								<row>
+									<checkbox label="&txt.group.global_options.display_search_preview;" preference="fvd_sd_display_search_preview" />
+															
+								</row>
+								-->
+								
+								
+							</rows>
+						</grid>
+					
+						<hbox>
+						
+							<groupbox flex="2">
+								<caption label="&fvd_sd.dials_opacity.title;" />
+								<hbox flex="2">	
+									<scale min="0" max="100" preference="fvd_sd_dials_opacity" flex="2" id="scale_fvd_sd_dials_opacity" />									
+								</hbox>
+								<hbox flex="2">
+									<hbox flex="2">0%</hbox><hbox flex="2" style="text-align:center">50%</hbox><hbox flex="2" style="text-align: right">100%</hbox>
+								</hbox>
+							</groupbox>	
+						
+						</hbox>
+						
+						<hbox>
+						
+							<groupbox flex="2" id="groupBoxSetupCustomSize">
+								<caption label="&fvd_sd.custom_dial_size.title;" />
+								<hbox>									
+									<scale min="150" id="customDialSizeScale" max="260" flex="2" />
+																		
+									<hbox align="center">
+										<label id="customDialSize"/><hbox class="countMax">&fvd_sd.custom_dial_size.max_min_width;</hbox>	
+									</hbox>									
+								</hbox>
+							</groupbox>	
+						
+							<groupbox flex="2" id="groupBoxSetupCustomSizeMostVisited">
+								<caption label="&fvd_sd.custom_dial_size_mostvisited.title;" />
+								<hbox>									
+									<scale min="150" id="customDialSizeScaleMostVisited" max="260" flex="2" />
+																		
+									<hbox align="center">
+										<label id="customDialSizeMostVisited"/><hbox class="countMax">&fvd_sd.custom_dial_size.max_min_width;</hbox>	
+									</hbox>									
+								</hbox>
+							</groupbox>	
+						
+						
+						
+						</hbox>	
+						
+						<hbox>
+						
+							<groupbox flex="2">
+								<caption label="&fvd_sd.scrolling;" />
+								<hbox>
+								
+									<menulist  flex="2"  preference="fvd_sd_scrolling" crop="right">
+										<menupopup>
+											<menuitem label="&scrolling.vertical;" value="vertical"/>  
+											<menuitem label="&scrolling.horizontal;" value="horizontal"/>  
+										</menupopup>
+									</menulist>									
+															
+								</hbox>
+								<hbox id="themesHelpMessage">
+									<label value="&themes_help.dont_forget_to_change;"/>
+									<label value="&themes_help.font_colors;" onclick="goToTab( 'paneSdFontColors' )" class="linkedText"/>
+									<label value="&themes_help.and_set_nice;"/>
+									<label value="" id="themesHelpBackgrounName"/>
+									<label class="linkedText" onclick="goToTab( 'paneSdBackground' )" value="&themes_help.background;"/> 
+									<label value=":)"/>
+								</hbox>
+							</groupbox>	
+						
+						</hbox>
+						
+						<hbox>
+						
+							<groupbox flex="2">
+								<caption label="&fvd_sd.theme.title;" />
+								<hbox>
+								
+									<menulist oncommand="changeTheme()" flex="2" id="activeTheme" preference="fvd_sd_active_theme" crop="right">
+										<menupopup>
+											<menuitem label="&themes.white.label;" value="white"/>  
+											<menuitem label="&themes.dark.label;" value="dark"/>  
+										</menupopup>
+									</menulist>									
+															
+								</hbox>
+								<hbox id="themesHelpMessage">
+									<label value="&themes_help.dont_forget_to_change;"/>
+									<label value="&themes_help.font_colors;" onclick="goToTab( 'paneSdFontColors' )" class="linkedText"/>
+									<label value="&themes_help.and_set_nice;"/>
+									<label value="" id="themesHelpBackgrounName"/>
+									<label class="linkedText" onclick="goToTab( 'paneSdBackground' )" value="&themes_help.background;"/> 
+									<label value=":)"/>
+								</hbox>
+							</groupbox>	
+						
+						</hbox>
+						
+						
+					
+					</vbox>
+				
+				
+				</tabpanel>
+				
+
+			</tabpanels>
+		</tabbox>				
+	
+	</prefpane>
+	
+	<prefpane id="paneSdTopSites" label="&fvd_sd.group.top_sites.title;">
+		
+		<groupbox>
+			<caption label="&fvd_sd.group.top_sites.title;"></caption>				
+			
+			<hbox flex="2">
+				<checkbox label="&txt.group.top_sites.enable_popular_group.title;" id="cb_fvd_sd_enable_popular_group" onclick="setTimeout(function(){fvds.rebuildGroupsList()}, 0)" preference="fvd_sd_enable_popular_group" />					
+			</hbox>
+			
+			<groupbox flex="2" >
+				<caption label="&fvd_sd.group.groups.title;" />
+				<hbox pack="center" align="center">			
+					<label value="&fvd_sd.group.groups.default.title;"/>	
+					<menulist flex="2" preference="fvd_sd_default_group" id="group" crop="right">
+						<menupopup>
+						</menupopup>
+					</menulist>		
+					
+					<button label="&fvd_sd.group.groups.manage.title;" onclick="fvds.manageGroups()"/>							
+				</hbox>
+			</groupbox>	
+			
+			<groupbox flex="2" >
+				<caption label="&fvd_sd.group.all_groups_max_dials.title;" />
+				<hbox pack="center" align="center">							
+					<textbox id="fvd_sd_all_groups_limit_dials_tb"  type="number" min="1" max="50" preference="fvd_sd_all_groups_limit_dials"/>
+					<hbox class="countMax">&txt.group.popular.max_items;</hbox>	
+				</hbox>
+			</groupbox>	
+			
+			<groupbox id="migrateGroup" flex="2" hidden="true">
+				<caption label="&fvd_sd.group.import_data;" />
+				<hbox pack="center" align="center">							
+					<button label="&fvd_sd.group.import_data.start;" oncommand="fvd_speed_dial_speedDialSSD.startMigrate()"/>	
+				</hbox>
+			</groupbox>	
+		</groupbox>
+		
+	</prefpane>
+	
+	<prefpane id="paneSdMostVisited" label="&fvd_sd.group.most_visited.title;">
+	
+		<groupbox>
+			<caption label="&fvd_sd.group.most_visited.title;" />
+			<hbox pack="center" align="center">							
+				<label value="&fvd_sd.group.most_visited.show_last;"/><textbox type="number" min="1" max="75" preference="fvdsd_sd_max_most_visited_records"/><hbox class="countMax">&txt.group.most_visited.max_items;</hbox>			
+			</hbox>
+			
+			<groupbox>
+				<caption label="&fvd_sd.group.most_visited.order_by;" />
+				<radiogroup preference="fvd_sd_most_visited_order">
+				  <radio value="visits" label="&txt.group.most_visited_order_by.visits;"/>
+				  <radio value="date" label="&txt.group.most_visited_order_by.date;"/>
+				</radiogroup>
+			</groupbox>	
+			
+			
+			
+			<groupbox>
+				<caption label="&fvd_sd.group.most_visited_interval.title;" />
+				<radiogroup preference="fvd_sd_most_visited_interval">
+				  <radio value="week" label="&txt.group.most_visited_interval.week.title;"/>
+				  <radio value="month" label="&txt.group.most_visited_interval.month.title;"/>
+				  <radio value="all_time" label="&txt.group.most_visited_interval.all_time.title;"/>
+				</radiogroup>
+			</groupbox>	
+		</groupbox>	
+	
+	</prefpane>
+	
+	<prefpane id="paneSdRecentlyClosed" label="&fvd_sd.group.recent.title;">
+	
+		<groupbox flex="2">
+			<caption label="&fvd_sd.group.recent.title;" />
+			<hbox pack="center" align="center">							
+			<label value="&fvd_sd.group.recent.show_last;" control="fvdsd_sd_max_recently_closed_records_tb" /><textbox size="8" id="fvdsd_sd_max_recently_closed_records_tb"  type="number" min="1" max="40" preference="fvdsd_sd_max_recently_closed_records"/>
+			<hbox class="countMax">&txt.group.recent.max_items;</hbox>		
+			</hbox>
+		</groupbox>	
+		
+	</prefpane>
+	
+	<prefpane id="paneSdBackground" label="&fvd_sd.group.background.title;">
+		<groupbox>
+			<caption label="&fvd_sd.group.background.title;"/>
+			
+			<vbox >
+				<stack class="bgPreview">
+					<vbox flex="2">
+					</vbox>
+					<label value="&fvd_sd.group.background.refresh_preview;" right="3" bottom="-19" onclick="fvds.refreshPreview()" />
+				</stack>
+				<hbox pack="center"><label id="currentBgDimension"/></hbox>
+				<groupbox flex="2">
+					<caption label="&fvd_sd.group.background.caption.color;"/>	
+					<hbox flex="2">
+						<textbox id="bgColor" preference="fvd_sd_bg_color" readonly="true"/><checkbox onclick="setTimeout(function(){fvds.refreshPreview()}, 0)" id="enableBgColor" preference="fvd_sd_bg_enable_color" label="&fvd_sd.group.background.color.enabled;"/>
+					</hbox>
+				</groupbox>
+				<groupbox flex="2">
+					<caption label="&fvd_sd.group.background.caption.image;"/>	
+					<label value="&fvd_sd.group.background.image.type;"/>
+					
+					<menulist preference="fvd_sd_bg_type" oncommand="fvds.backgroundTypeChange();setTimeout(function(){fvds.refreshPreview()}, 0)" id="bgType">
+					  <menupopup>
+						<menuitem label="&fvd_sd.group.background.image.type.no_image;" value="no_image"/>
+						<menuitem label="&fvd_sd.group.background.image.type.fill;" value="fill"/>		
+						<menuitem label="&fvd_sd.group.background.image.type.fit;" value="fit"/>		
+						<menuitem label="&fvd_sd.group.background.image.type.stretch;" value="stretch"/>	
+						<menuitem label="&fvd_sd.group.background.image.type.tile;" value="tile"/>		
+						<menuitem label="&fvd_sd.group.background.image.type.center;" value="center"/>		
+					  </menupopup>
+					</menulist>
+					
+			
+					
+					<radiogroup id="backgroundImageType" preference="fvd_sd_image_type">
+						<radio id="backgroundImageTypeLocalFile" label="&fvd_sd.group.background.image.local_file;" value="local_file" onclick="fvds.changeBGImageType('local_file')"/>
+						<hbox hidden="true" id="bgLocalFileBox">
+							<textbox  flex="2" id="localFilePath" preference="fvd_sd_bg_file_path" /><button id="btnLocalFilePath" onclick="fvds.pickScreenLocalFile()" label="&fvd_sd.group.background.image.local_file.browse;"/>
+						</hbox>
+						<radio id="backgroundImageTypeUrl" label="&fvd_sd.group.background.image.url;" value="url" onclick="fvds.changeBGImageType('url')"/>
+						<hbox hidden="true" id="bgUrlBox">
+							<textbox preference="fvd_sd_bg_url" flex="2" id="bgImage" value=""/>
+						</hbox>
+					</radiogroup>
+				</groupbox>
+			</vbox>
+			
+		</groupbox>
+	</prefpane>
+	
+	
+	<prefpane id="paneSdFontColors" label="&fvd_sd.group.font_colors.title;">
+		
+		<groupbox flex="2">
+			<caption label="&fvd_sd.group.font_colors.title;"/>
+			
+			<hbox>
+			
+				<groupbox flex="2">
+					<caption label="&fvd_sd.group.font_colors.title_for_dials;"/>
+					
+					<vbox>
+						<hbox align="center">
+							<label for="sdTextColorCellTitle" value="&fvd_sd.group.font_colors.color;"/>		
+							<textbox class="tbTextColor" id="sdTextColorCellTitle" readonly="true" preference="fvd_sd_text_cell_title_color" />
+						</hbox>			
+						<checkbox label="&fvd_sd.group.font_colors.bolder;" preference="fvd_sd_text_cell_title_bolder"/>
+						<hbox align="center">
+							<label for="sdTextSizeCellTitle" value="&fvd_sd.group.font_colors.size;"/>
+							<menulist id="sdTextSizeCellTitle" preference="fvd_sd_text_cell_title_size">
+							  <menupopup>
+								<menuitem label="8px" value="8px"/>
+								<menuitem label="9px" value="9px"/>
+								<menuitem label="10px" value="10px"/>
+								<menuitem label="11px" value="11px"/>
+								<menuitem label="12px" value="12px"/>
+								<menuitem label="13px" value="13px"/>
+								<menuitem label="14px" value="14px"/>
+							  </menupopup>
+							</menulist>
+						</hbox>
+					</vbox>
+	
+				</groupbox>
+				
+				
+				<groupbox flex="2">
+					<caption label="&fvd_sd.group.font_colors.url_for_dials;"/>
+					
+					<vbox>
+						<hbox align="center">
+							<label for="sdTextColorCellUrl" value="&fvd_sd.group.font_colors.color;"/>				
+							<textbox class="tbTextColor" id="sdTextColorCellUrl" readonly="true" preference="fvd_sd_text_cell_url_color"/>
+						</hbox>					
+						<checkbox label="&fvd_sd.group.font_colors.bolder;" preference="fvd_sd_text_cell_url_bolder"/>
+						<hbox align="center">
+							<label for="sdTextSizeCellUrl" value="&fvd_sd.group.font_colors.size;"/>
+							<menulist id="sdTextSizeCellUrl" preference="fvd_sd_text_cell_url_size">
+							  <menupopup>
+								<menuitem label="8px" value="8px"/>
+								<menuitem label="9px" value="9px"/>
+								<menuitem label="10px" value="10px"/>
+								<menuitem label="11px" value="11px"/>
+								<menuitem label="12px" value="12px"/>
+								<menuitem label="13px" value="13px"/>
+								<menuitem label="14px" value="14px"/>
+							  </menupopup>
+							</menulist>
+						</hbox>
+					</vbox>
+						
+				</groupbox>
+			
+			</hbox>
+			
+			<hbox>
+			
+				<groupbox flex="2">
+					<caption label="&fvd_sd.group.font_colors.text_in_list_mode;"/>
+					
+					<vbox>
+						<hbox flex="2">	
+							<hbox align="center">
+								<label for="sdTextColorListElem" value="&fvd_sd.group.font_colors.color;"/>				
+								<textbox class="tbTextColor" id="sdTextColorListElem" readonly="true" preference="fvd_sd_text_list_elem_color"/>
+							</hbox>
+							<vbox pack="center">
+								<hbox class="sdIcon question clickable imageHelper" helperImage="text_list_elem_color" />
+							</vbox>
+						</hbox>						
+						<checkbox label="&fvd_sd.group.font_colors.bolder;" preference="fvd_sd_text_list_elem_bolder"/>
+						<hbox align="center">
+							<label for="sdTextSizeListElem" value="&fvd_sd.group.font_colors.size;"/>
+							<menulist id="sdTextSizeListElem" preference="fvd_sd_text_list_elem_size">
+							  <menupopup>
+								<menuitem label="8px" value="8px"/>
+								<menuitem label="9px" value="9px"/>
+								<menuitem label="10px" value="10px"/>
+								<menuitem label="11px" value="11px"/>
+								<menuitem label="12px" value="12px"/>
+								<menuitem label="13px" value="13px"/>
+								<menuitem label="14px" value="14px"/>
+							  </menupopup>
+							</menulist>
+						</hbox>
+					</vbox>
+				
+				</groupbox>
+				
+				<groupbox flex="2">
+					<caption label="&fvd_sd.group.font_colors.show_title_url;"/>		
+						
+					<vbox>
+						<hbox flex="2">	
+							<hbox align="center">
+								<label for="sdTextColorListShowUrlTitle" value="&fvd_sd.group.font_colors.color;"/>				
+								<textbox class="tbTextColor" id="sdTextColorListShowUrlTitle" readonly="true" preference="fvd_sd_text_list_show_url_title_color"/>
+							</hbox>
+							<vbox pack="center">
+								<hbox class="sdIcon question clickable imageHelper" helperImage="text_list_show_url_title_color" />
+							</vbox>
+						</hbox>						
+						<checkbox label="&fvd_sd.group.font_colors.bolder;" preference="fvd_sd_text_list_show_url_title_bolder"/>
+						<hbox align="center">
+							<label for="sdTextSizeListShowUrlTitle" value="&fvd_sd.group.font_colors.size;"/>
+							<menulist id="sdTextSizeListShowUrlTitle" preference="fvd_sd_text_list_show_url_title_size">
+							  <menupopup>
+								<menuitem label="8px" value="8px"/>
+								<menuitem label="9px" value="9px"/>
+								<menuitem label="10px" value="10px"/>
+								<menuitem label="11px" value="11px"/>
+								<menuitem label="12px" value="12px"/>
+								<menuitem label="13px" value="13px"/>
+								<menuitem label="14px" value="14px"/>
+							  </menupopup>
+							</menulist>
+						</hbox>
+					</vbox>
+					
+				</groupbox>
+			
+			</hbox>
+			
+			<hbox>
+			
+				<groupbox flex="2">
+					<caption label="&fvd_sd.group.font_colors.list_links;"/>							
+					<vbox>
+						<hbox flex="2">	
+							<hbox align="center">
+								<label for="sdTextColorListLinks" value="&fvd_sd.group.font_colors.color;"/>				
+								<textbox class="tbTextColor" id="sdTextColorListLinks" readonly="true" preference="fvd_sd_text_list_link_color"/>
+							</hbox>
+							<vbox pack="center">
+								<hbox class="sdIcon question clickable imageHelper" helperImage="text_list_link_color" />
+							</vbox>
+						</hbox>						
+						<checkbox label="&fvd_sd.group.font_colors.bolder;" preference="fvd_sd_text_list_link_bolder"/>
+						<hbox align="center">
+							<label for="sdTextSizeListLinks" value="&fvd_sd.group.font_colors.size;"/>
+							<menulist id="sdTextSizeListLinks" preference="fvd_sd_text_list_link_size">
+							  <menupopup>
+								<menuitem label="8px" value="8px"/>
+								<menuitem label="9px" value="9px"/>
+								<menuitem label="10px" value="10px"/>
+								<menuitem label="11px" value="11px"/>
+								<menuitem label="12px" value="12px"/>
+								<menuitem label="13px" value="13px"/>
+								<menuitem label="14px" value="14px"/>
+							  </menupopup>
+							</menulist>
+						</hbox>
+					</vbox>		
+				</groupbox>
+				
+				<groupbox flex="2">
+					<caption label="&fvd_sd.group.font_colors.other_texts;"/>
+					
+					<vbox>
+						<hbox flex="2">	
+							<hbox align="center">
+								<label for="sdTextColorOther" value="&fvd_sd.group.font_colors.color;"/>				
+								<textbox class="tbTextColor" id="sdTextColorOther" readonly="true" preference="fvd_sd_text_other_color"/>
+							</hbox>
+							<vbox pack="center">
+								<hbox class="sdIcon question clickable imageHelper" helperImage="text_other_color" />
+							</vbox>
+						</hbox>						
+						<checkbox label="&fvd_sd.group.font_colors.bolder;" preference="fvd_sd_text_other_bolder"/>
+						<hbox align="center">
+							<label for="sdTextSizeOther" value="&fvd_sd.group.font_colors.size;"/>
+							<menulist id="sdTextSizeOther" preference="fvd_sd_text_other_size">
+							  <menupopup>
+								<menuitem label="8px" value="8px"/>
+								<menuitem label="9px" value="9px"/>
+								<menuitem label="10px" value="10px"/>
+								<menuitem label="11px" value="11px"/>
+								<menuitem label="12px" value="12px"/>
+								<menuitem label="13px" value="13px"/>
+								<menuitem label="14px" value="14px"/>
+							  </menupopup>
+							</menulist>
+						</hbox>
+					</vbox>	
+					
+				</groupbox>
+			
+			</hbox>
+			
+			<spacer style="height: 10px"/>
+			
+			<hbox>
+				<button onclick="fvds.fontColorsRestoreDefault()" label="&fvd_sd.group.font_colors.restore_default;"/>
+			</hbox>
+			
+			
+		</groupbox>
+		
+	</prefpane>
+	
+	<prefpane id="paneSdSync" label="&fvd_sd.group.sync.title;">
+
+		<tabbox>
+			<tabs id="syncTabs">
+				<tab label="&fvd_sd.sync.tab.sync;" id="syncTabs_sync"/>
+				
+				<tab label="&txt.global.tabs.import_export;" id="syncTabs_import_export" />
+			</tabs>
+			<tabpanels>
+			
+				<tabpanel id="syncTabs_sync">
+					
+					<vbox flex="2">
+					
+						<deck id="syncDeck">
+							
+							<vbox pack="center">
+								<hbox pack="center" align="center">
+									<button id="startSync" label="&sync.button.start_sync;"/>									
+								</hbox>								
+							</vbox>
+							
+							<iframe flex="2" id="installSyncFrame" src="chrome://fvd.speeddial/content/dialogs/fvd_sd_install_fvd_sync.xul"></iframe>
+							
+							<!--
+							<vbox class="installSyncMessage">
+								
+								<label id="header" value="&head_message;"/>
+								
+								<groupbox>
+							
+									<caption label="&fvd_speed_dial;"/>
+								
+									<vbox flex="2">
+										
+										<hbox>
+											<label value="&sd_1;"/>
+										</hbox>
+										
+										<hbox>
+											<label value="&sd_2;"/>
+										</hbox>
+										
+										<hbox>
+											<label value="&sd_3;"/>
+										</hbox>
+										
+									</vbox>	
+								
+								</groupbox>
+							
+								<groupbox>
+							
+									<caption label="&fvd_sync;"/>
+								
+									<vbox flex="2">
+										
+										<hbox>
+											<label value="&s_1;"/>
+										</hbox>
+										
+										<hbox>
+											<label value="&s_2;"/>
+										</hbox>
+										
+									</vbox>	
+								
+								</groupbox>
+								
+								<groupbox>
+							
+									<caption label="&ever_helper;"/>
+								
+									<vbox flex="2">
+										
+										<hbox>
+											<label value="&eh_1;"/>
+										</hbox>
+										
+										<hbox>
+											<label value="&eh_2;"/>
+										</hbox>
+										
+										<hbox>
+											<label value="&eh_3;"/>
+										</hbox>
+										
+									</vbox>	
+								
+								</groupbox>
+								
+								<hbox pack="center">
+									
+									<html:button  onclick="goToMozilla()" class="fvdButton main" >&download;</html:button>
+							
+								</hbox>
+																
+							</vbox>
+							-->
+							
+						</deck>
+					
+					</vbox>
+					
+				</tabpanel>	
+				
+				<tabpanel id="syncTabs_import_export" class="">
+					
+					<deck flex="2">
+						
+						<vbox flex="2" class="importExportData">
+						
+							<hbox>
+							
+								<groupbox flex="2">
+									<caption label="&fvd_sd.import_export.title;" />
+									<hbox pack="center" align="center" flex="2">	
+										<button oncommand="FVDSDSingleImportExport.exportData()" label="&fvd_sd.import_export.export;"/>			
+										<button oncommand="FVDSDSingleImportExport.importData()" label="&fvd_sd.import_export.import;"/>		
+										
+										<label value="&fvd_sd.sync.import_export_to_from;"/>
+									</hbox>
+								</groupbox>	
+							
+							</hbox>					
+
+						</vbox>
+
+						<vbox flex="2" top="0" class="importExportProgress" align="center">
+							<label value="&importing.please_wait;"/>
+						</vbox>
+							
+					</deck>
+					
+				</tabpanel>
+				
+			</tabpanels>
+		</tabbox>
+		
+	</prefpane>
+	
+	<prefpane id="panePoweroff">
+		
+		<vbox flex="2">			
+			
+			<vbox class="poweroffHead">
+				
+				<label value="&group.poweroff.top_text_1;"/>
+				<label value="&group.poweroff.top_text_2;"/>
+				<label class="small" value="&group.poweroff.top_text_3;"/>
+				
+			</vbox>
+		
+			<tabbox>
+				<tabs id="poweroffTabs">
+					<tab label="&group.poweroff.tabs.main.title;" id="poweroffTabs_main" />
+					<tab label="&group.poweroff.tabs.change_pass.title;" id="poweroffTabs_changePass" />
+					<tab label="&group.poweroff.tabs.restore.title;" id="poweroffTabs_restore" />
+				</tabs>
+				<tabpanels>
+					<tabpanel>
+						
+						<deck id="poweroffEnterPassDeck" flex="2">
+							
+							<vbox align="center">
+										
+								<grid>
+									<columns>
+										<column flex="2"/>
+										<column flex="2"/>
+									</columns>
+									<rows>
+										<row>
+											<label value="&group.poweroff.tabs.main.passcode;"/>
+											<textbox submitbutton="poweroff_createPasscode" type="password" id="poweroff_passcode"/>
+										</row>
+										<row>
+											<label  value="&group.poweroff.tabs.main.passcode_repeat;"/>
+											<textbox submitbutton="poweroff_createPasscode" type="password" id="poweroff_passcode_repeat"/>
+										</row>
+										<row>
+											<label value="&group.poweroff.tabs.main.recovery_email;"/>
+											<textbox submitbutton="poweroff_createPasscode" id="poweroff_recovery_email"/>	
+										</row>	
+										<row>
+											<hbox/>
+											<hbox align="center">
+												<button id="poweroff_createPasscode" label="&group.poweroff.tabs.main.create_passcode;"/>		
+												<label class="error" id="poweroff_errorCreatePassCode"/>										
+											</hbox>
+										</row>									
+									</rows>	
+								</grid>
+								
+							</vbox>
+							
+							<vbox pack="center" align="center" flex="2">
+								
+								<label id="currentPowerOffEmail"/>
+								<label value="&group.poweroff.tabs.main.setuped;"/>
+								
+							</vbox>
+							
+						</deck>
+						
+					</tabpanel>
+					
+					<tabpanel>
+							
+							<vbox flex="2">
+								
+								<vbox align="center" pack="center" flex="2">
+											
+									<grid>
+										<columns>
+											<column flex="2"/>
+											<column flex="2"/>
+										</columns>
+										<rows>
+											<row>
+												<label value="&group.poweroff.tabs.change_pass.old_passcode;"/>
+												<textbox submitbutton="poweroff_changePasscode" type="password" id="poweroff_old_passcode"/>
+											</row>
+											<row>
+												<label value="&group.poweroff.tabs.change_pass.new_passcode;"/>
+												<textbox submitbutton="poweroff_changePasscode" type="password" id="poweroff_new_passcode"/>
+											</row>
+											<row>
+												<hbox/>
+												<hbox align="center">
+													<button id="poweroff_changePasscode" label="&group.poweroff.tabs.change_pass.change_passcode;"/>		
+													<label class="error" id="poweroff_errorChangePassCode"/>										
+												</hbox>
+											</row>									
+										</rows>	
+									</grid>
+									
+								</vbox>
+									
+								<hbox pack="start" align="start" class="removePassCodeMessage" flex="2">
+									<label value="&group.poweroff.tabs.change_pass.remove_passcode_message;"/>									
+								</hbox>
+								
+							</vbox>
+												
+
+						
+					</tabpanel>
+
+						<vbox flex="2" pack="center" align="center">
+							<deck id="poweroff_restorePassCodeDeck">
+								
+								<button id="poweroff_doRestorePasscode" label="&group.poweroff.tabs.restore_password.do_restore_password;"/>
+								
+								<hbox>
+									<label class="restorePassCodePleaseWait" value="&group.poweroff.tabs.restore_password.please_wait;"/>
+								</hbox>
+								
+							</deck>
+							
+							<label class="error" id="poweroff_restorePassCodeError"/>
+						</vbox>
+
+					<tabpanel>
+					</tabpanel>					
+				</tabpanels>
+			</tabbox>
+			
+			<hbox flex="1" align="center" pack="center">
+				<!--<image class="poweroffHelpImage"/>			-->
+				<image class="poweroffHelpImage2"/>	
+			</hbox>
+			
+		</vbox>		
+		
+	</prefpane>
+	
+	<prefpane id="suggestionsButton">
+
+		
+	</prefpane>
+	
+	<!--
+	<prefpane id="donateButton" label="&fvd_sd.make_donation;">
+	</prefpane>
+	-->
+	
+	<!--
+	
+	<prefpane id="fvdsd_sd" label="&txt.prefpane.sd.title;">
+	
+
+	
+		<hbox class="subPane" flex="2" pack="center">
+			<hbox id="paneSdGlobal" class="buttonBig settings" default="1" tooltiptext="&fvd_sd.group.global_options.title;"></hbox>				
+			<hbox id="paneSdTopSites" class="buttonBig speedDial" tooltiptext="&fvd_sd.group.top_sites.title;"></hbox>				
+			<hbox id="paneSdMostVisited" class="buttonBig mostVisited" tooltiptext="&fvd_sd.group.most_visited.title;"></hbox>
+			<hbox id="paneSdRecentlyClosed" class="buttonBig recentlyClosed" tooltiptext="&fvd_sd.group.recent.title;"></hbox>				
+			<hbox id="paneSdBackground" class="buttonBig sdBackground" tooltiptext="&fvd_sd.group.background.title;"></hbox>				
+			<hbox id="paneSdFontColors" class="buttonBig sdFontColors" tooltiptext="&fvd_sd.group.font_colors.title;"></hbox>			
+			<hbox id="paneSdSync" class="buttonBig sdSync" tooltiptext="&fvd_sd.group.sync.title;"></hbox>			
+			
+			<hbox id="suggestionsButton" class="buttonBig sdGetSatisfaction" onclick="fvds.openSuggestionPopup();"></hbox>
+			<hbox id="donateButton" class="buttonBig sdDonate" onclick="fvds.openDonatePanel();" tooltiptext="&fvd_sd.make_donation;"></hbox>			
+		</hbox>
+		
+
+		
+		<spacer flex="1" />
+	</prefpane>
+
+		-->
+</prefwindow>

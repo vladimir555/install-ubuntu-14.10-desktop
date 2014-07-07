@@ -1,0 +1,11 @@
+<!ENTITY window.title "Սինքը ընթացքում է...">
+<!ENTITY button.try_again "Կրկին փորձել">
+<!ENTITY button.close "Փակել">
+<!ENTITY sync_success "Սինքը հաջող էր">
+<!ENTITY sync_failed "Սինքը ձախողվեց">
+<!ENTITY aborting_sync "Սինքի ընդհատում...">
+<!ENTITY syncing_status "Սինքի վիճակը">
+<!ENTITY groups "Խմբեր">
+<!ENTITY dials "Էջերը">
+<!ENTITY apply_changes "Կիրառել փոփոխությունները">
+<!ENTITY close_when_finished "Ավարտելուց հետո փակել">

@@ -1,0 +1,84 @@
+<!ENTITY context.open "在当前标签打开">
+<!ENTITY context.open_new_tab "在新标签打开">
+<!ENTITY context.open_new_tab_background "在后台标签打开">
+<!ENTITY context.edit "编辑">
+<!ENTITY context.refresh "重新载入">
+<!ENTITY context.remove "删除">
+<!ENTITY context.copy_url "复制 URL">
+<!ENTITY context.move_to "移动到">
+<!ENTITY context_list.open "在当前标签打开">
+<!ENTITY context_list.open_new_tab "在新标签打开">
+<!ENTITY context_list.open_new_tab_background "在后台标签打开">
+<!ENTITY context_list.add "添加到快速拨号">
+<!ENTITY context_list.remove "删除">
+<!ENTITY context_list.block "阻止">
+<!ENTITY context_list.edit "编辑">
+<!ENTITY context_list.refresh "重新载入">
+<!ENTITY context_group.refresh_all "全部重新载入">
+<!ENTITY context_group.open_all_links "打开所有链接">
+<!ENTITY context_group.default "默认">
+<!ENTITY context_group.last_selected "上次选择">
+<!ENTITY context_group.manage_groups "管理分组">
+<!ENTITY context_group.edit "编辑分组">
+<!ENTITY context_group.delete "删除分组">
+<!ENTITY context_group.sync_this_group "同步此分组">
+<!ENTITY fs_context.add_dial "添加拨号">
+<!ENTITY fs_context.refresh_all "全部重新载入">
+<!ENTITY fs_context.open_all "打开所有链接">
+<!ENTITY fs_context.thumbs.big "大">
+<!ENTITY fs_context.thumbs.medium "中">
+<!ENTITY fs_context.thumbs.small "小">
+<!ENTITY fs_context.thumbs.custom "自定义">
+<!ENTITY fs_context.thumbs.custom_change_size "更改大小...">
+<!ENTITY fs_context.thumbs.list "列表">
+<!ENTITY fs_context.view "视图">
+<!ENTITY fs_context.columns "列">
+<!ENTITY thumb.delete_dial "删除拨号">
+<!ENTITY thumb.edit_dial "编辑拨号">
+<!ENTITY list_elem.add "固定为快速拨号">
+<!ENTITY list_elem.remove "删除">
+<!ENTITY list_elem.block "阻止 URL 或域">
+<!ENTITY list_elem.error_loading_page "加载页面错误">
+<!ENTITY list_open_all.title "打开所有链接">
+<!ENTITY list_remove_all.title "删除选中链接">
+<!ENTITY list_open_all.add_dial "添加拨号">
+<!ENTITY list_no_items.title "没有可显示的项目">
+<!ENTITY thumb_types.title "缩略图：">
+<!ENTITY thumb_types.type_small "小">
+<!ENTITY thumb_types.type_medium "中">
+<!ENTITY thumb_types.type_big "大">
+<!ENTITY thumb_types.type_list "列表">
+<!ENTITY selector.refresh "重新载入">
+<!ENTITY selector.options "选项">
+<!ENTITY dont_display_page.title "不要显示这个页面">
+<!ENTITY make_home_page.title "设置快速拨号为我的主页">
+<!ENTITY settings2.most_visited.week "最近一周">
+<!ENTITY settings2.most_visited.last_month "最近一个月">
+<!ENTITY settings2.most_visited.all_time "全部">
+<!ENTITY settings2.most_visited.group_by.uri "URL">
+<!ENTITY settings2.most_visited.group_by.domain "域">
+<!ENTITY settings2.top_sites_groups.all_groups "热门">
+<!ENTITY settings2.top_sites_groups.add_group "添加分组">
+<!ENTITY settings2.top_sites_groups.manage_groups "管理分组">
+<!ENTITY settings2.list_types.title "标题">
+<!ENTITY settings2.list_types.uri "URL">
+<!ENTITY double_click_to_expand.title "双击(或按下回车)展开">
+<!ENTITY most_visited.restore_removed "还原删除的项目">
+<!ENTITY list_type_selector.title "显示标题">
+<!ENTITY list_type_selector.url "显示 URL">
+<!ENTITY all_group.tooltip "这个分组仅显示热门的拨号。">
+<!ENTITY change_background.title "更改背景">
+<!ENTITY restore_thumb.restore_previous "还原之前的缩略图：">
+<!ENTITY restore_thumb.yes "是">
+<!ENTITY restore_thumb.no "否">
+<!ENTITY restore_session.label "还原会话">
+<!ENTITY fs_context.theme "Theme">
+<!ENTITY enable_power_off_message "Learn how you can protect your Speed Dials from unwanted viewers ">
+<!ENTITY poweroff.enter_passcode "Unlock Speed Dial">
+<!ENTITY power_off_feature "Power Off feature">
+<!ENTITY search_on_google "Search">
+<!ENTITY expand_message.dont_display_again "Dont display again">
+<!ENTITY fs_context.rows "Rows">
+<!ENTITY fs_context.scrolling_type "Scrolling type">
+<!ENTITY fs_context.scrolling_type_vertical "Vertical">
+<!ENTITY fs_context.scrolling_type_horizontal "Horizontal">

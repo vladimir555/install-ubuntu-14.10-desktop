@@ -1,0 +1,67 @@
+.listContainer{
+	overflow-y:auto;
+}
+
+.listContainer > hbox{
+	padding: 2px;
+	margin: 2px;
+}
+
+.listContainer > hbox, .listContainer > hbox *{
+	cursor:pointer;
+}
+
+.listContainer > hbox[disabled=true]{
+	color: #999;
+}
+
+.listContainer > hbox:hover{
+	box-shadow: 0px 0px 5px -1px gray;
+	background-color: Highlight;
+	color: HighlightText;
+	text-shadow: 1px 1px 1px #000;
+}
+
+.listContainer > hbox .title{
+	font-size: 12px;
+	font-family: Arial;
+}
+
+.listContainer > hbox .url{
+	font-size: 10px;
+	font-family: Arial;
+}
+
+.listContainer > hbox .favicon{
+	max-width: 16px;
+	max-height: 16px;
+}
+
+.screamer{
+	margin-top: 2px;
+}
+
+#importProgress{
+	max-width: 350px;
+	min-width: 350px;	
+}
+
+.dialBigIcon{
+	list-style-image: url( ../sd/skin/dials/migrate_icons_big.png );
+}
+
+.fastDialImage{
+	-moz-image-region: rect( 0px, 32px, 32px, 0px );
+}
+
+.speedDialImage{
+	-moz-image-region: rect( 0px, 64px, 32px, 32px );
+}
+
+.foxTabImage{
+	-moz-image-region: rect( 0px, 96px, 32px, 64px );
+}
+
+.superStartImage{
+	-moz-image-region: rect( 0px, 128px, 32px, 96px );
+}

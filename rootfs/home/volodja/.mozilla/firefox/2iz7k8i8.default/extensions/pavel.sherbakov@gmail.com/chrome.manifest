@@ -1,0 +1,16 @@
+overlay	chrome://browser/content/browser.xul	chrome://fvd.speeddial/content/fvd_speeddial.xul
+
+
+
+content	fvd.speeddial	chrome/content/
+skin	fvd.speeddial	classic/1.0	chrome/skin/
+
+resource fvd.speeddial.modules modules/
+
+style	chrome://global/content/customizeToolbar.xul	chrome://fvd.speeddial/skin/fvd.toolbar.css
+
+locale	fvd.speeddial	en-US	chrome/locale/en-US/
+locale	fvd.speeddial	ru	chrome/locale/ru/
+
+component {d908872d-f46e-4208-a40d-46a008ae44b1} components/googleautocomplete.js
+contract @mozilla.org/autocomplete/search;1?name=fvd_speed_dial_googleautocomplete {d908872d-f46e-4208-a40d-46a008ae44b1}

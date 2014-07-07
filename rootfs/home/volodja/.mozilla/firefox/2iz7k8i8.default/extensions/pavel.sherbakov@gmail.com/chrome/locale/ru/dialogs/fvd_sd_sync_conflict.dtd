@@ -1,0 +1,9 @@
+<!ENTITY window.title "Конфликт версий объекта">
+<!ENTITY button.pick_local "Сохранить локальную версию">
+<!ENTITY button.pick_server "Сохранить серверную версию">
+<!ENTITY button.close "Отменить синхронизацию">
+<!ENTITY local_version "Локальная версия">
+<!ENTITY server_version "Серверная версия">
+<!ENTITY description "FVD Speed Dial не может определить какая из версии должна быть сохранена">
+<!ENTITY please_select "Пожалуйста выберите версию, которая будет сохранена">
+<!ENTITY use_choice "Использовать выбор для всех конфликтов">

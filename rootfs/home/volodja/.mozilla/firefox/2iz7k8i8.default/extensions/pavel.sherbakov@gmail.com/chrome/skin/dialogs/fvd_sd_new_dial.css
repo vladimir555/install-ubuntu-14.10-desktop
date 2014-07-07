@@ -1,0 +1,188 @@
+dialog{
+	min-width: 420px;
+}
+
+
+dialog[fvdsdmode="add"] #fvdsdmode_add{
+	display: -moz-box;
+}
+dialog[fvdsdmode="add"] #fvdsdmode_userpics{
+	display: none;
+}
+
+dialog[fvdsdmode="userpics"] #fvdsdmode_userpics{
+	display: -moz-box;
+}
+dialog[fvdsdmode="userpics"] #fvdsdmode_add{
+	display: none;
+}
+
+
+.get_title_label{
+	padding-top: 2px;
+	color: #777;	
+	height: 18px;
+}
+
+.get_title_label[loading="0"]:hover{
+	color: #000;
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+.get_title_label[loading="1"]{
+	background: url( chrome://fvd.toolbar/skin/fvd.toolbar.download.ad_showing.gif );
+	background-repeat: no-repeat;
+	padding-left: 20px;
+}
+
+#title_not_found_label{
+	padding-top: 2px;
+	color: #ff0000;
+	-moz-transition-duration: 500ms;
+	-moz-transition-timing-function: ease-in-out;
+}
+
+#title_not_found_label[raised="0"]{
+	opacity: 0;
+}
+
+#title_not_found_label[raised="1"]{
+	opacity: 1;	
+}
+
+/* PREVIEW BOX */
+
+#preview_box_parent{
+	margin: 10px;
+	
+	border-radius: 7px;
+	border: 1px solid #999;
+	box-shadow: 1px 1px rgba(0,0,0, 0.1);
+	padding: 5px;
+	
+	width: 210px;
+	height: 140px;
+	
+	background: #fff;
+}
+
+#preview_box{
+	
+}
+
+#preview_box[nopreview="1"]{			
+	background: url(../sd_fail_load.png);
+	background-position:center center;
+	background-repeat: no-repeat;
+	
+	background-color: #fff;	
+}
+
+#preview_box progressmeter{
+	visibility: hidden;
+}
+
+#preview_box[loading="1"] progressmeter{
+	visibility: visible;
+}
+
+#preview_box[loading="1"]{
+	/*
+	background: url( "chrome://fvd.toolbar/skin/sd/skin/dials/sd_loading.gif" );
+	background-repeat: no-repeat;
+	background-position: center center;
+	*/
+	/*background-color: #fff;*/
+}
+
+#grab_frames_container{
+	height: 10px;
+}
+
+/* context menu group addition */
+
+.contextAddGroup{
+	font-weight: bold;
+}
+
+#pickUrlFrom label{
+	margin-left: 2px;
+	margin-right: 2px;	
+}
+
+#pickUrlFrom label.text-link{
+	margin-top: 0px;
+}
+
+#pickUrlsFromPanel .loading{
+	display: none;
+}
+
+#pickUrlsFromPanel[loading="1"] .loading{
+	display: -moz-box;
+	min-width: 150px;
+	min-height: 50px;
+}
+
+#pickUrlsFromPanel .loading .img{
+	width: 43px;
+	height: 11px;
+	
+	background: url( ../squares-loader.gif );
+}
+
+#pickUrlsFromPanelContainer{
+	max-height: 500px;
+	overflow: auto;
+}
+
+#pickUrlsFromPanel .item{
+	cursor: pointer;
+	padding: 2px;
+	max-width: 300px;
+	border-radius: 4px;
+}
+
+#pickUrlsFromPanel .item *{
+	cursor: pointer;
+}
+
+#pickUrlsFromPanel .item:hover{
+	background-color: Highlight;
+	color: HighlightText !important;
+}
+
+#pickUrlsFromPanel .item .title{
+	font-weight: bold;	
+}
+
+#pickUrlsFromPanel .item .url{
+	font-size: 11px;
+}
+
+#closeWindowAfterSuccess{
+	margin-top: 5px;
+}
+
+#fvdsdmode_userpics{
+	min-width: 725px;
+	max-width: 725px;
+	min-height: 500px;
+	max-height: 500px;
+}
+
+#buttonUserGallery{
+	margin-left: 4px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+#fastPickUserPic{
+	display: none;
+}
+
+dialog[fast_user_pics="1"] #fastPickUserPic{
+	display: -moz-box;
+	min-width: 230px;
+}

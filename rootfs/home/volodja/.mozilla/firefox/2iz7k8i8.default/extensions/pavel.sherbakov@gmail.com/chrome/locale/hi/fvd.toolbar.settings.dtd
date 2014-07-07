@@ -1,0 +1,214 @@
+<!ENTITY txt.dialog.title "चुनाव">
+<!ENTITY txt.dialog.button_ok.title "ठीक है">
+<!ENTITY txt.dialog.button_cancel.title "रद्द करें">
+<!ENTITY txt.prefpane.general.title "चुनाव">
+<!ENTITY txt.prefpane.about.title "शीर्षक के बारे में">
+<!ENTITY txt.group.toolbar_elements.title "toolbar की चीज़ें दिखाएँ">
+<!ENTITY txt.group.toolbar_elements.display_search.title "खोज पट्टी">
+<!ENTITY txt.group.toolbar_elements.display_search_video.title "चलचित्र खोज">
+<!ENTITY txt.group.toolbar_elements.display_search_adult.title "वयस्कों (18+) के लिए खोज">
+<!ENTITY txt.group.toolbar_elements.display_tools.title "उपयोगी साधन">
+<!ENTITY txt.group.toolbar_elements.display_recording.title "दर्ज करने लिए">
+<!ENTITY txt.group.toolbar_elements.download.title "डाउनलोड">
+<!ENTITY txt.group.global_options.display_main_button "मुख्य पद दिखाएँ">
+<!ENTITY txt.group.global_options.display_status_button "status bar पद दिखाएँ">
+<!ENTITY txt.group.notes.title "सूचनाएं">
+<!ENTITY txt.group.toolbar_elements.dont_display_features_hint.title "सूचना मत दिखाएँ">
+<!ENTITY txt.group.toolbar_elements.display_search_adult_about.title "आप वयस्क सम्बंधित प्रधानता FVD Suite चुनावमें जाकर बंध कर सकते हैं">
+<!ENTITY txt.group.newpages.title "नया पृष्ठ खोलें...">
+<!ENTITY txt.group.newpages.new_tab.title "नये भागमें">
+<!ENTITY txt.group.newpages.current_tab.title "उस ही भागमें">
+<!ENTITY txt.group.hooks.title "घटनाओ को संभालें >">
+<!ENTITY txt.group.hooks.dns_errors.title "dns खोजनेमें खराबी">
+<!ENTITY txt.group.hooks.pages_errors.title "खराबीयों भरे पन्ने">
+<!ENTITY txt.group.hooks.search_queries.title "खोज के निवेदन">
+<!ENTITY txt.group.hooks.url_queries.title "एड्रेस बार से खोजें">
+<!ENTITY txt.group.hooks.about_blank.title "Speed Dial नए भागमें शुरू करें">
+<!ENTITY txt.group.hooks.thumbs_icons_and_titles.title "प्रतिमा और शीर्षक को सरल पट्ट के ऊपर दिखाएँ">
+<!ENTITY txt.group.tab_preview.title "सम्मिलित पूर्व-दर्शन">
+<!ENTITY txt.group.tab_preview.display.title "दिखावा">
+<!ENTITY txt.prefpane.sd.title "Speed Dial">
+<!ENTITY fvd_sd.group.show_url_in_dial.title "मूल सरल पट्ट">
+<!ENTITY fvd_sd.group.default.title "मूल सरल पट्ट ">
+<!ENTITY fvd_sd.group.default.top_sites "Speed Dial">
+<!ENTITY fvd_sd.group.default.most_visited "सर्वाधिक मुलाकात">
+<!ENTITY fvd_sd.group.default.recently_closed "हाल ही में बंध किया हुआ">
+<!ENTITY fvd_sd.group.default.last_selected "पिछली बार का चुनाव">
+<!ENTITY fvd_sd.group.enable.title "शुरू करें">
+<!ENTITY fvd_sd.group.recent.title "हाल ही में बंध किया हुआ ">
+<!ENTITY fvd_sd.group.recent.show_last "आखरी चुनाव दिखाएँ">
+<!ENTITY fvd_sd.group.all_groups_max_dials.title "लोकप्रिय समूह में अधिकतम सरल पट्ट की संख्या">
+<!ENTITY fvd_sd.group.groups.title "समूह">
+<!ENTITY fvd_sd.group.groups.default.title "मूलरूप >">
+<!ENTITY fvd_sd.group.groups.manage.title "नियंत्रित करें">
+<!ENTITY fvd_sd.group.most_visited.title "सर्वाधिक मुलाकात">
+<!ENTITY fvd_sd.group.most_visited.show_last "आखरी चुनाव दिखाएँ >">
+<!ENTITY fvd_sd.group.most_visited_interval.title "समय मर्यादा">
+<!ENTITY txt.group.most_visited_interval.week.title "पिछले हफ्ते">
+<!ENTITY txt.group.most_visited_interval.month.title "पिछले महीने">
+<!ENTITY txt.group.most_visited_interval.all_time.title "अबतक का सभी">
+<!ENTITY fvd_sd.group.most_visited_group_by.title "समूह बनाएं">
+<!ENTITY txt.group.most_visited_interval.uri.title "URI">
+<!ENTITY txt.group.most_visited_interval.domain.title "कार्यक्षेत्र">
+<!ENTITY txt.group.most_visited.max_items "(max 75)">
+<!ENTITY txt.group.recent.max_items "(max 40)">
+<!ENTITY fvd_sd.group.blocked_domains.title "रोके गए कार्यक्षेत्र">
+<!ENTITY fvd_sd.group.blocked_domains.manage "नियंत्रित करें">
+<!ENTITY txt.group.sd.make_home_page "Speed Dial को मुख्य-पृष्ठ चुने">
+<!ENTITY txt.group.sd.show_url_in_dial "कड़ियों को सरल पट्ट के निचे दिखाएँ">
+<!ENTITY fvd_sd.group.dials_opening.title "सरल पट्ट खुल रहे हैं">
+<!ENTITY txt.group.dials_opening.current_tab.title "इस भागमें">
+<!ENTITY txt.group.dials_opening.new_tab.title "नए भागमें">
+<!ENTITY txt.group.dials_opening.new_tab_passive.title "नए भागमें (प्रुष्ठ-भुमि में)">
+<!ENTITY txt.prefpane.about.version.title "आवृत्ति >">
+<!ENTITY txt.prefpane.about.home_site_visit.title "मुलाकात लें">
+<!ENTITY txt.group.sniffing_options.title "विपरीत विकल्प">
+<!ENTITY txt.group.sniffing_options.display_swf.title ".swf दस्तावेज शुरू करें">
+<!ENTITY txt.group.toolbar_elements.download.close_after_download "डाऊनलोड पूरा होने पर खिड़की बंध कर दें">
+<!ENTITY fvd_sd.group.top_sites.title "Speed Dial">
+<!ENTITY fvd_sd.group.global_options.title "विश्वव्यापी विकल्प">
+<!ENTITY txt.group.toolbar_elements.disable_plugins.title "plugins बांध करें (flash, silverlight,...)">
+<!ENTITY fvd_sd.group.background.image.url "कड़ी">
+<!ENTITY fvd_sd.group.background.image.local_file.browse "...">
+<!ENTITY fvd_sd.group.background.image.local_file "स्थानिक दस्तावेज">
+<!ENTITY fvd_sd.group.background.image.type.no_image "कोई चित्र नहीं">
+<!ENTITY fvd_sd.group.background.image.type.fill "चित्रण">
+<!ENTITY fvd_sd.group.background.image.type.fit "व्यवस्थित">
+<!ENTITY fvd_sd.group.background.image.type.stretch "खिंचा हुआ">
+<!ENTITY fvd_sd.group.background.image.type.tile "बहुरूपी">
+<!ENTITY fvd_sd.group.background.image.type.center "केंद्र">
+<!ENTITY fvd_sd.group.background.refresh_preview "पुर्व-दर्शन पुनः प्रस्तुति">
+<!ENTITY fvd_sd.group.background.caption.image "चित्र">
+<!ENTITY fvd_sd.group.background.image.type "प्रकार >">
+<!ENTITY fvd_sd.group.background.title "पृष्ठ-भूमि">
+<!ENTITY fvd_sd.group.background.caption.color "पृष्ठ-भूमि रंग">
+<!ENTITY fvd_sd.group.background.color.enabled "शुरू है">
+<!ENTITY fvd_sd.group.font_colors.title "अक्षरों का रंग">
+<!ENTITY fvd_sd.group.font_colors.title_for_dials "शीर्षक (सरल पट्ट के) >">
+<!ENTITY fvd_sd.group.font_colors.url_for_dials "कड़ी (सरल पट्ट के) >">
+<!ENTITY fvd_sd.group.font_colors.text_in_list_mode "अक्षर सूचि रूपमें">
+<!ENTITY fvd_sd.group.font_colors.show_title_url "शीर्षक/कड़ी दिखाएँ (सूचि रूपमें) >">
+<!ENTITY fvd_sd.group.font_colors.list_links "कड़ियों को सूचिमें दिखाएँ">
+<!ENTITY fvd_sd.group.font_colors.other_texts "अन्य अक्षर >">
+<!ENTITY fvd_sd.group.font_colors.restore_default "मूलरूपमें लायें">
+<!ENTITY fvd_sd.group.font_colors.size "आकार >">
+<!ENTITY fvd_sd.group.font_colors.color "रंग >">
+<!ENTITY fvd_sd.group.font_colors.bolder "स्पष्ट >">
+<!ENTITY fvd_sd.group.display_restore_previous_session "पिछला सत्र देखने का विकल्प दिखाएँ">
+<!ENTITY fvd_sd.group.import_data "अन्य addons से जानकारी आयात करें">
+<!ENTITY fvd_sd.group.import_data.start "आयात शुरू करें">
+<!ENTITY fvd_sd.import_export.title "सरल पट्ट और चुनाव आयात/निर्यात करें">
+<!ENTITY fvd_sd.import_export.export "निर्यात">
+<!ENTITY fvd_sd.import_export.import "आयात">
+<!ENTITY txt.group.top_sites.display_plus_cells.title "speed dial पद [+] दिखाएँ">
+<!ENTITY fvd_sd.dials_opacity.title "सरल पट्ट की पारदर्शता">
+<!ENTITY txt.group.sd.disable_custom_search "खोज निषेध">
+<!ENTITY txt.group.top_sites.hide_cell_background.title "सरल पट्ट की मूल पृष्ठ-भूमि छुपायें">
+<!ENTITY txt.group.top_sites.enable_popular_group.title "लोकप्रिय समूह दिखाएँ">
+<!ENTITY fvd_sd.group.most_visited.order_by "अनुक्रमित करें">
+<!ENTITY txt.group.most_visited_order_by.visits "मुलाक़ात">
+<!ENTITY txt.group.most_visited_order_by.date "तारीख">
+<!ENTITY txt.group.sd.show_in_last_tab "आखरी पदमें दिखाएँ">
+<!ENTITY txt.group.global_options.show_clicks_and_quick_menu "क्लिक्स और सरल उपाय दिखाएँ">
+<!ENTITY txt.global.tabs.general "सामान्य चीजे">
+<!ENTITY txt.global.tabs.appearance "बाह्य रूप रंग">
+<!ENTITY txt.global.tabs.import_export "जमा करें">
+<!ENTITY fvd_sd.custom_dial_size.title "व्यक्ति-विशेष सरल पट्ट आकार">
+<!ENTITY fvd_sd.custom_dial_size.width "चौड़ाई >">
+<!ENTITY fvd_sd.custom_dial_size.max_min_width "(Min 150px; Max 260px)">
+<!ENTITY txt.group.top_sites.display_button_in_google_results.title "Google के परिणामोंमें पद दिखाएँ">
+<!ENTITY fvd_sd.theme.title "विषय-वस्तु">
+<!ENTITY themes.white.label "सफ़ेद">
+<!ENTITY themes.dark.label "काला">
+<!ENTITY themes_help.dont_forget_to_change "बदलना मत भुल्येगा">
+<!ENTITY themes_help.font_colors "अक्षरों का रंग">
+<!ENTITY themes_help.and_set_nice "और अच्छी तरह बिठाएं">
+<!ENTITY themes_help.background "पृष्ठ-भूमि">
+<!ENTITY suggestions_popup.submit_suggestion "सुझाव भेजें">
+<!ENTITY suggestions_popup.report_bug "परेशानी बताएं">
+<!ENTITY txt.group.global_options.show_in_context_menu "कोनटेक्स्ट मेनुमें दिखाएँ">
+<!ENTITY fvd_sd.group.hot_key.use_hot_key "सरल पद इस्तमाल करें">
+<!ENTITY fvd_sd.group.hot_key.apply_changes "बदलाव लागू करने के लिए ब्राउज़र फिरसे शुरू करें">
+<!ENTITY fvd_sd.group.hot_key.already_used "यह पद इस्तमाल में हैं">
+<!ENTITY fvd_sd.make_donation "धन-दान दें">
+<!ENTITY donate_message "धन-दान में दिलचस्पी के लिए शुक्रिया! आपकी यह भावना सुनिश्चित करती है की हम और बेहतर सॉफ्टवेर बनाना जारी रखें और उसमें से जितना होसके निःशुल्क बांटे.
+जब आप धन-दान कर रहे हैं, तो हम कैसे कह सकते हैं की यह निःशुल्क है? आप हमेशा के लिए इस सॉफ्टवेर को निःशुल्क इस्तमाल करने के लिए आवकार्य हैं.
+
+इस FVD Speed dial Addon को बनाने, शुधारने और आगे बढ़ने में काफी पैसा खर्च होता है.
+
+We truly hope that satisfied users or users who like our initiative are willing to donate some money (of they can afford it) enabling us to reach as many people as possible in the entire world.
+
+Received donations will NOT be used to pay salaries or any indirect costs that is not directly related to keeping the service on the Internet. ">
+<!ENTITY donate_button.text "धन-दान करें">
+<!ENTITY txt.group.top_sites.disable_like_button.title "like पद बंध करें">
+<!ENTITY fvd_sd.group.sync.title "समकालन">
+<!ENTITY fvd_sd.sync.online "ऑनलाइन">
+<!ENTITY fvd_sd.sync.logout "लोग-आउट">
+<!ENTITY fvd_sd.sync.remove_account "खाता निकाल दें">
+<!ENTITY fvd_sd.sync.login "लोग-इन">
+<!ENTITY fvd_sd.sync.register "दर्ज करें">
+<!ENTITY fvd_sd.sync.restore_password "पासवर्ड पुनः स्थापित करें">
+<!ENTITY fvd_sd.sync.already_have_account "खाता मौजूद है">
+<!ENTITY fvd_sd.sync.email "ईमेल">
+<!ENTITY fvd_sd.sync.password "पासवर्ड">
+<!ENTITY fvd_sd.sync.button.login "लोग-इन">
+<!ENTITY fvd_sd.sync.create_new_account "नया खाता बनाएं">
+<!ENTITY fvd_sd.sync.subscribe "अपडेट और समाचार मंगवाएं">
+<!ENTITY fvd_sd.sync.button.create_account "नया खाता बनाएं">
+<!ENTITY fvd_sd.sync.check_email "खाता सुनिश्चित करने के लिए अपना ईमेल जांचे">
+<!ENTITY fvd_sd.sync.confirm_code "कोड सुनिश्चित करें">
+<!ENTITY fvd_sd.sync.button.cancel_confirm "रद्द">
+<!ENTITY fvd_sd.sync.button.confirm "सुनिश्चित">
+<!ENTITY fvd_sd.sync.button.resend_confirm "सुनिश्चित करनेवाला ईमेल फिर भेजें">
+<!ENTITY fvd_sd.sync.button.restore_password "पासवर्ड पुनः स्थापित करें">
+<!ENTITY fvd_sd.sync.enable_auto_sync "स्वचलित समकालन शुरू करें (हर 3 घंटे.)">
+<!ENTITY fvd_sd.sync.button.merge "मिश्रित करें">
+<!ENTITY fvd_sd.sync.button.upload "अपलोड़">
+<!ENTITY fvd_sd.sync.button.download "डाऊनलोड">
+<!ENTITY fvd_sd.sync.merge "स्थानिक और सरवर की जानकारी को मिश्रित करें">
+<!ENTITY fvd_sd.sync.upload "सरवर की जानकारी पर उपरिलेखन करें">
+<!ENTITY fvd_sd.sync.download "स्थानिक जानकारी पर उपरिलेखन करें">
+<!ENTITY fvd_sd.sync.import_export_to_from "to/from स्थानिक दस्तावेज (.sd)">
+<!ENTITY fvd_sd.sync.enable_sync "समकालन शुरू करें">
+<!ENTITY fvd_sd.sync.tab.account "खाता">
+<!ENTITY fvd_sd.sync.tab.sync "समकालन">
+<!ENTITY fvd_sd.sync.settings "चुनाव">
+<!ENTITY fvd_sd.sync.manual_sync "निवेदन पर समकालन">
+<!ENTITY fvd_sd.sync.close_sync_progress_window_after_sync "समकालन प्रगति दर्शानेवाली खिड़की समकालन ख़त्म होने पर बंध करदें">
+<!ENTITY fvd_sd.sync.change_password "पासवर्ड बदलें">
+<!ENTITY fvd_sd.sync.change_password.old_password "पुराना पासवर्ड">
+<!ENTITY fvd_sd.sync.change_password.new_password "नया पासवर्ड">
+<!ENTITY fvd_sd.sync.change_password.new_password_confirm "नया पासवर्ड सुनिश्चित करें">
+<!ENTITY fvd_sd.sync.cancel_change_password "रद्द">
+<!ENTITY fvd_sd.sync.confirm_change_password "सुनिश्चित">
+<!ENTITY fvd_sd.sync.change_password_confirm_sent_desc "सुनिश्चित करने वाली चाबी आपके ईमेल पर भेज दी गई है">
+<!ENTITY fvd_sd.sync.change_password.confirm_key "चाबी सुनिश्चित करें">
+<!ENTITY fvd_sd.sync.manage_groups "समूह नियंत्रण">
+<!ENTITY fvd_sd.sync.button.manage_synced_groups "समकालिक समूह नियंत्रण">
+<!ENTITY fvd_sd.custom_dial_size_mostvisited.title "Most visited custom dial size">
+<!ENTITY sync.button.start_sync "Start Sync">
+<!ENTITY txt.group.global_options.display_search_preview "Display search preview">
+<!ENTITY group.poweroff.top_text_1 "Create your personal passcode to unlock your dials.">
+<!ENTITY group.poweroff.top_text_2 "After pressing Power Off button your dials will be hidden and the only way to unlock them is to enter passcode.">
+<!ENTITY group.poweroff.top_text_3 "This is good feature if you do not want someone see your sped dials without you!">
+<!ENTITY group.poweroff.tabs.main.title "Main">
+<!ENTITY group.poweroff.tabs.change_pass.title "Change Password">
+<!ENTITY group.poweroff.tabs.restore.title "Restore Password">
+<!ENTITY group.poweroff.tabs.main.passcode "PassCode">
+<!ENTITY group.poweroff.tabs.main.passcode_repeat "PassCode repeat">
+<!ENTITY group.poweroff.tabs.main.recovery_email "Recovery email">
+<!ENTITY group.poweroff.tabs.main.create_passcode "Create PassCode">
+<!ENTITY group.poweroff.tabs.main.setuped "Power off is setuped">
+<!ENTITY group.poweroff.tabs.change_pass.old_passcode "Old PassCode">
+<!ENTITY group.poweroff.tabs.change_pass.new_passcode "New PassCode *">
+<!ENTITY group.poweroff.tabs.change_pass.change_passcode "Change PassCode">
+<!ENTITY group.poweroff.tabs.change_pass.remove_passcode_message "* To remove PassCode leave New PassCode blank">
+<!ENTITY group.poweroff.tabs.restore_password.do_restore_password "Send PassCode to Recovery Email">
+<!ENTITY group.poweroff.tabs.restore_password.please_wait "Please wait...">
+<!ENTITY fvd_sd.scrolling "Dials Scrolling">
+<!ENTITY scrolling.vertical "Vertical">
+<!ENTITY scrolling.horizontal "Horizontal">
+<!ENTITY txt.group.popular.max_items "(max 50)">
+<!ENTITY importing.please_wait "Importing... Please wait.">
+<!ENTITY txt.group.global_options.display_urlbar_button "Display URL bar button">
+<!ENTITY txt.dialog.button_get_premium_for_free.title "Get Premium account for Free!">

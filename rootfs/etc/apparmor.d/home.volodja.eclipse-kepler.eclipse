@@ -35,6 +35,8 @@
   /home/volodja/.local/share/mime/mime.cache r,
   /home/volodja/Desktop/wallpaper/look.com.ua-88022e.jpg r,
   /home/volodja/.themes/** r,
+  /home/volodja/.cache/fontconfig/ r,
+  /home/volodja/.cache/fontconfig/** r,
 
   /home/volodja/eclipse-kepler/** rwmk,
   /home/volodja/eclipse-kepler/*  rw,
@@ -110,6 +112,10 @@
   /etc/python3.*/**           r,
   /etc/default/apport         r,
   /etc/mime.types             r,
+  /etc/ld.so.conf             r,
+  /etc/ld.so.conf.d/          r,
+  /etc/ld.so.conf.d/*         r,
+
 
   /proc/*/fd/                 r,
   /usr/bin/                   r,

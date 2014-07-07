@@ -1,0 +1,44 @@
+menuitem#fvd_speed_dial_fvd_context_search, menuitem#fvd_speed_dial_fvd_context_search_tab
+{
+	list-style-image: url('sd/skin/dials/sd_favicon.png');
+/*	-moz-image-region: rect(0px 16px 16px 0px);*/
+}
+
+
+#fvd_speed_dial_fvdSpeedDialButton
+{
+	/*list-style-image: url('chrome://fvd.speeddial/skin/sd/skin/images/toolbar_big.png');*/
+	list-style-image: url(chrome://fvd.speeddial/skin/sd/skin/images/toolbar_small.png);
+	/*-moz-image-region: rect(0px 18px 30px 0px);*/
+}
+
+toolbar[iconsize="small"] #fvd_speed_dial_fvdSpeedDialButton {
+    list-style-image: url(chrome://fvd.speeddial/skin/sd/skin/images/toolbar_small.png);
+}
+
+
+toolbar[iconsize="small"]:-moz-windows-theme(aero) #fvd_speed_dial_fvdSpeedDialButton {
+    list-style-image: url(chrome://fvd.speeddial/skin/sd/skin/images/toolbar_small_aero.png);
+}
+
+toolbarpaletteitem[place="palette"] #fvd_speed_dial_fvdSpeedDialButton,
+#fvd_speed_dial_fvdSpeedDialButton[cui-areatype="menu-panel"]{
+  list-style-image: url(chrome://fvd.speeddial/skin/fvd.toolbar.icon.png);
+}
+
+.fvdSuiteMenuIcon{
+	list-style-image: url('fvd_suite.png');
+	font-weight: bold;
+}
+
+#fvd_speed_dial_urlBarIcon{
+	width: 16px;
+	height: 16px;
+
+	background: url('chrome://fvd.speeddial/skin/sd/skin/images/toolbar_small_gray.png') no-repeat;
+}
+
+#fvd_speed_dial_urlBarIcon:hover{
+	background: url('chrome://fvd.speeddial/skin/sd/skin/images/toolbar_small.png') no-repeat;
+}
+

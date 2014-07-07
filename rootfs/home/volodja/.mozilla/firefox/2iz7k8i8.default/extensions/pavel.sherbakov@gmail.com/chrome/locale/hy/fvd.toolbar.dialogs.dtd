@@ -1,0 +1,82 @@
+<!ENTITY fvd_confirm_download_browser.dialog.title "Fvd Suite-ն բացված չէ">
+<!ENTITY fvd_confirm_download_browser.button.no.title "Ոչ (Նախ պետք է բացեք Fvd Suite-ը)">
+<!ENTITY fvd_confirm_download_browser.button.yes.title "Այո">
+<!ENTITY fvd_confirm_download_browser.label.first.value "Fvd Suite-ն բացված չէ։ ">
+<!ENTITY fvd_confirm_download_browser.label.second.value "Խորհուրդ ենք տալիս նախ բացել Fvd Suite-ը, ապա փորձել կրկին բեռնել։">
+<!ENTITY fvd_confirm_download_browser.label.three.value "Շարունակե՞լ բեռնումը Firefox-ում։">
+<!ENTITY fvd_sd_new_dial.dialog.title "Ստեղծել/Խմբագրել Dial-ը">
+<!ENTITY fvd_sd_new_dial.title.title "Գլխագիրը">
+<!ENTITY fvd_sd_new_dial.url.title "Վեբ հղումը">
+<!ENTITY fvd_sd_new_dial.title_not_found "Գլխագիրը չի գտնվել">
+<!ENTITY fvd_sd_new_dial.preview_type.make_from_dial "Ստեղծել՝ օգտագործելով վեբ հղումը">
+<!ENTITY fvd_sd_new_dial.preview_type.make_from_uri "Ստեղծել վեբ հղման միջոցով">
+<!ENTITY fvd_sd_new_dial.preview_type.make_from_local_file "Ստեղծել՝ օգտագործելով համակարգչային ֆայլ">
+<!ENTITY fvd_sd_new_dial.preview_type.preview "Սեղմեք՝ նախադիտման համար">
+<!ENTITY fvd_sd_new_dial.preview_type.make_from_file_button "...">
+<!ENTITY fvd_sd_new_dial.group.title "Խումբը">
+<!ENTITY fvd_sd_new_dial.user_defined_image.title "Պատրաստի լոգոները">
+<!ENTITY fvd_sd_new_dial.url.emptytext "http://">
+<!ENTITY fvd_sd_new_dial.button.close "Փակել">
+<!ENTITY fvd_sd_new_dial.disable_js "Անջատել JavaScript-ը">
+<!ENTITY fvd_sd_new_dial.enable_js "Միացնել JavaScript-ը">
+<!ENTITY fvd_sd_new_dial.tab.main "Գլխ. ընտրացանկը">
+<!ENTITY fvd_sd_new_dial.tab.preview "Պատկերումը">
+<!ENTITY fvd_sd_new_dial.button.back "Հետ">
+<!ENTITY fvd_sd_new_dial.delay.label "Դադարը (վայրկյան).">
+<!ENTITY fvd_sd_new_dial.empty_title.value "Դինամիկ գլխագիր">
+<!ENTITY fvd_sd_new_dial.disable_plugins.yes "այո">
+<!ENTITY fvd_sd_new_dial.disable_plugins.no "ոչ">
+<!ENTITY fvd_sd_new_dial.disable_plugins "Անջատել օժանդակիչները (flash, silverlight,...):">
+<!ENTITY fvd_sd_new_dial.preview_type "Դիտման տեսակը">
+<!ENTITY fvd_sd_new_dial.autoupdate "Ինքնաթարմացում">
+<!ENTITY fvd_sd_new_dial.autoupdate.every "Ամեն՝">
+<!ENTITY fvd_sd_new_dial.autoupdate.minutes "Րոպե">
+<!ENTITY fvd_sd_new_dial.autoupdate.hours "Ժամ">
+<!ENTITY fvd_sd_new_dial.autoupdate.days "Օր">
+<!ENTITY fvd_sd_manage_groups.tree.name.title "Անունը">
+<!ENTITY fvd_sd_manage_groups.tree.count.title "Վահանակներ">
+<!ENTITY fvd_sd_manage_groups.add.title "Ավելացնել">
+<!ENTITY fvd_sd_manage_groups.edit.title "Խմբագրել">
+<!ENTITY fvd_sd_manage_groups.remove.title "Ջնջել">
+<!ENTITY fvd_sd_manage_groups.close.title "Փակել">
+<!ENTITY fvd_sd_manage_groups.context.remove.title "Հեռացնել">
+<!ENTITY fvd_sd_sd_block.dialog.title "Արգելել վեբ հասցեն/Տիրույթը">
+<!ENTITY fvd_sd_sd_block.block_type.title "Արգելման եղանակը">
+<!ENTITY fvd_sd_sd_block.block_type.uri "Վեբ հասցե">
+<!ENTITY fvd_sd_sd_block.block_type.domain "Տիրույթ">
+<!ENTITY fvd_sd_sd_block.block_url.title "Վեբ հասցե/Տիրույթ">
+<!ENTITY fvd_sd_manage_blocked.dialog.title "Արգելված տիրույթների կառավարում">
+<!ENTITY fvd_sd_manage_blocked.tree.sign.title "Վեբ հասցե/Տիրույթ">
+<!ENTITY fvd_sd_manage_blocked.tree.type.title "Տեսակը">
+<!ENTITY fvd_sd_manage_blocked.button.ok "ԼԱՎ">
+<!ENTITY fvd_sd_manage_blocked.button.unblock "Ապաարգելակել">
+<!ENTITY fvd_sd_manage_blocked.button.add "Ավելացնել">
+<!ENTITY fvd_sd_manage_blocked.button.edit "Խմբագրել">
+<!ENTITY fvd_sd_manage_blocked.context.unblock "Ապաարգելակել">
+<!ENTITY fvd_sd_manage_blocked.context.open_uri "Բացել վեբ հղումը">
+<!ENTITY fvd_sd_manage_blocked.context.edit "Խմբագրել">
+<!ENTITY fvd_sd_view_group.dialog.title "Նայել խումբը">
+<!ENTITY fvd_sd_view_group.type.title "Գլխագիրը">
+<!ENTITY fvd_sd_view_group.type.uri "Վեբ հղումը">
+<!ENTITY fvd_sd_view_group.context.open "Բացել էջում">
+<!ENTITY fvd_sd_view_group.context.open_new_tab "Բացել նոր էջում">
+<!ENTITY fvd_sd_view_group.context.open_new_tab_background "Բացել հետին էջում">
+<!ENTITY fvd_sd_view_group.context.remove "Ջնջել վեբ էջը">
+<!ENTITY fvd_sd_view_group.context.add_to_speed_dial "Ավելացնել Speed Dial-ում">
+<!ENTITY fvd_sd_view_group.context.block "Արգելել">
+<!ENTITY fvd_sd_view_group.context.copy_url "Պատճենել վեբ հղումը">
+<!ENTITY fvd_sd_view_group.context.refresh "Թարմացնել">
+<!ENTITY fvd_sd_new_group.dialog.title "Ստեղծել/փոփոխել խումբը">
+<!ENTITY fvd_sd_new_group.group_name.title "Խմբի անունը">
+<!ENTITY fvd_sd_new_dial.close_window "Փակել պատուհանը">
+<!ENTITY fvd_sd_new_group.sync_this_group "Sync this group">
+<!ENTITY fvd_sd_manage_groups.tree.sync.title "Sync">
+<!ENTITY fvd_sd_new_dial.pickurl.title "Pick URL From:">
+<!ENTITY fvd_sd_new_dial.pickurl.tabs "Opened Tabs">
+<!ENTITY fvd_sd_new_dial.pickurl.mostvisited "Most Visited">
+<!ENTITY fvd_sd_new_dial.pickurl.or "or">
+<!ENTITY fvd_sd_new_dial.button.user_pics "User Pics">
+<!ENTITY fvd_sd_new_dial.preview_type.enter_manually_url "Or enter your image URL below">
+<!ENTITY fvd_sd_new_dial.pickurl.popular "Most Popular">
+<!ENTITY fvd_sd_new_dial.pick_from_panle.loading "Loading...">
+<!ENTITY fvd_sd_new_dial.top_10_pics "Top 10 User Images">

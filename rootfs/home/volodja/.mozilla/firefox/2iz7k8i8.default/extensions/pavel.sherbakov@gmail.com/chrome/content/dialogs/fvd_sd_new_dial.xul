@@ -1,0 +1,235 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://global/skin/"?>
+<?xml-stylesheet href="chrome://fvd.speeddial/skin/dialogs/fvd_sd_new_dial.css" type="text/css"?>
+<?xml-stylesheet href="chrome://fvd.speeddial/skin/sd/skin/google.css" type="text/css"?>
+
+<!DOCTYPE dialog SYSTEM "chrome://fvd.speeddial/locale/fvd.toolbar.dialogs.dtd">
+<dialog 
+	xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+	xmlns:html="http://www.w3.org/1999/xhtml" 
+	id="fvd_new_dial_dialog"
+	flex="2"
+	title="&fvd_sd_new_dial.dialog.title;"
+	ondialogaccept="return onOK(event)"
+	ondialogcancel="return onCancel(event)"	
+	ondialogextra1="return back(event)"	
+	buttonlabelcancel="&fvd_sd_new_dial.button.close;"	
+	buttonlabelextra1="&fvd_sd_new_dial.button.back;"	
+	persist="screenX,screenY"
+	
+	fvdsdmode="add"
+	>
+	
+	<script type="application/x-javascript" src="chrome://fvd.speeddial/content/dialogs/fvd_sd_new_dial.js"/>
+	<script type="application/x-javascript" src="chrome://fvd.speeddial/content/include/tools/urlrequestor.js"/>
+	<script type="application/x-javascript" src="chrome://fvd.speeddial/content/include/tools/misc.js"/>
+		
+	<panel id="pickUrlsFromPanel" type="arrow">
+		<vbox class="loading" flex="2" pack="center" align="center">
+			<hbox class="img"/>
+			<label value="&fvd_sd_new_dial.pick_from_panle.loading;"/>
+		</vbox>
+	
+		<vbox id="pickUrlsFromPanelContainer" flex="2"></vbox>
+		
+		<arrowscrollbox orient="vertical" flex="1">
+		</arrowscrollbox>
+	</panel>
+	
+	<vbox id="fvdsdmode_userpics">
+		
+		<iframe src="fvdsd_new_userpics.html" flex="2"></iframe>
+		
+	</vbox>
+	
+	<hbox id="fvdsdmode_add">
+		
+		<vbox>
+		
+			<stack>
+		
+				<tabbox>
+					<tabs onselect="changeTab(event)" id="tabsContainer">
+						<tab label="&fvd_sd_new_dial.tab.main;" id="tabMain" />
+						<tab label="&fvd_sd_new_dial.tab.preview;" id="tabPreview" />
+					</tabs>
+					<tabpanels>
+						<tabpanel id="tabMain">
+							<vbox flex="2">
+								<groupbox>
+									
+									<caption label="&fvd_sd_new_dial.url.title;" />
+									<hbox>	
+										<textbox 
+										id="url"
+										type="autocomplete"
+										autocompletesearch="history"
+										autocompletesearchparam="enable-actions"
+										completeselectedindex="true"
+										tabscrolling="true"
+										showcommentcolumn="false"
+										showimagecolumn="true"
+										enablehistory="true"
+										newlines="stripsurroundingwhitespace"			
+										flex="1"
+										crop="right"
+										emptytext="&fvd_sd_new_dial.url.emptytext;" />
+									</hbox>
+									
+									<hbox id="pickUrlFrom" align="right" hidden="true">
+										<label value="&fvd_sd_new_dial.pickurl.title;"/>
+										<label popup="pickUrlsFromPanel" class="text-link" value="&fvd_sd_new_dial.pickurl.tabs;" id="pickUrlFromOpenedTabs"/>
+										<label value="/"/>							
+										<label popup="pickUrlsFromPanel" class="text-link" value="&fvd_sd_new_dial.pickurl.mostvisited;" id="pickUrlFromMostVisited"/>
+										<label value="/"/>
+										<label popup="pickUrlsFromPanel" class="text-link" value="&fvd_sd_new_dial.pickurl.popular;" id="pickUrlFromMostPopular"/>
+									</hbox>
+									
+								</groupbox>
+							
+								<groupbox>
+									<caption label="&fvd_sd_new_dial.group.title;" />
+									
+									<menulist id="group" crop="right" flex="2">
+										<menupopup>
+										</menupopup>
+									</menulist>
+									
+								</groupbox>
+									
+								<groupbox>
+									<caption label="&fvd_sd_new_dial.title.title;" />
+									<hbox>	
+										<textbox emptytext="&fvd_sd_new_dial.empty_title.value;" id="title" flex="1" onkeypress="handChangeTitle()"  />
+									</hbox>
+									<hbox pack="end"><label id="title_not_found_label" raised="0" value="&fvd_sd_new_dial.title_not_found;"/><label id="get_title_label" class="get_title_label" loading="0" value="" /></hbox>
+								</groupbox>
+							</vbox>
+						</tabpanel>
+						<tabpanel id="tabPreview">
+							<vbox flex="2">
+								<hbox pack="center" align="center">
+									<vbox id="preview_box_parent">
+										<vbox id="preview_box" flex="2" nopreview="1" align="center" pack="center">
+											<progressmeter	id="previewProgress"	mode="determined"	value="0"/>
+										</vbox>
+									</vbox>
+								</hbox>
+						
+								
+								<vbox pack="center" align="center" id="url_custom_settings">
+									<hbox align="center">
+										<label value="&fvd_sd_new_dial.delay.label;" control="delay"/>
+										<textbox id="delay" value="1" type="number" min="1" max="10" size="2"/>
+									</hbox>
+									<hbox align="center">
+										<label value="&fvd_sd_new_dial.disable_plugins;" control="disable_plugins"/>
+										<radiogroup id="disable_plugins">
+											<hbox>
+												<radio label="&fvd_sd_new_dial.disable_plugins.yes;" value="1" onclick="preview(null, 1)"/>
+												<radio label="&fvd_sd_new_dial.disable_plugins.no;" value="0" onclick="preview(null, 0)"/>
+											</hbox>
+										</radiogroup>
+									</hbox>
+									<radiogroup id="use_js">
+										<hbox>
+											<radio label="&fvd_sd_new_dial.disable_js;" value="0" onclick="preview(0)"/>
+											<radio label="&fvd_sd_new_dial.enable_js;" value="1" selected="true" onclick="preview(1)"/>
+										</hbox>
+									</radiogroup>						
+								</vbox>
+								<vbox pack="center" align="center">
+									<html:button  onclick="preview(null, null, null, true)" class="fvdButton2" id="previewButton">&fvd_sd_new_dial.preview_type.preview;</html:button>
+								</vbox>
+								
+								<groupbox>
+									<caption label="&fvd_sd_new_dial.preview_type;" />
+									<vbox flex="2">
+										<radiogroup id="preview_type">
+											<radio value="url" label="&fvd_sd_new_dial.preview_type.make_from_dial;" onclick="setTimeout(function(){setScreenType('url');preview(null, null, true);}, 0)"/>
+											<radio value="force_url" label="&fvd_sd_new_dial.preview_type.make_from_uri;" onclick="setTimeout(function(){setScreenType('force_url');preview(null, null, true);}, 0)"/>
+											
+											<vbox id="screen_url_box">
+												<hbox align="center">
+											
+													<label style="display:none" id="lbl_default_images" value="Default image:" control="default_images"/>
+													<menulist hidden="true" oncommand="changeScreenUrl(this.value, true)" label="&fvd_sd_new_dial.user_defined_image.title;" id="default_images" crop="right" sizetopopup="always" flex="2">
+														<menupopup height="200">
+														</menupopup>
+													</menulist>
+											
+													<html:button id="buttonUserGallery" onclick="setDialogMode( 'userpics' )" class="fvdButton green">&fvd_sd_new_dial.button.user_pics;</html:button>
+												
+													<label value="&fvd_sd_new_dial.preview_type.enter_manually_url;"/>
+												
+												</hbox>
+												
+												<hbox pack="end">
+													<menulist hidden="true" oncommand="changeScreenUrl(this.value)" id="default_images_variants" crop="right" sizetopopup="always">
+														<menupopup>
+														</menupopup>
+													</menulist>
+												</hbox>
+												
+												<textbox  flex="2" id="screen_url"/>
+											</vbox>
+											<radio value="local_file" label="&fvd_sd_new_dial.preview_type.make_from_local_file;" onclick="setTimeout(function(){setScreenType('local_file');preview(null, null, true);}, 0)"/>		
+											<hbox>
+												<textbox  flex="2" id="local_file_path"/><button id="btn_local_file_path" onclick="pickScreenLocalFile()" label="&fvd_sd_new_dial.preview_type.make_from_file_button;"/>
+											</hbox>
+										</radiogroup>
+									</vbox>							
+								</groupbox>
+								
+								<groupbox>
+									<caption>
+										<checkbox label="&fvd_sd_new_dial.autoupdate;" id="autoUpdateState" oncommand="refreshAutoUpdateState()"/>
+									</caption>
+									<hbox id="autoUpdateBox" align="center">
+										<label value="&fvd_sd_new_dial.autoupdate.every;"/>
+										<textbox min="1" type="number" id="autoUpdateInterval"/>
+										<menulist id="autoUpdateIntervalType">
+											<menupopup>
+												<menuitem label="&fvd_sd_new_dial.autoupdate.minutes;" value="minutes"/>
+												<menuitem label="&fvd_sd_new_dial.autoupdate.hours;" value="hours"/>
+												<menuitem label="&fvd_sd_new_dial.autoupdate.days;" value="days"/>
+											</menupopup>
+										</menulist>
+									</hbox>
+								</groupbox>		
+								
+							</vbox>
+						</tabpanel>
+					</tabpanels>
+				</tabbox>
+			
+				<hbox flex="2" top="20" align="center" pack="center"><label id="dialAddedUpdatedNotice" class="fvdNotice"/></hbox>
+			
+			</stack>
+			
+			<hbox pack="end">
+					
+				<checkbox label="&fvd_sd_new_dial.close_window;" id="closeWindowAfterSuccess"/>
+					
+			</hbox>
+		
+		</vbox>
+		
+		<vbox id="fastPickUserPic">
+			
+			<groupbox flex="2">
+				<caption label="&fvd_sd_new_dial.top_10_pics;"></caption>
+				
+				<iframe flex="2" src="fvdsd_new_userpics.html?short=1"></iframe>
+			</groupbox>
+			
+		</vbox>
+		
+	</hbox>
+		
+
+	
+	<browser style="visiblity: hidden" id="helper_browser" type="content" src=""/>
+	<hbox id="grab_frames_container"/>
+
+</dialog>

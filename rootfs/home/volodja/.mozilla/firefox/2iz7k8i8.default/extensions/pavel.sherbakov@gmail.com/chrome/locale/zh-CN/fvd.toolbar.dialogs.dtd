@@ -1,0 +1,82 @@
+<!ENTITY fvd_confirm_download_browser.dialog.title "Fvd Suite 未运行">
+<!ENTITY fvd_confirm_download_browser.button.no.title "否(我要先启动 Fvd Suite)">
+<!ENTITY fvd_confirm_download_browser.button.yes.title "是">
+<!ENTITY fvd_confirm_download_browser.label.first.value "Fvd Suite 未启动。">
+<!ENTITY fvd_confirm_download_browser.label.second.value "建议启动 Fvd Suite 然后重新尝试下载。">
+<!ENTITY fvd_confirm_download_browser.label.three.value "是否要用 Firefox 进行下载？">
+<!ENTITY fvd_sd_new_dial.dialog.title "创建/修改拨号">
+<!ENTITY fvd_sd_new_dial.title.title "拨号标题">
+<!ENTITY fvd_sd_new_dial.url.title "URL">
+<!ENTITY fvd_sd_new_dial.title_not_found "未找到标题">
+<!ENTITY fvd_sd_new_dial.preview_type.make_from_dial "从拨号 URL 创建">
+<!ENTITY fvd_sd_new_dial.preview_type.make_from_uri "从 URL 创建">
+<!ENTITY fvd_sd_new_dial.preview_type.make_from_local_file "从本地文件创建">
+<!ENTITY fvd_sd_new_dial.preview_type.preview "点击预览">
+<!ENTITY fvd_sd_new_dial.preview_type.make_from_file_button "...">
+<!ENTITY fvd_sd_new_dial.group.title "分组">
+<!ENTITY fvd_sd_new_dial.user_defined_image.title "预定义图标">
+<!ENTITY fvd_sd_new_dial.url.emptytext "http://">
+<!ENTITY fvd_sd_new_dial.button.close "关闭">
+<!ENTITY fvd_sd_new_dial.disable_js "禁用 JavaScript">
+<!ENTITY fvd_sd_new_dial.enable_js "启用 JavaScript">
+<!ENTITY fvd_sd_new_dial.tab.main "主要">
+<!ENTITY fvd_sd_new_dial.tab.preview "预览">
+<!ENTITY fvd_sd_new_dial.button.back "返回">
+<!ENTITY fvd_sd_new_dial.delay.label "延迟(秒)：">
+<!ENTITY fvd_sd_new_dial.empty_title.value "自动获取标题">
+<!ENTITY fvd_sd_new_dial.disable_plugins.yes "是">
+<!ENTITY fvd_sd_new_dial.disable_plugins.no "否">
+<!ENTITY fvd_sd_new_dial.disable_plugins "禁用插件(flash, silverlight...)：">
+<!ENTITY fvd_sd_new_dial.preview_type "预览类型">
+<!ENTITY fvd_sd_new_dial.autoupdate "自动更新">
+<!ENTITY fvd_sd_new_dial.autoupdate.every "频率：">
+<!ENTITY fvd_sd_new_dial.autoupdate.minutes "分">
+<!ENTITY fvd_sd_new_dial.autoupdate.hours "小时">
+<!ENTITY fvd_sd_new_dial.autoupdate.days "天">
+<!ENTITY fvd_sd_manage_groups.tree.name.title "名称">
+<!ENTITY fvd_sd_manage_groups.tree.count.title "拨号数">
+<!ENTITY fvd_sd_manage_groups.add.title "添加">
+<!ENTITY fvd_sd_manage_groups.edit.title "编辑">
+<!ENTITY fvd_sd_manage_groups.remove.title "删除">
+<!ENTITY fvd_sd_manage_groups.close.title "关闭">
+<!ENTITY fvd_sd_manage_groups.context.remove.title "删除">
+<!ENTITY fvd_sd_sd_block.dialog.title "阻止 URL/域">
+<!ENTITY fvd_sd_sd_block.block_type.title "阻止类型">
+<!ENTITY fvd_sd_sd_block.block_type.uri "URL">
+<!ENTITY fvd_sd_sd_block.block_type.domain "域">
+<!ENTITY fvd_sd_sd_block.block_url.title "URL/域">
+<!ENTITY fvd_sd_manage_blocked.dialog.title "管理阻止的域">
+<!ENTITY fvd_sd_manage_blocked.tree.sign.title "URL/域">
+<!ENTITY fvd_sd_manage_blocked.tree.type.title "类型">
+<!ENTITY fvd_sd_manage_blocked.button.ok "确定">
+<!ENTITY fvd_sd_manage_blocked.button.unblock "取消阻止">
+<!ENTITY fvd_sd_manage_blocked.button.add "添加">
+<!ENTITY fvd_sd_manage_blocked.button.edit "编辑">
+<!ENTITY fvd_sd_manage_blocked.context.unblock "取消阻止">
+<!ENTITY fvd_sd_manage_blocked.context.open_uri "打开 URL">
+<!ENTITY fvd_sd_manage_blocked.context.edit "编辑">
+<!ENTITY fvd_sd_view_group.dialog.title "查看分组">
+<!ENTITY fvd_sd_view_group.type.title "标题">
+<!ENTITY fvd_sd_view_group.type.uri "URL">
+<!ENTITY fvd_sd_view_group.context.open "在当前标签打开">
+<!ENTITY fvd_sd_view_group.context.open_new_tab "在新标签打开">
+<!ENTITY fvd_sd_view_group.context.open_new_tab_background "在后台标签打开">
+<!ENTITY fvd_sd_view_group.context.remove "删除 URL">
+<!ENTITY fvd_sd_view_group.context.add_to_speed_dial "添加到快速拨号">
+<!ENTITY fvd_sd_view_group.context.block "阻止">
+<!ENTITY fvd_sd_view_group.context.copy_url "复制 URL">
+<!ENTITY fvd_sd_view_group.context.refresh "重新载入">
+<!ENTITY fvd_sd_new_group.dialog.title "创建/编辑分组">
+<!ENTITY fvd_sd_new_group.group_name.title "分组名">
+<!ENTITY fvd_sd_new_dial.close_window "关闭此窗口">
+<!ENTITY fvd_sd_new_group.sync_this_group "同步此分组">
+<!ENTITY fvd_sd_manage_groups.tree.sync.title "同步">
+<!ENTITY fvd_sd_new_dial.pickurl.title "Pick URL From:">
+<!ENTITY fvd_sd_new_dial.pickurl.tabs "Opened Tabs">
+<!ENTITY fvd_sd_new_dial.pickurl.mostvisited "Most Visited">
+<!ENTITY fvd_sd_new_dial.pickurl.or "or">
+<!ENTITY fvd_sd_new_dial.button.user_pics "User Pics">
+<!ENTITY fvd_sd_new_dial.preview_type.enter_manually_url "Or enter your image URL below">
+<!ENTITY fvd_sd_new_dial.pickurl.popular "Most Popular">
+<!ENTITY fvd_sd_new_dial.pick_from_panle.loading "Loading...">
+<!ENTITY fvd_sd_new_dial.top_10_pics "Top 10 User Images">

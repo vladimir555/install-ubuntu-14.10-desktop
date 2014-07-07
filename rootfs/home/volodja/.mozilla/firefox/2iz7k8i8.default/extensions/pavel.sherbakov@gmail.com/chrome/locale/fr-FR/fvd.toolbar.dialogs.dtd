@@ -1,0 +1,82 @@
+<!ENTITY fvd_confirm_download_browser.dialog.title "Fvd Suite n'est pas démarré">
+<!ENTITY fvd_confirm_download_browser.button.no.title "Non (je lancerai Fvd Suite d'abord)">
+<!ENTITY fvd_confirm_download_browser.button.yes.title "Oui">
+<!ENTITY fvd_confirm_download_browser.label.first.value "Fvd Suite n'est pas démarré. ">
+<!ENTITY fvd_confirm_download_browser.label.second.value "Nous vous conseillons de démarrer Fvd Suite et réessayer votre téléchargement.">
+<!ENTITY fvd_confirm_download_browser.label.three.value "Voulez-vous effectuer ce téléchargement avec Firefox?">
+<!ENTITY fvd_sd_new_dial.dialog.title "Ajouter/modifier un accès">
+<!ENTITY fvd_sd_new_dial.title.title "Titre de l'accès">
+<!ENTITY fvd_sd_new_dial.url.title "URL">
+<!ENTITY fvd_sd_new_dial.title_not_found "Titre non trouvé">
+<!ENTITY fvd_sd_new_dial.preview_type.make_from_dial "Créer à partir de l'URL d'un accès">
+<!ENTITY fvd_sd_new_dial.preview_type.make_from_uri "Créer à partir de l'URL">
+<!ENTITY fvd_sd_new_dial.preview_type.make_from_local_file "Créer à partir d'un fichier local">
+<!ENTITY fvd_sd_new_dial.preview_type.preview "Cliquer pour voir un aperçu">
+<!ENTITY fvd_sd_new_dial.preview_type.make_from_file_button "...">
+<!ENTITY fvd_sd_new_dial.group.title "Groupe">
+<!ENTITY fvd_sd_new_dial.user_defined_image.title "Logo prédéfini">
+<!ENTITY fvd_sd_new_dial.url.emptytext "http://">
+<!ENTITY fvd_sd_new_dial.button.close "Fermer">
+<!ENTITY fvd_sd_new_dial.disable_js "Désactiver JavaScript">
+<!ENTITY fvd_sd_new_dial.enable_js "Activer JavaScript">
+<!ENTITY fvd_sd_new_dial.tab.main "Principal">
+<!ENTITY fvd_sd_new_dial.tab.preview "Aperçu">
+<!ENTITY fvd_sd_new_dial.button.back "Retour">
+<!ENTITY fvd_sd_new_dial.delay.label "Délai(secondes):">
+<!ENTITY fvd_sd_new_dial.empty_title.value "Titre Dynamique">
+<!ENTITY fvd_sd_new_dial.disable_plugins.yes "oui">
+<!ENTITY fvd_sd_new_dial.disable_plugins.no "non">
+<!ENTITY fvd_sd_new_dial.disable_plugins "Désactiver les plugins(flash, silverlight,...):">
+<!ENTITY fvd_sd_new_dial.preview_type "Type d'aperçu">
+<!ENTITY fvd_sd_new_dial.autoupdate "Mise à jour auto">
+<!ENTITY fvd_sd_new_dial.autoupdate.every "Tous les:">
+<!ENTITY fvd_sd_new_dial.autoupdate.minutes "Minutes">
+<!ENTITY fvd_sd_new_dial.autoupdate.hours "Heures">
+<!ENTITY fvd_sd_new_dial.autoupdate.days "Jours">
+<!ENTITY fvd_sd_manage_groups.tree.name.title "Nom">
+<!ENTITY fvd_sd_manage_groups.tree.count.title "Accès">
+<!ENTITY fvd_sd_manage_groups.add.title "Ajouter">
+<!ENTITY fvd_sd_manage_groups.edit.title "Editer">
+<!ENTITY fvd_sd_manage_groups.remove.title "Supprimer">
+<!ENTITY fvd_sd_manage_groups.close.title "Fermer">
+<!ENTITY fvd_sd_manage_groups.context.remove.title "Supprimer">
+<!ENTITY fvd_sd_sd_block.dialog.title "Bloquer une URL/Domaine">
+<!ENTITY fvd_sd_sd_block.block_type.title "Blocager">
+<!ENTITY fvd_sd_sd_block.block_type.uri "URL">
+<!ENTITY fvd_sd_sd_block.block_type.domain "Domaine">
+<!ENTITY fvd_sd_sd_block.block_url.title "URL/Domaine">
+<!ENTITY fvd_sd_manage_blocked.dialog.title "Gérer les domaines bloqués">
+<!ENTITY fvd_sd_manage_blocked.tree.sign.title "URL/Domaine">
+<!ENTITY fvd_sd_manage_blocked.tree.type.title "Type">
+<!ENTITY fvd_sd_manage_blocked.button.ok "Ok">
+<!ENTITY fvd_sd_manage_blocked.button.unblock "Débloquer">
+<!ENTITY fvd_sd_manage_blocked.button.add "Ajouter">
+<!ENTITY fvd_sd_manage_blocked.button.edit "Editer">
+<!ENTITY fvd_sd_manage_blocked.context.unblock "Débloquer">
+<!ENTITY fvd_sd_manage_blocked.context.open_uri "Ouvrir l'URL">
+<!ENTITY fvd_sd_manage_blocked.context.edit "Editer">
+<!ENTITY fvd_sd_view_group.dialog.title "Voir le groupe">
+<!ENTITY fvd_sd_view_group.type.title "Titre">
+<!ENTITY fvd_sd_view_group.type.uri "URL">
+<!ENTITY fvd_sd_view_group.context.open "Ouvrir dans l'onglet courant">
+<!ENTITY fvd_sd_view_group.context.open_new_tab "Ouvrir dans un nouvel onglet">
+<!ENTITY fvd_sd_view_group.context.open_new_tab_background "Ouvrir dans un onglet en arrière-plan">
+<!ENTITY fvd_sd_view_group.context.remove "Supprimer l'URL">
+<!ENTITY fvd_sd_view_group.context.add_to_speed_dial "Ajouter au Speed Dial">
+<!ENTITY fvd_sd_view_group.context.block "Bloquer">
+<!ENTITY fvd_sd_view_group.context.copy_url "Copier l'URL">
+<!ENTITY fvd_sd_view_group.context.refresh "Actualiser">
+<!ENTITY fvd_sd_new_group.dialog.title "Créer/modifier un groupe">
+<!ENTITY fvd_sd_new_group.group_name.title "Nom du groupe">
+<!ENTITY fvd_sd_new_dial.close_window "Fermer cette fenêtre">
+<!ENTITY fvd_sd_new_group.sync_this_group "Sync this group">
+<!ENTITY fvd_sd_manage_groups.tree.sync.title "Sync">
+<!ENTITY fvd_sd_new_dial.pickurl.title "Pick URL From:">
+<!ENTITY fvd_sd_new_dial.pickurl.tabs "Opened Tabs">
+<!ENTITY fvd_sd_new_dial.pickurl.mostvisited "Most Visited">
+<!ENTITY fvd_sd_new_dial.pickurl.or "or">
+<!ENTITY fvd_sd_new_dial.button.user_pics "User Pics">
+<!ENTITY fvd_sd_new_dial.preview_type.enter_manually_url "Or enter your image URL below">
+<!ENTITY fvd_sd_new_dial.pickurl.popular "Most Popular">
+<!ENTITY fvd_sd_new_dial.pick_from_panle.loading "Loading...">
+<!ENTITY fvd_sd_new_dial.top_10_pics "Top 10 User Images">

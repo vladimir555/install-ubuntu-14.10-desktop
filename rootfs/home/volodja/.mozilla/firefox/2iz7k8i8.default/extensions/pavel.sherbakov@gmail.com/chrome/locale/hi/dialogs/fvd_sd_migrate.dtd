@@ -1,0 +1,11 @@
+<!ENTITY dialog.title "Import Dials/Groups from another addons">
+<!ENTITY step_select_addon.caption "Select addon to import">
+<!ENTITY step_select_groups.caption "Select groups to import">
+<!ENTITY step_select_urls.caption "Select dials to import">
+<!ENTITY import_urls.caption "Importing dials">
+<!ENTITY btn_select_all "Select All">
+<!ENTITY btn_unselect_all "Unselect All">
+<!ENTITY btn_previous "Previous">
+<!ENTITY btn_next "Next">
+<!ENTITY btn_close "Done">
+<!ENTITY btn_abort "Close">

@@ -1,0 +1,84 @@
+<!ENTITY context.open "Abrir en pestaña">
+<!ENTITY context.open_new_tab "Abrir en nueva pestaña">
+<!ENTITY context.open_new_tab_background "Abrir en pestaña en segundo plano">
+<!ENTITY context.edit "Editar">
+<!ENTITY context.refresh "Actualizar">
+<!ENTITY context.remove "Borrar dial">
+<!ENTITY context.copy_url "Copiar URL">
+<!ENTITY context.move_to "Mover a">
+<!ENTITY context_list.open "Abrir en pestaña">
+<!ENTITY context_list.open_new_tab "Abrir en nueva pestaña">
+<!ENTITY context_list.open_new_tab_background "Abrir en pestaña en segundo plano">
+<!ENTITY context_list.add "Añadir a Speed Dial">
+<!ENTITY context_list.remove "Borrar">
+<!ENTITY context_list.block "Bloquear">
+<!ENTITY context_list.edit "Editar">
+<!ENTITY context_list.refresh "Actualizar">
+<!ENTITY context_group.refresh_all "Actualizar todo">
+<!ENTITY context_group.open_all_links "Abrir todos los enlaces">
+<!ENTITY context_group.default "Predeterminado">
+<!ENTITY context_group.last_selected "Último seleccionado">
+<!ENTITY context_group.manage_groups "Administrar grupos">
+<!ENTITY context_group.edit "Editar grupo">
+<!ENTITY context_group.delete "Borrar grupo">
+<!ENTITY context_group.sync_this_group "Sincronizar este grupo">
+<!ENTITY fs_context.add_dial "Añadir dial">
+<!ENTITY fs_context.refresh_all "Actualizar todo">
+<!ENTITY fs_context.open_all "Abrir todos los enlaces">
+<!ENTITY fs_context.thumbs.big "Grande">
+<!ENTITY fs_context.thumbs.medium "Mediano">
+<!ENTITY fs_context.thumbs.small "Pequeño">
+<!ENTITY fs_context.thumbs.custom "Personalizado">
+<!ENTITY fs_context.thumbs.list "Lista">
+<!ENTITY fs_context.view "Ver">
+<!ENTITY fs_context.columns "Columnas">
+<!ENTITY thumb.delete_dial "Borrar dial">
+<!ENTITY thumb.edit_dial "Editar dial">
+<!ENTITY list_elem.add "Fijar a Speed Dial">
+<!ENTITY list_elem.remove "Borrar">
+<!ENTITY list_elem.block "Bloquear URL o dominio">
+<!ENTITY list_elem.error_loading_page "Error al cargar página">
+<!ENTITY list_open_all.title "Abrir todos los enlaces">
+<!ENTITY list_remove_all.title "Borrar estos enlaces">
+<!ENTITY list_open_all.add_dial "Añadir dial">
+<!ENTITY list_no_items.title "No hay elementos a mostrar">
+<!ENTITY thumb_types.title "Miniaturas:">
+<!ENTITY thumb_types.type_small "Pequeño">
+<!ENTITY thumb_types.type_medium "Mediano">
+<!ENTITY thumb_types.type_big "Grande">
+<!ENTITY thumb_types.type_list "Lista">
+<!ENTITY selector.refresh "Actualizar">
+<!ENTITY selector.options "Opciones">
+<!ENTITY dont_display_page.title "No mostrar esta página">
+<!ENTITY make_home_page.title "Hacer de Speed Dial mi página de inicio">
+<!ENTITY settings2.most_visited.week "Última semana">
+<!ENTITY settings2.most_visited.last_month "Último mes">
+<!ENTITY settings2.most_visited.all_time "Tiempo completo">
+<!ENTITY settings2.most_visited.group_by.uri "URI">
+<!ENTITY settings2.most_visited.group_by.domain "Dominio">
+<!ENTITY settings2.top_sites_groups.all_groups "Populares">
+<!ENTITY settings2.top_sites_groups.add_group "Añadir grupo">
+<!ENTITY settings2.top_sites_groups.manage_groups "Administrar grupos">
+<!ENTITY settings2.list_types.title "Título">
+<!ENTITY settings2.list_types.uri "URI">
+<!ENTITY double_click_to_expand.title "Doble clic para expandir (o pulsar Intro)">
+<!ENTITY most_visited.restore_removed "Restaurar borrados">
+<!ENTITY list_type_selector.title "Mostrar título">
+<!ENTITY list_type_selector.url "Mostrar URL">
+<!ENTITY all_group.tooltip "Este grupo sólo muestra los diales más populares.">
+<!ENTITY change_background.title "Cambiar fondo">
+<!ENTITY restore_thumb.restore_previous "Restaurar previos:">
+<!ENTITY restore_thumb.yes "Sí">
+<!ENTITY restore_thumb.no "No">
+<!ENTITY restore_session.label "Restaurar sesión">
+<!ENTITY fs_context.thumbs.custom_change_size "Change Size">
+<!ENTITY fs_context.theme "Theme">
+<!ENTITY enable_power_off_message "Learn how you can protect your Speed Dials from unwanted viewers ">
+<!ENTITY poweroff.enter_passcode "Unlock Speed Dial">
+<!ENTITY power_off_feature "Power Off feature">
+<!ENTITY search_on_google "Search">
+<!ENTITY expand_message.dont_display_again "Dont display again">
+<!ENTITY fs_context.rows "Rows">
+<!ENTITY fs_context.scrolling_type "Scrolling type">
+<!ENTITY fs_context.scrolling_type_vertical "Vertical">
+<!ENTITY fs_context.scrolling_type_horizontal "Horizontal">

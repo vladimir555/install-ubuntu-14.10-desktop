@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://global/skin/"?>
+
+<!DOCTYPE dialog SYSTEM "chrome://fvd.speeddial/locale/fvd.toolbar.dialogs.dtd">
+
+<dialog xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+	id="fvd_new_group_dialog"
+	width="400"
+	title="&fvd_sd_new_group.dialog.title;"
+	ondialogaccept="return onOK(event)"
+	ondialogcancel="return onCancel(event)"
+	>
+	
+	<script type="application/x-javascript" src="chrome://fvd.speeddial/content/dialogs/fvd_sd_new_group.js"/>
+	
+	<groupbox>
+		<caption label="&fvd_sd_new_group.group_name.title;" />
+		<vbox>	
+			<textbox id="name"/>
+		</vbox>
+	</groupbox>
+	
+	<hbox hidden="true">
+		<checkbox label="&fvd_sd_new_group.sync_this_group;" id="sync" checked="true"/>
+	</hbox>
+
+</dialog>

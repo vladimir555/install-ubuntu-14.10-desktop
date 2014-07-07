@@ -1,0 +1,95 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+<?xml-stylesheet href="chrome://fvd.speeddial/skin/dialogs/fvd_sd_install_fvd_sync.css" type="text/css"?>
+<?xml-stylesheet href="chrome://fvd.speeddial/skin/sd/skin/dials/icons.css" type="text/css"?>
+<?xml-stylesheet href="chrome://fvd.speeddial/skin/sd/skin/google.css" type="text/css"?>
+
+<!DOCTYPE window SYSTEM "chrome://fvd.speeddial/locale/dialogs/fvd_sd_install_fvd_sync.dtd">
+
+<window
+	xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+	title="&window.title;"
+	xmlns:html="http://www.w3.org/1999/xhtml" 
+	class="installSyncMessage"
+>
+
+	<script src="chrome://fvd.speeddial/content/dialogs/fvd_sd_install_fvd_sync.js"/>
+	
+	<label id="header" value="&head_message;"/>
+	
+	<groupbox>
+
+		<caption label="&fvd_speed_dial;"/>
+	
+		<vbox flex="2">
+			
+			<hbox>
+				<label value="&sd_1;"/>
+			</hbox>
+			
+			<hbox>
+				<label value="&sd_2;"/>
+			</hbox>
+			
+			<hbox>
+				<label value="&sd_3;"/>
+			</hbox>
+			
+		</vbox>	
+	
+	</groupbox>
+
+	<groupbox>
+
+		<caption label="&fvd_sync;"/>
+	
+		<vbox flex="2">
+			
+			<hbox>
+				<label value="&s_1;"/>
+			</hbox>
+			
+			<hbox>
+				<label value="&s_2;"/>
+			</hbox>
+			
+		</vbox>	
+	
+	</groupbox>
+	
+	<groupbox>
+
+		<caption label="&ever_helper;"/>
+	
+		<vbox flex="2">
+			
+			<hbox>
+				<label value="&eh_1;"/>
+			</hbox>
+			
+			<hbox>
+				<label value="&eh_2;"/>
+			</hbox>
+			
+			<hbox>
+				<label value="&eh_3;"/>
+			</hbox>
+			
+		</vbox>	
+	
+	</groupbox>
+	
+	<hbox pack="center">
+		
+		<deck id="installationDeck">
+			
+			<html:button  onclick="goToMozilla()" class="fvdButton main" >&download;</html:button>
+			<vbox  pack="center" align="center">
+				<progressmeter mode="undetermined"/>
+			</vbox>
+			
+		</deck>
+
+	</hbox>
+
+</window>

@@ -1,0 +1,618 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+<?xml-stylesheet href="chrome://fvd.speeddial/skin/sd/skin/dials/fvd.toolbar.sd.css" type="text/css"?>
+<?xml-stylesheet href="chrome://fvd.speeddial/skin/sd/skin/dials/themes/style.css" type="text/css"?>
+<?xml-stylesheet href="chrome://fvd.speeddial/skin/sd/skin/dials/text_colors.css" type="text/css"?>
+<?xml-stylesheet href="chrome://fvd.speeddial/skin/sd/skin/dials/icons.css" type="text/css"?>
+<?xml-stylesheet href="chrome://fvd.speeddial/skin/sd/skin/google.css" type="text/css"?>
+
+<!DOCTYPE window [
+<!ENTITY % fvd.speeddialDTD SYSTEM "chrome://fvd.speeddial/locale/fvd.sd.dtd">
+%fvd.speeddialDTD;
+]>
+
+<window xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+	xmlns:html="http://www.w3.org/1999/xhtml" 
+	id="fvdSpeedDial"
+	onunload="fvd_speed_dial_speedDialSSD.uninit()"	
+	>
+
+	<script src="chrome://fvd.speeddial/content/include/sd/pointerfeedback.js"></script>	
+
+	<script src="chrome://fvd.speeddial/content/include/sd/migrate.js"></script>
+	<script src="chrome://fvd.speeddial/content/include/tools/urlrequestor.js"></script>		
+	<script src="chrome://fvd.speeddial/content/include/tools/misc.js"></script>	
+	<script src="chrome://fvd.speeddial/content/include/speed_dial.js"></script>	
+	<script src="chrome://fvd.speeddial/content/include/sd/utils.js"></script>	
+	<script src="chrome://fvd.speeddial/content/include/sd/background_adjuster.js"></script>
+	<script src="chrome://fvd.speeddial/content/include/sd/livesearch.js"></script>
+	<script src="chrome://fvd.speeddial/content/include/sd/poweroff.js"></script>	
+	
+	<script src="chrome://fvd.speeddial/content/include/sd/textcolor_adjuster.js"></script>	
+	
+	<script>
+	
+	document.addEventListener("DOMContentLoaded", function(){
+		fvd_speed_dial_speedDialSSD.setupBgAdjuster();
+	}, false);
+	
+	document.addEventListener("DOMContentLoaded", function(){
+	
+		function _run(){
+			fvd_speed_dial_speedDialSSD.init();
+			fvd_speed_dial_speedDialSSD.display();
+			parent.document.body.setAttribute('loaded', '1');
+		}	
+		
+		if( parent.__domContentLoaded ){
+			_run();
+		}
+		else{
+		
+			// wait parent page load...
+			parent.document.addEventListener( "DOMContentLoaded", function(){
+				
+				_run();
+				
+			}, false );	
+			
+		}
+
+	}, false);
+
+	
+	</script>
+		
+	<vbox id="speedDialContent" flex="2" onclick="fvd_speed_dial_speedDialSSD.clickProcess()" ondblclick="fvd_speed_dial_speedDialSSD.toggleExpand(  );">
+	
+			<hbox align="center" style="display:none">		
+				<vbox draggable="true"
+				 ondrop="return fvd_speed_dial_speedDialSSD.dropDrag(event)"
+				 ondragleave="return fvd_speed_dial_speedDialSSD.outDrag(event)"
+				 ondragover="return fvd_speed_dial_speedDialSSD.overDrag(event)"
+				 ondragstart="return fvd_speed_dial_speedDialSSD.startDrag(event)"
+				 ondragend="fvd_speed_dial_speedDialSSD.endDrag(event)"
+				 id="widget_cell" class="sd_cell" context="cell_menu">					
+			
+						<hbox class="sd_cell_header top" align="center">
+							<image height="16" width="16" src="" class="sd_cell_favicon"/>
+							<vbox flex="2">
+								<label flex="2" class="sd_cell_title textColorCellTitle" value="" crop="right" />
+							</vbox>					
+						</hbox>			
+						
+						<vbox class="preview_parent" flex="2">
+							<stack flex="2">
+								<hbox flex="2" class="sd_cell_preview_container"/>
+								<vbox flex="2" bottom="0">
+								
+									<hbox class="restoreThumb cell_header_gray_line" pack="left" flex="2">
+										<label flex="2" crop="right" value="&restore_thumb.restore_previous;"/>
+										<label value="&restore_thumb.yes;" class="selector white yes"/>
+										<label value="/"/>
+										<label value="&restore_thumb.no;" class="selector white no"/>
+									</hbox>
+								
+									<hbox class="sd_cell_header cell_header2 cell_header_gray_line" pack="left" flex="2" >
+										<label class="clicks_count" crop="right"/>
+										<hbox class="buttons_container" flex="2" pack="end">
+											<vbox class="edit" tooltiptext="&thumb.edit_dial;" />
+											<spacer style="width: 5px"/>
+											<vbox class="cross" tooltiptext="&thumb.delete_dial;" />
+										</hbox>
+									</hbox>
+								</vbox>						
+							</stack>
+						</vbox>
+						<hbox class="bottomShadow"></hbox>
+						
+													
+						<hbox class="sd_cell_header bottom" align="center">
+						
+						
+							<vbox flex="2">
+								<label flex="2" class="sd_cell_title2 textColorCellUrl" value="" crop="right" />
+							</vbox>
+
+							
+						</hbox>
+			
+					
+					
+				</vbox>		
+				
+				<vbox id="widget_cell_most_visited" class="sd_cell" context="cell_menu_type2">	
+					<hbox class="sd_cell_header top" align="center">
+						<image height="16" width="16" src="" class="sd_cell_favicon"/>
+						<vbox flex="2">
+							<label flex="2" class="sd_cell_title textColorCellTitle" value="" crop="right" />
+						</vbox>
+					</hbox>				
+
+
+					<vbox class="preview_parent" flex="2">
+						<stack flex="2">
+							<hbox flex="2" class="sd_cell_preview_container"/>	
+							<hbox class="cell_header_gray_line slideMenu" pack="start" top="0">
+								<label crop="right" class="views_count" value=""/>
+								<hbox flex="1" pack="end">
+									<label crop="right" class="in_group" value=""/>
+								</hbox>
+							</hbox>
+							<vbox flex="2" bottom="0">
+								<hbox class="sd_cell_header cell_header2 cell_header_gray_line" pack="end" flex="2" >								
+									<hbox class="buttons_container">
+										<vbox class="edit" tooltiptext="&thumb.edit_dial;" />
+										<spacer style="width: 5px"/>
+										<vbox class="add" tooltiptext="&list_elem.add;"/>
+										<spacer style="width: 5px"/>
+										<vbox class="cross" tooltiptext="&list_elem.remove;"/>
+										<spacer style="width: 5px"/>
+										<vbox class="deny" tooltiptext="&list_elem.block;"/>
+									</hbox>
+								</hbox>
+							</vbox>								
+						</stack>			
+					</vbox>
+
+					
+					<hbox class="bottomShadow"></hbox>
+		
+					<hbox class="sd_cell_header bottom" align="center">
+						<vbox flex="2">
+							<label flex="2" class="sd_cell_title2 textColorCellUrl" value="" crop="right" />
+						</vbox>
+					</hbox>	
+
+					
+				</vbox>		
+				
+				
+				<hbox 
+				class="sd_list_elem"
+				context="cell_menu"
+				id="widget_cell_list"
+				ondrop="return fvd_speed_dial_speedDialSSD.dropDrag(event)"
+				ondragleave="return fvd_speed_dial_speedDialSSD.outDrag(event)"
+				ondragover="return fvd_speed_dial_speedDialSSD.overDrag(event)"
+				ondragstart="return fvd_speed_dial_speedDialSSD.startDrag(event)"
+				>
+					<stack flex="2">
+					
+						<hbox class="insertBeforeArrow"></hbox>								
+						<hbox class="insertAfterArrow"></hbox>
+					
+						<hbox>
+							<hbox class="sd_list_elem_favicon"/>
+							<label crop="right" class="sd_list_elem_title textColorListElem" value=""/>
+							<spacer style="width: 10px"/>
+							<hbox class="buttonsContainer">
+								<vbox class="list_edit" tooltiptext="&context.edit;"/>
+								<spacer style="width: 8px"/>
+								<vbox class="list_refresh" tooltiptext="&context.refresh;"/>
+								<spacer style="width: 8px"/>
+								<vbox class="list_cross" tooltiptext="&context.remove;"/>	
+							</hbox>
+						</hbox>
+					
+					</stack>
+					
+				</hbox>
+				
+				<hbox
+					id="widget_list_elem"
+					class="sd_list_elem"			
+				>
+					<hbox class="sd_list_elem_favicon"/>
+					
+					
+					<vbox>
+						<hbox>
+							<label crop="right" class="sd_list_elem_title textColorListElem" value=""/>
+							<label crop="right" class="sd_list_elem_title_error" value="&list_elem.error_loading_page;"/>
+						</hbox>
+											
+						<hbox class="most_visited_data">
+							<label class="views_count textColorListElem"/>
+							<label class="in_group textColorListElem"/>
+						</hbox>
+					</vbox>				
+					
+					<spacer style="width: 10px"/>
+					
+					<hbox class="buttonsContainer">
+						<vbox 	 class="list_add" tooltiptext="&list_elem.add;"/>
+						<spacer style="width: 8px"/>
+						<vbox  class="list_cross" tooltiptext="&list_elem.remove;"/>
+						<spacer style="width: 8px"/>
+						<vbox  class="list_deny" tooltiptext="&list_elem.block;"/>
+					</hbox>
+				</hbox>	
+				
+							
+			</hbox>
+			
+			<popupset>
+			  <menupopup id="cell_menu">
+				<menuitem label="&context.open;" oncommand="fvd_speed_dial_speedDialSSD.openPopupedDial()" />
+				<menuitem label="&context.open_new_tab;" oncommand="fvd_speed_dial_speedDialSSD.openPopupedDial('new_tab')" />
+				<menuitem label="&context.open_new_tab_background;" oncommand="fvd_speed_dial_speedDialSSD.openPopupedDial('new_tab_passive')" />
+				<menuseparator/>		    
+				<menuitem label="&context.edit;" oncommand="fvd_speed_dial_speedDialSSD.editPopupedDial()" />
+				<menuitem label="&context.refresh;" oncommand="fvd_speed_dial_speedDialSSD.refreshPopupedDial()"/>
+				<menuitem label="&context.remove;"  oncommand="fvd_speed_dial_speedDialSSD.remodePopupedDial()"/>
+				<menuitem label="&context.copy_url;"  oncommand="fvd_speed_dial_speedDialSSD.copyPopupedDial()"/>
+				
+				<menu label="&context.move_to;">
+					<menupopup id="topSitesMoveToGroups">
+
+					</menupopup>
+				</menu>
+				
+				
+			  </menupopup>
+			</popupset>
+				
+			<popupset>
+			  <menupopup id="cell_menu_type2">   
+				<menuitem label="&context_list.open;" oncommand="fvd_speed_dial_speedDialSSD.openPopupedListElem()" />
+				<menuitem label="&context_list.open_new_tab;" oncommand="fvd_speed_dial_speedDialSSD.openPopupedListElem('new_tab')" />
+				<menuitem label="&context_list.open_new_tab_background;" oncommand="fvd_speed_dial_speedDialSSD.openPopupedListElem('new_tab_passive')" />
+				<menuseparator/>
+				<menuitem label="&context_list.add;" oncommand="fvd_speed_dial_speedDialSSD.addPopupedListElem()" class="menuitem-iconic dialIcon" />
+				
+				<menuitem label="&context_list.refresh;" oncommand="fvd_speed_dial_speedDialSSD.refreshPopupedListElem()" />	
+				<menuitem label="&context_list.edit;" oncommand="fvd_speed_dial_speedDialSSD.editPopupedListElem()" />		    
+				<menuitem label="&context_list.remove;" oncommand="fvd_speed_dial_speedDialSSD.removePopupedListElem()"/>
+				<menuitem label="&context_list.block;"  oncommand="fvd_speed_dial_speedDialSSD.blockPopupedListElem()"/>
+				<menuitem label="&context.copy_url;"  oncommand="fvd_speed_dial_speedDialSSD.copyPopupedListElem()"/>
+			  </menupopup>
+			</popupset>
+					
+			<popupset>
+			  <menupopup id="cell_menu_type3">   
+				<menuitem label="&context_list.open;" oncommand="fvd_speed_dial_speedDialSSD.openPopupedListElem()" />
+				<menuitem label="&context_list.open_new_tab;" oncommand="fvd_speed_dial_speedDialSSD.openPopupedListElem('new_tab')" />
+				<menuitem label="&context_list.open_new_tab_background;" oncommand="fvd_speed_dial_speedDialSSD.openPopupedListElem('new_tab_passive')" />
+				<menuseparator/>
+				<menuitem label="&context_list.add;" oncommand="fvd_speed_dial_speedDialSSD.addPopupedListElem()" class="menuitem-iconic dialIcon" />
+				<menuitem label="&context.copy_url;"  oncommand="fvd_speed_dial_speedDialSSD.copyPopupedListElem()"/>
+				<menuitem label="&context_list.block;"  oncommand="fvd_speed_dial_speedDialSSD.blockPopupedListElem()"/>
+				<menuitem label="&context_list.remove;" oncommand="fvd_speed_dial_speedDialSSD.removePopupedListElem()"/>
+			  </menupopup>
+			</popupset>	
+			
+			<popupset>
+			  <menupopup id="group_menu_full" onpopupshowing="fvd_speed_dial_speedDialSSD._processGroupPopupShowing(event)">   
+				<menuitem label="&context_group.edit;" oncommand="fvd_speed_dial_speedDialSSD.editPopupedGroup()" />
+				<menuitem label="&context_group.delete;" oncommand="fvd_speed_dial_speedDialSSD.removePopupedGroup()" />
+				<menuitem label="&context_group.default;" id="groupMenuPopupDefault" type="checkbox" oncommand="fvd_speed_dial_speedDialSSD.setPopupedGroupAsDefault()" />
+				<menuitem label="&context_group.last_selected;" id="groupMenuPopupDefaultLastSelected" type="checkbox" oncommand="fvd_speed_dial_speedDialSSD._setDefaultGroupId(-1)" />
+				<menuitem hidden="true" label="&context_group.sync_this_group;" id="groupMenuPopupSyncThisGroupSelected" type="checkbox" oncommand="fvd_speed_dial_speedDialSSD.setPopupedGroupSync()" />		
+				<menuseparator/>
+				<menuitem label="&context_group.refresh_all;" oncommand="fvd_speed_dial_speedDialSSD.refreshAllPopupedGroupDials()" />
+				<menuitem label="&context_group.open_all_links;" oncommand="fvd_speed_dial_speedDialSSD.openAllPopupedGroupLinks()" />
+				<menuitem label="&context_group.manage_groups;" oncommand="fvd_speed_dial_speedDialSSD.manageGroupsDialog()" />
+			  </menupopup>
+			
+			  <menupopup id="group_menu"> 
+				<menuitem label="&context_group.default;" id="groupMenuPopupDefaultAll" type="checkbox" oncommand="fvd_speed_dial_speedDialSSD.setPopupedGroupAsDefault()" />
+				<menuitem label="&context_group.last_selected;" id="groupMenuPopupDefaultLastSelectedAll" type="checkbox" oncommand="fvd_speed_dial_speedDialSSD._setDefaultGroupId(-1)" />
+				<menuseparator/>
+				<menuitem label="&context_group.refresh_all;" oncommand="fvd_speed_dial_speedDialSSD.refreshAllPopupedGroupDials()" />
+				<menuitem label="&context_group.open_all_links;" oncommand="fvd_speed_dial_speedDialSSD.openAllPopupedGroupLinks()" />
+				<menuitem label="&context_group.manage_groups;" oncommand="fvd_speed_dial_speedDialSSD.manageGroupsDialog()" />
+			  </menupopup>
+			  
+			  <menupopup id="group_menu_simple">   
+				<menuitem label="&context_group.refresh_all;" oncommand="fvd_speed_dial_speedDialSSD.refreshAllDials()" />
+				<menuitem label="&context_group.open_all_links;" oncommand="fvd_speed_dial_speedDialSSD.openAllPopupedGroupLinks()" />
+			  </menupopup>
+			</popupset>	
+
+			
+			<!-- Free Space menus -->	
+			<popupset>
+			  <menupopup id="fs_menu_top_sites" onpopupshowing="fvd_speed_dial_speedDialSSD.whiteSpaceMenuFill( this )">   
+				<menuitem class="menuitem-iconic addDial" label="&fs_context.add_dial;" oncommand="fvd_speed_dial_speedDialSSD.createNewDial()" />
+				<menuseparator/>
+				<menuitem label="&fs_context.refresh_all;" oncommand="fvd_speed_dial_speedDialSSD.refreshAllDials()" />
+				<menuitem label="&fs_context.open_all;" oncommand="fvd_speed_dial_speedDialSSD.openAllLinks()" />
+				<menu label="&fs_context.view;">
+					<menupopup>   
+						<!-- <menuitem label="&fs_context.thumbs.big;" class="view_big" type="radio" oncommand="fvd_speed_dial_speedDialSSD.setThumbsType('big')" />
+						<menuitem label="&fs_context.thumbs.medium;" class="view_medium" type="radio" oncommand="fvd_speed_dial_speedDialSSD.setThumbsType('medium')" />
+						<menuitem label="&fs_context.thumbs.small;" class="view_small" type="radio" oncommand="fvd_speed_dial_speedDialSSD.setThumbsType('small')" />-->
+						<menuitem label="&fs_context.thumbs.list;" class="view_list" type="radio" oncommand="fvd_speed_dial_speedDialSSD.setThumbsType('list')" />
+						<menuitem label_template="&fs_context.thumbs.custom;" class="view_custom" type="radio" oncommand="fvd_speed_dial_speedDialSSD.setThumbsType('custom')" />	
+						<menuitem label="&fs_context.thumbs.custom_change_size;" class="change_size" oncommand="fvd_speed_dial_speedDialSSD.changeCustomSize()" />					
+					</menupopup>
+				</menu>
+				<menu label="" cols_label="&fs_context.columns;" rows_label="&fs_context.rows;" onpopupshowing="fvd_speed_dial_speedDialSSD.fillPopupMenuColumns('topSitesPopupColumnsMenu')">
+					<menupopup id="topSitesPopupColumnsMenu">
+
+					</menupopup>
+				</menu>
+				
+				<menu label="&fs_context.theme;" onpopupshowing="fvd_speed_dial_speedDialSSD.fillContextMenuThemesList('topSitesThemesList')">
+					<menupopup id="topSitesThemesList">
+
+					</menupopup>
+				</menu>
+				
+				<menu class="scrollingTypeMenu" label="&fs_context.scrolling_type;" onpopupshowing="fvd_speed_dial_speedDialSSD.fillContextMenuScrollingType('topSitesScrollingTypeList')">
+					<menupopup id="topSitesScrollingTypeList">
+						<menuitem label="&fs_context.scrolling_type_vertical;" sdscrolltype="vertical" type="radio" oncommand="fvd_speed_dial_speedDialSSD.setScrollingMode('vertical')" />
+						<menuitem label="&fs_context.scrolling_type_horizontal;" sdscrolltype="horizontal" type="radio" oncommand="fvd_speed_dial_speedDialSSD.setScrollingMode('horizontal')" />
+					</menupopup>
+				</menu>
+				
+			  </menupopup>
+			  
+			  <menupopup id="fs_menu_most_visited" onpopupshowing="fvd_speed_dial_speedDialSSD.whiteSpaceMenuFill( this )">   
+				<menuitem label="&fs_context.refresh_all;" oncommand="fvd_speed_dial_speedDialSSD.refreshAllDials()" />
+				<menuitem label="&fs_context.open_all;" oncommand="fvd_speed_dial_speedDialSSD.openAllLinks()" />
+				<menu label="&fs_context.view;">
+					<menupopup>   
+						<!--<menuitem label="&fs_context.thumbs.big;" class="view_big" type="radio" oncommand="fvd_speed_dial_speedDialSSD.setThumbsType('big')" />
+						<menuitem label="&fs_context.thumbs.medium;" class="view_medium" type="radio" oncommand="fvd_speed_dial_speedDialSSD.setThumbsType('medium')" />
+						<menuitem label="&fs_context.thumbs.small;" class="view_small" type="radio" oncommand="fvd_speed_dial_speedDialSSD.setThumbsType('small')" />-->
+						<menuitem label="&fs_context.thumbs.list;" class="view_list" type="radio" oncommand="fvd_speed_dial_speedDialSSD.setThumbsType('list')" />
+						<menuitem label_template="&fs_context.thumbs.custom;" class="view_custom" type="radio" oncommand="fvd_speed_dial_speedDialSSD.setThumbsType('custom')" />	
+						<menuitem label="&fs_context.thumbs.custom_change_size;" class="change_size" oncommand="fvd_speed_dial_speedDialSSD.changeCustomSize()" />											
+					</menupopup>
+				</menu>
+				<menu cols_label="&fs_context.columns;" rows_label="&fs_context.rows;" onpopupshowing="fvd_speed_dial_speedDialSSD.fillPopupMenuColumns('mostVisitedPopupColumnsMenu')">
+					<menupopup id="mostVisitedPopupColumnsMenu">
+
+					</menupopup>
+				</menu>
+				
+				<menu label="&fs_context.theme;" onpopupshowing="fvd_speed_dial_speedDialSSD.fillContextMenuThemesList('mostVisitedThemesList')">
+					<menupopup id="mostVisitedThemesList">
+
+					</menupopup>
+				</menu>
+				
+				<menu class="scrollingTypeMenu" label="&fs_context.scrolling_type;" onpopupshowing="fvd_speed_dial_speedDialSSD.fillContextMenuScrollingType('mostVisitedScrollingTypeList')">
+					<menupopup id="mostVisitedScrollingTypeList">
+						<menuitem label="&fs_context.scrolling_type_vertical;" sdscrolltype="vertical" type="radio" oncommand="fvd_speed_dial_speedDialSSD.setScrollingMode('vertical')" />
+						<menuitem label="&fs_context.scrolling_type_horizontal;" sdscrolltype="horizontal" type="radio" oncommand="fvd_speed_dial_speedDialSSD.setScrollingMode('horizontal')" />
+					</menupopup>
+				</menu>
+				
+			  </menupopup>
+			  
+			  <menupopup id="fs_menu_recently_closed" onpopupshowing="fvd_speed_dial_speedDialSSD.whiteSpaceMenuFill( this )">   
+				<menuitem label="&fs_context.refresh_all;" oncommand="fvd_speed_dial_speedDialSSD.refreshAllDials()" />
+				<menuitem label="&fs_context.open_all;" oncommand="fvd_speed_dial_speedDialSSD.openAllLinks()" />
+				<menu label="&fs_context.view;">
+					<menupopup>   
+						<menuitem label="&fs_context.thumbs.list;" class="view_list" type="radio" oncommand="fvd_speed_dial_speedDialSSD.setThumbsType('list')" />
+					</menupopup>
+				</menu>
+				<menu cols_label="&fs_context.columns;" rows_label="&fs_context.rows;" onpopupshowing="fvd_speed_dial_speedDialSSD.fillPopupMenuColumns('recentlyClosedPopupColumnsMenu')">
+					<menupopup id="recentlyClosedPopupColumnsMenu">
+
+					</menupopup>
+				</menu>
+				
+				<menu label="&fs_context.theme;" onpopupshowing="fvd_speed_dial_speedDialSSD.fillContextMenuThemesList('recentlyClosedThemesList')">
+					<menupopup id="recentlyClosedThemesList">
+
+					</menupopup>
+				</menu>
+				
+			  </menupopup>
+			  
+			  <!-- additional groups list menu -->
+			  <panel id="additional_groups_list">
+			  
+				<arrowscrollbox orient="vertical" flex="1">
+				</arrowscrollbox>
+			  
+			  </panel>
+			  
+			</popupset>	
+				
+			<stack id="searchSDStack">
+				
+				<vbox id="body_dial" flex="0">
+						 
+					<hbox flex="2" pack="end" class="topMenuLine">
+					
+						<hbox id="groupsBoxParent" flex="2" pack="left">
+					
+							<hbox  flex="2" id="groupsBox" pack="left" onscroll="fvd_speed_dial_speedDialSSD.adjustGroupsSliderDisplaying(event)" onmousedown="fvd_speed_dial_speedDialSSD.groupsBoxMouseDown(event)" onmousemove="fvd_speed_dial_speedDialSSD.groupsBoxMouseMove(event)" mousedown="0">
+								<hbox id="restoreSessionContainer" onclick="fvd_speed_dial_speedDialSSD.restorePreviousSession(event)">
+									<vbox class="group" current="0" flex="2">
+										<label value="&restore_session.label;" />
+									</vbox>
+								</hbox>
+								
+								<hbox id="allGroupContainer" tooltiptext="&all_group.tooltip;" onclick="fvd_speed_dial_speedDialSSD._onClickAllGroups(event)" context="group_menu">
+									<vbox class="group" current="0" flex="2" id="group_link_all" >
+										<label value="" />
+									</vbox>
+								</hbox>
+								
+								<hbox id="groups_list">			
+												
+								</hbox>	
+								
+								<vbox class="sliderContainer">
+									<hbox  class="slider right" pack="center" align="center" onclick="fvd_speed_dial_speedDialSSD.openAdditionalGroupsMenu(event)" ondblclick="event.stopPropagation()"><hbox class="image"/></hbox>
+								</vbox>
+								
+								<hbox><vbox class="group add" current="0" flex="2" id="topAddGroupButton"><hbox class="image"/></vbox></hbox>
+							</hbox>
+							
+							
+							
+				
+						
+						</hbox>
+						
+						<hbox  flex="2" id="mostVisitedTypes" pack="center">
+							<hbox onclick="fvd_speed_dial_speedDialSSD.setMostVisitedSearchInterval('all_time')" context="group_menu_simple"><vbox class="group" current="0" flex="2" value="all_time" ><label value="&settings2.most_visited.all_time;" /></vbox></hbox>
+							<hbox onclick="fvd_speed_dial_speedDialSSD.setMostVisitedSearchInterval('month')" context="group_menu_simple"><vbox class="group" current="0" flex="2" value="month" ><label value="&settings2.most_visited.last_month;" /></vbox></hbox>
+							<hbox onclick="fvd_speed_dial_speedDialSSD.setMostVisitedSearchInterval('week')" context="group_menu_simple"><vbox class="group" current="0" flex="2" value="week" ><label value="&settings2.most_visited.week;" /></vbox></hbox>
+						</hbox>
+									
+					</hbox>	
+						
+					<hbox id="searchBar" pack="center" align="center" hidden="true">
+						
+						<hbox flex="2">
+						
+							<panel id="searchAutocompletePanel" type="autocomplete" noautofocus="true" />
+						
+							<textbox flex="2" type="autocomplete"
+							autocompletepopup="searchAutocompletePanel"
+							autocompletesearch="fvd_speed_dial_googleautocomplete" id="q" 
+							onclick="event.stopPropagation()" 
+							onkeypress="fvd_speed_dial_speedDialSSD.Search.textBoxPressButton(event)"
+							onmousedown="event.stopPropagation()"
+							/>
+							<vbox>
+								<hbox id="searchButton" pack="center" align="center" ondblclick="event.stopPropagation()" onclick="fvd_speed_dial_speedDialSSD.Search.doSearch(event)" onmousedown="event.stopPropagation()">
+									<image/><label value="&search_on_google;"/>
+								</hbox>
+							</vbox>
+						
+						</hbox>
+						
+					</hbox>	
+						
+					<vbox id="dialExpandedContent">
+					
+						<stack flex="2">
+							
+							<vbox id="speedDialPayload">
+										
+								<hbox id="hboxListType" pack="center">
+									<hbox class="listDisplayTypeSelect textColorShowUrlTitle">
+										<radiogroup id="list_type">
+											<hbox>
+												<radio value="title" label="&list_type_selector.title;" onclick="fvd_speed_dial_speedDialSSD.setListType('title')"/>
+												<radio value="uri" label="&list_type_selector.url;" onclick="fvd_speed_dial_speedDialSSD.setListType('uri')"/>
+											</hbox>
+										</radiogroup>
+									</hbox>
+								</hbox>
+								
+								<vbox flex="2" align="center" id="fvd_sd_content_main" >
+								
+									<vbox flex="2" id="fvd_sd_cells_container">
+										
+									</vbox>	
+						
+									<vbox id="fvd_sd_list">
+										<hbox flex="2" id="fvd_sd_list_container">
+											
+										</hbox>				
+										
+										<hbox pack="end">
+											<label id="list_add_dial" class="selector textColorListLink" value="&list_open_all.add_dial;" onclick="fvd_speed_dial_speedDialSSD.createNewDial()" />
+										</hbox>
+										<stack id="list_menu2">
+											<hbox pack="center">
+												<label id="list_open_all" class="selector textColorListLink" value="&list_open_all.title;" onclick="fvd_speed_dial_speedDialSSD.openAllListElems()" />
+											</hbox>	
+											<label id="list_remove_all" class="selector textColorListLink" value="&list_remove_all.title;" onclick="fvd_speed_dial_speedDialSSD.removeAllListElements()" right="1"/>
+										</stack>
+										<label id="list_no_items" value="&list_no_items.title;" />
+									</vbox>	
+								</vbox>	
+			
+								<hbox flex="2" id="grab_frames_container">
+								</hbox>
+								
+							</vbox>
+							
+						</stack>				
+	
+					</vbox>
+					
+				</vbox>		
+			
+				<hbox id="liveSearchContainer" flex="2" hidden="true">
+					
+					<hbox flex="2" pack="center">
+					
+						<vbox id="liveSearch" flex="2">
+							
+							<hbox class="head">
+								<label crop="end" flex="2"/>
+								<hbox class="close"></hbox>
+							</hbox>
+							<hbox flex="2" class="content">
+								
+								<browser disablehistory="true" type="content" flex="2"/>
+								
+							</hbox>
+							
+						</vbox>
+					
+					</hbox>
+					
+				</hbox>
+				
+			</stack>
+			
+			<vbox id="expandMessageParent" flex="2" align="center" pack="center">
+				
+				<stack id="expand_message">
+					
+					<vbox class="expandMessage" align="center">
+							
+						<vbox class="expandMessageFormParent pointerFeedBack" pointerfbcolor="0, 0, 0">	
+										
+							<vbox class="expandMessageForm">
+													
+								<deck>
+									
+									<vbox class="withoutPassword" pack="center">
+																				
+										<label class="textColorOther" value="&double_click_to_expand.title;"/>
+										
+										<hbox class="enablePowerOffMessage">
+											<image class="sdIconImage screamer"/>
+											
+											<hbox>
+												<label value="&enable_power_off_message;"/> (<label class="powerOffFeature" value="&power_off_feature;"/>).
+											</hbox>
+											
+										</hbox>
+										
+										<hbox id="dontDisplayAgainCollapsedMessageContainer" pack="end">
+											<checkbox class="textColorOther" id="dontDisplayAgainCollapsedMessage" label="&expand_message.dont_display_again;"/>
+										</hbox>
+										
+									</vbox>
+									
+									<vbox class="withPassword">
+										
+										<textbox id="poweroffPasscode" type="password"/>
+										
+										<vbox flex="2" pack="center" align="center">
+											<html:button id="poweroffEnterPasscode" class="fvdButton">&poweroff.enter_passcode;</html:button>											
+										</vbox>
+										
+									</vbox>
+									
+								</deck>
+													
+							</vbox>		
+						
+						</vbox>	
+										
+					</vbox>
+	
+				</stack>
+				
+			</vbox>
+		
+	</vbox>	
+
+</window>

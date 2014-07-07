@@ -1,0 +1,13 @@
+﻿<!ENTITY window.title "विषय-वास्तु की आवृत्ति विवादित है">
+<!ENTITY button.pick_local "स्थानिक आवृत्ति संभाले रखें">
+<!ENTITY button.pick_server "सरवर आवृत्ति संभाले रखें">
+<!ENTITY button.close "समकालन रोकें">
+
+<!ENTITY local_version "स्थानिक आवृत्ति">
+<!ENTITY server_version "सरवर आवृत्ति">
+
+<!ENTITY description "FVD Speed Dial यह तय नहीं कर पा रहा की किस आवृत्ति तो सुरक्षित रखना है.">
+
+<!ENTITY please_select "कृपया जो आवृत्ति सुरक्षित करना चाहते हो उसे चुनें">
+
+<!ENTITY use_choice "इस समकालन के विवादों के लिए यही चुनाव मान्य रखें">

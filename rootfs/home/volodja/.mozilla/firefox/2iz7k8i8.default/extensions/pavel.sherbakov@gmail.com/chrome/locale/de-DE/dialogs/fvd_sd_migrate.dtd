@@ -1,0 +1,11 @@
+<!ENTITY dialog.title "Importiere Dials/Gruppen von einer anderen Erweiterung">
+<!ENTITY step_select_addon.caption "Wähle zu importierende Erweiterung">
+<!ENTITY step_select_groups.caption "Wähle zu importierende Gruppen">
+<!ENTITY step_select_urls.caption "Wähle zu importierende Dials">
+<!ENTITY import_urls.caption "Importiere Dials">
+<!ENTITY btn_select_all "Alle auswählen">
+<!ENTITY btn_unselect_all "Alle abwählen">
+<!ENTITY btn_previous "Vorige">
+<!ENTITY btn_next "Nächste">
+<!ENTITY btn_close "erledigt">
+<!ENTITY btn_abort "Schließen">

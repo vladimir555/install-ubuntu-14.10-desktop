@@ -1,0 +1,213 @@
+<!ENTITY txt.dialog.title "Կարգավորումներ">
+<!ENTITY txt.dialog.button_ok.title "ԼԱՎ">
+<!ENTITY txt.dialog.button_cancel.title "Չեղարկել">
+<!ENTITY txt.prefpane.general.title "Կարգավորումներ">
+<!ENTITY txt.prefpane.about.title "Ծրագրի մասին">
+<!ENTITY txt.group.toolbar_elements.title "Ցուցադրել գործիքաշերտը">
+<!ENTITY txt.group.toolbar_elements.display_search.title "Փնտրման տողը">
+<!ENTITY txt.group.toolbar_elements.display_search_video.title "Տեսանյութի փնտրման կոճակը">
+<!ENTITY txt.group.toolbar_elements.display_search_adult.title "Մեծերի համար տեսանյութի փնտրման կոճակը (18+)">
+<!ENTITY txt.group.toolbar_elements.display_tools.title "Օգտակար գործիքների կոճակը">
+<!ENTITY txt.group.toolbar_elements.display_recording.title "Գրելու կոճակը">
+<!ENTITY txt.group.toolbar_elements.download.title "Բեռնում">
+<!ENTITY txt.group.global_options.display_main_button "Ցուցադրել հիմնական կոճակը">
+<!ENTITY txt.group.global_options.display_status_button "Ցուցադրել դրության տողի կոճակը">
+<!ENTITY txt.group.notes.title "Հուշումներ">
+<!ENTITY txt.group.toolbar_elements.dont_display_features_hint.title "Չցուցադրել հուշումները">
+<!ENTITY txt.group.toolbar_elements.display_search_adult_about.title "Կարող եք անջատել մեծերի համար տեսանյութերի ցուցադրումը FVD Suite-ի կարգավորումներում">
+<!ENTITY txt.group.newpages.title "Բացել նոր էջը՝">
+<!ENTITY txt.group.newpages.new_tab.title "նոր էջում">
+<!ENTITY txt.group.newpages.current_tab.title "ընթացիկ էջում">
+<!ENTITY txt.group.hooks.title "Ձեռադիր դեպքեր.">
+<!ENTITY txt.group.hooks.dns_errors.title "dns դիտման սխալ">
+<!ENTITY txt.group.hooks.pages_errors.title "սխալի էջերը">
+<!ENTITY txt.group.hooks.search_queries.title "որոնման հարցումներ">
+<!ENTITY txt.group.hooks.url_queries.title "փնտրել հասցեի տողից">
+<!ENTITY txt.group.hooks.about_blank.title "Միացնել Speed Dial-ը նոր էջում">
+<!ENTITY txt.group.hooks.thumbs_icons_and_titles.title "Ցուցադրել պատկերները և անունները Վահանակների տակ">
+<!ENTITY txt.group.tab_preview.title "Էջի նախադիտում">
+<!ENTITY txt.group.tab_preview.display.title "Ցուցադրել">
+<!ENTITY txt.prefpane.sd.title "Speed Dial">
+<!ENTITY fvd_sd.group.show_url_in_dial.title "Հիմնական վահանակը">
+<!ENTITY fvd_sd.group.default.title "Հիմնական վահանակը">
+<!ENTITY fvd_sd.group.default.top_sites "Speed Dial">
+<!ENTITY fvd_sd.group.default.most_visited "Ամենաայցելվածները">
+<!ENTITY fvd_sd.group.default.recently_closed "Վերջին փակվածները">
+<!ENTITY fvd_sd.group.default.last_selected "Վերջին ընտրվածները">
+<!ENTITY fvd_sd.group.enable.title "Միացնել">
+<!ENTITY fvd_sd.group.recent.title "Վերջին փակվածը">
+<!ENTITY fvd_sd.group.recent.show_last "Ցուցադրել վերջին.">
+<!ENTITY fvd_sd.group.all_groups_max_dials.title "Վահանակների առավ. քանակը Հայտնիներում.">
+<!ENTITY fvd_sd.group.groups.title "Խմբեր">
+<!ENTITY fvd_sd.group.groups.default.title "Հիմնականը.">
+<!ENTITY fvd_sd.group.groups.manage.title "Կառավարել">
+<!ENTITY fvd_sd.group.most_visited.title "Վերջին այցելվածները">
+<!ENTITY fvd_sd.group.most_visited.show_last "Ցուցադրել վերջինը.">
+<!ENTITY fvd_sd.group.most_visited_interval.title "Ժամանակ">
+<!ENTITY txt.group.most_visited_interval.week.title "Վերջին շաբաթում">
+<!ENTITY txt.group.most_visited_interval.month.title "Վերջին ամսում">
+<!ENTITY txt.group.most_visited_interval.all_time.title "Ամբողջ ժամանակում">
+<!ENTITY fvd_sd.group.most_visited_group_by.title "Խմբավորել ըստ">
+<!ENTITY txt.group.most_visited_interval.uri.title "Վեբ հղումը">
+<!ENTITY txt.group.most_visited_interval.domain.title "Տիրույթը">
+<!ENTITY txt.group.most_visited.max_items "(առավ. 75)">
+<!ENTITY txt.group.recent.max_items "(առավ. 40)">
+<!ENTITY fvd_sd.group.blocked_domains.title "Արգելված տիրույթները">
+<!ENTITY fvd_sd.group.blocked_domains.manage "Կառավարել">
+<!ENTITY txt.group.sd.make_home_page "Դարձնել Speed Dial-ը տնային էջ">
+<!ENTITY txt.group.sd.show_url_in_dial "Ցուցադրել վեբ հղումները վահանակների տակ">
+<!ENTITY fvd_sd.group.dials_opening.title "Վահանակների բացումը">
+<!ENTITY txt.group.dials_opening.current_tab.title "Ընթացիկ էջը.">
+<!ENTITY txt.group.dials_opening.new_tab.title "Նոր էջ">
+<!ENTITY txt.group.dials_opening.new_tab_passive.title "Նոր էջ (Խորապատկերում)">
+<!ENTITY txt.prefpane.about.version.title "Տարբերակը.">
+<!ENTITY txt.prefpane.about.home_site_visit.title "Այցելել ">
+<!ENTITY txt.group.sniffing_options.title "Հոսքերի ընտրանքները">
+<!ENTITY txt.group.sniffing_options.display_swf.title "Միացնել .swf ֆայլերը">
+<!ENTITY txt.group.toolbar_elements.download.close_after_download "Փակել պատուհանը, երբ բեռնումը ավարտվի">
+<!ENTITY fvd_sd.group.top_sites.title "Speed Dial">
+<!ENTITY fvd_sd.group.global_options.title "Հիմ. ընտրանքները">
+<!ENTITY txt.group.toolbar_elements.disable_plugins.title "Անջատել օժանդակիչները (flash, silverlight,...)">
+<!ENTITY fvd_sd.group.background.image.url "Վեբ հղումը">
+<!ENTITY fvd_sd.group.background.image.local_file.browse "...">
+<!ENTITY fvd_sd.group.background.image.local_file "Լոկալ ֆայլը">
+<!ENTITY fvd_sd.group.background.image.type.no_image "Չկա նկար">
+<!ENTITY fvd_sd.group.background.image.type.fill "Լրացնել">
+<!ENTITY fvd_sd.group.background.image.type.fit "Հարմարեցնել">
+<!ENTITY fvd_sd.group.background.image.type.stretch "Կտրել">
+<!ENTITY fvd_sd.group.background.image.type.tile "Ցանցով">
+<!ENTITY fvd_sd.group.background.image.type.center "Կենտրոնով">
+<!ENTITY fvd_sd.group.background.refresh_preview "Թարմացնել դիտարկումը">
+<!ENTITY fvd_sd.group.background.caption.image "Նկարը">
+<!ENTITY fvd_sd.group.background.image.type "Տեսակը.">
+<!ENTITY fvd_sd.group.background.title "Խորապատկերը">
+<!ENTITY fvd_sd.group.background.caption.color "Խորապատկերի գույնը">
+<!ENTITY fvd_sd.group.background.color.enabled "Միացված">
+<!ENTITY fvd_sd.group.font_colors.title "Տեքստի գույնը">
+<!ENTITY fvd_sd.group.font_colors.title_for_dials "Անունը (վահանակի համար).">
+<!ENTITY fvd_sd.group.font_colors.url_for_dials "Վեբ հղումը (վահանակի համար).">
+<!ENTITY fvd_sd.group.font_colors.text_in_list_mode "Տեքստը տեքստային եղանակում.">
+<!ENTITY fvd_sd.group.font_colors.show_title_url "Ցուցադրել անունը/Վեբ հղումը (Ցանկի եղանակում).">
+<!ENTITY fvd_sd.group.font_colors.list_links "Ցանկի հղումները.">
+<!ENTITY fvd_sd.group.font_colors.other_texts "Այլ տեքստեր.">
+<!ENTITY fvd_sd.group.font_colors.restore_default "Վերականգնել ծրագրայինը">
+<!ENTITY fvd_sd.group.font_colors.size "Չափը.">
+<!ENTITY fvd_sd.group.font_colors.color "Գույնը.">
+<!ENTITY fvd_sd.group.font_colors.bolder "Եզրագիծը">
+<!ENTITY fvd_sd.group.display_restore_previous_session "Ցուցադրել վերականգնման նախորդ աշխատաշրջանը.">
+<!ENTITY fvd_sd.group.import_data "Ներմուծել տվյալներ այլ հավելումներից">
+<!ENTITY fvd_sd.group.import_data.start "Սկսել ներմուծումը">
+<!ENTITY fvd_sd.import_export.title "Ներմուծել/Արտածել վահանակները և կարգավորումները">
+<!ENTITY fvd_sd.import_export.export "Արտածել">
+<!ENTITY fvd_sd.import_export.import "Ներմուծել">
+<!ENTITY txt.group.top_sites.display_plus_cells.title "Ցուցադրել [+] speed dial կոճակը">
+<!ENTITY fvd_sd.dials_opacity.title "Վահանակների թափանցելիությունը">
+<!ENTITY txt.group.sd.disable_custom_search "Անջատել որոնումը">
+<!ENTITY txt.group.top_sites.hide_cell_background.title "Թաքցնել վահանակները խորապատկերում">
+<!ENTITY txt.group.top_sites.enable_popular_group.title "Միացնել Վարկանիշային խումբը">
+<!ENTITY fvd_sd.group.most_visited.order_by "Դասավորել ըստ">
+<!ENTITY txt.group.most_visited_order_by.visits "Այցելությունների">
+<!ENTITY txt.group.most_visited_order_by.date "Ամսաթվի">
+<!ENTITY txt.group.sd.show_in_last_tab "Ցուցադրել վերջին վահանակում">
+<!ENTITY txt.group.global_options.show_clicks_and_quick_menu "Ցուցադրել սեղմումները և հասանելի ընտրացանկը">
+<!ENTITY txt.global.tabs.general "Գլխավորը">
+<!ENTITY txt.global.tabs.appearance "Տեսքը">
+<!ENTITY txt.global.tabs.import_export "Պահուստացում">
+<!ENTITY fvd_sd.custom_dial_size.title "Ընտրված վահանակի չափը">
+<!ENTITY fvd_sd.custom_dial_size.width "Լայնքը.">
+<!ENTITY fvd_sd.custom_dial_size.max_min_width "(Նվազ. 150px; Առավ. 260px)">
+<!ENTITY txt.group.top_sites.display_button_in_google_results.title "Ցուցադրել կոճակը Google-ի արդյունքներում">
+<!ENTITY fvd_sd.theme.title "Թեման">
+<!ENTITY themes.white.label "Սպիտակ">
+<!ENTITY themes.dark.label "Մուգ">
+<!ENTITY themes_help.dont_forget_to_change "Չմոռանաք փոխել">
+<!ENTITY themes_help.font_colors "տառի գույները">
+<!ENTITY themes_help.and_set_nice "և նշել լավը">
+<!ENTITY themes_help.background "խորապատկերը">
+<!ENTITY suggestions_popup.submit_suggestion "Ուղարկել առաջարկը">
+<!ENTITY suggestions_popup.report_bug "Ուղարկել սխալը">
+<!ENTITY txt.group.global_options.show_in_context_menu "Ցուցադրել համատեքստային ընտրացանկում">
+<!ENTITY fvd_sd.group.hot_key.use_hot_key "Օգտ. տաք կարճուղի">
+<!ENTITY fvd_sd.group.hot_key.apply_changes "Փոփոխությունները կիրառելու համար վերագործարկեք դիտարկիչը">
+<!ENTITY fvd_sd.group.hot_key.already_used "Այս բանալին արդեն օգտագործվում է">
+<!ENTITY fvd_sd.make_donation "Նվիրատվություն">
+<!ENTITY donate_message "Շնորհակալ ենք Ձեր աջակցության համար։ Ձեր նվիրատվությունը կօգնի մեզ էլ ավելի լավարկելու այս ծրագիրը։ Միակ պատճառը, որ մենք հայցում ենք Ձեր օժանդակությունը այս անվճար ծրագրի համար, դա այն է, որ էլ ավելի կատարելագործենք այն։
+
+FVD Speed dial հավելման զարգացումը, կատարելագործումը բավականին թանկ արժե։
+
+Մենք հույսով ենք, որ մեր օգտվողները կնվիրաբերեն որոշ գումար՝ հնարավորություն տալով զարգացնելու այս ծրագիրը։
+
+Նվիրաբերված գումարները կօգտագործվեն միայն ծրագրի զարգացման համար։ ">
+<!ENTITY donate_button.text "Նվիրատվություն">
+<!ENTITY txt.group.top_sites.disable_like_button.title "Անջատել հավանելու կոճակը">
+<!ENTITY fvd_sd.group.sync.title "Սինք">
+<!ENTITY fvd_sd.sync.online " առցանց">
+<!ENTITY fvd_sd.sync.logout "Ելք">
+<!ENTITY fvd_sd.sync.remove_account "Ջնջել հաշվեկշիռը">
+<!ENTITY fvd_sd.sync.login "Մուտք">
+<!ENTITY fvd_sd.sync.register "Գրանցել">
+<!ENTITY fvd_sd.sync.restore_password "Վերականգնել գաղտնաբառը">
+<!ENTITY fvd_sd.sync.already_have_account "Արդեն ունեք հաշվեկշիռ">
+<!ENTITY fvd_sd.sync.email "Էլ. հասցեն">
+<!ENTITY fvd_sd.sync.password "Գաղտնաբառը">
+<!ENTITY fvd_sd.sync.button.login "Մուտք">
+<!ENTITY fvd_sd.sync.create_new_account "Ստեղծել նոր հաշվեկշիռ">
+<!ENTITY fvd_sd.sync.subscribe "Բաժանորդագրվել նորություններին և թարմացումներին">
+<!ENTITY fvd_sd.sync.button.create_account "Ստեղծել հաշվեկշիռ">
+<!ENTITY fvd_sd.sync.check_email "Ստուգեք Ձեր էլ. փոստը՝ հաստատելու գրանցումը։">
+<!ENTITY fvd_sd.sync.confirm_code "Հաստատման բանալին">
+<!ENTITY fvd_sd.sync.button.cancel_confirm "Չեղարկել">
+<!ENTITY fvd_sd.sync.button.confirm "Հաստատել">
+<!ENTITY fvd_sd.sync.button.resend_confirm "Կրկին ուղարկել հաստատման նամակը">
+<!ENTITY fvd_sd.sync.button.restore_password "Վերականգնել գաղտնաբառը">
+<!ENTITY fvd_sd.sync.enable_auto_sync "Միացնել ԻնքնաՍինքը (Ամեն 3 ժամը մեկ։)">
+<!ENTITY fvd_sd.sync.button.merge "Միացնել">
+<!ENTITY fvd_sd.sync.button.upload "Վերբեռնել">
+<!ENTITY fvd_sd.sync.button.download "Բեռնել">
+<!ENTITY fvd_sd.sync.merge "Միացնել համակարգչային և սպասարկիչի տվյալը">
+<!ENTITY fvd_sd.sync.upload "Վերագրել սպասարկիչի տվյալը">
+<!ENTITY fvd_sd.sync.download "Վերագրել համակարգչային տվյալը">
+<!ENTITY fvd_sd.sync.import_export_to_from "ում/ումից համակարգչային ֆայլը(.sd)">
+<!ENTITY fvd_sd.sync.enable_sync "Միացնել Սինքը">
+<!ENTITY fvd_sd.sync.tab.account "Հաշվեկշիռը">
+<!ENTITY fvd_sd.sync.tab.sync "Սինք">
+<!ENTITY fvd_sd.sync.settings "Կարգավորումներ">
+<!ENTITY fvd_sd.sync.manual_sync "Ձեռադիր Սինք">
+<!ENTITY fvd_sd.sync.close_sync_progress_window_after_sync "Ավարտելուց հետո փակել սինքի գործողությունը">
+<!ENTITY fvd_sd.sync.change_password "Փոխել գաղտնաբառը">
+<!ENTITY fvd_sd.sync.change_password.old_password "Հին գաղտնաբառը">
+<!ENTITY fvd_sd.sync.change_password.new_password "Նոր գաղտնաբառը">
+<!ENTITY fvd_sd.sync.change_password.new_password_confirm "Հաստատել նոր գաղտնաբառը">
+<!ENTITY fvd_sd.sync.cancel_change_password "Չեղարկել">
+<!ENTITY fvd_sd.sync.confirm_change_password "Հաստատել">
+<!ENTITY fvd_sd.sync.change_password_confirm_sent_desc "Հաստատման բանալին ուղարկվել է Ձեր էլ. փոստին">
+<!ENTITY fvd_sd.sync.change_password.confirm_key "Հաստատման բանալին">
+<!ENTITY fvd_sd.sync.manage_groups "Manage groups">
+<!ENTITY fvd_sd.sync.button.manage_synced_groups "Manage synced groups">
+<!ENTITY fvd_sd.custom_dial_size_mostvisited.title "Most visited custom dial size">
+<!ENTITY sync.button.start_sync "Start Sync">
+<!ENTITY txt.group.global_options.display_search_preview "Display search preview">
+<!ENTITY group.poweroff.top_text_1 "Create your personal passcode to unlock your dials.">
+<!ENTITY group.poweroff.top_text_2 "After pressing Power Off button your dials will be hidden and the only way to unlock them is to enter passcode.">
+<!ENTITY group.poweroff.top_text_3 "This is good feature if you do not want someone see your sped dials without you!">
+<!ENTITY group.poweroff.tabs.main.title "Main">
+<!ENTITY group.poweroff.tabs.change_pass.title "Change Password">
+<!ENTITY group.poweroff.tabs.restore.title "Restore Password">
+<!ENTITY group.poweroff.tabs.main.passcode "PassCode">
+<!ENTITY group.poweroff.tabs.main.passcode_repeat "PassCode repeat">
+<!ENTITY group.poweroff.tabs.main.recovery_email "Recovery email">
+<!ENTITY group.poweroff.tabs.main.create_passcode "Create PassCode">
+<!ENTITY group.poweroff.tabs.main.setuped "Power off is setuped">
+<!ENTITY group.poweroff.tabs.change_pass.old_passcode "Old PassCode">
+<!ENTITY group.poweroff.tabs.change_pass.new_passcode "New PassCode *">
+<!ENTITY group.poweroff.tabs.change_pass.change_passcode "Change PassCode">
+<!ENTITY group.poweroff.tabs.change_pass.remove_passcode_message "* To remove PassCode leave New PassCode blank">
+<!ENTITY group.poweroff.tabs.restore_password.do_restore_password "Send PassCode to Recovery Email">
+<!ENTITY group.poweroff.tabs.restore_password.please_wait "Please wait...">
+<!ENTITY fvd_sd.scrolling "Dials Scrolling">
+<!ENTITY scrolling.vertical "Vertical">
+<!ENTITY scrolling.horizontal "Horizontal">
+<!ENTITY txt.group.popular.max_items "(max 50)">
+<!ENTITY importing.please_wait "Importing... Please wait.">
+<!ENTITY txt.group.global_options.display_urlbar_button "Display URL bar button">
+<!ENTITY txt.dialog.button_get_premium_for_free.title "Get Premium account for Free!">

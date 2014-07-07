@@ -1,0 +1,84 @@
+<!ENTITY context.open "Ouvrir dans l'onglet courant">
+<!ENTITY context.open_new_tab "Ouvrir dans un nouvel onglet">
+<!ENTITY context.open_new_tab_background "Ouvrir dans un nouvel onglet en arrière-plan">
+<!ENTITY context.edit "Editer">
+<!ENTITY context.refresh "Actualiser">
+<!ENTITY context.remove "Supprimer l'accès rapide">
+<!ENTITY context.copy_url "Copier l'URL">
+<!ENTITY context.move_to "Déplacer vers">
+<!ENTITY context_list.open "Ouvrir dans l'onglet courant">
+<!ENTITY context_list.open_new_tab "Ouvrir dans un nouvel onglet">
+<!ENTITY context_list.open_new_tab_background "Ouvrir dans un nouvel onglet en arrière-plan">
+<!ENTITY context_list.add "Ajouter au Speed Dial">
+<!ENTITY context_list.remove "Supprimer">
+<!ENTITY context_list.block "Bloquer">
+<!ENTITY context_list.edit "Editer">
+<!ENTITY context_list.refresh "Actualiser">
+<!ENTITY context_group.refresh_all "Actualiser tout">
+<!ENTITY context_group.open_all_links "Ouvrir tous les liens">
+<!ENTITY context_group.default "Défaut">
+<!ENTITY context_group.last_selected "Dernier utilisé">
+<!ENTITY context_group.manage_groups "Gérer les groupes">
+<!ENTITY context_group.edit "Editer le groupe">
+<!ENTITY context_group.delete "Supprimer le groupe">
+<!ENTITY fs_context.add_dial "Ajouter un accès rapide">
+<!ENTITY fs_context.refresh_all "Actualiser tout">
+<!ENTITY fs_context.open_all "Ouvrir tous les liens">
+<!ENTITY fs_context.thumbs.big "Grand">
+<!ENTITY fs_context.thumbs.medium "Moyen">
+<!ENTITY fs_context.thumbs.small "Petit">
+<!ENTITY fs_context.thumbs.custom "Personnalisé">
+<!ENTITY fs_context.thumbs.list "Liste">
+<!ENTITY fs_context.view "Affichage">
+<!ENTITY fs_context.columns "Colonnes">
+<!ENTITY thumb.delete_dial "Supprimer un accès rapide">
+<!ENTITY thumb.edit_dial "Editer un accès rapide">
+<!ENTITY list_elem.add "Attacher à l'accès rapide">
+<!ENTITY list_elem.remove "Enlever">
+<!ENTITY list_elem.block "Bloquer une URL ou un domaine">
+<!ENTITY list_elem.error_loading_page "Erreur lors du chargement de la page">
+<!ENTITY list_open_all.title "Ouvrir tous les liens">
+<!ENTITY list_remove_all.title "Supprimer ces liens">
+<!ENTITY list_open_all.add_dial "Ajouter un accès rapide">
+<!ENTITY list_no_items.title "Pas d'élements à afficher">
+<!ENTITY thumb_types.title "Vignettes:">
+<!ENTITY thumb_types.type_small "Petit">
+<!ENTITY thumb_types.type_medium "Moyen">
+<!ENTITY thumb_types.type_big "Grand">
+<!ENTITY thumb_types.type_list "Liste">
+<!ENTITY selector.refresh "Actualiser">
+<!ENTITY selector.options "Options">
+<!ENTITY dont_display_page.title "Ne pas afficher cette page">
+<!ENTITY make_home_page.title "Faire du Speed Dial ma page d'accueil">
+<!ENTITY settings2.most_visited.week "La semaine dernière">
+<!ENTITY settings2.most_visited.last_month "Le mois dernier">
+<!ENTITY settings2.most_visited.all_time "Tous">
+<!ENTITY settings2.most_visited.group_by.uri "URI">
+<!ENTITY settings2.most_visited.group_by.domain "Domaine">
+<!ENTITY settings2.top_sites_groups.all_groups "Populaires">
+<!ENTITY settings2.top_sites_groups.add_group "Ajouter un groupe">
+<!ENTITY settings2.top_sites_groups.manage_groups "Gérer les groupes">
+<!ENTITY settings2.list_types.title "Titre">
+<!ENTITY settings2.list_types.uri "URI">
+<!ENTITY double_click_to_expand.title "Double cliquer pour développer (ou appuyer sur Entrée)">
+<!ENTITY most_visited.restore_removed "Restaurer les liens supprimés">
+<!ENTITY list_type_selector.title "Afficher le titre">
+<!ENTITY list_type_selector.url "Afficher l'URL">
+<!ENTITY all_group.tooltip "Ce groupe affiche uniquement les accès les plus populaires.">
+<!ENTITY change_background.title "Changer l'arrière-plan">
+<!ENTITY restore_thumb.restore_previous "Restaurer le précédent:">
+<!ENTITY restore_thumb.yes "Oui">
+<!ENTITY restore_thumb.no "Non">
+<!ENTITY restore_session.label "Restaurer la session">
+<!ENTITY context_group.sync_this_group "Sync this Group">
+<!ENTITY fs_context.thumbs.custom_change_size "Change Size...">
+<!ENTITY fs_context.theme "Theme">
+<!ENTITY enable_power_off_message "Learn how you can protect your Speed Dials from unwanted viewers ">
+<!ENTITY poweroff.enter_passcode "Unlock Speed Dial">
+<!ENTITY power_off_feature "Power Off feature">
+<!ENTITY search_on_google "Search">
+<!ENTITY expand_message.dont_display_again "Dont display again">
+<!ENTITY fs_context.rows "Rows">
+<!ENTITY fs_context.scrolling_type "Scrolling type">
+<!ENTITY fs_context.scrolling_type_vertical "Vertical">
+<!ENTITY fs_context.scrolling_type_horizontal "Horizontal">

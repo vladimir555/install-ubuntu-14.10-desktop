@@ -1,0 +1,220 @@
+<!ENTITY txt.dialog.title "设置">
+<!ENTITY txt.dialog.button_ok.title "确定">
+<!ENTITY txt.dialog.button_cancel.title "取消">
+<!ENTITY txt.prefpane.general.title "设置">
+<!ENTITY txt.prefpane.about.title "关于">
+<!ENTITY txt.group.toolbar_elements.title "显示工具栏项">
+<!ENTITY txt.group.toolbar_elements.display_search.title "搜索栏">
+<!ENTITY txt.group.toolbar_elements.display_search_video.title "搜索视频按钮">
+<!ENTITY txt.group.toolbar_elements.display_search_adult.title "搜索成人内容(18+)按钮">
+<!ENTITY txt.group.toolbar_elements.display_tools.title "实用工具按钮">
+<!ENTITY txt.group.toolbar_elements.display_recording.title "录制按钮">
+<!ENTITY txt.group.toolbar_elements.download.title "下载">
+<!ENTITY txt.group.global_options.display_main_button "显示主按钮">
+<!ENTITY txt.group.global_options.display_status_button "显示状态栏图标">
+<!ENTITY txt.group.notes.title "说明">
+<!ENTITY txt.group.toolbar_elements.dont_display_features_hint.title "不要显示说明">
+<!ENTITY txt.group.toolbar_elements.display_search_adult_about.title "你可以在 FVD Suite 首选项里面禁用成人相关功能">
+<!ENTITY txt.group.newpages.title "新页面打开到：">
+<!ENTITY txt.group.newpages.new_tab.title "新标签">
+<!ENTITY txt.group.newpages.current_tab.title "当前标签">
+<!ENTITY txt.group.hooks.title "处理事件：">
+<!ENTITY txt.group.hooks.dns_errors.title "查找 DNS 出错">
+<!ENTITY txt.group.hooks.pages_errors.title "错误页面">
+<!ENTITY txt.group.hooks.search_queries.title "搜索查询字符串">
+<!ENTITY txt.group.hooks.url_queries.title "从地址栏搜索">
+<!ENTITY txt.group.hooks.about_blank.title "启用新标签的快速拨号">
+<!ENTITY txt.group.hooks.thumbs_icons_and_titles.title "在拨号上方显示图标和标题">
+<!ENTITY txt.group.tab_preview.title "标签预览">
+<!ENTITY txt.group.tab_preview.display.title "显示">
+<!ENTITY txt.prefpane.sd.title "快速拨号">
+<!ENTITY fvd_sd.group.show_url_in_dial.title "默认拨号">
+<!ENTITY fvd_sd.group.default.title "默认拨号">
+<!ENTITY fvd_sd.group.default.top_sites "快速拨号">
+<!ENTITY fvd_sd.group.default.most_visited "访问最多">
+<!ENTITY fvd_sd.group.default.recently_closed "最近关闭">
+<!ENTITY fvd_sd.group.default.last_selected "上次选择">
+<!ENTITY fvd_sd.group.enable.title "启用">
+<!ENTITY fvd_sd.group.recent.title "最近关闭">
+<!ENTITY fvd_sd.group.recent.show_last "显示最近的条数：">
+<!ENTITY fvd_sd.group.all_groups_max_dials.title "热门分组最大拨号数">
+<!ENTITY fvd_sd.group.groups.title "分组">
+<!ENTITY fvd_sd.group.groups.default.title "默认：">
+<!ENTITY fvd_sd.group.groups.manage.title "管理">
+<!ENTITY fvd_sd.group.most_visited.title "访问最多">
+<!ENTITY fvd_sd.group.most_visited.show_last "显示最近的条数：">
+<!ENTITY fvd_sd.group.most_visited_interval.title "排序依据">
+<!ENTITY txt.group.most_visited_interval.week.title "最近一周">
+<!ENTITY txt.group.most_visited_interval.month.title "最近一个月">
+<!ENTITY txt.group.most_visited_interval.all_time.title "全部">
+<!ENTITY fvd_sd.group.most_visited_group_by.title "分组方式">
+<!ENTITY txt.group.most_visited_interval.uri.title "URL">
+<!ENTITY txt.group.most_visited_interval.domain.title "域">
+<!ENTITY txt.group.most_visited.max_items "(最多 75 个)">
+<!ENTITY txt.group.recent.max_items "(最多 40 个)">
+<!ENTITY fvd_sd.group.blocked_domains.title "阻止的域">
+<!ENTITY fvd_sd.group.blocked_domains.manage "管理">
+<!ENTITY txt.group.sd.make_home_page "设置快速拨号为主页">
+<!ENTITY txt.group.sd.show_url_in_dial "在拨号下方显示URL">
+<!ENTITY fvd_sd.group.dials_opening.title "打开拨号页到">
+<!ENTITY txt.group.dials_opening.current_tab.title "当前标签">
+<!ENTITY txt.group.dials_opening.new_tab.title "新标签">
+<!ENTITY txt.group.dials_opening.new_tab_passive.title "新标签(后台)">
+<!ENTITY txt.prefpane.about.version.title "版本：">
+<!ENTITY txt.prefpane.about.home_site_visit.title "浏览 ">
+<!ENTITY txt.group.sniffing_options.title "嗅探选项">
+<!ENTITY txt.group.sniffing_options.display_swf.title "启用嗅探 .swf 文件">
+<!ENTITY txt.group.toolbar_elements.download.close_after_download "下载完毕后关闭窗口">
+<!ENTITY fvd_sd.group.top_sites.title "快速拨号">
+<!ENTITY fvd_sd.group.global_options.title "全局选项">
+<!ENTITY txt.group.toolbar_elements.disable_plugins.title "禁用插件(flash,silverlight...)">
+<!ENTITY fvd_sd.group.background.image.url "URL">
+<!ENTITY fvd_sd.group.background.image.local_file.browse "...">
+<!ENTITY fvd_sd.group.background.image.local_file "本地文件">
+<!ENTITY fvd_sd.group.background.image.type.no_image "无图像">
+<!ENTITY fvd_sd.group.background.image.type.fill "填充">
+<!ENTITY fvd_sd.group.background.image.type.fit "适应">
+<!ENTITY fvd_sd.group.background.image.type.stretch "拉伸">
+<!ENTITY fvd_sd.group.background.image.type.tile "平铺">
+<!ENTITY fvd_sd.group.background.image.type.center "居中">
+<!ENTITY fvd_sd.group.background.refresh_preview "重新载入预览">
+<!ENTITY fvd_sd.group.background.caption.image "图像">
+<!ENTITY fvd_sd.group.background.image.type "类型：">
+<!ENTITY fvd_sd.group.background.title "背景">
+<!ENTITY fvd_sd.group.background.caption.color "背景颜色">
+<!ENTITY fvd_sd.group.background.color.enabled "启用">
+<!ENTITY fvd_sd.group.font_colors.title "文字颜色">
+<!ENTITY fvd_sd.group.font_colors.title_for_dials "标题(拨号用)：">
+<!ENTITY fvd_sd.group.font_colors.url_for_dials "URL(拨号用)：">
+<!ENTITY fvd_sd.group.font_colors.text_in_list_mode "列表模式下文字：">
+<!ENTITY fvd_sd.group.font_colors.show_title_url "显示标题/URL(列表模式)：">
+<!ENTITY fvd_sd.group.font_colors.list_links "列表模式下链接：">
+<!ENTITY fvd_sd.group.font_colors.other_texts "其它文字：">
+<!ENTITY fvd_sd.group.font_colors.restore_default "恢复默认">
+<!ENTITY fvd_sd.group.font_colors.size "大小：">
+<!ENTITY fvd_sd.group.font_colors.color "颜色：">
+<!ENTITY fvd_sd.group.font_colors.bolder "边框">
+<!ENTITY fvd_sd.group.display_restore_previous_session "显示还原之前的会话">
+<!ENTITY fvd_sd.group.import_data "从其它附加组件导入数据">
+<!ENTITY fvd_sd.group.import_data.start "开始导入">
+<!ENTITY fvd_sd.import_export.title "导入/导出拨号和设置">
+<!ENTITY fvd_sd.import_export.export "导出">
+<!ENTITY fvd_sd.import_export.import "导入">
+<!ENTITY txt.group.top_sites.display_plus_cells.title "显示添加拨号单元格">
+<!ENTITY fvd_sd.dials_opacity.title "拨号透明度">
+<!ENTITY txt.group.sd.disable_custom_search "禁用搜索">
+<!ENTITY txt.group.top_sites.hide_cell_background.title "隐藏拨号默认背景">
+<!ENTITY txt.group.top_sites.enable_popular_group.title "启用热门分组">
+<!ENTITY fvd_sd.group.most_visited.order_by "排序方式">
+<!ENTITY txt.group.most_visited_order_by.visits "访问次数">
+<!ENTITY txt.group.most_visited_order_by.date "日期">
+<!ENTITY txt.group.sd.show_in_last_tab "在最后一个标签中显示">
+<!ENTITY txt.group.global_options.show_clicks_and_quick_menu "显示点击和快捷菜单">
+<!ENTITY txt.global.tabs.general "常规">
+<!ENTITY txt.global.tabs.appearance "外观">
+<!ENTITY txt.global.tabs.import_export "备份">
+<!ENTITY fvd_sd.custom_dial_size.title "自定义拨号大小">
+<!ENTITY fvd_sd.custom_dial_size.width "宽度：">
+<!ENTITY fvd_sd.custom_dial_size.max_min_width "(最小 150 像素; 最大 260 像素)">
+<!ENTITY txt.group.top_sites.display_button_in_google_results.title "在 Google 搜索结果中显示按钮">
+<!ENTITY fvd_sd.theme.title "主题">
+<!ENTITY themes.white.label "白色">
+<!ENTITY themes.dark.label "暗色">
+<!ENTITY themes_help.dont_forget_to_change "不要忘记更改">
+<!ENTITY themes_help.font_colors "字体颜色">
+<!ENTITY themes_help.and_set_nice "并设置合适的">
+<!ENTITY themes_help.background "背景">
+<!ENTITY suggestions_popup.submit_suggestion "提交建议">
+<!ENTITY suggestions_popup.report_bug "提交 Bug">
+<!ENTITY txt.group.global_options.show_in_context_menu "在上下文菜单中显示">
+<!ENTITY fvd_sd.group.hot_key.use_hot_key "使用热键">
+<!ENTITY fvd_sd.group.hot_key.apply_changes "要应用更改请重启浏览器">
+<!ENTITY fvd_sd.group.hot_key.already_used "此热键已被使用">
+<!ENTITY fvd_sd.make_donation "捐赠">
+<!ENTITY donate_message "感谢您对捐赠的兴趣！您的捐赠可以保证我们继续开发优秀的软件同时保持尽可能多的功能免费。 为什么我们的免费软件希望得到捐赠呢？这是它最美妙的地方——无力支付或者认为它不够优秀的用户依然可以免费使用我们的软件。 
+
+
+
+
+创建、改进、扩展 FVD Speed dial 附加组件确实会花费很多钱。
+
+
+
+我们真诚的希望对我们软件感觉满意或者喜欢我们软件的创造性的用户进行捐赠(在能够承受的范围内) ，这会让我们的软件能在世界上更多的地方使用。
+
+
+
+我们接受的捐赠不会用于发工资或者任何与维持因特网上的服务非直接相关的方面。">
+<!ENTITY donate_button.text "捐赠">
+<!ENTITY txt.group.top_sites.disable_like_button.title "禁用赞按钮">
+<!ENTITY fvd_sd.group.sync.title "同步">
+<!ENTITY fvd_sd.sync.online " 在线">
+<!ENTITY fvd_sd.sync.logout "退出">
+<!ENTITY fvd_sd.sync.remove_account "删除账户">
+<!ENTITY fvd_sd.sync.login "登录">
+<!ENTITY fvd_sd.sync.register "注册">
+<!ENTITY fvd_sd.sync.restore_password "恢复密码">
+<!ENTITY fvd_sd.sync.already_have_account "已经拥有账户">
+<!ENTITY fvd_sd.sync.email "电子邮件">
+<!ENTITY fvd_sd.sync.password "密码">
+<!ENTITY fvd_sd.sync.button.login "登录">
+<!ENTITY fvd_sd.sync.create_new_account "创建新账户">
+<!ENTITY fvd_sd.sync.subscribe "订阅更新和新闻">
+<!ENTITY fvd_sd.sync.button.create_account "创建账户">
+<!ENTITY fvd_sd.sync.check_email "请检查你的电子邮件并确认注册。">
+<!ENTITY fvd_sd.sync.confirm_code "确认码">
+<!ENTITY fvd_sd.sync.button.cancel_confirm "取消">
+<!ENTITY fvd_sd.sync.button.confirm "确认">
+<!ENTITY fvd_sd.sync.button.resend_confirm "重新发送验证邮件">
+<!ENTITY fvd_sd.sync.button.restore_password "恢复密码">
+<!ENTITY fvd_sd.sync.enable_auto_sync "启用自动同步(每 3 小时)。">
+<!ENTITY fvd_sd.sync.button.merge "合并">
+<!ENTITY fvd_sd.sync.button.upload "上传">
+<!ENTITY fvd_sd.sync.button.download "下载">
+<!ENTITY fvd_sd.sync.merge "合并本地和服务器数据">
+<!ENTITY fvd_sd.sync.upload "覆盖服务器数据">
+<!ENTITY fvd_sd.sync.download "覆盖本地数据">
+<!ENTITY fvd_sd.sync.import_export_to_from "到/从本地文件(.sd)">
+<!ENTITY fvd_sd.sync.enable_sync "启用同步">
+<!ENTITY fvd_sd.sync.tab.account "账户">
+<!ENTITY fvd_sd.sync.tab.sync "同步">
+<!ENTITY fvd_sd.sync.settings "设置">
+<!ENTITY fvd_sd.sync.manual_sync "手动同步">
+<!ENTITY fvd_sd.sync.close_sync_progress_window_after_sync "同步后关闭同步进度窗口">
+<!ENTITY fvd_sd.sync.change_password "更改密码">
+<!ENTITY fvd_sd.sync.change_password.old_password "旧密码">
+<!ENTITY fvd_sd.sync.change_password.new_password "新密码">
+<!ENTITY fvd_sd.sync.change_password.new_password_confirm "确认新密码">
+<!ENTITY fvd_sd.sync.cancel_change_password "取消">
+<!ENTITY fvd_sd.sync.confirm_change_password "确认">
+<!ENTITY fvd_sd.sync.change_password_confirm_sent_desc "确认码已发送到你的邮箱">
+<!ENTITY fvd_sd.sync.change_password.confirm_key "确认码">
+<!ENTITY fvd_sd.sync.manage_groups "管理分组">
+<!ENTITY fvd_sd.sync.button.manage_synced_groups "管理同步的分组">
+<!ENTITY fvd_sd.custom_dial_size_mostvisited.title "自定义访问最多拨号大小">
+<!ENTITY sync.button.start_sync "Start Sync">
+<!ENTITY txt.group.global_options.display_search_preview "Display search preview">
+<!ENTITY group.poweroff.top_text_1 "Create your personal passcode to unlock your dials.">
+<!ENTITY group.poweroff.top_text_2 "After pressing Power Off button your dials will be hidden and the only way to unlock them is to enter passcode.">
+<!ENTITY group.poweroff.top_text_3 "This is good feature if you do not want someone see your sped dials without you!">
+<!ENTITY group.poweroff.tabs.main.title "Main">
+<!ENTITY group.poweroff.tabs.change_pass.title "Change Password">
+<!ENTITY group.poweroff.tabs.restore.title "Restore Password">
+<!ENTITY group.poweroff.tabs.main.passcode "PassCode">
+<!ENTITY group.poweroff.tabs.main.passcode_repeat "PassCode repeat">
+<!ENTITY group.poweroff.tabs.main.recovery_email "Recovery email">
+<!ENTITY group.poweroff.tabs.main.create_passcode "Create PassCode">
+<!ENTITY group.poweroff.tabs.main.setuped "Power off is setuped">
+<!ENTITY group.poweroff.tabs.change_pass.old_passcode "Old PassCode">
+<!ENTITY group.poweroff.tabs.change_pass.new_passcode "New PassCode *">
+<!ENTITY group.poweroff.tabs.change_pass.change_passcode "Change PassCode">
+<!ENTITY group.poweroff.tabs.change_pass.remove_passcode_message "* To remove PassCode leave New PassCode blank">
+<!ENTITY group.poweroff.tabs.restore_password.do_restore_password "Send PassCode to Recovery Email">
+<!ENTITY group.poweroff.tabs.restore_password.please_wait "Please wait...">
+<!ENTITY fvd_sd.scrolling "Dials Scrolling">
+<!ENTITY scrolling.vertical "Vertical">
+<!ENTITY scrolling.horizontal "Horizontal">
+<!ENTITY txt.group.popular.max_items "(max 50)">
+<!ENTITY importing.please_wait "Importing... Please wait.">
+<!ENTITY txt.group.global_options.display_urlbar_button "Display URL bar button">
+<!ENTITY txt.dialog.button_get_premium_for_free.title "Get Premium account for Free!">

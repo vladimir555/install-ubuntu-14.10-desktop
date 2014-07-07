@@ -1,0 +1,11 @@
+<!ENTITY txt.context_popup.add_to_sd "添加到快速拨号">
+<!ENTITY txt_main_button.speed_dial "快速拨号">
+<!ENTITY txt_main_button.speed_dial_status "快速拨号(状态栏)">
+<!ENTITY txt.main_popup.global_options "全局选项">
+<!ENTITY txt.main_popup.sd_options "快速拨号选项">
+<!ENTITY txt.main_popup.most_visited_options "访问最多选项">
+<!ENTITY txt.main_popup.recently_closed_options "最近关闭选项">
+<!ENTITY txt.main_popup.change_background "更改背景">
+<!ENTITY txt.main_popup.change_text_color "更改文字颜色">
+<!ENTITY txt.main_popup.fvd_suite "Fvd Suite下载和转换工具">
+<!ENTITY txt.urlbar_button.title "Add page to Speed Dial">

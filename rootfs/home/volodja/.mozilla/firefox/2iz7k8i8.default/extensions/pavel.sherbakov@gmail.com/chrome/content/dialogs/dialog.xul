@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+<?xml-stylesheet href="chrome://fvd.speeddial/skin/dialogs/dialog.css" type="text/css"?>
+
+<!DOCTYPE dialog SYSTEM "chrome://fvd.speeddial/locale/fvd.toolbar.dialogs.dtd">
+
+
+<dialog
+	xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+	id="dialog"
+>
+
+	<script src="chrome://fvd.speeddial/content/dialogs/dialog.js"/>
+	
+	<hbox flex="2" id="mainContent">
+		<vbox>
+			<image src=""/>
+		</vbox>
+		<vbox id="descriptionBox" pack="center">
+			<label id="text"/>
+		</vbox>
+		
+	</hbox>
+	
+</dialog>
