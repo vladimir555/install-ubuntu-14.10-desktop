@@ -32,7 +32,8 @@ alias ims='/home/volodja/workspace/shell/internet-mail-search.sh $1'
 
 # Set up must-have aliases and alias file.
 #
-alias ls='clear && ls --color=auto'
+alias c='clear'
+alias ls='ls --color=auto'
 alias ll='ls -lh'
 alias la='ls -a'
 alias l='ls'
