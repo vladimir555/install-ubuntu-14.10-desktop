@@ -1,0 +1,13 @@
+* {
+  padding           : 1;
+  background-color  : #2D3340;
+  color             : #FFFFFF;
+  font              : Terminus 10;
+  menu_fg_color     : #FFFFFF;
+  panel_fg_color    : #FFFFFF;
+}
+
+
+*:selected {
+  background-color  : #171C26;
+}
