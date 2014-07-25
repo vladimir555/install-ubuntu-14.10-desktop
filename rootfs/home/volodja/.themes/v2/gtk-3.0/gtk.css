@@ -4,10 +4,18 @@
   color             : #FFFFFF;
   font              : Terminus 10;
   menu_fg_color     : #FFFFFF;
+  menu_bg_color     : #2D3340;
   panel_fg_color    : #FFFFFF;
+  panel_bg_color    : #2D3340;
+  -GtkRange-slider-width: 12px;
 }
 
 
 *:selected {
+  background-color  : #171C26;
+}
+
+
+.slider {
   background-color  : #171C26;
 }
