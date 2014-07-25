@@ -1,9 +1,9 @@
 [audgui]
-filesel_path=/media/vm/music/_unsorted
+filesel_path=/media/vm/music
 no_confirm_playlist_delete=TRUE
 
 [audacious]
-equalizer_bands=0,-12,-9,-7,0,0,-7,-5,0,0
+equalizer_bands=3,-12,-9,-3,0,-1.44,-10.559999,-6.72,-2.4,-2.4
 equalizer_active=TRUE
 output_bit_depth=24
 output_buffer_size=10000
@@ -16,14 +16,21 @@ recurse_for_cover=TRUE
 recurse_for_cover_depth=2
 show_filepopup_for_tuple=FALSE
 advance_on_delete=TRUE
+proxy_host=192.168.0.1
+proxy_port=3128
+generic_title_format=${?artist:${artist} - }${title}
+use_proxy=TRUE
+shuffle=TRUE
 
 [gtkui]
 infoarea_show_vis=FALSE
-player_x=1246
+player_x=1263
 player_y=24
-player_width=668
-player_height=1031
+player_width=651
+player_height=1033
 playlist_columns=artist title length
+column_widths=-1,-1,-1
+column_expand=1,1,0
 
 [gtkui-layout]
 item_count=0
@@ -31,3 +38,50 @@ item_count=0
 [resample]
 default-rate=192000
 method=0
+
+[alsa]
+mixer-element=Master
+
+[globalHotkey]
+Hotkey_0_key=83
+Hotkey_0_mask=4
+Hotkey_0_type=0
+Hotkey_0_event=0
+Hotkey_1_key=84
+Hotkey_1_mask=4
+Hotkey_1_type=0
+Hotkey_1_event=2
+Hotkey_2_key=85
+Hotkey_2_mask=4
+Hotkey_2_type=0
+Hotkey_2_event=4
+Hotkey_3_key=80
+Hotkey_3_mask=4
+Hotkey_3_type=0
+Hotkey_3_event=8
+Hotkey_4_key=88
+Hotkey_4_mask=4
+Hotkey_4_type=0
+Hotkey_4_event=9
+NumHotkeys=5
+
+[skins]
+equalizer_visible=TRUE
+playlist_visible=TRUE
+vis_type=2
+equalizer_x=1593
+equalizer_y=138
+player_x=1318
+player_y=138
+playlist_x=1318
+playlist_y=254
+playlist_width=550
+playlist_height=783
+skin=/usr/share/audacious/Skins/Refugee
+mainwin_font=Terminus 10
+playlist_font=Terminus 10
+timer_mode=1
+
+[history]
+entry0=http://173.254.28.46:9116
+entry1=http://173.254.28.46
