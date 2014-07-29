@@ -1,5 +1,5 @@
 * {
-  padding           : 1;
+  padding           : 1px;
   background-color  : #2D3340;
   color             : #FFFFFF;
   font              : Terminus 10;
@@ -7,7 +7,8 @@
   menu_bg_color     : #2D3340;
   panel_fg_color    : #FFFFFF;
   panel_bg_color    : #2D3340;
-  -GtkRange-slider-width: 12px;
+
+  -GtkRange-slider-width      : 12px;
 }
 
 
@@ -18,4 +19,27 @@
 
 .slider {
   background-color  : #171C26;
+}
+
+
+*:active {
+  background-color  : #171C26;
+  color             : #171C26;
+}
+
+
+*:selected:focus {
+  background-color  : #171C26;
+}
+
+
+*:hover {
+  background-color  : #171C26;
+}
+
+
+.separator {
+  padding           : 0px;
+  background-color  : transparent;
+  color             : transparent;
 }
