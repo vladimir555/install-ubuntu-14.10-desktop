@@ -1,3 +1,10 @@
+gtk-icon-sizes = "gtk-menu=16,16:gtk-button=16,16:panel-applications-menu=16,16:panel-directory-menu=16,16"
+#gtk-menu-images     = 0
+#gtk-button-images   = 0
+#gtk-toolbar-style   = 0
+#gtk-auto-mnemonics  = 1
+
+
 style "clearlooks-style"
 {
   fg[NORMAL]        = @fg_color
@@ -36,6 +43,7 @@ style "clearlooks-style"
   GtkButton::focus-line-width       = 0
   GtkButton::focus-line-height      = 0
   GtkButton::inner-border           = {0, 0, 0, 0}
+  GtkButton::default_outside_border = {0, 0, 0, 0}
 
   GtkWidget::separator-height       = 0
  
@@ -45,11 +53,43 @@ style "clearlooks-style"
   GtkTreeView::focus-line-width     = 0
   GtkTreeView::vertical-separator   = 0
 
-  engine "clearlooks"
-  {
-    hint                = "progressbar"
-    hint                = "scrollbar"
-    scrollbar_color     = @selected_bg_color
+  GtkScrollbar::slider-width        = 12
+
+  GtkEntry::progress-border         = {0, 0, 0, 0}
+
+  engine "murrine" {
+    animation           = FALSE
+    arrowstyle          = 1     # Estilo flechas menu (triangulos)
+    border_shades       = {1.0, 1.0}
+    colorize_scrollbar  = TRUE
+    contrast            = 0.0
+    # default_button_color = shade (1.30, @selected_bg_color)
+    comboboxstyle       = 0     # 0 = normal combobox, 1 = colorized combobox button
+    expanderstyle       = 0     # Treview expander (triangulo)
+    focusstyle          = 0     # 0 to disable focus drawing. 1 to use dots. 2 to use a small colored rectangle. 3 to use a colored rectangle that touches the borders.
+    focus_color         = shade (1.0, @selected_bg_color)
+    glazestyle          = 0     # 0 = flat highlight, 1 = curved highlight, 2 = concave style, 3 = top curved highlight, 4 = beryl highlight
+    glowstyle           = 0     # 0 = top, 1 = bottom, 2 = top and bottom, 3 = horizontal, 4 = centered glow
+    gradient_shades     = {1.00, 1.00, 1.00, 1.00}
+    highlight_shade     = 1.0
+    lightborder_shade   = 1.0
+    lightborderstyle    = 1     # 0 = top side, 1 = all sides
+    listviewstyle       = 0     # 0 = nothing, 1 = dotted, 2 = line
+    menubaritemstyle    = 0     # 0 = menuitem look, 1 = button look
+    menubarstyle        = 0     # 0 = flat, 1 = glassy, 2 = gradient, 3 = striped
+    menuitemstyle       = 0     # 0 = flat, 1 = glassy, 2 = striped
+    menustyle           = 0     # 0 = no vertical menu stripe, 1 = display vertical menu stripe, 2 = faint? 3 = borderless
+    progressbarstyle    = 0
+    reliefstyle         = 0     # 0 = flat, 1 = inset, 2 = shadow, 3 = shadow with gradient, 4 = stronger shadow with gradient
+    rgba                = FALSE # alpha transparency
+    roundness           = 0     # 0 = square
+    scrollbarstyle      = 0     # 0 = nothing
+    separatorstyle      = 0     # 0 = Hard seperators 1 = Smooth seperators
+    shadow_shades       = {1.0, 1.0}
+    sliderstyle         = 0     # 0 = nothing added
+    stepperstyle        = 0     # 0 = standard, 1 = integrated stepper handles, 2 = unknown
+    toolbarstyle        = 0     # 0 = flat, 1 = glassy, 2 = gradient
+    trough_shades       = {1.0, 1.0}
   }
 }
 
