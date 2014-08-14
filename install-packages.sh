@@ -12,6 +12,7 @@ apt-get -y install \
  xinit qt4-qtconfig \
  mate-core mate-desktop-environment mate-notification-daemon mate-media-pulse \
  compiz compiz-plugins compiz-plugins-extra compizconfig-settings-manager \
+ autoconf libtool libwnck1.0-cil-dev libwnck-dev intltool libdecoration0-dev gawk \
  eom evince dconf-tools engrampa \
  mate-applets mate-sensors-applet \
  lightdm lightdm-gtk-greeter gtk2-engines-murrine
