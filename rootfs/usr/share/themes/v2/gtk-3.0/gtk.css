@@ -1,45 +1,59 @@
+@define-color fg  #FFFFFF;
+@define-color bg  #2D3340;
+@define-color bgs #171C26;
+
+
 * {
-  padding           : 1px;
-  background-color  : #2D3340;
-  color             : #FFFFFF;
-  font              : Terminus 10;
-  menu_fg_color     : #FFFFFF;
-  menu_bg_color     : #2D3340;
-  panel_fg_color    : #FFFFFF;
-  panel_bg_color    : #2D3340;
+  engine                      : none;
+  menu_fg_color               : @fg;
+  menu_bg_color               : @bg;
+  panel_fg_color              : @fg;
+  panel_bg_color              : @bg;
 
-  -GtkRange-slider-width      : 12px;
+  padding                     : 1px;
+  background-color            : @bg;
+  color                       : @fg;
+  font                        : Terminus 10;
+  border-style                : none;
+  border-image                : none;  
+  border-width                : 0px;
+
+  -GtkRange-slider-width      : 10px;
+
 }
 
 
-*:selected {
-  background-color  : #171C26;
-}
-
-
+*:selected,
+*:active,
+*:selected:focus,
+*:hover,
 .slider {
-  background-color  : #171C26;
-}
-
-
-*:active {
-  background-color  : #171C26;
-  color             : #171C26;
-}
-
-
-*:selected:focus {
-  background-color  : #171C26;
-}
-
-
-*:hover {
-  background-color  : #171C26;
+  background-color            : @bgs;
+  border-color                : @bgs;
 }
 
 
 .separator {
-  padding           : 0px;
-  background-color  : transparent;
-  color             : transparent;
+  padding                     : 0px;
+  color                       : transparent;
 }
+
+
+.check {
+  color                       : @fg
+}
+
+
+GtkButton,
+GtkImage,
+GtkLabel {
+  background-color            : transparent;
+}
+
+
+/*
+GtkDrawingArea {
+  background-color            : transparent;
+  background-image            : url("/home/volodja/wallpaper/eclipse-text-editor-background-image.png");
+}
+*/
