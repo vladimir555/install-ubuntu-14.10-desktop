@@ -13,7 +13,7 @@
   padding                     : 1px;
   background-color            : @bg;
   color                       : @fg;
-  font                        : Terminus 10;
+  font                        : Terminus (TTF) 10;
   border-style                : none;
   border-image                : none;  
   border-width                : 0px;
