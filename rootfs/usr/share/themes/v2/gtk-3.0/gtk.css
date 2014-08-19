@@ -13,7 +13,7 @@
   padding                     : 1px;
   background-color            : @bg;
   color                       : @fg;
-  font                        : Terminus (TTF) 10;
+  font                        : OCR_OneCTT 9;
   border-style                : none;
   border-image                : none;  
   border-width                : 0px;
